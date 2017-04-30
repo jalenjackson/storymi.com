@@ -298,7 +298,7 @@
 </style>
 
 
-<%= form_for @story do |form| %>
+<%= form_for @story, multipart:true do |form| %>
         <% if @story.errors.any? %>
             <div style="margin-top:100px;" id="error_explanation">
               <h2><%= pluralize(@story.errors.count, "error") %> prohibited this story from being saved:</h2>
