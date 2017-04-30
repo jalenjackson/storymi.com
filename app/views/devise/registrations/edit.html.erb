@@ -1,0 +1,150 @@
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background: #95a5a6;
+    background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png);
+    font-family: 'Helvetica Neue', Arial, Sans-Serif;
+  }
+  html .login-wrap {
+    position: relative;
+    margin: 0 auto;
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px;
+  }
+  html .login-wrap h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2em;
+    margin-top: 10px;
+    color: #34495e;
+  }
+  html .login-wrap .form {
+    padding-top: 20px;
+  }
+  html .login-wrap .form input[type="text"],
+  html .login-wrap .form input[type="password"],
+  html .login-wrap .form button {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    -moz-outline-style: none;
+  }
+  html .login-wrap .form input[type="text"],
+  html .login-wrap .form input[type="password"] {
+    border: 1px solid #bbb;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+  }
+  html .login-wrap .form input[type="text"]:focus,
+  html .login-wrap .form input[type="password"]:focus {
+    border: 1px solid #3498db;
+  }
+  html .login-wrap .form a {
+    text-align: center;
+    font-size: 10px;
+    color: #3498db;
+  }
+  html .login-wrap .form a p {
+    padding-bottom: 10px;
+  }
+  html .login-wrap .form button {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+  }
+  html .login-wrap .form button:hover {
+    box-shadow: 1px 1px 5px #555;
+  }
+  html .login-wrap .form button:active {
+    box-shadow: 1px 1px 7px #222;
+  }
+  html .login-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+    background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+    input {
+      width:100%;
+      height:40px;
+      margin-bottom: 25px;
+    }
+
+
+
+</style>
+<div style="margin-top:70px;" class="login-wrap">
+  <h2>Edit Profile</h2>
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+
+      <div class="form">
+
+        <i>Change avatar image</i>
+        <%= f.file_field :avatar %>
+
+        <i>Change background image</i>
+        <%= f.file_field :cover %>
+
+
+      <div class="field">
+    <%= f.email_field :email, autofocus: true, placeholder:"Change Email" %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <i>Leave blank if you do not want to change it </i>
+
+    <%= f.password_field :password, autocomplete: "off" , placeholder: "Password" %>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> characters minimum</em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "confirm password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  </div>
+<%= link_to "Back", :back %>

@@ -1,0 +1,103 @@
+
+<style>
+  .fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fb-image-profile
+  {
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%;
+  }
+
+  @media (max-width:768px)
+  {
+
+    .fb-profile-text>h1{
+      font-weight: 700;
+      font-size:16px;
+    }
+
+    .fb-image-profile
+    {
+      margin: -45px 10px 0px 25px;
+      z-index: 9;
+      width: 20%;
+    }
+  }
+
+  .edit-action{
+    transition: all 200ms ease-in-out;
+  }
+    .edit-action:hover{
+      background:#0B93F6 !important;
+      cursor: pointer;
+    }
+
+    .link-to{
+      color:white !important;
+      transition: all 300ms ease-in-out
+    }
+
+    .link-to:hover{
+      background:#0B93F6;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<div class="container">
+  <div class="fb-profile">
+    <% if @user.avatar? %>
+    <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:medium) %>" alt="Profile image example"/>
+    <% else  %>
+        <img style="width:100%;height:500px;" align="left" src="http://www.pixelstalk.net/wp-content/uploads/2015/01/Landscape-fantasy-drawing-wallpaper-HD.jpg" alt="Profile image example"/>
+
+  <% end %>
+     <% if @user.cover? %>
+     <img align="left" class="fb-image-profile thumbnail" src="<%= @user.cover.url(:medium) %>" alt="Profile image example"/>
+    <% else %>
+        <img align="left" class="fb-image-profile thumbnail" src="http://sem.yildiz.edu.tr/img/avatar.png" alt="Profile image example"/>
+
+  <% end %>
+
+    <div  class="fb-profile-text">
+      <h1><%= @user.firstname + " " + @user.lastname %></h1>
+      <div style="margin-top:60px;" id="columns">
+        <% @user.stories.each do |story| %>
+            <a href = "/stories/<%= story.id %>/view" >
+              <figure>
+                <% if story.cover? %>
+                <img src="<%= story.cover.url(:medium) %>">
+                <% else %>
+
+                <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
+
+                <% end %>
+                <div class="overlay"></div>
+                <h1 style="position: absolute;background:black;top:30px;left:20px; word-break: break-all;color:white;"><%= story.title %></h1>
+                <% if current_user.id == @user.id %>
+
+              <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
+               <% end %>
+                <% if !story.ispublished %>
+                <a href ="/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px; font-size:16px;left:100px; word-break: break-all;color:white;">Not Yet Published</h1></a>
+                <% end %>
+                <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname %></h1>
+
+
+                <% if current_user.id == @user.id %>
+                <h1 style="position: absolute;background:black;top:70px; font-size:16px;  left:150px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
+                <% end %>
+
+              </figure>
+            </a>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->

@@ -1,0 +1,63 @@
+<style>
+  #message_message1 {
+      width:100%;
+      border:none;
+      font-size:50px;
+      border-bottom: 3px solid grey;
+    }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+
+  #message_message2 {
+    width:100%;
+    border:none;
+    font-size:50px;
+    border-bottom: 3px solid grey;
+  }
+    .circlebtn{
+      border-radius:100%;
+      background:rgb(33,178,254);
+      width:50px;
+      height:50px;
+      position: absolute;
+      top:20px;
+      left:20px;
+      border:none;
+      box-shadow: 5px 5px 1px rgba(100,100,100,0.3);
+      cursor: pointer;
+
+    }
+</style>
+
+<button class="circlebtn">
+  <i style="font-size:20px; color:black;" class="fa fa-arrow-left" aria-hidden="true"></i>
+</button>
+
+<div style="margin-top:100px;" >
+
+
+      <%= form_for [@story,@message] do |f| %>
+          <div class="modal-body">
+            <% if @message.message1? %>
+                <%= f.text_field :message1, maxlength: 120,  placeholder: "what will " + @story.texter.titleize + " say?" %>
+            <% end %>
+            <% if @message.message2? %>
+                <%= f.text_field :message2, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
+            <% end %>
+          </div>
+
+      <% end %>
+
+</div>
+
+
+<script>
+  $(".circlebtn").click(function(){
+      window.location.href = "/stories/<%= @story.id %>" ;
+  });
+
+  $(window).keypress(function(e){
+
+  });
+</script>

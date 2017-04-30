@@ -1,0 +1,283 @@
+
+<style>
+  body{
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+  }
+
+  .ajs-success {
+    background:black;
+  }
+  .ajs-message{
+    background:black;
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+  }
+
+  .site-footer, .page-wrap:after {
+    /* .push must be the same height as footer */
+    height: 142px;
+  }
+  .site-footer {
+  }
+  .bg {
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+  }
+
+    #new_message {
+      position: fixed;
+      top:85%;
+      left:0%;
+      height:15%;
+      background:rgba(225,225,255,0.6);
+      width:100%;
+
+    }
+
+    #message_message1{
+      background:rgba(0,0,0,0.5);
+      border-radius:1em;
+      border: none;
+      background:white;
+      width:40%;
+      height:50px;
+      margin-left:90px;
+      margin-top:20px;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: grey;
+      font-size:20px;
+      transform:translateX(20px)
+    }
+
+    #message_message2{
+      background:rgba(0,0,0,0.5);
+      border-radius:1em;
+      border: none;
+      background:white;
+      height:50px;
+      width:40%;
+      margin-left:20px;
+      margin-top:20px;
+
+    }
+
+    .ajs-warning{
+      background:black !important;
+    }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+
+    input[type="text"] {
+      font-size: 20px;
+    }
+
+    .d{
+      height:50px;
+      width:50px;
+    }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
+
+    .overlay{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:red;
+      z-index:9999;
+    }
+
+    .link-to{
+      position: fixed;
+      top: 50%;
+      left: 42%;
+      font-size:35px;
+      color:white !important;
+      background:black;
+    }
+    .number{
+      background:black;
+      color:white !important;
+    }
+
+
+
+</style>
+<% if current_user.id == @story.user.id %>
+
+<div style="
+  <% if @story.image? %>
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 9%, rgba(0, 0, 0, 0.65) 100%), url(<%= @story.image.url(:large) %>) no-repeat center center;
+      background-size: 100% 100%;
+  <% end %>
+
+" class="bg">
+
+  <div class="video-bg">
+    <% if @story.video? %>
+        <video  id="bgvid" playsinline autoplay muted loop>
+          <source src="<%= @story.video %>" type="video/mp4">
+        </video>
+    <% end %>
+  </div>
+
+
+</div>
+<div data-behavior="messages" class = "scroller">
+  <% @messages.each_with_index do |message, i| %>
+
+      <div class="message-container">
+      <% if message.message1? %>
+            <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
+          <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
+            <p><span><strong><%= @story.texter.titleize %> : </strong></span><%= message.message1 %></p><br>
+            <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <i style=" cursor: pointer;color:red; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
+            <% end %>
+
+          </div>
+                <% end %>
+      <% end %>
+
+
+      <% if message.message2? %>
+            <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
+
+      <div style="margin-top:5px;" class="animated  from-me message2 texter<%= i %> reciever<%= i %> ">
+            <p><span><strong><%= @story.reciever.titleize %> : </strong></span><%= message.message2 %></p><br>
+        <%= link_to story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure?' } do %>
+        <i style=" cursor: pointer;color:black; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
+      <% end %>
+      </div>
+<% end %>
+
+      <% end %>
+      </div>
+
+      <div class="clear"></div>
+
+
+      </section>
+      </div>
+
+
+
+
+
+  <% end %>
+
+
+  <footer class="site-footer">
+    <a class="edit-story" style="background:black;" href= "/stories/<%= @story.id %>/edit"><h1 style="position: fixed; color:white; top:78%;left:5%;cursor:pointer; z-index:999;font-size:15px;background:black !important;">Edit Story Details</h1></a>
+
+    <h1 class="number" style="position: fixed; top: 35%; left: 45%; font-size:35px;color:grey;"></h1>
+
+    <% if !@story.ispublished? %>
+
+  <%= link_to  publish_story_path(@story), class:'link-to',  :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
+      <h1>Publish</h1>
+
+    <% end %>
+
+        <% end %>
+  </footer>
+
+
+
+  <script>
+
+
+      $(".texter0").css("margin-top","100px");
+      $(".reciever0").css("margin-top","100px");
+
+  </script>
+
+
+
+  <%= form_for [@story, Message.new]  do |f| %>
+
+
+    <%= f.text_field :message1, class:'mes1',  maxlength: 120,  placeholder: "what will " + @story.texter.titleize + " say?" %>
+    <%= f.text_field :message2, class:'mes2', maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
+
+     <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
+<% end %>
+
+<script>
+    window.scrollTo(0,document.body.scrollHeight);
+    var all = document.getElementsByClassName("from-them").length + document.getElementsByClassName("from-me").length;
+  console.log(all);
+
+    if(all > 102){
+      $("#message_message1").css({
+          "pointer-events":"none",
+          "opacity": "0.1"
+      });
+        $("#message_message2").css({
+            "pointer-events":"none",
+            "opacity": "0.1"
+        });
+        alertify.set('notifier','delay', 10000);
+
+
+
+
+        alertify.warning('<span style = "color:white!important;font-weight:bold;font-size:17px;">You wrote over 102 messages. Save the rest for the next part of the story </span><i style = "margin-left:10px;color:white !important; font-size:17px;" class="fa fa-frown-o" aria-hidden="true"></i>');
+
+    }
+    $("#new_message").keypress(function(e){
+          if(e.keyCode == 13) {
+              e.preventDefault();
+              if ($(this).submit()){
+                  $('#new_message').find('input:text').val('');
+              }
+          }
+      });
+
+
+    console.log($(".message-container").children().slice(-1)[0].className += " bounceIn");
+
+    $(".view-btn").click(function(){
+        window.location.href = "/stories/<%= @story.id %>/view"
+    })
+
+    $(".number").html(all);
+
+    $(".story-name").html("<%= @story.title %>");
+
+
+
+</script>
+
+<% else %>
+  <script>
+
+
+
+    window.location.href = "/";
+  </script>
+<% end %>

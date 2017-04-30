@@ -1,0 +1,41 @@
+
+<style>
+
+  .name {
+    transition: all 300ms ease-in-out;
+  }
+  .name:hover{
+    background: #0B93F6 !important;
+  }
+</style>
+<div style="margin-top:60px;" id="columns">
+  <% @stories.each do |story| %>
+
+      <% if story.ispublished? %>
+      <a href = "/stories/<%= story.id %>/view" >
+  <figure>
+    <% if story.cover? %>
+    <img src="<%= story.cover.url(:medium) %>">
+        <% else %>
+
+        <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
+
+        <% end %>
+        <div class="overlay"></div>
+    <% if user_signed_in? %>
+        <% if story.user.id == current_user.id %>
+            <a href = "/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;">Edit</h1></a>
+        <% end %>
+        <% end %>
+    <h1 style="position: absolute;background:black;top:30px;left:20px; word-break: break-all;color:white;"><%= story.title %></h1>
+    <a href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname %></h1></a>
+
+    <h1 style="position: absolute;background:black;top:140px; font-size:16px;  left:20px; word-break: break-all;color:white;"><%= truncate(story.synopsis, length: 29 ) %></h1>
+
+  </figure>
+      </a>
+
+<% end %>
+
+      <% end %>
+</div>

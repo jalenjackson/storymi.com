@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StoryTime</title>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'alertify.min' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'alertify.min' %>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Indie+Flower" rel="stylesheet">
+  </head>
+
+  <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <nav class="navigation-bar is-visible" data-nav-status="toggle">
+    <ul>
+      <li><a style="font-size:30px; font-family: 'Alex Brush', cursive;" href = "/">Story Time <span style="font-family: Helvetica; font-weight:300;color:grey;">Beta</span></a></li>
+      <li><a href = "/">Home</a></li>
+
+
+
+      <% if user_signed_in? %>
+      <li><a href = "/profile/<%= current_user.id %>">Profile</a></li>
+      <li><%= link_to 'Edit your profile', edit_user_registration_path  %></li>
+
+      <li><%= link_to 'New Story', new_story_path %></li>
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+          <li style="float: right;"><h1 class="story-name"> </h1></li>
+
+    </ul>
+      <% else %>
+          <li><%= link_to "Sign In", new_user_session_path, :style=>'font-size:14px;transform:translate(20px,-22px)'%></li>
+          <li><%= link_to "Sign Up", new_user_registration_path, :style=>'font-size:14px;transform:translate(30px,-22px)'  %></li>
+
+    <% end %>
+
+
+      </nav>
+
+  <%= yield %>
+
+  <script>
+      $(document).ready(function(){
+
+          /** ===========================================
+           Hide / show the master navigation menu
+           ============================================ */
+
+              // console.log('Window Height is: ' + $(window).height());
+              // console.log('Document Height is: ' + $(document).height());
+
+          var previousScroll = 0;
+
+          $(window).scroll(function(){
+
+              var currentScroll = $(this).scrollTop();
+
+            /*
+             If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
+             */
+              if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+                /*
+                 If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
+                 */
+                  if (currentScroll > previousScroll){
+                      window.setTimeout(hideNav, 300);
+                    /*
+                     Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
+                     */
+                  } else {
+                      window.setTimeout(showNav, 300);
+                  }
+                /*
+                 Set the previous scroll value equal to the current scroll.
+                 */
+                  previousScroll = currentScroll;
+              }
+
+          });
+
+          function hideNav() {
+              $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
+          }
+          function showNav() {
+              $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
+          }
+
+      });
+  </script>
+<style>
+
+</style>
+
+  </body>
+
+</html>
