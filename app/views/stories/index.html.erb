@@ -7,6 +7,26 @@
   .name:hover{
     background: #0B93F6 !important;
   }
+    .pagination{
+      width: 50%;
+      margin: 0 auto;
+      background:rgb(240,240,255);
+      font-size:40px;
+      width:100%;
+      text-align: center;
+      color:rgb(80,80,80) !important;
+      font-weight:lighter !important;
+      position: relative;
+      margin-top: 5px;
+      margin-left: 8px;
+    }
+    .current{
+      font-style: normal;
+      background:rgb(80,80,80);
+      color:white;
+    }
+
+
 </style>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
@@ -38,4 +58,7 @@
 <% end %>
 
       <% end %>
+
 </div>
+
+<%= will_paginate @stories %>

@@ -9,9 +9,51 @@
     width: 100%;
     height: 100%;
     font-family: "Roboto", sans-serif;
-    background-color: #5356ad;
+    background: url("http://st.depositphotos.com/2564943/3573/i/950/depositphotos_35737409-stock-photo-fantastic-background-with-a-magic.jpg") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow: hidden;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:100s scroll infinite linear;
   }
+
+
+
+  @-webkit-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-moz-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-o-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-ms-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
 
   .table {
     display: table;
@@ -33,7 +75,7 @@
     width: 600px;
     margin: 30px auto 0;
     height: 320px;
-    background-color: #999ede;
+    background-color: grey;
     top: 50%;
     margin-top: -160px;
     -moz-transition: all 0.5s;
@@ -54,7 +96,7 @@
     position: absolute;
     left: 152px;
     top: 50px;
-    background-color: #9297e0;
+    background-color: black;
     transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
     width: 300px;
     height: 285px;
@@ -64,7 +106,7 @@
     transition: all 0.5s;
   }
   .container .box:after {
-    background-color: #a5aae4;
+    background-color: rgb(90,90,90);
     top: -10px;
     left: 80px;
     width: 320px;
@@ -267,7 +309,6 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
-
     <div style="margin-top:110px;" class="container">
       <div class="box"></div>
       <div class="container-forms">
@@ -283,11 +324,6 @@
           <div class="info-item">
             <div class="table">
               <div class="table-cell">
-                <p style="margin-bottom:150px;width:200px; font-weight:lighter !important;">
-                  Already have an account?<br>
-
-                  <a style="color:white" href ="/users/sign_up">Sign up</a>
-                </p>
 
               </div>
             </div>
@@ -297,6 +333,8 @@
           <div class="form-item log-in">
             <div class="table">
               <div class="table-cell">
+                <h1 style="text-align:center;font-weight:300 !important;color:rgb(80,80,80)">Sign In</h1>
+
                 <%= f.email_field :email, autofocus: true %>
                 <% if @minimum_password_length %>
                 <% end %><br />

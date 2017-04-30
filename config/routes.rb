@@ -10,7 +10,8 @@ Rails.application.routes.draw do
     end
     resources :messages
   end
-  root to: "stories#index"
+
+    root to: "stories#index"
 
   get 'stories/:id/view', to: 'stories#view'
 end

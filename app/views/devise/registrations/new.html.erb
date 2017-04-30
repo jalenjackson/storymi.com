@@ -7,9 +7,48 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-family: "Roboto", sans-serif;
-    background-color: #5356ad;
+    background: url("http://st.depositphotos.com/2564943/3568/i/950/depositphotos_35685477-stock-photo-fantastic-background-with-a-magic.jpg") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow: hidden;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:100s scroll infinite linear;
+  }
+
+
+  @-webkit-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-moz-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-o-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-ms-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
   }
 
   .table {
@@ -32,7 +71,7 @@
     width: 600px;
     margin: 30px auto 0;
     height: 320px;
-    background-color: #999ede;
+    background-color: rgb(220,220,255);
     top: 50%;
     margin-top: -160px;
     -moz-transition: all 0.5s;
@@ -53,7 +92,7 @@
     position: absolute;
     left: 152px;
     top: 50px;
-    background-color: #9297e0;
+    background-color: purple;
     transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
     width: 300px;
     height: 285px;
@@ -63,7 +102,7 @@
     transition: all 0.5s;
   }
   .container .box:after {
-    background-color: #a5aae4;
+    background-color: #8e44ad;
     top: -10px;
     left: 80px;
     width: 320px;
@@ -267,6 +306,7 @@
     <%= devise_error_messages! %>
 
 <div style="margin-top:110px;" class="container">
+  <h1 style="position: absolute;top:30px;left:75%;color:rgb(80,80,80); font-weight:100 !important;">Tell Your Story</h1>
   <div class="box"></div>
   <div class="container-forms">
     <div class="container-info">
@@ -281,11 +321,7 @@
       <div class="info-item">
         <div class="table">
           <div class="table-cell">
-            <p style="margin-bottom:150px;width:200px; font-weight:lighter !important;">
-                Already have an account?<br>
 
-              <a style="color:white;" href ="/users/sign_in">Sign in</a>
-            </p>
 
           </div>
         </div>
