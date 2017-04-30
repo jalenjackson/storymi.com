@@ -63,7 +63,6 @@
 
 </style>
 
-
 <div class="bg">
 
 </div>
@@ -144,8 +143,8 @@
 
   alertify.warning('<span style = "color:black!important;font-weight:bold;font-size:17px;">Click to see the next text message</span>');
 
-
-  $(".story-name").html("<%= @story.title %>");
+18
+  $(".story-name").html(" <%= truncate(@story.title,:length => 30) %>  <span style='color:grey; font-style:italic;'> <% if @story.ispublished %> <%= pluralize(@story.impressionist_count(:filter=>:session_hash), "view") %> </span> <% end  %>");
 
 
   $(".texter0").css("margin-top","100px");

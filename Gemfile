@@ -16,6 +16,7 @@ gem 'aws-sdk'
 gem 'will_paginate'
 
 gem 'bootstrap-filestyle-rails'
+gem 'impressionist'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

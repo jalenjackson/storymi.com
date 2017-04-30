@@ -309,6 +309,8 @@
 
 <script>
 
+    $(".story-name").html("<%= @story.title %>");
+
     $(":file").filestyle({
         input: false,
         buttonText: "Add Image"
@@ -354,7 +356,6 @@
 
     $(".number").html(all);
 
-    $(".story-name").html("<%= @story.title %>");
 
 
 

@@ -64,9 +64,9 @@
 
   <% end %>
 
-    <div  class="fb-profile-text">
+    <div   class="fb-profile-text">
       <h1><%= @user.firstname + " " + @user.lastname %></h1>
-      <div style="margin-top:60px;" id="columns">
+      <div style="margin-top:120px;" id="columns">
 <% if @user.stories.exists? %>
         <% @user.stories.each do |story| %>
             <a href = "/stories/<%= story.id %>/view" >
@@ -79,19 +79,19 @@
 
                 <% end %>
                 <div class="overlay"></div>
-                <h1 style="position: absolute;background:black;top:30px;left:20px; word-break: break-all;color:white;"><%= story.title %></h1>
+                <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title,length:20) %></h1>
                 <% if current_user.id == @user.id %>
 
               <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                <% end %>
                 <% if !story.ispublished %>
-                <a href ="/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px; font-size:16px;left:100px; word-break: break-all;color:white;">Not Yet Published</h1></a>
+                <a href ="/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1></a>
                 <% end %>
-                <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname %></h1>
+                <h1 style="position: absolute;background:black;top:110px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname %></h1>
 
 
                 <% if current_user.id == @user.id %>
-                <h1 style="position: absolute;background:black;top:90px; font-size:16px;  left:150px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
+                <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
                 <% end %>
               </figure>
             </a>
