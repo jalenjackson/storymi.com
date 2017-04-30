@@ -10,7 +10,8 @@ class StoriesController < ApplicationController
   # GET /stories/1
   # GET /stories/1.json
   def show
-    @messages = @story.messages.all
+    @messages = @story.messages.order(created_at: :desc).reverse
+
   end
 
   def publish
@@ -82,7 +83,7 @@ class StoriesController < ApplicationController
   end
 
   def view
-    @messages = @story.messages.all
+    @messages = @story.messages.order(created_at: :desc).reverse
     @count = Story.count
   end
 
