@@ -10,7 +10,14 @@ Rails.application.routes.draw do
     end
     resources :messages
   end
-
+  devise_scope :user do
+    authenticated :user do
+      root :to => 'stories#index'
+    end
+    unauthenticated :user do
+      root :to => 'devise/registrations#new', as: :unauthenticated_root
+    end
+  end
     root to: "stories#index"
 
   get 'stories/:id/view', to: 'stories#view'
