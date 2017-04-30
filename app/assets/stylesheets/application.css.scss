@@ -123,6 +123,126 @@ section div {
     content: "";
 }
 
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
+
+  #columns { column-gap: 0px; }
+  figure { width: 100%; margin-left:5px !important; }
+
+  nav a{
+    font-size:30px !important;
+    margin-left:-19px;
+  }
+  nav{
+    height:100px;
+  }
+
+
+  li{
+    font-size:25px;
+  }
+
+  .fb-profile {
+    margin-top:100px;
+  }
+
+  .mobile-container{
+    width:100% !important;
+  }
+
+  .login-wrap{
+    margin-top:200px !important;
+    width:90% !important;
+  }
+
+  .login-wrap input[type="submit"]{
+    font-size:50px !important;
+    background:rgb(240,240,255);
+    border:none;
+    height:100px;
+    box-shadow: 5px 5px 10px grey;
+  }
+
+  .edit-message{
+    margin-top:100px;
+  }
+  .cont{
+    margin-top:150px !important;
+  }
+
+  .from-them{
+    font-size:15px;
+  }
+  .view-btn{
+    position: absolute;
+    top:40%;
+    left:10px;
+  }
+
+  .number{
+    top:91% !important;
+    z-index:999999;
+  }
+
+  .from-me{
+    font-size:15px;
+  }
+
+  .cont span {
+    font-size:30px !important;
+  }
+
+  .login-wrap input {
+    width:100%;
+    font-size:35px !important;
+  }
+
+  #user_password, #user_password_confirmation, #user_current_password{
+    font-size:35px !important;
+  }
+
+  .mobile-bg{
+    height:auto !important;
+  }
+  .container-form  {
+
+    width:900px!important;
+    margin-left:-190px;
+    margin-top:200px;
+    height: 900px !important;
+
+  }
+
+  .pagination   {
+    font-size:70px !important;
+  }
+
+  .message-container{
+    font-size:50px;
+  }
+
+  #new_user input{
+    width:100%;
+    font-size:40px;
+    border: 1px solid grey;
+  }
+
+  #new_user input[type="submit"]{
+    margin-left: -3px;
+    transform:translateY(100px);
+  }
+
+  .sign-up-h1{
+    font-size:74px !important;
+  }
+
+
+}
+
+
 .li-links{
   font-size:25px;
   color:white;

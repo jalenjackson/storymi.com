@@ -49,12 +49,12 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<div class="container">
+<div class="container mobile-container">
   <div class="fb-profile">
     <% if @user.avatar? %>
     <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:medium) %>" alt="Profile image example"/>
     <% else  %>
-        <img style="width:100%;height:500px;" align="left" src="http://www.pixelstalk.net/wp-content/uploads/2015/01/Landscape-fantasy-drawing-wallpaper-HD.jpg" alt="Profile image example"/>
+        <img class="mobile-bg" style="width:100%;height:500px;" align="left" src="http://www.pixelstalk.net/wp-content/uploads/2015/01/Landscape-fantasy-drawing-wallpaper-HD.jpg" alt="Profile image example"/>
 
   <% end %>
      <% if @user.cover? %>
@@ -67,6 +67,7 @@
     <div  class="fb-profile-text">
       <h1><%= @user.firstname + " " + @user.lastname %></h1>
       <div style="margin-top:60px;" id="columns">
+<% if @user.stories.exists? %>
         <% @user.stories.each do |story| %>
             <a href = "/stories/<%= story.id %>/view" >
               <figure>
@@ -92,10 +93,13 @@
                 <% if current_user.id == @user.id %>
                 <h1 style="position: absolute;background:black;top:90px; font-size:16px;  left:150px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
                 <% end %>
-
               </figure>
             </a>
 
+        <% end %>
+
+            <% else %>
+          <h1>You Have No Stories Yet </h1>
         <% end %>
       </div>
     </div>

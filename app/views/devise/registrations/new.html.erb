@@ -297,6 +297,10 @@
       margin-left:45px;
     }
 
+    .sign-up-h1{
+      font-size:14px;
+    }
+
 </style>
 
 
@@ -306,7 +310,7 @@
     <%= devise_error_messages! %>
 
 <div style="margin-top:110px;" class="container">
-  <h1 style="position: absolute;top:30px;left:75%;color:rgb(80,80,80); font-weight:100 !important;">Tell Your Story</h1>
+  <h1 style="position: absolute;top:30px;left:75%;color:rgb(80,80,80); font-weight:100 !important;">Tell Your Story </h1>
   <div class="box"></div>
   <div class="container-forms">
     <div class="container-info">
@@ -332,6 +336,7 @@
         <div class="table">
           <div class="table-cell">
             <div style="margin-top:20px;">
+              <h1 class="sign-up-h1" style="text-align:center;font-weight:lighter;color:rgb(80,80,80)">Sign Up</h1>
             <%= f.text_field :firstname, placeholder: "First Name" %>
             <%= f.text_field :lastname, placeholder: "Last Name" %>
             </div>
