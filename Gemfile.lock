@@ -53,6 +53,7 @@ GEM
     aws-sigv4 (1.0.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-filestyle-rails (1.2.1)
     bootstrap-modal-rails (2.2.5)
       railties (>= 3.1)
     bootstrap-sass (3.3.7)
@@ -225,6 +226,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  bootstrap-filestyle-rails
   bootstrap-modal-rails
   bootstrap-sass
   byebug

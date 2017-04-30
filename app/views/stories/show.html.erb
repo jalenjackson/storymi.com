@@ -33,30 +33,35 @@
     left:0;
   }
 
-    #new_message {
-      position: fixed;
-      top:85%;
-      left:0%;
-      height:15%;
-      background:rgba(225,225,255,0.6);
-      width:100%;
 
-    }
+
+  .form-div{
+    position: fixed;
+    top:85%;
+    left:0%;
+    height:15%;
+    background:rgba(225,225,255,0.6);
+    width:100%;
+  }
 
     #message_message1{
       background:rgba(0,0,0,0.5);
       border-radius:1em;
       border: none;
       background:white;
-      width:40%;
+      width:20%;
       height:50px;
-      margin-left:90px;
+      transform:translateX(10px);
       margin-top:20px;
+      margin-left:50px;
     }
 
+    .input-group{
+      background:red !important;
+    }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: grey;
-      font-size:20px;
+      font-size:15px;
       transform:translateX(20px)
     }
 
@@ -66,11 +71,55 @@
       border: none;
       background:white;
       height:50px;
-      width:40%;
-      margin-left:20px;
+      width:20%;
+      margin-left:10px;
       margin-top:20px;
 
     }
+
+
+    input[type="submit"]{
+      margin-top:35px;
+      margin-right: 0px;
+      display: inline-block;
+      border:none;
+      background: #0B93F6;
+      color:white;
+      border-radius:.2em;
+      height:30px;
+      margin-left:30px;
+
+    }
+
+    .view-btn{
+      margin-left: 80px;
+      margin-top: 24px;
+    }
+
+
+
+  .boostrap-filestyle {
+    margin-top: -400px;
+    position: absolute;
+    top:-150%;
+    left:560px;
+    height:50px;
+    background:red;
+  }
+
+  .input-group {
+    margin-top: -100px;
+    display: inline;
+    position: relative;
+    background:red;
+  }
+
+  .input-group:first-child{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+
 
     .ajs-warning{
       background:black !important;
@@ -87,6 +136,8 @@
       height:50px;
       width:50px;
     }
+
+
   video {
     position: fixed;
     top: 50%;
@@ -124,6 +175,15 @@
       color:white !important;
     }
 
+    .image_inputs{
+      position: absolute;
+      top:-10px;
+      left:46%;
+
+    }
+
+
+
 
 
 </style>
@@ -151,27 +211,35 @@
   <% @messages.each_with_index do |message, i| %>
 
       <div class="message-container">
-      <% if message.message1? %>
+      <% if message.message1? || message.image?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
           <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
-            <p><span><strong><%= @story.texter.titleize %> : </strong></span><%= message.message1 %></p><br>
-            <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <p><span><strong><%= @story.texter.titleize %> : <% if message.image? %> Sent an image <br> <% end %> </strong></span><%= message.message1 %></p><br>
+            <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
                 <i style=" cursor: pointer;color:red; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
+                <% if message.image? %>
+                    <%= image_tag message.image.url(:medium) %>
+                <% end %>
             <% end %>
 
           </div>
                 <% end %>
+
+
       <% end %>
 
 
-      <% if message.message2? %>
+      <% if message.message2? || message.image2?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
 
       <div style="margin-top:5px;" class="animated  from-me message2 texter<%= i %> reciever<%= i %> ">
-            <p><span><strong><%= @story.reciever.titleize %> : </strong></span><%= message.message2 %></p><br>
-        <%= link_to story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <p><span><strong><%= @story.reciever.titleize %> : <% if message.image2? %> Sent an image <br> <% end %> </strong></span><%= message.message2 %></p><br>
+        <%= link_to story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
         <i style=" cursor: pointer;color:black; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
-      <% end %>
+            <% if message.image2? %>
+                <%= image_tag message.image2.url(:medium) %>
+            <% end %>
+        <% end %>
       </div>
 <% end %>
 
@@ -220,14 +288,31 @@
 
   <%= form_for [@story, Message.new]  do |f| %>
 
-
+<div class="form-div">
     <%= f.text_field :message1, class:'mes1',  maxlength: 120,  placeholder: "what will " + @story.texter.titleize + " say?" %>
     <%= f.text_field :message2, class:'mes2', maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
 
-     <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
+  <div class="image_inputs">
+      <%= f.file_field :image, class:'img1' %>
+
+      <%= f.file_field :image2 %>
+    <%= f.submit "Send message"%>
+    <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
+
+  </div>
+
+</div>
+
+
+
 <% end %>
 
 <script>
+
+    $(":file").filestyle({
+        input: false,
+        buttonText: "Add Image"
+    });
     window.scrollTo(0,document.body.scrollHeight);
     var all = document.getElementsByClassName("from-them").length + document.getElementsByClassName("from-me").length;
   console.log(all);
@@ -248,7 +333,9 @@
 
         alertify.warning('<span style = "color:white!important;font-weight:bold;font-size:17px;">You wrote over 102 messages. Save the rest for the next part of the story </span><i style = "margin-left:10px;color:white !important; font-size:17px;" class="fa fa-frown-o" aria-hidden="true"></i>');
 
+
     }
+
     $("#new_message").keypress(function(e){
           if(e.keyCode == 13) {
               e.preventDefault();
@@ -268,6 +355,8 @@
     $(".number").html(all);
 
     $(".story-name").html("<%= @story.title %>");
+
+
 
 
 

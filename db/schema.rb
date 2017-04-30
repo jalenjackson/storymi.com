@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170430031226) do
+ActiveRecord::Schema.define(version: 20170430100141) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "story_id"
     t.string   "message1"
     t.string   "message2"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "image2_file_name"
+    t.string   "image2_content_type"
+    t.integer  "image2_file_size"
+    t.datetime "image2_updated_at"
     t.index ["story_id"], name: "index_messages_on_story_id"
   end
 

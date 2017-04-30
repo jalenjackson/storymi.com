@@ -80,6 +80,9 @@
 <% if message.message1? %>
   <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
     <p><span><strong><%= @story.texter %> : </strong></span><%= message.message1 %></p><br>
+    <% if message.image? %>
+      <%= image_tag message.image.url(:medium) %>
+    <% end %>
   </div>
 <% end %>
 
@@ -88,6 +91,9 @@
 <% if message.message2? %>
 <div  style="margin-top:5px;" class="animated from-me message2 texter<%= i %> reciever<%= i %> ">
   <p><span><strong><%= @story.reciever %> : </strong></span><%= message.message2 %></p><br>
+  <% if message.image2? %>
+      <%= image_tag message.image2.url(:medium) %>
+  <% end %>
 </div>
 <% end %>
 
@@ -136,7 +142,8 @@
       i++;
   });
 
-  alertify.warning("Click to see the next text message");
+  alertify.warning('<span style = "color:black!important;font-weight:bold;font-size:17px;">Click to see the next text message</span>');
+
 
   $(".story-name").html("<%= @story.title %>");
 

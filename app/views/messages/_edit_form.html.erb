@@ -8,6 +8,23 @@
   textarea:focus, input:focus{
     outline: none;
   }
+  input[type="submit"]{
+    width:100%;
+    margin-top:10px;
+    background: #0B93F6;
+    height:60px;
+    color:white;
+    font-size:16px;
+    border:none;
+  }
+
+  .input-group{
+    margin-left:50px;
+  }
+
+  i{
+    margin-left:50px;
+  }
 
   #message_message2 {
     width:100%;
@@ -16,22 +33,28 @@
     border-bottom: 3px solid grey;
   }
     .circlebtn{
-      border-radius:100%;
       background:rgb(33,178,254);
-      width:50px;
-      height:50px;
+      width:auto;
+      height:70px;
       position: absolute;
-      top:20px;
+      top:100px;
       left:20px;
       border:none;
       box-shadow: 5px 5px 1px rgba(100,100,100,0.3);
       cursor: pointer;
+      color:white;
+      font-size:17px;
 
+    }
+
+
+    .edit-message{
+      margin-top:50px;
     }
 </style>
 
 <button class="circlebtn">
-  <i style="font-size:20px; color:black;" class="fa fa-arrow-left" aria-hidden="true"></i>
+  <p>Back to <strong><%= @story.title %></strong></p>
 </button>
 
 <div style="margin-top:100px;" >
@@ -45,9 +68,32 @@
             <% if @message.message2? %>
                 <%= f.text_field :message2, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
             <% end %>
+            <% if @message.image? && @message.message1? %>
+                <i>Add an image to this text</i>
+                <%= f.file_field :image %>
+            <% end %>
+
+            <% if @message.image2? && @message.message2? %>
+            <i>Change image</i>
+            <%= f.file_field :image2 %>
+  <% end %>
           </div>
 
+      <% if @message.image2? && !@message.message2?  %>
+          <i>Change image</i>
+          <%= f.file_field :image2 %>
+          <%= f.text_field :message2, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
+<% end %>
+
+      <% if @message.image? && !@message.message1? %>
+          <i>Change image</i>
+          <%= f.file_field :image1 %>
+          <%= f.text_field :message1, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
       <% end %>
+      <%= f.submit %>
+
+      <% end %>
+
 
 </div>
 
@@ -60,4 +106,7 @@
   $(window).keypress(function(e){
 
   });
+  $(":file").filestyle({
+      input: false
+  })
 </script>
