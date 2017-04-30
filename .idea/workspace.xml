@@ -1,7 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="" />
+    <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/large/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/large/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/medium/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/medium/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/original/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/original/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/large/500.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/large/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/medium/500.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/medium/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/original/500.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/original/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/large/img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/large/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/medium/img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/medium/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/original/img_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/original/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/001/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/001/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/001/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/large/6831cf1404304b27496eb1bb5dbe49ec.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/large/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/medium/6831cf1404304b27496eb1bb5dbe49ec.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/medium/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/original/6831cf1404304b27496eb1bb5dbe49ec.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/002/original/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/large/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/medium/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/003/original/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/large/tumblr_n7dgfyWWTV1t6ri09o1_500.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/medium/tumblr_n7dgfyWWTV1t6ri09o1_500.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/original/tumblr_n7dgfyWWTV1t6ri09o1_500.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/005/large/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/005/medium/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/005/original/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/007/large/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/007/medium/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/007/original/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/008/large/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/008/medium/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/008/original/california-beach-getaway-pismo-beach.jpg.rend.hgtvcom.616.462.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/009/large/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/009/medium/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/009/original/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/010/large/haunted-amusement-parks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/010/medium/haunted-amusement-parks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/010/original/haunted-amusement-parks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/videos/000/000/006/original/videos.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/videos/000/000/006/thumb/videos.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/004/large/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/004/medium/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/004/original/Tahiti-French-Polynesia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/006/large/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/006/medium/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/006/original/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/004/large/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/004/medium/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/004/original/492_paidinfull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/006/large/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/006/medium/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/006/original/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StoryTime.iml" afterPath="$PROJECT_DIR$/.idea/StoryTime.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -44,16 +117,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stories_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/stories_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stories.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/stories.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,7 +127,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/profile.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
@@ -88,6 +151,16 @@
               <folding>
                 <element signature="n#style#0;n#h1#0;n#a#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,7 +263,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20170429234927_add_attachment_cover_to_stories.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170430003647_add_data_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170430004847_add_user_id_to_stories.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -210,6 +282,7 @@
         <option value="$PROJECT_DIR$/app/controllers/stories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/profile.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -263,6 +336,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoryTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoryTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -835,18 +922,18 @@
       <workItem from="1493508478884" duration="407000" />
       <workItem from="1493508942187" duration="3826000" />
       <workItem from="1493513082006" duration="9052000" />
-      <workItem from="1493523106271" duration="3299000" />
+      <workItem from="1493523106271" duration="3469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51714000" />
+    <option name="totallyTimeSpent" value="51884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1036,14 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1256,6 +1335,14 @@
             <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#2;n#figure#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
