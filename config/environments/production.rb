@@ -65,6 +65,10 @@ Rails.application.configure do
       }
   }
 
+
+  config.assets.compile = true
+
+
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
