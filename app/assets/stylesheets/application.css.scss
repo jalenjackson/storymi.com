@@ -136,6 +136,67 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     font-size:30px !important;
     margin-left:-19px;
   }
+
+  .mobile-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:99999999999;
+    display: block !important;
+  background: rgb(0,0,0) url("http://st.depositphotos.com/2564943/3568/i/950/depositphotos_35685477-stock-photo-fantastic-background-with-a-magic.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+}
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+  
+  .mobile-overlay h1 {
+    font-size:60px;
+    color:white;
+    text-align: center;
+    margin-top: 200px;
+    transform:translateY(200px);
+    font-weight:lighter;
+  }
   nav{
     height:100px;
   }
