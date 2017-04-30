@@ -77,7 +77,7 @@
 <div class = "scroller">
 <% @messages.each_with_index do |message, i| %>
 <div class="message-container">
-<% if message.message1? %>
+<% if message.message1? || message.image? %>
   <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
     <p><span><strong><%= @story.texter %> : </strong></span><%= message.message1 %></p><br>
     <% if message.image? %>
@@ -88,7 +88,7 @@
 
 <div class="clear"></div>
 
-<% if message.message2? %>
+<% if message.message2? || message.image2? %>
 <div  style="margin-top:5px;" class="animated from-me message2 texter<%= i %> reciever<%= i %> ">
   <p><span><strong><%= @story.reciever %> : </strong></span><%= message.message2 %></p><br>
   <% if message.image2? %>
