@@ -96,7 +96,9 @@
 
     <h1 class="category-title" style="margin-top:60px !important;  background:url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg);  text-align: center;;">No Stories For This Category Yet</h1>
 <% end %>
-<h1 style="text-align: center;font-weight:lighter">Message Stories</h1>
+
+<% if @stories.last.present? %>
+    <h1 style="text-align: center;font-weight:lighter">Message Stories</h1>
 
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
@@ -187,10 +189,10 @@
       <% end %>
 
 </div>
+<% end %>
 
 
-
-
+<% if @articles.last.present? %>
 <h1 style="text-align: center;font-weight:lighter">Stories</h1>
 <div style="margin-top:60px;" id="columns">
   <% @articles.each do |story| %>
@@ -281,7 +283,7 @@
   <% end %>
 
 </div>
-
+<% end %>
 
 
 <%= will_paginate @stories %>
