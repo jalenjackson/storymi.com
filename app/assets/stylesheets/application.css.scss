@@ -22,7 +22,9 @@
 body {
 overflow-x: hidden;
 }
-
+nav ul li a {
+  font-family: 'lato',sans-serif !important;
+}
 body,html{
 
   font-family: "Helvetica Neue";
@@ -106,6 +108,7 @@ section div {
     right: -15px;
     content: "";
 }
+
 
 nav:after {
   content: '';
@@ -368,6 +371,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   .sign-up-h1{
     font-size:74px !important;
   }
+
 
 
 }
