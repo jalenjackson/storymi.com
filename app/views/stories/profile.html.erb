@@ -47,6 +47,14 @@
     .link-to:hover{
       background:#0B93F6;
     }
+
+    .category-link{
+      color:white !important;
+    }
+
+    .category-link:hover{
+      color:blue;
+    }
 </style>
 
 
@@ -102,6 +110,7 @@
 
                 <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
 
+                <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
 
                 <% if current_user.id == @user.id %>
                 <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
