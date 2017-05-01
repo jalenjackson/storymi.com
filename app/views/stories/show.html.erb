@@ -328,11 +328,19 @@
               "pointer-events": "none",
               "opacity" : "0.3"
           });
+          $("#message_message2").css({
+              "pointer-events":"none",
+              "opacity": "0.3"
+          });
       }
       else {
           $("label[for='message_image2']").css({
               "pointer-events": "auto",
               "opacity" : "1"
+          });
+          $("#message_message2").css({
+              "pointer-events":"auto",
+              "opacity": "1"
           });
       }
   });
@@ -349,10 +357,18 @@
               "pointer-events":"none",
               "opacity" : "0.3"
           });
+          $("#message_message1").css({
+              "pointer-events":"none",
+              "opacity": "0.3"
+          });
       } else {
           $(".input-group label:first").css({
               "pointer-events":"auto",
               "opacitiy" : "1"
+          });
+          $("#message_message1").css({
+              "pointer-events":"auto",
+              "opacity": "1"
           });
 
       }
