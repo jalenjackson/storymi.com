@@ -340,6 +340,10 @@
       <%= form.file_field :cover %>
     </label>
     <label>
+      <span> Add A Category </span>
+      <%= form.text_field :category %>
+    </label>
+    <label>
       <%= form.button :submit , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating Story Interface..."} %>
     </label>
   </div>
