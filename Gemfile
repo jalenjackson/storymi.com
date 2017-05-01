@@ -17,6 +17,7 @@ gem 'will_paginate'
 
 gem 'bootstrap-filestyle-rails'
 gem 'impressionist'
+gem "wysiwyg-rails"
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

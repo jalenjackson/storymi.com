@@ -78,9 +78,14 @@
       <h1><%= @user.firstname.titlecase + " " + @user.lastname.titlecase %></h1>
       <h1 style="color:grey; font-style:italic;">  <%= pluralize(@views , "total view" ) %></h1>
 
+
+      <h1 style="transform:translateY(50px); "><%= @user.firstname %>'s Text Message Stories</h1>
+
       <div style="margin-top:85px;" id="columns">
+
 <% if @user.stories.exists? %>
         <% @user.stories.each do |story| %>
+
 
                 <% if story.ispublished? %>
             <a href = "/stories/<%= story.id %>/view" >
@@ -92,7 +97,9 @@
               <figure>
                 <% if story.cover? %>
                 <img src="<%= story.cover.url(:medium) %>">
-                <% else %>
+
+                <% else%>
+
 
                 <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
 
@@ -104,7 +111,7 @@
               <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                <% end %>
                 <% if !story.ispublished %>
-                <a href ="/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1></a>
+                <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
                 <% end %>
                 <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 
@@ -127,7 +134,68 @@
             <% else %>
           <h1>No Stories </h1>
         <% end %>
+
+
       </div>
+
+      <h1 style="text-align: center;;"><%= @user.firstname %>'s Stories</h1>
+      <div style="margin-top:85px;" id="columns">
+
+        <% if @user.articles.exists? %>
+            <% @user.articles.each do |story| %>
+
+
+                <% if story.ispublished? %>
+                    <a href = "/articles/<%= story.id %>" >
+                <% else %>
+                    <a href = "/articles/<%= story.id %>/edit" >
+
+                <% end %>
+
+                <figure>
+                  <% if story.cover? %>
+                      <img src="<%= story.cover.url(:medium) %>">
+
+                  <% else%>
+
+
+                      <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
+
+                  <% end %>
+                  <div class="overlay"></div>
+                  <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
+                  <% if current_user.id == @user.id %>
+
+                      <a href ="/articles/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
+                  <% end %>
+                  <% if !story.ispublished %>
+                      <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
+                  <% end %>
+                  <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
+
+                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
+
+                  <% if story.category.present? %>
+                      <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
+                  <% end %>
+
+                  <% if current_user.id == @user.id %>
+                      <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
+                  <% end %>
+                </figure>
+                </a>
+
+
+
+            <% end %>
+
+        <% else %>
+            <h1>No Stories </h1>
+        <% end %>
+
+
+      </div>
+
     </div>
   </div>
 </div> <!-- /container -->

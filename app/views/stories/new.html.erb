@@ -1,4 +1,4 @@
-
+<% if user_signed_in? %>
 
 <%= render 'form', story: @story %>
 
@@ -14,6 +14,12 @@
 <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
   <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
 </a>
+
+    <% else %>
+      <script>
+        window.location.href = "/"
+      </script>
+      <% end %>
 
 <script>
     document.querySelector('.img__btn').addEventListener('click', function() {

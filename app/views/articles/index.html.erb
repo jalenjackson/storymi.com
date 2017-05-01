@@ -1,0 +1,153 @@
+
+<style>
+
+  .name {
+    transition: all 300ms ease-in-out;
+  }
+  .name:hover{
+    background: #8e44ad !important;
+  }
+
+  body{
+    background:black;
+  }
+
+  nav{
+    background:rgb(40,40,40) !important;
+    color:white !important;
+    border:none !important;
+  }
+
+  nav li {
+    color:white !important;
+
+  }
+  nav a {
+    color:white !important;
+
+  }
+
+
+  .name:after {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+    background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+    height: 5px;
+  }
+
+
+
+
+  .pagination{
+    width: 50%;
+    margin: 0 auto;
+    background:rgb(240,240,255);
+    font-size:40px;
+    width:100%;
+    text-align: center;
+    color:rgb(80,80,80) !important;
+    font-weight:lighter !important;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+  .current{
+    font-style: normal;
+    background:rgb(80,80,80);
+    color:white;
+  }
+
+  .category-link {
+    color:white !important;
+  }
+
+  .category-title{
+    font-size:50px;
+    text-align: center;
+    margin-top:45px;
+    background-size: cover;
+    color:white;
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/3f/49/bd/3f49bda40a090feca577a5451b1b97c6.jpg);
+    font-weight:bold !important;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:100s scroll infinite linear;
+
+  }
+
+
+  @-webkit-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-moz-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-o-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-ms-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+
+</style>
+<h1 style="text-align: center; color:white; font-weight:lighter;">Stories</h1>
+
+<div style="margin-top:30px;" id="columns">
+
+  <% @articles.each do |story| %>
+
+      <% if story.ispublished? %>
+          <a href = "/articles/<%= story.id %>" >
+            <figure>
+              <% if story.cover? %>
+                  <img src="<%= story.cover.url(:medium) %>">
+              <% else %>
+
+                  <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
+
+              <% end %>
+              <div class="overlay"></div>
+
+              <a href = "/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1></a>
+              <h1 style="position: absolute;background:black;top:34px; font-size:25px;left:20px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase ,length:25) %></h1>
+              <a href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:100px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1></a>
+              <% if story.category.present?  %>
+                  <h1 class="name"  style="position: absolute;top:100px; font-size:20px; font-style: italic;  left:100px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
+              <% end %>
+
+            </figure>
+          </a>
+
+      <% end %>
+
+  <% end %>
+
+</div>
+
+
+
+<%= will_paginate @articles %>

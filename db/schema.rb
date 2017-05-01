@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170501065501) do
+ActiveRecord::Schema.define(version: 20170501124606) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.string   "synopsis"
+    t.string   "body"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.boolean  "ispublished"
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
+    t.integer  "user_id"
+    t.integer  "category_id"
+    t.index ["category_id"], name: "index_articles_on_category_id"
+    t.index ["user_id"], name: "index_articles_on_user_id"
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"

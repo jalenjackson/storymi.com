@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.paginate(:page => params[:page], :per_page => 21)
+    @stories = Story.paginate(:page => params[:page], :per_page => 11)
   end
 
   # GET /stories/1
@@ -41,7 +41,13 @@ class StoriesController < ApplicationController
     if User.find_by_id(params[:id])
       @email = params[:id]
       @user = User.find_by_id(params[:id])
-      @views = @user.stories.sum(&:impressionist_count)
+      @views = 0
+
+      @views = @user.stories.last.impressionist_count(:filter => :params)
+      @user.stories.each do |i|
+        @views += @user.stories.last.impressionist_count(:filter => :params)
+      end
+
     else
       redirect_to "/"
     end

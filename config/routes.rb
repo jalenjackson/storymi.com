@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
 
 
+  resources :articles do
+    member do
+      put :publish
+    end
+  end
   get '/profile/:id' , to: 'stories#profile'
 
   get '/category/:id' , to: 'categories#show', as: 'category'
+
+  get '/story/new', to: 'choose#index'
+
+
 
 
   devise_for :users
@@ -13,15 +22,8 @@ Rails.application.routes.draw do
     end
     resources :messages
   end
-  devise_scope :user do
-    authenticated :user do
       root :to => 'stories#index'
-    end
-    unauthenticated :user do
-      root :to => 'devise/registrations#new', as: :unauthenticated_root
-    end
-  end
-    root to: "stories#index"
+
 
   get 'stories/:id/view', to: 'stories#view'
 end

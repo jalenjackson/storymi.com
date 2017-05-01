@@ -1,0 +1,62 @@
+
+<style>
+  img, iframe {
+    filter: blur(10px);
+    transition: all 600ms ease-in-out;
+  }
+    .edit{
+      position: fixed;
+      top:110px;
+      left:10px;
+      background:rgba(200,200,255,0.3);
+      font-size:16px;
+      width:100px;
+      border-radius:.3em;
+      color:black;
+      text-align: center;
+      cursor: pointer;
+
+    }
+    .edit > h1{
+      font-weight:lighter !important;
+      margin-top:-2px;
+    }
+</style>
+
+<div class="container-fluid">
+<div style="margin-top:70px;" class="fr-view">
+  <%= raw @article.body %>
+</div>
+
+<% if @article.user.id == current_user.id   %>
+    <div class="edit">
+      <p>Continue Editing</p>
+    </div>
+    <% if !@article.ispublished?  %>
+        <%= link_to  publish_article_path(@article), class:'link-to',  :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
+            <div style="margin-top:70px;" class="edit">
+              <p>Publish Story</p>
+            </div>
+
+        <% end %>
+
+    <% end %>
+    <% end %>
+
+</div>
+<script>
+
+    $(window).on("load",function(){
+        $("img").css("filter","blur(0px)")
+        $("iframe").css("filter","blur(0px)")
+
+    });
+
+    $(".edit").click(function(){
+        window.location.href = "/articles/<%= @article.id %>/edit"
+    });
+
+
+    $(".story-name").html(" <%= truncate(@article.title,:length => 30) %>  <span class='latt' style='color:grey; font-style:italic;'> <% if @article.ispublished %> <%= pluralize(@article.impressionist_count(:filter=>:session_hash), "view") %> </span> <% end  %>");
+    $(".story-name").addClass("animated fadeInUp")
+</script>

@@ -8,6 +8,11 @@
     background: #8e44ad !important;
   }
 
+  .nav-item:hover{
+    background: none !important;
+    color:black !important;
+  }
+
 
   .name:after {
     content: '';
@@ -45,11 +50,61 @@
     .category-link {
       color:white !important;
     }
+  .category-title{
+    font-size:50px;
+    text-align: center;
+    margin-top:45px;
+    background-size: cover;
+    color:white;
+    background: url(http://www.mobile-aflak.ir/wp-content/uploads/2016/01/8777684-Seamless-Pattern-made-with-Mobile-Devices-on-Black-Background-Stock-Vector.jpg);
+    font-weight:bold !important;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:100s scroll infinite linear;
+
+  }
+
+
+  @-webkit-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-moz-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-o-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @-ms-keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  @keyframes scroll{
+    100%{
+      background-position:0px -3000px;
+    }
+  }
+
+
+
 
 
 </style>
+<h1 style="text-align: center; color:black; font-weight:lighter;">Message Stories</h1>
 
-<div style="margin-top:60px;" id="columns">
+<div style="margin-top:30px;" id="columns">
   <% @stories.each do |story| %>
 
       <% if story.ispublished? %>
@@ -79,5 +134,7 @@
       <% end %>
 
 </div>
+
+
 
 <%= will_paginate @stories %>

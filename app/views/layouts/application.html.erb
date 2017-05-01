@@ -5,6 +5,10 @@
       .cat-link{
         color:white !important;
       }
+        .nav-item:hover{
+          background: none;
+          color:black
+        }
     </style>
     <title>TellAFiction</title>
     <%= csrf_meta_tags %>
@@ -44,23 +48,29 @@
   <nav class=" navigation-bar  is-visible" data-nav-status="toggle">
     <ul>
       <li><a class="brand" style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
-      <li><a href = "/">Home</a></li>
+      <li><a class= "nav-item" href = "/">Home</a></li>
       <li style="cursor: pointer;" class="category-go">Categories</li>
+      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 animated pulse">Message Stories</li>
+      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 animated pulse">Stories</li>
+
+      <% if user_signed_in? %>
+      <li ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
+      <% end %>
+
 
 
 
       <% if user_signed_in? %>
-      <li><a href = "/profile/<%= current_user.id %>">Profile</a></li>
-      <li><%= link_to 'Edit your profile', edit_user_registration_path  %></li>
+      <li ><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
+      <li><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></li>
 
-      <li><%= link_to 'New Story', new_story_path %></li>
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%>
           <li style="float: right; "><h1  class="story-name"> </h1></li>
 
     </ul>
       <% else %>
-          <li><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)'%></li>
-          <li><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)'  %></li>
+          <li><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item'%></li>
+          <li><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item'  %></li>
 
     <% end %>
 
@@ -82,6 +92,14 @@
   <%= yield %>
 
   <script>
+
+    $(".category-go1").click(function(){
+        window.location.href = "/";
+    });
+    $(".category-go2").click(function(){
+        window.location.href = "/articles";
+
+    });
 
     $(".category-overlay").hide();
     $(".category-go").click(function(){
