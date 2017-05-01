@@ -64,6 +64,17 @@ section div {
     content: "";
 }
 
+nav:after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+  background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+  height: 5px;
+}
+
 
 .ajs-content {
     font-weight:bold !important;
@@ -218,6 +229,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   .fb-profile {
     margin-top:100px;
   }
+
+
 
   .mobile-container{
     width:100% !important;
