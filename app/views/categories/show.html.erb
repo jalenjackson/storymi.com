@@ -90,14 +90,14 @@
 
 
 </style>
-<% if @stories.last.category %>
+<% if @stories.last.category.present? %>
 <h1 class="category-title"><%= @stories.last.category.name %></h1>
     <% end %>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
-      <% if story.category %>
+      <% if story.category.present? %>
 
-      <% if story.ispublished? %>
+      <% if story.ispublished %>
           <% if story.category.name == "Romance" %>
               <script>
 
