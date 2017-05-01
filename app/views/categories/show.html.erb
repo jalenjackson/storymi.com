@@ -90,8 +90,9 @@
 
 
 </style>
-
+<% if @stories.last.category %>
 <h1 class="category-title"><%= @stories.last.category.name %></h1>
+    <% end %>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
       <% if story.category %>
