@@ -78,9 +78,10 @@
       <h1><%= @user.firstname.titlecase + " " + @user.lastname.titlecase %></h1>
       <h1 style="color:grey; font-style:italic;">  <%= pluralize(@views , "total view" ) %></h1>
 
+      <% if @user.stories.exists? %>
 
       <h1 style="transform:translateY(50px); "><%= @user.firstname %>'s Text Message Stories</h1>
-
+<% end %>
       <div style="margin-top:85px;" id="columns">
 
 <% if @user.stories.exists? %>
@@ -137,8 +138,10 @@
 
 
       </div>
+      <% if @user.articles.exists? %>
 
       <h1 style="text-align: center;;"><%= @user.firstname %>'s Stories</h1>
+          <% end %>
       <div style="margin-top:85px;" id="columns">
 
         <% if @user.articles.exists? %>
@@ -190,7 +193,6 @@
             <% end %>
 
         <% else %>
-            <h1>No Stories </h1>
         <% end %>
 
 

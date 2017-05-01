@@ -42,8 +42,6 @@ class StoriesController < ApplicationController
       @email = params[:id]
       @user = User.find_by_id(params[:id])
       @views = 0
-
-      @views = @user.stories.last.impressionist_count(:filter => :params)
       @user.stories.each do |i|
         @views += @user.stories.last.impressionist_count(:filter => :params)
       end
