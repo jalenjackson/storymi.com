@@ -73,7 +73,13 @@
       <div style="margin-top:85px;" id="columns">
 <% if @user.stories.exists? %>
         <% @user.stories.each do |story| %>
+
+                <% if story.ispublished? %>
             <a href = "/stories/<%= story.id %>/view" >
+              <% else %>
+                    <a href = "/stories/<%= story.id %>" >
+
+      <% end %>
 
               <figure>
                 <% if story.cover? %>

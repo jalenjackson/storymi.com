@@ -15,6 +15,8 @@ class StoriesController < ApplicationController
 
   end
 
+
+
   def publish
     @story = Story.find(params[:id])
     @story.ispublished = true
@@ -23,12 +25,14 @@ class StoriesController < ApplicationController
   # GET /stories/new
   def new
     @story = Story.new
+    @category = Category.new
   end
 
   # GET /stories/1/edit
   def edit
 
   end
+
 
   def profile
     @user = User.find_by_id(params[:id])
@@ -98,7 +102,7 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params.require(:story).permit(:title, :category, :synopsis,:texter,:reciever, :image, :video, :cover)
+      params.require(:story).permit(:title, :category_id, :synopsis,:texter,:reciever, :image, :video, :cover)
     end
 
 

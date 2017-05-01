@@ -341,7 +341,7 @@
     </label>
     <label>
       <span> Add A Category </span>
-      <%= form.text_field :category %>
+      <%= form.select :category_id , Category.all.collect { |c| [c.name, c.id]}, :prompt => "Select One" %>
     </label>
     <label>
       <%= form.button :submit , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating Story Interface..."} %>

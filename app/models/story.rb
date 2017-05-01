@@ -1,5 +1,6 @@
 class Story < ApplicationRecord
   has_many :messages
+  belongs_to :category
 
   is_impressionable
 

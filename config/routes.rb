@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   get '/profile/:id' , to: 'stories#profile'
 
+  get '/category/:id' , to: 'categories#show', as: 'category'
+
+
   devise_for :users
   resources :stories do
     member do

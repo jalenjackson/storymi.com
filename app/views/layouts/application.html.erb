@@ -25,10 +25,22 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
+  <div class="category-overlay">
+
+    <a href = "/category/8"><h1 class="animated bounceInLeft"><span style="background: url(http://www.jotdown.es/wp-content/uploads/2014/12/peq1.jpg)">SCI-FI</span></h1></a>
+    <a href = "/category/1"><h1 style="animation-delay: 0.1s ;" class="animated bounceInLeft"><span style="animation-delay: 0.3s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%), url(https://image.shutterstock.com/z/stock-vector-scary-fantasy-pattern-background-hair-and-eyes-blue-eyes-in-pink-hair-294640793.jpg)">Horror</span></h1></a>
+    <a href = "/category/4"><h1 style="animation-delay: 0.2s ;" class="animated bounceInLeft"><span style="animation-delay: 0.6s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%), url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_zknayTcu_S.jpg)">Fantasy</span></h1></a>
+    <a href = "/category/3"><h1 style="animation-delay: 0.3s ;" class="animated bounceInLeft"><span style="animation-delay: 0.9s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://st.depositphotos.com/1341440/1362/v/950/depositphotos_13624912-stock-illustration-seamless-pattern-with-pink-and.jpg)">Romance</span></h1></a>
+    <a href = "/category/6"><h1 style="animation-delay: 0.4s ;"class="animated bounceInLeft"><span style="animation-delay: 1.2s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://www.presentationmagazine.com/powerpoint-templates/9/8/98199434/free-color-powerpoint-template-for-presentations-_1.jpg)">Thriller</span></h1></a>
+    <a href = "/category/5"><h1 style="animation-delay: 0.5s ; "class="animated bounceInLeft"><span style="animation-delay: 1.5s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://previews.123rf.com/images/mihno/mihno1505/mihno150500047/40730251-Abstract-ink-background-Marble-style-White-black-ink-in-water-Stock-Photo.jpg)">Mystery</span></h1></a>
+    <a href = "/category/2"><h1 style="animation-delay: 0.6s ; "class="animated bounceInLeft"><span style="animation-delay: 1.9s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://cdn.pixabay.com/photo/2014/03/04/19/51/dark-279694_1280.png)">Drama</span></h1>
+    <a href = "/category/7"><h1 style="animation-delay: 0.7s ;" class="animated bounceInLeft"><span style="animation-delay: 2.1s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://st2.depositphotos.com/5817452/8470/v/950/depositphotos_84703236-stock-illustration-crowd-of-laughing-people-hand.jpg)">Comedy</span></h1></a>
+  </div>
   <nav class=" navigation-bar  is-visible" data-nav-status="toggle">
     <ul>
       <li><a class="brand" style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
       <li><a href = "/">Home</a></li>
+      <li style="cursor: pointer;" class="category-go">Categories</li>
 
 
 
@@ -65,6 +77,12 @@
   <%= yield %>
 
   <script>
+
+    $(".category-overlay").hide();
+    $(".category-go").click(function(){
+        $(".category-overlay").fadeIn("slow");
+    });
+
       $(document).ready(function(){
 
           /** ===========================================
