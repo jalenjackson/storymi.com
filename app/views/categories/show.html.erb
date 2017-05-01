@@ -93,8 +93,8 @@
 <% if @stories.last.present? %>
 <h1 class="category-title"><%= @stories.last.category.name %></h1>
     <% else %>
-    <h1 class="category-title">No Stories For This Category Yet</h1>
 
+    <h1 class="category-title" style="margin-top:60px !important;  background:url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg);  text-align: center;;">No Stories For This Category Yet</h1>
 <% end %>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>

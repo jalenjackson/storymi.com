@@ -59,8 +59,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+            <state relative-caret-position="344">
+              <caret line="96" column="66" lean-forward="false" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -81,8 +81,8 @@
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            <state relative-caret-position="249">
+              <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,9 +91,10 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="95" column="36" lean-forward="false" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
+            <state relative-caret-position="224">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#h1#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -152,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ispub</find>
       <find>plura</find>
       <find>lastname</find>
       <find>submit</find>
@@ -182,6 +182,7 @@
       <find>views</find>
       <find>view</find>
       <find>we need</find>
+      <find>brand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -410,32 +411,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="registrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,7 +790,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97590000" />
+    <option name="totallyTimeSpent" value="97886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1173,14 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -1221,11 +1188,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="346" column="19" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="139" column="88" lean-forward="false" selection-start-line="139" selection-start-column="88" selection-end-line="139" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="95" column="36" lean-forward="false" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
+        <state relative-caret-position="224">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#h1#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1246,26 +1230,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="346" column="19" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="139" column="88" lean-forward="false" selection-start-line="139" selection-start-column="88" selection-end-line="139" selection-end-column="88" />
+        <state relative-caret-position="249">
+          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+        <state relative-caret-position="344">
+          <caret line="96" column="66" lean-forward="false" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
