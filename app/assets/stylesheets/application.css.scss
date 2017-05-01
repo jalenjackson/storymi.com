@@ -236,6 +236,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     box-shadow: 5px 5px 10px grey;
   }
 
+
+
   .edit-message{
     margin-top:100px;
   }
@@ -353,6 +355,9 @@ div#columns figure img {
   margin-bottom: 0px;
 }
 
+.mobile-bg{
+  width:100% !important;
+}
 div#columns figure figcaption {
   font-size: .9rem;
   color: #444;

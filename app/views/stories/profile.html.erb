@@ -4,6 +4,8 @@
     z-index: 0;
     width: 100%;
     margin-bottom: 10px;
+    height:auto !important;
+    max-height: 600px !important;
   }
 
   .fb-image-profile
@@ -49,7 +51,6 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<div class="container mobile-container">
   <div class="fb-profile">
     <% if @user.avatar? %>
     <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:medium) %>" alt="Profile image example"/>
@@ -63,6 +64,7 @@
         <img align="left" class="fb-image-profile thumbnail" src="http://sem.yildiz.edu.tr/img/avatar.png" alt="Profile image example"/>
 
   <% end %>
+    <div class="container mobile-container">
 
     <div   class="fb-profile-text">
       <h1><%= @user.firstname.titlecase + " " + @user.lastname.titlecase %></h1>
