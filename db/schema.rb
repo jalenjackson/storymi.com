@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170430215713) do
+ActiveRecord::Schema.define(version: 20170501004436) do
 
   create_table "impressions", force: :cascade do |t|
     t.string   "impressionable_type"
@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(version: 20170430215713) do
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
+    t.integer  "total_post_views"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

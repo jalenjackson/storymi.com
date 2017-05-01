@@ -65,11 +65,14 @@
   <% end %>
 
     <div   class="fb-profile-text">
-      <h1><%= @user.firstname + " " + @user.lastname %></h1>
-      <div style="margin-top:120px;" id="columns">
+      <h1><%= @user.firstname.titlecase + " " + @user.lastname.titlecase %></h1>
+      <h1 style="color:grey; font-style:italic;">  <%= pluralize(@views , "total view" ) %></h1>
+
+      <div style="margin-top:85px;" id="columns">
 <% if @user.stories.exists? %>
         <% @user.stories.each do |story| %>
             <a href = "/stories/<%= story.id %>/view" >
+
               <figure>
                 <% if story.cover? %>
                 <img src="<%= story.cover.url(:medium) %>">
@@ -79,7 +82,7 @@
 
                 <% end %>
                 <div class="overlay"></div>
-                <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title,length:20) %></h1>
+                <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
                 <% if current_user.id == @user.id %>
 
               <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
@@ -87,7 +90,9 @@
                 <% if !story.ispublished %>
                 <a href ="/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1></a>
                 <% end %>
-                <h1 style="position: absolute;background:black;top:110px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname %></h1>
+                <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
+
+                <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
 
 
                 <% if current_user.id == @user.id %>
@@ -95,6 +100,8 @@
                 <% end %>
               </figure>
             </a>
+
+
 
         <% end %>
 
@@ -105,3 +112,9 @@
     </div>
   </div>
 </div> <!-- /container -->
+
+<script>
+
+
+
+</script>

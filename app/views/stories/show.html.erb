@@ -182,6 +182,13 @@
 
     }
 
+    #message_message1{
+          transition: opacity 100ms ease-in-out;
+        }
+  #message_message2{
+    transition: opacity 100ms ease-in-out;
+  }
+
 
 
 
@@ -309,12 +316,83 @@
 
 <script>
 
-    $(".story-name").html("<%= @story.title %>");
-
     $(":file").filestyle({
         input: false,
-        buttonText: "Add Image"
+        buttonText: ""
     });
+
+  $("#message_image").change(function(){
+
+      if( $("#message_image").val().length > 0){
+          $("label[for='message_image2']").css({
+              "pointer-events": "none",
+              "opacity" : "0.3"
+          });
+      }
+      else {
+          $("label[for='message_image2']").css({
+              "pointer-events": "auto",
+              "opacity" : "1"
+          });
+      }
+  });
+
+
+    $("label[for='message_image2'] > span:eq(1) ").html("Image for <%= @story.reciever.titlecase %>");
+
+    $("label[for='message_image'] > span:eq(1) ").html("Image for <%= @story.texter.titlecase %>");
+
+      $("#message_image2").change(function(){
+
+      if( $("#message_image2").val().length > 0){
+          $(".input-group label:first").css({
+              "pointer-events":"none",
+              "opacity" : "0.3"
+          });
+      } else {
+          $(".input-group label:first").css({
+              "pointer-events":"auto",
+              "opacitiy" : "1"
+          });
+
+      }
+  });
+
+    $("#message_message1").keyup(function(){
+
+        if ($("#message_message1").val().length > 0){
+            $("#message_message2").css({
+                "pointer-events":"none",
+                "opacity": "0.3"
+            });
+        } else {
+            $("#message_message2").css({
+                "pointer-events":"auto",
+                "opacity": "1"
+            });        }
+    });
+
+    $("#message_message2").keyup(function(){
+
+        if ($("#message_message2").val().length > 0){
+            $("#message_message1").css({
+                "pointer-events":"none",
+                "opacity": "0.3"
+            });
+        } else {
+            $("#message_message1").css({
+                "pointer-events":"auto",
+                "opacity": "1"
+            });        }
+    });
+
+
+
+
+
+    $(".story-name").html("<%= @story.title %>");
+
+
     window.scrollTo(0,document.body.scrollHeight);
     var all = document.getElementsByClassName("from-them").length + document.getElementsByClassName("from-me").length;
   console.log(all);

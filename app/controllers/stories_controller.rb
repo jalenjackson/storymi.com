@@ -33,9 +33,11 @@ class StoriesController < ApplicationController
   def profile
     @user = User.find_by_id(params[:id])
 
+
     if User.find_by_id(params[:id])
       @email = params[:id]
       @user = User.find_by_id(params[:id])
+      @views = @user.stories.sum(&:impressionist_count)
     else
       redirect_to "/"
     end
@@ -98,4 +100,6 @@ class StoriesController < ApplicationController
     def story_params
       params.require(:story).permit(:title,:synopsis,:texter,:reciever, :image, :video, :cover)
     end
+
+
 end

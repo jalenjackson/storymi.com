@@ -1,7 +1,9 @@
 class Story < ApplicationRecord
   has_many :messages
 
-  is_impressionable 
+  is_impressionable
+
+
 
   belongs_to :user
   has_attached_file :image, styles: { medium: "300x300>", large: "2000x2000>" }, default_url: "/images/:style/missing.png"
