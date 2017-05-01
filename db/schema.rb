@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170501004436) do
+ActiveRecord::Schema.define(version: 20170501045303) do
 
   create_table "impressions", force: :cascade do |t|
     t.string   "impressionable_type"
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 20170501004436) do
     t.datetime "cover_updated_at"
     t.integer  "user_id"
     t.boolean  "ispublished"
+    t.string   "category"
     t.index ["user_id"], name: "index_stories_on_user_id"
   end
 
