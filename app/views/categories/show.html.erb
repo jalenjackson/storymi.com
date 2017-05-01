@@ -92,7 +92,10 @@
 </style>
 <% if @stories.last.present? %>
 <h1 class="category-title"><%= @stories.last.category.name %></h1>
-    <% end %>
+    <% else %>
+    <h1 class="category-title">No Stories For This Category Yet</h1>
+
+<% end %>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
       <% if story.category.present? %>
