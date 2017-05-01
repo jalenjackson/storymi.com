@@ -90,9 +90,11 @@
 
 
 </style>
+
 <h1 class="category-title"><%= @stories.last.category.name %></h1>
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
+      <% if story.category %>
 
       <% if story.ispublished? %>
           <% if story.category.name == "Romance" %>
@@ -175,6 +177,8 @@
       <% end %>
 
   <% end %>
+
+      <% end %>
 
 </div>
 
