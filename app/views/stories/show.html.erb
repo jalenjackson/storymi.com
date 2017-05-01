@@ -189,6 +189,12 @@
     transition: opacity 100ms ease-in-out;
   }
 
+    .btn-success {
+      border-radius: .2em;
+      border:none;
+      height:40px;
+    }
+
 
 
 
@@ -303,7 +309,7 @@
       <%= f.file_field :image, class:'img1' %>
 
       <%= f.file_field :image2 %>
-    <%= f.submit "Send message"%>
+    <%= f.button "Send message" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
     <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
 
   </div>
