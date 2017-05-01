@@ -300,6 +300,15 @@
     margin-left:45px;
   }
 
+  .btn-btn{
+    width:100%;
+    border-radius: .2em;
+    border:none;
+    background: rgb(225,225,255);
+    height:50px;
+    font-size:15px;
+  }
+
 </style>
 
 
@@ -307,7 +316,8 @@
 
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
+    
+
     <div style="margin-top:110px;" class="container">
       <div class="box"></div>
       <div class="container-forms">
@@ -345,7 +355,7 @@
                     </div>
                 <% end -%>
 
-                <%= f.submit "Log in" %>
+                <%= f.button :submit ,  data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Welcome Back !"}, class: "btn-btn" %>
 
               </div>
             </div>

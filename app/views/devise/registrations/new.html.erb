@@ -288,17 +288,23 @@
     fill: #fff;
   }
 
-    input[type="submit"]{
+    input[type="button"]{
       background:red;
       border:none;
       background: rgb(245,245,255);
       border-radius: .4em;
       color:black;
       margin-left:45px;
+      width:100%;
     }
 
-    .sign-up-h1{
-      font-size:14px;
+    .btn-btn{
+      width:100%;
+      border-radius: .2em;
+      border:none;
+      background: rgb(225,225,255);
+      height:50px;
+      font-size:15px;
     }
 
 </style>
@@ -307,7 +313,10 @@
 
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
+    <div style="margin-top:50px; color:white !important; background:purple; margin-top: 50px;">
+      <%= devise_error_messages! %>
+
+    </div>
 
 <div style="margin-top:110px;" class="container">
   <h1 style="position: absolute;top:5px;left:73%;color:rgb(80,80,80); font-weight:100 !important;"> Tell Whatever Story You Want</h1>
@@ -344,7 +353,7 @@
             <% end %><br />
             <%= f.password_field :password, autocomplete: "off", placeholder: "password " %>
             <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "password confirmation" %>
-              <%= f.submit "Sign up" %>
+            <%= f.button :submit ,  data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Getting You All Set Up!"}, class: "btn-btn" %>
 
           </div>
         </div>
