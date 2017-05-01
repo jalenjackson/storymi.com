@@ -31,6 +31,49 @@ body,html{
     width:100%;
 }
 
+.brand{
+  background:  url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg) center center;
+  background-size: cover;
+  color:white !important;
+  font-weight:bold !important;
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+}
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
 section {
     max-width: 450px;
     margin: 50px auto;
@@ -168,6 +211,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   -ms-animation:100s scroll infinite linear;
   animation:100s scroll infinite linear;
 }
+
+
 
   .mobile-overlay2{
     position: fixed;
