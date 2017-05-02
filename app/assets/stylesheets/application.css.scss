@@ -448,6 +448,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
 }
 
 div#columns figure {
+  min-width:240px;
+  min-height: 200px;
   position: relative;
   background: #fefefe;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
@@ -470,7 +472,7 @@ div#columns figure {
 
 div#columns figure img {
   width: 100%; height: auto;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid white;
   padding-bottom: 0;
   margin-bottom: 0px;
 }
@@ -480,7 +482,7 @@ div#columns figure img {
 }
 div#columns figure figcaption {
   font-size: .9rem;
-  color: #444;
+  color: #fff;
   line-height: 1.5;
 }
 
@@ -496,6 +498,9 @@ div#columns small a {
   text-decoration: none;
 }
 
+#columns{
+  word-break: break-all;
+}
 
 
 @media screen and (max-width: 750px) {

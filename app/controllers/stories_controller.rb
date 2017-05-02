@@ -41,9 +41,12 @@ class StoriesController < ApplicationController
     if User.find_by_id(params[:id])
       @email = params[:id]
       @user = User.find_by_id(params[:id])
-      @views = 0
+      @views = 1
       @user.stories.each do |i|
-        @views += @user.stories.last.impressionist_count(:filter => :params)
+        @views += i.impressionist_count(:filter => :params)
+      end
+      @user.articles.each do |i|
+        @views += i.impressionist_count(:filter => :params)
       end
 
     else

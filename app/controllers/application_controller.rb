@@ -7,6 +7,10 @@ class ApplicationController < ActionController::Base
   rescue_from Exception, with: :not_found
   rescue_from ActionController::RoutingError, with: :not_found
 
+  def raise_not_found
+    redirect_to '/'
+  end
+
 
 
   def error

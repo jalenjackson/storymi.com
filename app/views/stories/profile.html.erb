@@ -86,7 +86,7 @@
       <div style="margin-top:85px;" id="columns">
 
 <% if @user.stories.exists? %>
-        <% @user.stories.each do |story| %>
+        <% @user.stories.paginate(:page => params[:page], :per_page => 11).each do |story| %>
 
 
                 <% if story.ispublished? %>
@@ -146,7 +146,7 @@
       <div style="margin-top:85px;" id="columns">
 
         <% if @user.articles.exists? %>
-            <% @user.articles.each do |story| %>
+            <% @user.articles.paginate(:page => params[:page], :per_page => 11).each do |story| %>
 
 
                 <% if story.ispublished? %>
@@ -202,6 +202,8 @@
     </div>
   </div>
 </div> <!-- /container -->
+
+
 
 <script>
 
