@@ -226,7 +226,7 @@
       <div class="message-container">
       <% if message.message1? || message.image?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
-          <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
+          <div style="word-break:break-all;margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
             <p><span><strong><%= @story.texter.titleize %> : <% if message.image? %> Sent an image <br> <% end %> </strong></span><%= message.message1 %></p><br>
             <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
                 <i style=" cursor: pointer;color:red; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
@@ -245,7 +245,7 @@
       <% if message.message2? || message.image2?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
 
-      <div style="margin-top:5px;" class="animated  from-me message2 texter<%= i %> reciever<%= i %> ">
+      <div style="word-break:break-all;margin-top:5px;" class="animated  from-me message2 texter<%= i %> reciever<%= i %> ">
             <p><span><strong><%= @story.reciever.titleize %> : <% if message.image2? %> Sent an image <br> <% end %> </strong></span><%= message.message2 %></p><br>
         <%= link_to story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
         <i style=" cursor: pointer;color:black; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
@@ -302,8 +302,8 @@
   <%= form_for [@story, Message.new]  do |f| %>
 
 <div class="form-div">
-    <%= f.text_field :message1, class:'mes1',  maxlength: 120,  placeholder: "what will " + @story.texter.titleize + " say?" %>
-    <%= f.text_field :message2, class:'mes2', maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
+    <%= f.text_field :message1, class:'mes1',  maxlength: 260,  placeholder: "what will " + @story.texter.titleize + " say?" %>
+    <%= f.text_field :message2, class:'mes2', maxlength: 260, placeholder: "What will " + @story.reciever.titleize + " say?" %>
 
   <div class="image_inputs">
       <%= f.file_field :image, class:'img1' %>
