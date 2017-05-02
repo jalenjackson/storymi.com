@@ -278,6 +278,10 @@
     opacity: 0;
   }
 
+  #error_explanation{
+    background:black;
+  }
+
   .rabbit {
     width: 50px;
     height: 50px;
@@ -313,7 +317,7 @@
 
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <div style="margin-top:50px; color:white !important; background:purple; margin-top: 50px;">
+    <div style="margin-top:50px; color:white !important;  margin-top: 50px;">
       <%= devise_error_messages! %>
 
     </div>
@@ -371,6 +375,19 @@
     <% end %>
 
 <script>
+  $("#user_firstname").keyup(function(){
+      if($("#user_firstname").val().toUpperCase() == "TellAFiction".toUpperCase() ){
+          $("button[type='submit']").css({
+              "pointer-events":"none",
+              "opacity":"0.3"
+          });
+          alertify.alert("","Sorry that name is saved for the creator of TellAFiction")
+      } else {
+          $("button[type='submit']").css({
+              "pointer-events":"auto",
+              "opacity":"1"
+          });      }
+  });
     $(".info-item .btn").click(function(){
         $(".container").toggleClass("log-in");
     });
