@@ -375,7 +375,22 @@
     <% end %>
 
 <script>
-  
+
+  $("input").keyup(function(){
+      if($("#user_firstname").val().toUpperCase() == "TellAFiction".toUpperCase() ){
+          $("button[type='submit']").css({
+              "pointer-events":"none",
+              "opacity":"0.3"
+          });
+          alertify.alert("","Sorry your firstname is saved for the creator of TellAFiction")
+
+      } else {
+          $("button[type='submit']").css({
+              "pointer-events":"auto",
+              "opacity":"1"
+          });      }
+  });
+
     $(".info-item .btn").click(function(){
         $(".container").toggleClass("log-in");
     });
