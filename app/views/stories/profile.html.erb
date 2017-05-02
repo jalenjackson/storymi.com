@@ -58,10 +58,11 @@
 </style>
 
 
+
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <div class="fb-profile">
     <% if @user.avatar? %>
-    <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:medium) %>" alt="Profile image example"/>
+    <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:large) %>" alt="Profile image example"/>
     <% else  %>
         <img class="mobile-bg" style="width:100%;height:500px;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
 
