@@ -11,6 +11,8 @@
         }
     </style>
     <title>TellAFiction</title>
+    <link rel="shortcut icon" href="assets/logo.png" />
+
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'alertify.min' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -55,8 +57,9 @@
 
       <% if user_signed_in? %>
       <li ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
+      <% else %>
+          <li ><%= link_to 'New Story', '/users/sign_up', class:'nav-item' %></li>
       <% end %>
-
 
 
 
