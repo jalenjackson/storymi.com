@@ -131,9 +131,10 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="319" column="57" lean-forward="false" selection-start-line="319" selection-start-column="57" selection-end-line="319" selection-end-column="57" />
+            <state relative-caret-position="291">
+              <caret line="377" column="2" lean-forward="false" selection-start-line="377" selection-start-column="2" selection-end-line="377" selection-end-column="2" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -886,7 +887,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119768000" />
+    <option name="totallyTimeSpent" value="119842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1316,9 +1317,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="319" column="57" lean-forward="false" selection-start-line="319" selection-start-column="57" selection-end-line="319" selection-end-column="57" />
+        <state relative-caret-position="291">
+          <caret line="377" column="2" lean-forward="false" selection-start-line="377" selection-start-column="2" selection-end-line="377" selection-end-column="2" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
