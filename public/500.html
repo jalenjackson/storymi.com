@@ -1,66 +1,127 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>We're sorry, but something went wrong (500)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
+<style>
+  *{
     text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
+    margin: 0 auto 0 auto;
   }
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
+
+  /* skeleton blink */
+  @keyframes skeletonBlink{
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  body {
+    background: #F5F5F5;
   }
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
+
+  #container{
+    width: 960;
   }
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  #imageG{
+    position: relative;
+    clear: both;
+    margin-top: 150px;
+    width:350px;
   }
-  </style>
-</head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div>
-      <h1>We're sorry, but something went wrong.</h1>
+
+  #ghostBody{
+    z-index: -1;
+  }
+
+  #ghostEyes{
+    left:160px;
+    top:22px;
+    position: absolute;
+  }
+
+
+  #ghostSkeleton{
+    left:130px;
+    top:-15px;
+    position: absolute;
+    animation-name: skeletonBlink;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+  }
+
+
+
+  h3.bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    clear: both;
+    color: #000000;
+    margin-top: 20px;
+  }
+
+  .underline {
+    width: 80px;
+    height: 2px;
+    background: #4A90E2;
+    margin: 14px auto;
+  }
+
+  p.body{
+    display: block;
+    font-family: 'Varela Round', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    clear: both;
+    color: rgba(0,0,0,0.75);
+  }
+
+  .btn {
+    border: 1px solid #4A90E2;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #4A90E2;
+    font-family: 'Varela Round', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 15px 50px 15px 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background: black; }
+  }
+</style>
+<body>
+<div id ="container"> <!-- container starts -->
+  <div id ="imageG">
+    <div id="ghostBody">
+      <img src = "https://dl.dropboxusercontent.com/u/89298673/images/ghost.png" alt="left" class="bottomBody">
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <div id="ghostEyes">
+      <img src = "https://dl.dropboxusercontent.com/u/89298673/images/eyes.png" alt="right" class="topEyes">
+    </div>
+    <div id="ghostSkeleton">
+      <img src = "https://dl.dropboxusercontent.com/u/89298673/images/skeleton.png" alt="right" class="topSkeleton">
+    </div>
   </div>
-</body>
-</html>
+
+  <h3 class = "bold">Sorry There Was An Error Saving Your Story. </h3>
+  <div class="underline"></div>
+  <button type="button" id="btn" class="btn">Try Again</button>
+</div> <!-- container ends -->
+
+<script>
+  document.getElementById("btn").onclick = function(){
+     window.location.href = "/";
+  }
+</script>
