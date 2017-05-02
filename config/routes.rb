@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   get '/story/new', to: 'choose#index'
 
-  get '*unmatched_route', to: 'application#raise_not_found'
 
 
 
