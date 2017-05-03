@@ -50,9 +50,9 @@
   <nav class=" navigation-bar  is-visible" data-nav-status="toggle">
     <ul>
       <li><a class="brand" style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
-      <li style="cursor: pointer;" class="category-go">Categories</li>
       <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 animated pulse">Message Stories</li>
       <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 animated pulse">Stories</li>
+      <li style="cursor: pointer;" class="category-go">Categories</li>
 
       <% if user_signed_in? %>
       <li ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
