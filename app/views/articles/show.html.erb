@@ -30,6 +30,7 @@
       margin-top:-2px;
     }
 </style>
+<% if user_signed_in? %>
 <% if @article.user.id == current_user.id   %>
       <p class="edit">Continue Editing</p>
     <% if !@article.ispublished?  %>
@@ -42,6 +43,7 @@
 
     <% end %>
 <% end %>
+    <% end %>
 <div class="container">
   <div style="margin-top:70px;" class="fr-view">
     <%= raw @article.body %>

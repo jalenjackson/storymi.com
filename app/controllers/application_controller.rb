@@ -3,23 +3,6 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  rescue_from ActiveRecord::RecordNotFound, with: :not_found
-  rescue_from Exception, with: :not_found
-  rescue_from ActionController::RoutingError, with: :not_found
-
-  def raise_not_found
-    redirect_to '/'
-  end
-
-
-
-  def error
-    respond_to do |format|
-      format.html { render file: "#{Rails.root}/public/500", layout: false, status: :error }
-      format.xml { head :not_found }
-      format.any { head :not_found }
-    end
-  end
 
   protected
 
@@ -31,10 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def not_found
-    respond_to do |format|
-      format.html { render file: "#{Rails.root}/public/500", layout: false, status: :error }
-      format.xml { head :not_found }
-      format.any { head :not_found }
-    end
+    raise ActionController::RoutingError.new('Not Found')
   end
 end

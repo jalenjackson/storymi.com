@@ -109,8 +109,9 @@
                 <% end %>
                 <div class="overlay"></div>
                 <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
+                <% if user_signed_in? %>
                 <% if current_user.id == @user.id %>
-
+                <% end %>
               <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                <% end %>
                 <% if !story.ispublished %>
@@ -124,9 +125,11 @@
                 <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
                 <% end %>
 
+                <% if user_signed_in? %>
                 <% if current_user.id == @user.id %>
                 <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
                 <% end %>
+                    <% end %>
               </figure>
             </a>
 
@@ -169,8 +172,9 @@
                   <% end %>
                   <div class="overlay"></div>
                   <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
+                  <% if user_signed_in? %>
                   <% if current_user.id == @user.id %>
-
+                  <% end %>
                       <a href ="/articles/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                   <% end %>
                   <% if !story.ispublished %>
@@ -184,9 +188,11 @@
                       <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
                   <% end %>
 
+                  <% if user_signed_in? %>
                   <% if current_user.id == @user.id %>
                       <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
                   <% end %>
+                      <% end %>
                 </figure>
                 </a>
 
