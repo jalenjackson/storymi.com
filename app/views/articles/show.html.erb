@@ -5,9 +5,6 @@
     transition: all 600ms ease-in-out;
   }
     .edit{
-      position: fixed;
-      top:110px;
-      left:10px;
       background:rgba(200,200,255,0.3);
       font-size:16px;
       width:100px;
@@ -15,83 +12,42 @@
       color:black;
       text-align: center;
       cursor: pointer;
+      margin-top:70px;
+      margin-left: 40px;
 
+    }
+
+    .fr-view {
+      width:100%;
+      margin-left: -20px;
+      word-break: break-all;
     }
     .edit > h1{
       font-weight:lighter !important;
       margin-top:-2px;
     }
 </style>
-
-<div class="container-fluid">
-<div style="margin-top:70px;" class="fr-view">
-  <%= raw @article.body %>
-</div>
-
 <% if @article.user.id == current_user.id   %>
-    <div class="edit">
-      <p>Continue Editing</p>
-    </div>
+      <p class="edit">Continue Editing</p>
     <% if !@article.ispublished?  %>
         <%= link_to  publish_article_path(@article), class:'link-to',  :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
             <div style="margin-top:70px;" class="edit">
-              <p>Publish Story</p>
+              Publish Story
             </div>
 
         <% end %>
 
     <% end %>
-    <% end %>
+<% end %>
+<div class="container">
+<div style="margin-top:70px;" class="fr-view">
+  <%= raw @article.body %>
+</div>
+
+
 
 </div>
 <script>
-
-    $(document).ready(function(){
-
-        /** ===========================================
-         Hide / show the master navigation menu
-         ============================================ */
-
-            // console.log('Window Height is: ' + $(window).height());
-            // console.log('Document Height is: ' + $(document).height());
-
-        var previousScroll = 0;
-
-        $(window).scroll(function(){
-
-            var currentScroll = $(this).scrollTop();
-
-          /*
-           If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
-           */
-            if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
-              /*
-               If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
-               */
-                if (currentScroll > previousScroll){
-                    window.setTimeout(hideNav, 300);
-                  /*
-                   Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
-                   */
-                } else {
-                    window.setTimeout(showNav, 300);
-                }
-              /*
-               Set the previous scroll value equal to the current scroll.
-               */
-                previousScroll = currentScroll;
-            }
-
-        });
-
-        function hideNav() {
-            $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
-        }
-        function showNav() {
-            $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
-        }
-
-    });
 
     $(window).on("load",function(){
         $("img").css("filter","blur(0px)")

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -21,6 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="stories_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/stories_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -31,13 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="270" column="103" lean-forward="false" selection-start-line="270" selection-start-column="103" selection-end-line="270" selection-end-column="103" />
+            <state relative-caret-position="225">
+              <caret line="165" column="53" lean-forward="false" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +76,8 @@
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="450" column="14" lean-forward="false" selection-start-line="450" selection-start-column="14" selection-end-line="450" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="340" column="19" lean-forward="false" selection-start-line="340" selection-start-column="10" selection-end-line="340" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -71,9 +86,10 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2336">
-              <caret line="247" column="39" lean-forward="false" selection-start-line="247" selection-start-column="39" selection-end-line="247" selection-end-column="39" />
+            <state relative-caret-position="-679">
+              <caret line="223" column="32" lean-forward="false" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
               <folding>
+                <element signature="e#4875#4919#0#HTML" expanded="true" />
                 <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
                 <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
               </folding>
@@ -123,23 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2696">
-              <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
-              <folding>
-                <marker date="1493760232000" expanded="true" signature="3529:3583" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pub</find>
       <find>@sto</find>
       <find>profie</find>
       <find>bra</find>
@@ -148,7 +151,6 @@
       <find>btn</find>
       <find>save and</find>
       <find>view</find>
-      <find>edit</find>
       <find>will</find>
       <find>paginate</find>
       <find>pagination</find>
@@ -169,6 +171,8 @@
       <find>figure</find>
       <find>columns</find>
       <find>category</find>
+      <find>edit</find>
+      <find>container</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -218,7 +222,6 @@
         <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/articles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/edit.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -231,6 +234,7 @@
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/show.html.erb" />
       </list>
     </option>
   </component>
@@ -914,12 +918,12 @@
       <workItem from="1493546371813" duration="6410000" />
       <workItem from="1493589389106" duration="11376000" />
       <workItem from="1493646813618" duration="11040000" />
-      <workItem from="1493710255381" duration="7245000" />
+      <workItem from="1493710255381" duration="8179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128775000" />
+    <option name="totallyTimeSpent" value="129709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1214,14 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1552">
@@ -1278,17 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2336">
-          <caret line="247" column="39" lean-forward="false" selection-start-line="247" selection-start-column="39" selection-end-line="247" selection-end-column="39" />
-          <folding>
-            <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
-            <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2696">
@@ -1325,27 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="450" column="14" lean-forward="false" selection-start-line="450" selection-start-column="14" selection-end-line="450" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="123" column="94" lean-forward="false" selection-start-line="123" selection-start-column="94" selection-end-line="123" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -1364,10 +1328,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="270" column="103" lean-forward="false" selection-start-line="270" selection-start-column="103" selection-end-line="270" selection-end-column="103" />
+        <state relative-caret-position="225">
+          <caret line="165" column="53" lean-forward="false" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="340" column="19" lean-forward="false" selection-start-line="340" selection-start-column="10" selection-end-line="340" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="123" column="94" lean-forward="false" selection-start-line="123" selection-start-column="94" selection-end-line="123" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#figure#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-679">
+          <caret line="223" column="32" lean-forward="false" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+          <folding>
+            <element signature="e#4875#4919#0#HTML" expanded="true" />
+            <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
+            <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
