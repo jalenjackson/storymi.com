@@ -336,6 +336,18 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     margin-top:100px;
   }
 
+  .edit{
+    background:rgba(200,200,255,0.3);
+    font-size:16px;
+    width:100px;
+    border-radius:.3em;
+    color:black;
+    text-align: center;
+    cursor: pointer;
+    margin-top:70px;
+    margin-left: 40px;
+
+  }
 
 
   .mobile-container{

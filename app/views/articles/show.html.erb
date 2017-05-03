@@ -17,6 +17,11 @@
 
     }
 
+    .container{
+      background:red;
+      overflow: hidden;
+    }
+
     .fr-view {
       width:100%;
       margin-left: -20px;
@@ -39,14 +44,12 @@
 
     <% end %>
 <% end %>
-<div class="container">
 <div style="margin-top:70px;" class="fr-view">
   <%= raw @article.body %>
 </div>
 
 
 
-</div>
 <script>
 
     $(window).on("load",function(){
