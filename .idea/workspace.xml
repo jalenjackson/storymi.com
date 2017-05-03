@@ -25,8 +25,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -96,12 +96,24 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-679">
-              <caret line="223" column="32" lean-forward="false" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+            <state relative-caret-position="-3208">
+              <caret line="331" column="6" lean-forward="true" selection-start-line="331" selection-start-column="6" selection-end-line="331" selection-end-column="6" />
               <folding>
                 <element signature="e#4875#4919#0#HTML" expanded="true" />
                 <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
                 <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="206" column="0" lean-forward="true" selection-start-line="159" selection-start-column="2" selection-end-line="206" selection-end-column="0" />
+              <folding>
+                <marker date="1493760232000" expanded="true" signature="3529:3583" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,16 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="944">
               <caret line="146" column="29" lean-forward="false" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="138" column="116" lean-forward="false" selection-start-line="138" selection-start-column="116" selection-end-line="138" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -916,12 +918,12 @@
       <workItem from="1493546371813" duration="6410000" />
       <workItem from="1493589389106" duration="11376000" />
       <workItem from="1493646813618" duration="11040000" />
-      <workItem from="1493710255381" duration="8848000" />
+      <workItem from="1493710255381" duration="9214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130378000" />
+    <option name="totallyTimeSpent" value="130744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1257,16 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2696">
-          <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
-          <folding>
-            <marker date="1493760232000" expanded="true" signature="3529:3583" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/profile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -1333,18 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-679">
-          <caret line="223" column="32" lean-forward="false" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
-          <folding>
-            <element signature="e#4875#4919#0#HTML" expanded="true" />
-            <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
-            <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="656">
@@ -1369,10 +1349,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3208">
+          <caret line="331" column="6" lean-forward="true" selection-start-line="331" selection-start-column="6" selection-end-line="331" selection-end-column="6" />
+          <folding>
+            <element signature="e#4875#4919#0#HTML" expanded="true" />
+            <marker date="1493755227000" expanded="true" signature="11088:11142" ph="..." />
+            <marker date="1493755227000" expanded="true" signature="11237:11293" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="206" column="0" lean-forward="true" selection-start-line="159" selection-start-column="2" selection-end-line="206" selection-end-column="0" />
+          <folding>
+            <marker date="1493760232000" expanded="true" signature="3529:3583" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="629">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
