@@ -292,7 +292,7 @@
         heightMin: 300,
         imageUploadToS3: {
             bucket: '<%= @hash[:bucket] %>',
-            region: 's3-us-east-1	', // Change the region if it is different
+            region: 'us-east-1	', // Change the region if it is different
             keyStart: '<%= @hash[:key_start] %>',
             callback: function (url, key) {
                 console.log (url);
