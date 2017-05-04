@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
+  include AmazonSignature
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   impressionist :action => [:show]
-  include AmazonSignature
+
 
   # GET /articles
   # GET /articles.json
@@ -18,10 +19,13 @@ class ArticlesController < ApplicationController
   def new
     @article = Article.new
     @hash = AmazonSignature::data_hash
+
   end
 
   # GET /articles/1/edit
   def edit
+    @hash = AmazonSignature::data_hash
+
   end
 
   # POST /articles
@@ -74,13 +78,14 @@ class ArticlesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_article
-      @article = Article.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_article
+    @article = Article.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def article_params
-      params.require(:article).permit(:title, :synopsis ,:body, :cover, :category_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def article_params
+    params.require(:article).permit(:title, :synopsis ,:body, :cover, :category_id)
+  end
+
 end
