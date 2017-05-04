@@ -108,7 +108,6 @@
   <% @stories.each do |story| %>
 
       <% if story.ispublished? %>
-      <a href = "/stories/<%= story.id %>/view" >
   <figure>
     <% if story.cover? %>
     <img src="<%= story.cover.url(:medium) %>">
@@ -118,29 +117,29 @@
 
         <% end %>
         <div class="overlay">
+
+          <a href = "/stories/<%= story.id %>/view">
+            <div class="overlay">
+
+            </div>
+          </a>
+
+
           <a href = "/stories/<%= story.id %>"><h1 class="view-count" style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1></a>
           <h1 class="index-title" style="position: absolute;background:black;top:34px; font-size:25px;left:20px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase ,length:25) %></h1>
           <a class="" href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:100px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1></a>
           <% if story.category.present?  %>
               <h1 class="name category "  style="position: absolute;top:100px; font-size:20px; font-style: italic;  left:210px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
           <% end %>
-
         </div>
-
   </figure>
-      </a>
 
-          <script>
-              $(".overlay").click(function(){
-                  window.location.href = "/stories/<%= story.id %>/view"
-              });
-          </script>
+
 <% end %>
 
       <% end %>
 
 </div>
-
 
 
 <%= will_paginate @stories %>
