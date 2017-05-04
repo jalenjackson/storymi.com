@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -41,8 +43,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="84" column="62" lean-forward="false" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+            <state relative-caret-position="465">
+              <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#h1#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#h1#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,6 +53,7 @@
                 <element signature="n#style#0;n#a#0;n#h1#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#9;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#10;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -90,8 +93,8 @@
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="443" column="27" lean-forward="false" selection-start-line="443" selection-start-column="27" selection-end-line="443" selection-end-column="27" />
+            <state relative-caret-position="393">
+              <caret line="382" column="13" lean-forward="false" selection-start-line="382" selection-start-column="13" selection-end-line="382" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -153,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>columns</find>
-      <find>category</find>
       <find>container</find>
       <find>edit</find>
       <find>id</find>
@@ -182,6 +183,8 @@
       <find>view</find>
       <find>.overlay</find>
       <find>sign ou</find>
+      <find>mobile-menu</find>
+      <find>TellA</find>
       <find>mobile-menu</find>
     </findStrings>
     <replaceStrings>
@@ -783,12 +786,12 @@
       <workItem from="1493589389106" duration="11376000" />
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
-      <workItem from="1493858550588" duration="25316000" />
+      <workItem from="1493858550588" duration="25813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161345000" />
+    <option name="totallyTimeSpent" value="161842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1241,16 +1244,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="443" column="27" lean-forward="false" selection-start-line="443" selection-start-column="27" selection-end-line="443" selection-end-column="27" />
+        <state relative-caret-position="393">
+          <caret line="382" column="13" lean-forward="false" selection-start-line="382" selection-start-column="13" selection-end-line="382" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="84" column="62" lean-forward="false" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+        <state relative-caret-position="465">
+          <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#a#0;n#h1#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#h1#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1259,6 +1262,7 @@
             <element signature="n#style#0;n#a#0;n#h1#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#9;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#10;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
