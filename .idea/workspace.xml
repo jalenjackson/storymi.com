@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/profile.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/profile.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -105,8 +104,8 @@
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="411" column="12" lean-forward="false" selection-start-line="411" selection-start-column="12" selection-end-line="411" selection-end-column="12" />
+            <state relative-caret-position="417">
+              <caret line="407" column="32" lean-forward="false" selection-start-line="407" selection-start-column="32" selection-end-line="407" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -742,12 +741,12 @@
       <workItem from="1493589389106" duration="11376000" />
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
-      <workItem from="1493858550588" duration="28436000" />
+      <workItem from="1493858550588" duration="28532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164465000" />
+    <option name="totallyTimeSpent" value="164561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1204,8 +1203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="411" column="12" lean-forward="false" selection-start-line="411" selection-start-column="12" selection-end-line="411" selection-end-column="12" />
+        <state relative-caret-position="417">
+          <caret line="407" column="32" lean-forward="false" selection-start-line="407" selection-start-column="32" selection-end-line="407" selection-end-column="32" />
           <folding />
         </state>
       </provider>
