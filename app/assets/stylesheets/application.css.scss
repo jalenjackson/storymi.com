@@ -272,7 +272,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     font-family:Montserrat, sans-serif !important;
   }
   .overlay{
-    background: rgba(0,0,0,0.3) !important;
+    background: none !important;
     cursor: pointer !important;
     z-index: 9999999999999 !important;
   }
