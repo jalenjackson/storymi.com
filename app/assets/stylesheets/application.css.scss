@@ -46,6 +46,7 @@ overflow-x: hidden;
   position: fixed;
   top:70px;
   left:0;
+
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.8);
@@ -247,6 +248,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     background: black!important;
     margin: 0;
     pading:0;
+    cursor: pointer !important;
 
   }
 
@@ -270,6 +272,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   }
   .overlay{
     background: rgba(0,0,0,0.3) !important;
+    cursor: pointer !important;
+    z-index: 9999999999999 !important;
   }
 
   .name {
@@ -335,6 +339,8 @@ div#columns figure {
   position: absolute;
   top:0;
   left:0;
+  cursor: pointer !important;
+
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.2);
