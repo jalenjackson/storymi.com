@@ -377,6 +377,51 @@ transform: translateY(122px) !important;
     z-index:9999999999999;
   }
 
+  .container-form{
+    height: 1400px !important;
+    width:130% !important;
+    margin-left: -110px !important;
+    font-size:50px !important;
+    margin-top:210px;
+  }
+
+  #user_firstname {
+    width:90% !important;
+    height: 200px !important;
+  }
+  #user_lastname {
+    width:90% !important;
+    height: 200px !important;
+  }
+  #user_password_confirmation{
+    width:90% !important;
+    height: 200px !important;
+  }
+
+  .sign-up-h1{
+    font-size:133px !important;
+    padding-bottom: 50px !important;
+  }
+
+  #user_remember_me {
+    display: none !important;
+  }
+  .btn-btn{
+    height:100px !important;
+    font-size:55px !important;
+    margin-top:50px;
+  }
+  .field label {
+    display: none !important;
+  }
+  #user_email {
+    width:90% !important;
+    height: 200px !important;
+  }
+  #user_password{
+    width:90% !important;
+    height: 200px !important;  }
+
   .category-title{
     font-size:70px !important;
   }
