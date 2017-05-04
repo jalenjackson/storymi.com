@@ -228,7 +228,7 @@
       <% if message.message1? || message.image?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
           <div style="word-break:break-all;margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
-            <p><span><strong><%= @story.texter.titleize %> : <% if message.image? %> Sent an image <br> <% end %> </strong></span><%= message.message1 %></p><br>
+            <p class="message-big"><span><strong><%= @story.texter.titleize %> : <% if message.image? %> Sent an image <br> <% end %> </strong></span><%= message.message1 %></p><br>
             <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
                 <i style=" cursor: pointer;color:red; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
                 <% if message.image? %>
@@ -247,7 +247,7 @@
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
 
       <div style="word-break:break-all;margin-top:5px;" class="animated  from-me message2 texter<%= i %> reciever<%= i %> ">
-            <p><span><strong><%= @story.reciever.titleize %> : <% if message.image2? %> Sent an image <br> <% end %> </strong></span><%= message.message2 %></p><br>
+            <p class="message-big"> <span><strong><%= @story.reciever.titleize %> : <% if message.image2? %> Sent an image <br> <% end %> </strong></span><%= message.message2 %></p><br>
         <%= link_to story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
         <i style=" cursor: pointer;color:black; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
             <% if message.image2? %>
@@ -274,7 +274,7 @@
 
 
   <footer class="site-footer">
-    <a class="edit-story" style="background:black;" href= "/stories/<%= @story.id %>/edit"><h1 style="position: fixed; color:white; top:78%;left:5%;cursor:pointer; z-index:999;font-size:15px;background:black !important;">Edit Story Details</h1></a>
+    <a class="edit-story" style="background:black;" href= "/stories/<%= @story.id %>/edit"><h1 class="edit-story-details" style="position: fixed; color:white; top:78%;left:5%;cursor:pointer; z-index:999;font-size:15px;background:black;">Edit Story Details</h1></a>
 
     <h1 class="number" style="position: fixed; top: 35%; left: 45%; font-size:35px;color:grey;"></h1>
 

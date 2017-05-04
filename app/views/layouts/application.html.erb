@@ -56,12 +56,23 @@
     <h1><a style="color:white;" href = "/articles/">Stories</a></h1>
     <h1 class="cat-link2">Categories</h1>
     <% if user_signed_in? %>
-    <h1><a href = "/profile/<%= current_user.id %>">My Profile</a></h1>
-    <% end %>
-    <% if user_signed_in? %>
-        <h1><a style="color:white;" href = "/story/new">Message Stories</a></h1>
+        <h1><a style="color:white;" href = "/story/new">New Story</a></h1>
     <% else %>
         <h1><a style="color:white;" href = "/users/sign_up">New Story</a></h1>
+    <% end %>
+
+    <% if user_signed_in? %>
+        <h1><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></h1>
+        <h1><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></h1>
+
+        <h1><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></h1>
+        <h1 style="float: right; "><h1  class="story-name"> </h1></h1>
+
+        </ul>
+    <% else %>
+        <h1><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item'%></h1>
+        <h1><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item'  %></h1>
+
     <% end %>
 
   </div>
