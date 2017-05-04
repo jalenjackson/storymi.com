@@ -271,8 +271,8 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
 
   .mobile-brand{
     display: block !important;
-    height:100px !important;
-    width:100px;
+    height:140px !important;
+    width:100%;
     background:  url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg) center center;
     background-size: cover;
     color:white !important;
@@ -282,24 +282,27 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     -o-animation:100s scroll infinite linear;
     -ms-animation:100s scroll infinite linear;
     animation:100s scroll infinite linear;
-    border-radius: 100%;
     font-size:13px !important;
-    left: 90%;
-    position: fixed;
-    top:10px;
-    z-index: 9999999999999999999999999999999999999999999999999999999;
-  }
+    position: absolute !important;
+    top:0;
+    left:0;
 
-  .mobile-brand:hover {
-    top:100px;
   }
   
 
   nav {
     background: none !important;
-    display: none !important;
+
+
   }
   nav li {
+    display: none !important;
+
+  }
+  nav:after {
+    background: none !important;
+  }
+  nav a {
     display: none !important;
   }
 
@@ -363,8 +366,6 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   width: 90%;
   max-width: 1100px;
   margin: 50px auto;
-  margin-top: -100px !important;
-
 }
 
 div#columns figure {
