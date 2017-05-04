@@ -14,6 +14,7 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem 'aws-sdk'
 gem 'will_paginate'
+gem 'figaro'
 
 gem 'bootstrap-filestyle-rails'
 gem 'impressionist'
