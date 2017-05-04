@@ -179,6 +179,25 @@
   .__third {
     animation-delay: 180ms;
   }
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* For mobile phones: */
+    body {
+      background: white !important;
+    }
+  }
+
+  .mobile-brand {
+    background: black !important;
+    position: absolute;
+    left: 0 !important;
+  }
+
+  .mobile-brand > h1 {
+    font-size: 33px !important;
+  }
 
   .__fourth {
     animation-delay: 360ms;

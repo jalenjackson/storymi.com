@@ -108,32 +108,6 @@
     background-position: 0% 50%;
   }
 
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    /* For mobile phones: */
-    body {
-      background: white !important;
-      margin: 0;
-      pading: 0;
-      cursor: pointer !important;
-
-    }
-  }
-
-  .container{
-    margin-top:100px !important;
-  }
-
-
-
-  .mobile-brand{
-    background: black !important;
-  }
-  .mobile-brand > h1 {
-    font-size: 35px !important;
-  }
   .ui-input input.filled {
   }
   .ui-input input.filled + label::after {
@@ -166,6 +140,28 @@
     background-image: linear-gradient(to right, #E66161 50%, rgba(255, 255, 255, 0) 0%);
     background-position: 0% 50%;
   }
+
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* For mobile phones: */
+    body {
+      background: white !important;
+    }
+    .mobile-brand {
+      background: black !important;
+      position: absolute;
+      left: 0 !important;
+    }
+
+    .container{
+      margin-top:90px !important;
+    }
+  }
+
+
+
 
   .btn {
     border: 0;
@@ -316,8 +312,22 @@
     $(function() { $('textarea').froalaEditor({
         theme: "dark",
         heightMin: 300,
-
-      })
+        imageUploadToS3: {
+            bucket: '<%= @hash[:bucket] %>',
+            region: 's3', // Change the region if it is different
+            keyStart: '<%= @hash[:key_start] %>',
+            callback: function (url, key) {
+                console.log (url);
+                console.log (key);
+            },
+            params: {
+                acl: '<%= @hash[:acl] %>',
+                AWSAccessKeyId: '<%= @hash[:access_key] %>',
+                policy: '<%= @hash[:policy] %>',
+                signature: '<%= @hash[:signature] %>',
+            }
+        }
+    })
     });
 
 

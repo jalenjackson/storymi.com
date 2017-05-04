@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   impressionist :action => [:show]
-
+  include AmazonSignature
 
   # GET /articles
   # GET /articles.json
@@ -17,18 +17,18 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
-
+    @hash = AmazonSignature::data_hash
   end
 
   # GET /articles/1/edit
   def edit
-
   end
 
   # POST /articles
   # POST /articles.json
 
   def create
+    @hash = AmazonSignature::data_hash
 
     @article = current_user.articles.build (article_params)
 
@@ -83,5 +83,4 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :synopsis ,:body, :cover, :category_id)
     end
-
 end
