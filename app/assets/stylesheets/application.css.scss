@@ -253,7 +253,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   }
 
   figure{
-    width:100% !important;
+    width:125% !important;
     margin:0 !important;
     padding:0 !important;
     border:none !important;
@@ -272,7 +272,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     font-family:Montserrat, sans-serif !important;
   }
   .overlay{
-    background: none !important;
+    background: rgba(0,0,0,0.1) !important;
     cursor: pointer !important;
     z-index: 9999999999999 !important;
   }
