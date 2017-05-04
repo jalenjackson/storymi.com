@@ -247,13 +247,19 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     background: black!important;
     margin: 0;
     pading:0;
-    
+
   }
 
   figure{
     width:100% !important;
     margin:0 !important;
     padding:0 !important;
+    border:none !important;
+  }
+  figure img{
+    min-height:600px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   #columns {
     width:100% !important;
