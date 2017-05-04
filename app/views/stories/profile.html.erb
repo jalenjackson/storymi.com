@@ -127,7 +127,7 @@
 
                 <% if user_signed_in? %>
                 <% if current_user.id == @user.id %>
-                <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
+                <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to yea",  data: { confirm: 'Are you sure?' } %></h1>
                 <% end %>
                     <% end %>
               </figure>
@@ -190,7 +190,7 @@
 
                   <% if user_signed_in? %>
                   <% if current_user.id == @user.id %>
-                      <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to",  data: { confirm: 'Are you sure?' } %></h1>
+                      <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to yea",  data: { confirm: 'Are you sure?' } %></h1>
                   <% end %>
                       <% end %>
                 </figure>
