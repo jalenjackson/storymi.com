@@ -51,10 +51,29 @@
     <h1 style="animation-delay: 0.7s ;" class="animated bounceInLeft"><a  class="cat-link" href = "/category/7"><span style="animation-delay: 2.1s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://st2.depositphotos.com/5817452/8470/v/950/depositphotos_84703236-stock-illustration-crowd-of-laughing-people-hand.jpg)">Comedy</span></a></h1>
   </div>
 
+  <div class="mobile-menu">
+    <h1><a style="color:white;" href = "/">Message Stories</a></h1>
+    <h1><a style="color:white;" href = "/articles/">Stories</a></h1>
+    <h1 class="cat-link2">Categories</h1>
+    <% if user_signed_in? %>
+    <h1><a href = "/profile/<%= current_user.id %>">My Profile</a></h1>
+    <% end %>
+    <% if user_signed_in? %>
+        <h1><a style="color:white;" href = "/story/new">Message Stories</a></h1>
+    <% else %>
+        <h1><a style="color:white;" href = "/users/sign_up">New Story</a></h1>
+    <% end %>
+
+  </div>
   <nav class=" navigation-bar  is-visible" data-nav-status="toggle">
     <ul>
+
       <li><a class="brand" style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
-      <a class="mobile-brand"  style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/"><span></span></a>
+
+      <div class="mobile-brand">
+        <h1>TellAFiction</h1>
+      </div>
+
 
       <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 animated pulse">Message Stories</li>
       <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 animated pulse">Stories</li>
@@ -101,9 +120,19 @@
 
   <script>
 
+    $(".mobile-menu").hide();
     $(".mobile-brand").click(function(){
-       window.location.href = "/"
+        $(".mobile-menu").fadeIn("slow");
+
+        $("#columns").fadeOut("slow");
     });
+
+    $(".mobile-menu").click(function(){
+        $(".mobile-menu").fadeOut("slow");
+        $("#columns").fadeIn("slow");
+
+    });
+
 
     $(".category-go1").click(function(){
         window.location.href = "/";
@@ -114,15 +143,17 @@
     });
 
     $(".category-overlay").hide();
-    $(".category-go").click(function(){
+    $(".category-go, .cat-link2").click(function(){
         $(".category-overlay").fadeIn("slow");
     });
+
+
 
     $(".category-overlay").click(function(){
         $(".category-overlay").fadeOut("slow");
     });
 
-    $(".cat-link").click(function(){
+    $(".cat-link .cat-link2 ").click(function(){
         $(".category-overlay").show();
     });
 

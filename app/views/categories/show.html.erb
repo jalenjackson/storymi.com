@@ -161,7 +161,7 @@
               </script>
           <% end %>
           <a href = "/stories/<%= story.id %>/view" >
-            <figure>
+            <figure style="width:100% !important;">
               <% if story.cover? %>
                   <img src="<%= story.cover.url(:medium) %>">
               <% else %>
@@ -255,7 +255,7 @@
                   </script>
               <% end %>
               <a href = "/articles/<%= story.id %>" >
-                <figure>
+                <figure style="width:100% !important;">
                   <% if story.cover? %>
                       <img src="<%= story.cover.url(:medium) %>">
                   <% else %>

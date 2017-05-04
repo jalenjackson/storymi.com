@@ -249,7 +249,7 @@ and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   body{
-    background: white!important;
+    background: black!important;
     margin: 0;
     pading:0;
     cursor: pointer !important;
@@ -260,6 +260,56 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     display: none;
   }
 
+  .mobile-menu{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    z-index:9999999999999;
+  }
+
+  .category-title{
+    font-size:70px !important;
+  }
+
+  .mobile-menu > h1 {
+    font-size:100px ;
+    color:white !important;
+    transform:translateY(300px);
+    margin-top:60px;
+    background:#c51109;
+    text-align: center;
+  }
+  .pagination{
+    font-size:60px;
+    height:100px;
+  }
+  .pagination a {
+    font-size:70px;
+  }
+  .article-story{
+    font-size:70px;
+    margin-top:100px;
+  }
+
+  .mobile-menu > h1:hover {
+    background: lightcoral;
+  }
+
+  .nav-link {
+    font-size:100px !important;
+    color:white !important;
+    margin-top:100px;
+  }
+  .category-overlay > h1 {
+    font-size:150px !important;
+  }
+
+  .category-overlay {
+    background: black !important;
+  }
   figure{
     width:125% !important;
     margin:0 !important;
@@ -273,7 +323,6 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     display: block !important;
     height:170px !important;
     width:100%;
-    background:url(../assets/a.png) center center ;
     color:white !important;
     font-weight:bold !important;
     font-size:13px !important;
@@ -281,6 +330,14 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     top:-40px;
     left:20px;
 
+  }
+
+  .mobile-brand > h1 {
+    font-size: 70px;
+    text-align: center;;
+    margin-top:20px;
+    font-weight: 100 !important;
+    transform:translateY(40px);
   }
   
 
@@ -315,7 +372,6 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
   .overlay{
     background: rgba(0,0,0,0.1) !important;
     cursor: pointer !important;
-    z-index: 9999999999999 !important;
   }
 
   .name {
