@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    @hash = AmazonSignature::data_hash
   end
 
   # POST /articles
