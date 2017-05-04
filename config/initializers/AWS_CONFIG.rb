@@ -1,6 +1,6 @@
 AWS_CONFIG = {
-    'access_key_id' => 'AKIAJV3OXGVO7BXHN4FA',
-    'secret_access_key' => '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',
+    'access_key_id' => ENV["S3_ACCESS_KEY"],
+    'secret_access_key' => ENV["S3_SECRET_KEY"],
     'bucket' => 'storybucketstorage',
     'acl' => 'public-read',
     'key_start' => 'uploads/'

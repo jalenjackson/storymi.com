@@ -1,9 +1,9 @@
 class ArticlesController < ApplicationController
+  include AmazonSignature
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   impressionist :action => [:show]
   before_action :set_hash_for_froala
 
-  include AmazonSignature
 
   # GET /articles
   # GET /articles.json
@@ -19,19 +19,16 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
-    @hash = AmazonSignature::data_hash
   end
 
   # GET /articles/1/edit
   def edit
-    @hash = AmazonSignature::data_hash
   end
 
   # POST /articles
   # POST /articles.json
 
   def create
-    @hash = AmazonSignature::data_hash
 
     @article = current_user.articles.build (article_params)
 
