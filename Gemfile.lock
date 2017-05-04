@@ -235,6 +235,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  aws-sdk-resources
   bootstrap-filestyle-rails
   bootstrap-modal-rails
   bootstrap-sass

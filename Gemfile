@@ -13,6 +13,7 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem 'aws-sdk'
+gem 'aws-sdk-resources'
 gem 'will_paginate'
 gem 'figaro'
 
