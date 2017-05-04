@@ -255,9 +255,30 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     margin:0 !important;
     padding:0 !important;
     border:none !important;
+    -ms-word-break: break-all;
+    word-break: break-all;
+  }
+  .overlay  > h1 {
+    position: relative !important;
+    font-size: 50px !important;
+    background: none !important;
+    margin-top:50px !important;
+  }
+  .category{
+    top: -200px !important;
+  }
+  .name {
+    transform: translateY(95px)!important;
+    font-size: 30px !important;
+  }
+  .view-count {
+    font-size:40px !important;
+    background:none !important;
+    font-style: italic;;
+
   }
   figure img{
-    min-height:600px !important;
+    min-height:300px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
