@@ -260,6 +260,7 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     display: none;
   }
 
+
   .mobile-menu{
     position: absolute;
     top:0;
@@ -451,6 +452,10 @@ div#columns figure img {
   margin-bottom: 0px;
 }
 
+.message-container > p {
+  font-size: 100px !important;
+}
+
 .mobile-bg{
   width:100% !important;
 }
@@ -470,6 +475,11 @@ div#columns small {
 div#columns small a {
   color: #666;
   text-decoration: none;
+}
+
+
+.message-big{
+  font-size: 65px !important;
 }
 
 #columns{
