@@ -271,21 +271,15 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
 
   .mobile-brand{
     display: block !important;
-    height:140px !important;
+    height:170px !important;
     width:100%;
-    background:  url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg) center center;
-    background-size: cover;
+    background:url(../assets/front.png) center center;
     color:white !important;
     font-weight:bold !important;
-    -webkit-animation:100s scroll infinite linear;
-    -moz-animation:100s scroll infinite linear;
-    -o-animation:100s scroll infinite linear;
-    -ms-animation:100s scroll infinite linear;
-    animation:100s scroll infinite linear;
     font-size:13px !important;
     position: absolute !important;
-    top:0;
-    left:0;
+    top:-40px;
+    left:20px;
 
   }
   
