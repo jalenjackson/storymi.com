@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   impressionist :action => [:show]
   before_action :set_hash_for_froala
 
+  include AmazonSignature
 
   # GET /articles
   # GET /articles.json
