@@ -255,6 +255,12 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     cursor: pointer !important;
 
   }
+  .message-big{
+    font-size: 60px !important;
+    font-weight: bold !important;
+    margin-top:10px !important;
+    font-family: Montserrat, sans-serif;
+  }
 
   .brand {
     display: none;
@@ -478,10 +484,7 @@ div#columns small a {
 }
 
 
-.message-big{
-  font-size: 60px !important;
-  font-weight: 400 !important;
-}
+
 
 #columns{
   word-break: break-all;
