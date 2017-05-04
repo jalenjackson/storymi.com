@@ -290,22 +290,7 @@
     $(function() { $('textarea').froalaEditor({
         theme: "dark",
         heightMin: 300,
-        imageUploadToS3: {
-            bucket: 'storybucketstorage',
-            // Your bucket region.
-            region: 's3-us-east-1',
-            keyStart: 'uploads/',
-            callback: function(url,key){
-              console.log(url);
-              console.log(key);
-            },
-            params: {
-                acl: 'public-read', // ACL according to Amazon Documentation.
-                AWSAccessKeyId: 'AKIAJDATCTI6UROYWHJQ', // Access Key from Amazon.
-                policy: '<%= @hash[:policy] %>', // Policy string computed in the backend.
-                signature: '<%= @hash[:signature] %>', // Signature computed in the backend.
-            }
-        }
+        imageUploadToS3: <%= froala_s3_image_config %>
     }) });
 
 
