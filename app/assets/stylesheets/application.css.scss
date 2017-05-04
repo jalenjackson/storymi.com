@@ -243,207 +243,21 @@ nav:after {
 and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
-
-  #columns { column-gap: 0px; }
-  figure { width: 100%; margin-left:5px !important; }
-
-  nav a{
-    font-size:30px !important;
-    margin-left:-19px;
+  body{
+    background: black!important;
+    margin: 0;
+    pading:0;
+    
   }
 
-  .mobile-overlay{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:99999999999;
-    display: block !important;
-  background: rgb(0,0,0) url("http://st.depositphotos.com/2564943/3568/i/950/depositphotos_35685477-stock-photo-fantastic-background-with-a-magic.jpg") center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;
-}
-
-
-
-  .mobile-overlay2{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:999999999999999;
-    background:rgba(0,0,0,0.5);
+  figure{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
   }
-
-@-webkit-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-moz-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-o-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-ms-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-  
-  .mobile-overlay h1 {
-    font-size:70px;
-    color:white;
-    text-align: center;
-    margin-top: 200px;
-    transform:translateY(200px);
-    font-weight:lighter;
-  }
-  nav{
-    height:100px;
-  }
-
-
-  li{
-    font-size:25px;
-  }
-
-  .fb-profile {
-    margin-top:100px;
-  }
-
-  .edit{
-    background:rgba(200,200,255,0.3);
-    font-size:16px;
-    width:100px;
-    border-radius:.3em;
-    color:black;
-    text-align: center;
-    cursor: pointer;
-    margin-top:70px;
-    margin-left: 40px;
-
-  }
-
-
-  .mobile-container{
+  #columns {
     width:100% !important;
   }
-
-  .login-wrap{
-    margin-top:200px !important;
-    width:90% !important;
-  }
-
-  .login-wrap input[type="submit"]{
-    font-size:50px !important;
-    background:rgb(240,240,255);
-    border:none;
-    height:100px;
-    box-shadow: 5px 5px 10px grey;
-  }
-
-
-
-  .edit-message{
-    margin-top:100px;
-  }
-  .cont{
-    margin-top:150px !important;
-  }
-
-  .from-them{
-    font-size:25px;
-  }
-  .view-btn{
-    position: absolute;
-    top:40%;
-    left:10px;
-  }
-
-  .number{
-    top:91% !important;
-    z-index:999999;
-  }
-
-  .from-me{
-    font-size:25px;
-  }
-
-  .cont span {
-    font-size:30px !important;
-  }
-
-  .login-wrap input {
-    width:100%;
-    font-size:35px !important;
-  }
-
-  #user_password, #user_password_confirmation, #user_current_password{
-    font-size:35px !important;
-  }
-
-  .mobile-bg{
-    height:auto !important;
-  }
-  .container-form  {
-
-    width:900px!important;
-    margin-left:-190px;
-    margin-top:200px;
-    height: 900px !important;
-
-  }
-
-  .pagination   {
-    font-size:70px !important;
-  }
-
-  .message-container{
-    font-size:50px;
-  }
-
-  #new_user input{
-    width:100%;
-    font-size:40px;
-    border: 1px solid grey;
-  }
-
-  #new_user input[type="submit"]{
-    margin-left: -3px;
-    transform:translateY(100px);
-  }
-
-  .sign-up-h1{
-    font-size:74px !important;
-  }
-
-
-
 }
 
 
