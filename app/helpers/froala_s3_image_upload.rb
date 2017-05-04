@@ -26,7 +26,7 @@ def froala_s3_image_config
           '$1I9ACVi7sKvFkHYGqo4zTt1gDpMPtd0/ekGRjITx',
           s3_config[:policy]
       )
-  ).gsub("\n","")
+  ).gsub("\n","").to_json
 
-  return s3_config.to_json
+  return s3_config
 end

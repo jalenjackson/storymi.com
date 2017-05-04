@@ -5,7 +5,7 @@ module AmazonSignature
     Base64.encode64(
         OpenSSL::HMAC.digest(
             OpenSSL::Digest.new('sha1'),
-            '$1I9ACVi7sKvFkHYGqo4zTt1gDpMPtd0/ekGRjITx', self.policy
+            AWS_CONFIG['secret_access_key'], self.policy
         )
     ).gsub("\n", "")
   end
@@ -18,18 +18,18 @@ module AmazonSignature
     {
         expiration: 10.hours.from_now.utc.iso8601,
         conditions: [
-            ["starts-with", "$key", 'uploads/'],
+            ["starts-with", "$key", AWS_CONFIG['key_start']],
             ["starts-with", "$x-requested-with", "xhr"],
             ["content-length-range", 0, 20.megabytes],
             ["starts-with", "$content-type", ""],
-            {bucket: 'storybucketstorage'},
-            {acl: 'public-read'},
+            {bucket: AWS_CONFIG['bucket']},
+            {acl: AWS_CONFIG['acl']},
             {success_action_status: "201"}
         ]
     }
   end
 
   def data_hash
-    {:signature => self.signature, :policy => self.policy, :bucket => 'storybucketstorage', :acl => 'public-read', :key_start => 'uploads/', :access_key => 'AKIAJDATCTI6UROYWHJQ'}
+    {:signature => self.signature, :policy => self.policy, :bucket => AWS_CONFIG['bucket'], :acl => AWS_CONFIG['acl'], :key_start => AWS_CONFIG['key_start'], :access_key => AWS_CONFIG['access_key_id']}
   end
 end

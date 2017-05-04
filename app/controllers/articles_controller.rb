@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   impressionist :action => [:show]
-  include AmazonSignature
+  before_action :set_hash_for_froala
+
 
   # GET /articles
   # GET /articles.json
@@ -84,4 +85,7 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :synopsis ,:body, :cover, :category_id)
     end
+  def set_hash_for_froala
+    @hash = AmazonSignature::data_hash
+  end
 end
