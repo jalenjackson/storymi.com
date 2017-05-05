@@ -120,8 +120,8 @@
       <file leaf-file-name="profile.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/profile.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
+            <state relative-caret-position="-1095">
+              <caret line="189" column="27" lean-forward="true" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#a#0;n#a#0;n#figure#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -170,9 +170,9 @@
       <find>avat</find>
       <find>impre</find>
       <find>impress</find>
-      <find>edit</find>
       <find>@user</find>
       <find>@user.id</find>
+      <find>edit</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -904,12 +904,12 @@
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
       <workItem from="1493858550588" duration="30772000" />
-      <workItem from="1493960050459" duration="11502000" />
+      <workItem from="1493960050459" duration="11713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178303000" />
+    <option name="totallyTimeSpent" value="178514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1369,8 +1369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/profile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
+        <state relative-caret-position="-1095">
+          <caret line="189" column="27" lean-forward="true" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#a#0;n#a#0;n#figure#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>

@@ -111,11 +111,11 @@
                 <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
                 <% if user_signed_in? %>
                 <% if current_user.id == story.user.id %>
-                <% end %>
-              <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
+                        <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
+              <% end %>
                <% end %>
                 <% if user_signed_in? %>
-                    <% if current_user %>
+                    <% if current_user.id == story.user.id %>
                 <% if !story.ispublished %>
                 <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
                 <% end %>
@@ -184,7 +184,7 @@
                   <% end %>
 
                   <% if user_signed_in? %>
-                      <% if current_user %>
+                      <% if current_user.id == story.user.id %>
                   <% if !story.ispublished %>
                       <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
                   <% end %>
