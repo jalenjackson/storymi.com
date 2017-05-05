@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/new.js.erb" afterPath="$PROJECT_DIR$/app/views/videos/new.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -46,21 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stories/profile.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="161" column="29" lean-forward="true" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="41" column="334" lean-forward="false" selection-start-line="41" selection-start-column="334" selection-end-line="41" selection-end-column="334" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#span#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -69,11 +58,21 @@
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1493977712000" expanded="true" signature="5129:5183" ph="..." />
-                <marker date="1493977712000" expanded="true" signature="5224:5278" ph="..." />
-                <marker date="1493977712000" expanded="true" signature="5541:5595" ph="..." />
-                <marker date="1493977712000" expanded="true" signature="5642:5698" ph="..." />
+                <marker date="1493977873000" expanded="true" signature="5131:5185" ph="..." />
+                <marker date="1493977873000" expanded="true" signature="5226:5280" ph="..." />
+                <marker date="1493977873000" expanded="true" signature="5543:5597" ph="..." />
+                <marker date="1493977873000" expanded="true" signature="5644:5700" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="82" column="157" lean-forward="true" selection-start-line="82" selection-start-column="157" selection-end-line="82" selection-end-column="157" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>t</find>
       <find>tag_</find>
       <find>nav</find>
       <find>tag</find>
@@ -172,6 +170,7 @@
       <find>mobile-me</find>
       <find>Videos</find>
       <find>avat</find>
+      <find>impre</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -903,12 +902,12 @@
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
       <workItem from="1493858550588" duration="30772000" />
-      <workItem from="1493960050459" duration="11101000" />
+      <workItem from="1493960050459" duration="11192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177902000" />
+    <option name="totallyTimeSpent" value="177993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1262,16 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="76" column="31" lean-forward="true" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1358,8 +1347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="105">
+          <caret line="41" column="334" lean-forward="false" selection-start-line="41" selection-start-column="334" selection-end-line="41" selection-end-column="334" />
           <folding>
             <element signature="n#style#0;n#p#0;n#span#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1368,11 +1357,19 @@
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1493977712000" expanded="true" signature="5129:5183" ph="..." />
-            <marker date="1493977712000" expanded="true" signature="5224:5278" ph="..." />
-            <marker date="1493977712000" expanded="true" signature="5541:5595" ph="..." />
-            <marker date="1493977712000" expanded="true" signature="5642:5698" ph="..." />
+            <marker date="1493977873000" expanded="true" signature="5131:5185" ph="..." />
+            <marker date="1493977873000" expanded="true" signature="5226:5280" ph="..." />
+            <marker date="1493977873000" expanded="true" signature="5543:5597" ph="..." />
+            <marker date="1493977873000" expanded="true" signature="5644:5700" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="82" column="157" lean-forward="true" selection-start-line="82" selection-start-column="157" selection-end-line="82" selection-end-column="157" />
+          <folding />
         </state>
       </provider>
     </entry>
