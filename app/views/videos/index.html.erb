@@ -73,8 +73,10 @@
     <% @videos.each_with_index do |video,i| %>
 
     <div style = "animation-delay: <%= i * 0.05 %>s" class="border col-md-3 animated fadeInUp">
+      <% if video.mp4.present? %>
         <%= link_to (image_tag video.mp4.url(:thumb), class:"videos-images img-responsive"), video_path(video) %>
-      <p class = "videos-owner">
+      <% end %>
+          <p class = "videos-owner">
         <%= video.user.firstname + " " + video.user.lastname %>
       </p>
       <h1 class = "videos-content-title" ><%= video.title %></h1>
