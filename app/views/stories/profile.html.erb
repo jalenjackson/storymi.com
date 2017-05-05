@@ -87,7 +87,7 @@
       <div style="margin-top:85px;" id="columns">
 
 <% if @user.stories.exists? %>
-        <% @user.stories.paginate(:page => params[:page], :per_page => 11).each do |story| %>
+        <% @user.stories.each do |story| %>
 
 
                 <% if story.ispublished? %>
@@ -155,7 +155,7 @@
       <div style="margin-top:85px;" id="columns">
 
         <% if @user.articles.exists? %>
-            <% @user.articles.paginate(:page => params[:page], :per_page => 11).each do |story| %>
+            <% @user.articles.each do |story| %>
 
 
                 <% if story.ispublished? %>
@@ -217,7 +217,66 @@
       </div>
 
     </div>
+
+
+
+      <% if @user.videos.exists? %>
+
+          <h1 style="text-align: center;;"><%= @user.firstname %>'s Videos</h1>
+      <% end %>
+      <div style="margin-top:85px;" id="columns">
+
+        <% if @user.videos.exists? %>
+            <% @user.videos.each do |story| %>
+
+
+
+
+                <figure>
+                  <img src="<%= story.mp4.url(:thumb) %>">
+
+
+
+
+                  <a href = "/videos/<%= story.id %>">
+
+                  <div class="overlay"></div>
+                  <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
+                  <% if user_signed_in? %>
+                      <% if current_user.id == @user.id %>
+                      <% end %>
+                      <a href ="/videos/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
+                  <% end %>
+
+                  <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
+
+
+
+                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> </h1>
+
+
+                  <% if user_signed_in? %>
+                      <% if current_user.id == @user.id %>
+                          <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to yea",  data: { confirm: 'Are you sure?' } %></h1>
+                      <% end %>
+                  <% end %>
+                </figure>
+
+                </a>
+
+
+            <% end %>
+
+        <% else %>
+        <% end %>
+
+
+      </div>
   </div>
+
+
+
+
 </div> <!-- /container -->
 
 
