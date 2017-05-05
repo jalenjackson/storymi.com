@@ -118,7 +118,7 @@
 
 
           <a class="" href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:90px;  padding-right:100px; font-size:15px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %>
-            <% if story.user.avatar? %>
+            <% if story.user.avatar.present? %>
                 <img  src="<%= story.avatar.url(:medium) %>" alt="Profile image example"/>
             <% else  %>
                 <img  style="width:30px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>

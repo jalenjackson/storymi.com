@@ -10,6 +10,8 @@
     a:hover {
       background:none !important;
     }
+
+
 </style>
 
 <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
@@ -55,6 +57,12 @@
   <div class = "videoDiv">
     <h1 style = "color:grey;margin-left:20px;" class = "videoTitle"><%= @video.title %></h1>
     <p style = "color:grey;margin-left:20px;">Published on <span style = "font-weight:bold; color:black;"><%= @video.created_at.strftime("%-d/%-m/%y") %>  </span></p>
+    <% if @video.user.avatar.present? %>
+        <img  src="<%= @video.user.avatar.url(:medium) %>" class = "pro" alt="Profile image example"/>
+    <% else  %>
+        <img  style="width:30px !important;  left: 0;height:30px !important;  border-radius: 100%;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
+        <%= @video.user.firstname %>
+    <% end %>
   </div>
     <div><br>
       <div class = "panel">
