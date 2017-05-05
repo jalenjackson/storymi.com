@@ -15,9 +15,14 @@
 //= require bootstrap
 //= require froala_editor.min.js
 //= require bootstrap-filestyle
+//= require bootstrap-modal
+//= require dropzone
+
 //= require plugins/align.min.js
 //= require plugins/char_counter.min.js
 //= require plugins/code_beautifier.min.js
+//= require video
+
 //= require plugins/code_view.min.js
 //= require plugins/colors.min.js
 //= require plugins/emoticons.min.js

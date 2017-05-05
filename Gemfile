@@ -19,6 +19,12 @@ gem 'will_paginate'
 gem 'bootstrap-filestyle-rails'
 gem 'impressionist'
 gem "wysiwyg-rails"
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'simple_form'
+gem 'bootstrap-modal-rails'
+gem 'dropzonejs-rails'
+gem 'videojs_rails'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

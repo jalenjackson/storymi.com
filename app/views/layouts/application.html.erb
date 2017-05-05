@@ -68,6 +68,8 @@
         <h1><a style="color:white;" href = "/users/sign_up">New Story</a></h1>
     <% end %>
 
+
+
     <% if user_signed_in? %>
         <h1><a style="color:white;" class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></h1>
         <h1><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></h1>
@@ -94,8 +96,9 @@
       </div>
 
 
-      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 animated pulse">Message Stories</li>
-      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 animated pulse">Stories</li>
+      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 ">Message Stories</li>
+      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 ">Stories</li>
+      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go3 ">Videos</li>
       <li style="cursor: pointer;" class="category-go">Categories</li>
 
       <% if user_signed_in? %>
@@ -103,6 +106,8 @@
       <% else %>
           <li ><%= link_to 'New Story', '/users/sign_up', class:'nav-item' %></li>
       <% end %>
+
+      <%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %>
 
 
 
@@ -136,6 +141,8 @@
   </script>
 
   <%= yield %>
+  <div id="remote_container"></div>
+
 
   <script>
 
@@ -158,6 +165,10 @@
     });
     $(".category-go2").click(function(){
         window.location.href = "/articles";
+
+    });
+    $(".category-go3").click(function(){
+        window.location.href = "/videos";
 
     });
 

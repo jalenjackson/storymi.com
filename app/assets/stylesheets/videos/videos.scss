@@ -1,0 +1,197 @@
+.videos-video-chosen-thumbnail-image{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:170px;
+}
+
+.videos-front{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.ajs-content {
+  font-weight:bold !important;
+  font-size:20px !important;
+}
+
+.submit{
+  background-color: #01b2fe !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px !important;
+  color:white !important;
+  border-radius: 0 !important;
+  cursor:pointer !important;
+}
+
+.submit-btn{
+  opacity: 0 !important;
+}
+
+.ajs-modal > div{
+  background:black !important;
+  color:white !important;
+}
+.ajs-footer{
+  background:black !important;
+  color:white !important;
+}
+.ajs-header{
+  background:black !important;
+  color:white !important;
+
+}
+
+
+.ajs-button{
+  background-color: rgb(70,70,70) !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  float:left;
+  font-size: 12px !important;
+  width:100%;
+  position: absolute !important;
+  left:-4.5px !important;
+  border-radius: 0 !important;
+
+
+}
+
+#video_title {
+  font-weight:bold;
+
+}
+
+#video_description {
+  width:100% !important;
+  border-color: grey !important;
+  font-weight:bold;
+}
+
+#my-video{
+width:100%;
+  height:100%;
+}
+
+#video_tag_list{
+  font-weight:bold;
+}
+.slick-codepen2 {
+  width: 100%;
+  height: 340px;
+  position: relative;
+
+  .slick-slide {
+    height: 340px;
+
+  }
+
+  .ccc{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5;
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 0;
+    left: 0%;
+  }
+  .slick-next {
+    position: absolute;
+    top: 0;
+    left: 65.40%;
+  }
+
+  .slick-prev {
+    &:before {
+      margin-left: 200px;
+    }
+  }
+
+  .slick-prev, .slick-next {
+    top: 10px;
+    width: 34.7%;
+    height: 100%;
+    transition: all 0.3s ease-out 0s;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+
+    &:before {
+      color: white;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
+
+    &:before {
+      font-size: 38px;
+      color: white;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .slick-prev {
+    &:before {
+      margin-left: 96.5%;
+
+    }
+  }
+
+  .slick-next {
+    &:before {
+      margin-left: -99%;
+    }
+  }
+}
+
+.videos-video-title{
+  font-size:18px;
+  color:#02b875 !important;
+  font-weight:bold;
+
+}
+.videos-owner-name{
+  margin-top:-10px;
+}
+
+.videos-created-at{
+  margin-top:-10px;
+  color:grey !important;
+  font-style:italic;
+
+}
+
+
+
+.videos-showpage-main-video{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.video-showpage-related-videos{
+  float:left;
+  height: 90px;
+  width:165px;
+
+}
+
+.ajs-success{
+  background:black !important;
+}
+
+.vjs-control-bar {
+  background:rgba(0,0,0,0.4)!important;
+}
+
+

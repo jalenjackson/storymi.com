@@ -1,0 +1,8 @@
+$(function(){
+
+    $(".likes-count").text("<%= @video.get_upvotes.size %>");
+    $(".dislikes-count").text("<%= @video.get_downvotes.size %>");
+
+
+
+});

@@ -1,0 +1,99 @@
+<style>
+  .move-left{
+    animation:ani 500ms ease-out 1 forwards;
+    transform:translate(50px,50px) !important;
+
+  }
+  @keyframes ani {
+    0%{
+      transform:translate(50px,50px);
+      opacity:0;
+    }
+    100%{
+      transform:translate(0px,50px);
+      opacity:1;
+
+    }
+  }
+  video#bgvid {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+    .dropdown-menu li > a {
+      font-weight:bold;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+<br><br>
+
+  <div class = "videos-content">
+  <div class = "videos-content-top">
+    <h1 class = "videos-title move-left ">Most Popular Videos</h1>
+  </div>
+  <div class = "videos-content-middle">
+
+    <div class="row-fluid">
+      <div class="span12">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+          <source src="<%= @videos.first.mp4 %>" type="video/mp4">
+        </video>
+        <!-- Changed from `hidden` to `auto`. -->
+        <div style="width:90%;">
+
+          <!-- This is the div that does the trick: -->
+          <div style="width:1200px;">
+
+            <div style="display:inline-block;">
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "videos-content-dropdowns">
+    <div id="tag_cloud">
+
+    </div>
+
+  </div>
+
+
+  <div class = "container-fluid">
+  <div class="border row videos-border-row">
+
+    <% @videos.each_with_index do |video,i| %>
+
+    <div style = "animation-delay: <%= i * 0.05 %>s" class="border col-md-3 animated fadeInUp">
+        <%= link_to (image_tag video.mp4.url(:thumb), class:"videos-images img-responsive"), video_path(video) %>
+      <p class = "videos-owner">
+        <%= video.user.firstname + " " + video.user.lastname %>
+      </p>
+      <h1 class = "videos-content-title" ><%= video.title %></h1>
+      <span style="transform:translateY(-10px) !important; font-style: italic; font-weight: bold;"><%= pluralize(video.impressionist_count(:filter=>:session_hash), "view") %></span>
+
+    </div>
+    <% end %>
+  </div>
+  </div>
+</div>
+
+
+
+<script>
+
+  $(".videos-search").focusin(function(){
+      $("#bs-example-navbar-collapse-1").addClass("add-border-to-nav");
+  });
+  $(".videos-search").focusout(function(){
+      $("#bs-example-navbar-collapse-1").removeClass("add-border-to-nav");
+  });
+</script>
+
+<%= will_paginate @videos %>

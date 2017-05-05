@@ -69,6 +69,9 @@ Rails.application.configure do
   config.assets.compile = true
 
 
+  config.assets.precompile += %w( video-js.swf vjs.eot vjs.svg vjs.ttf vjs.woff )
+
+
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
