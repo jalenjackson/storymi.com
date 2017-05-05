@@ -396,7 +396,16 @@ transform: translateY(122px) !important;
     background:black;
     z-index:9;
   }
+  .mobile-profile{
+    width:30px !important;
+    display: none;
+    height: 30px !important;
+  }
 
+  .name > img {
+    width: 20px !important;
+    height: 20px !important;
+  }
 
   figure{
     background: none !important;
