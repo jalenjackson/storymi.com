@@ -114,10 +114,15 @@
                 <% end %>
               <a href ="/stories/<%= story.id %>"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                <% end %>
+                <% if user_signed_in? %>
+                    <% if current_user %>
                 <% if !story.ispublished %>
                 <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
                 <% end %>
-                <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
+                    <% end %>
+                <% end %>
+
+                    <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 
                 <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
 
@@ -177,8 +182,13 @@
                   <% end %>
                       <a href ="/articles/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
                   <% end %>
+
+                  <% if user_signed_in? %>
+                      <% if current_user %>
                   <% if !story.ispublished %>
                       <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
+                  <% end %>
+                    <% end %>
                   <% end %>
                   <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 

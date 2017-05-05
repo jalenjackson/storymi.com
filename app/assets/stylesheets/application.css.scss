@@ -74,6 +74,12 @@ body,html{
     width:100%;
 }
 
+
+figure img {
+  border: none !important;
+  background: none !important;
+}
+
 .brand{
   background:  url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_GJZn4Tcd_M.jpg) center center;
   background-size: cover;
@@ -385,10 +391,6 @@ transform: translateY(122px) !important;
     z-index:9;
   }
 
-  figure img {
-    border: none !important;
-    background: none !important;
-  }
 
   figure{
     background: none !important;
