@@ -1,4 +1,4 @@
-module AmazonSignature
+=begin module AmazonSignature
   extend self
 
   def signature
@@ -33,3 +33,5 @@ module AmazonSignature
     {:signature => self.signature, :policy => self.policy, :bucket => AWS_CONFIG['bucket'], :acl => AWS_CONFIG['acl'], :key_start => AWS_CONFIG['key_start'], :access_key => AWS_CONFIG['access_key_id']}
   end
 end
+
+=end

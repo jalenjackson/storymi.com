@@ -52,7 +52,12 @@
             <img class = "video-show-broken-heart animated" style = "width:40px;height:40px;" src = "http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-black/classica/classica_broken-heart/classica_broken-heart_flat-circle-white-on-black_512x512.png">
             <span style = "color:black; margin-right:5px !important;padding-right:20px; font-weight:bold; font-style:italic" class = "dislikes-count"><%= @video.get_downvotes.size  %></span>
       <% end %>
-        <p style="color:grey;"><a href ="/videos/<%= @video.id %>/edit">Edit</a></p>
+
+        <% if user_signed_in? %>
+            <% if current_user.id == @video.user.id %>
+          <p style="color:grey;"><a href ="/videos/<%= @video.id %>/edit">Edit</a></p>
+        <% end %>
+                    <% end %>
 
       </span>
 

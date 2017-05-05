@@ -279,9 +279,14 @@
         </label>
       </fieldset>
       </div>
-        <div class="froala" id="eg-red-theme">
+
+      <h1>Speech to text recognition</h1>
+
+
+      <button type="button" onclick="startConverting();"><i class="fa fa-microphone"></i></button>
+        <div class="froala" >
           <h1>Make Your Story Engaging</h1>
-          <%= f.text_area :body %>
+          <%= f.text_area :body, id: 'result' %>
       </div>
 
 
@@ -300,8 +305,57 @@
 <script>
 
 
+  r = document.getElementById("result");
 
-    $(".btn").html("Save And View");
+  $(".fr-element").css("background","red");
+
+  function startConverting(){
+      if("webkitSpeechRecognition" in window ){
+          var speechRecognizer = new webkitSpeechRecognition();
+          speechRecognizer.continuous = true;
+          speechRecognizer.interimResults = true;
+          speechRecognizer.lang = 'en';
+          speechRecognizer.start();
+
+          var finalTranscripts = '';
+
+          speechRecognizer.onresult = function(event){
+              var interimTranscripts = '';
+              for(var i = event.resultIndex; i < event.results.length; i++){
+                  var transcript = event.results[i][0].transcript;
+                  transcript.replace("\n", "<br>");
+                  if(event.results[i].isFinal){
+                      finalTranscripts += transcript;
+                  } else {
+                      interimTranscripts += transcript
+                  }
+
+              }
+
+              $("#result").val(finalTranscripts + interimTranscripts);
+
+          };
+
+          console.log($("#fr-view"))
+
+
+          speechRecognizer.onerror = function(event){
+
+          }
+
+      } else {
+        r.innerHTML = "Your browser is not supported. Try google chrome. If google chrome please upgrade"
+      }
+  }
+
+setInterval(function(){
+},20);
+
+
+
+
+
+  $(".btn").html("Save And View");
     var $input = $('.form-fieldset > input');
 
     $input.blur(function (e) {
@@ -312,21 +366,21 @@
     $(function() { $('textarea').froalaEditor({
         theme: "dark",
         heightMin: 300,
-        imageUploadToS3: {
-            bucket: '<%= @hash[:bucket] %>',
-            region: 's3', // Change the region if it is different
-            keyStart: '<%= @hash[:key_start] %>',
-            callback: function (url, key) {
-                console.log (url);
-                console.log (key);
-            },
-            params: {
-                acl: '<%= @hash[:acl] %>',
-                AWSAccessKeyId: '<%= @hash[:access_key] %>',
-                policy: '<%= @hash[:policy] %>',
-                signature: '<%= @hash[:signature] %>',
-            }
-        }
+        //imageUploadToS3: {
+          //  bucket: '<%#= @hash[:bucket] %>',
+           //region: 's3', // Change the region if it is different
+            //keyStart: '<%#= @hash[:key_start] %>',
+            //callback: function (url, key) {
+              //  console.log (url);
+                //console.log (key);
+            //},
+            //params: {
+              //  acl: '<%#= @hash[:acl] %>',
+                //AWSAccessKeyId: '<%#= @hash[:access_key] %>',
+                //policy: '<%#= @hash[:policy] %>',
+               // signature: '<%#= @hash[:signature] %>',
+        // }
+       // }
     })
     });
 
