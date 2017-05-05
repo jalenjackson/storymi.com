@@ -22,7 +22,6 @@
 //= require plugins/char_counter.min.js
 //= require plugins/code_beautifier.min.js
 //= require video
-
 //= require plugins/code_view.min.js
 //= require plugins/colors.min.js
 //= require plugins/emoticons.min.js
