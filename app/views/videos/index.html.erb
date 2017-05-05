@@ -37,9 +37,11 @@
 
     <div class="row-fluid">
       <div class="span12">
+        <% if @video.mp4.present? %>
         <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
           <source src="<%= @videos.first.mp4 %>" type="video/mp4">
         </video>
+            <% end %>
         <!-- Changed from `hidden` to `auto`. -->
         <div style="width:90%;">
 
