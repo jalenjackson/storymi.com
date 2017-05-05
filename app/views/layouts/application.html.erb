@@ -61,6 +61,8 @@
   <div class="mobile-menu">
     <h1><a style="color:white;" href = "/">Message Stories</a></h1>
     <h1><a style="color:white;" href = "/articles/">Stories</a></h1>
+    <h1><a style="color:white;" href = "/videos/">Videos</a></h1>
+
     <h1 class="cat-link2">Categories</h1>
     <% if user_signed_in? %>
         <h1><a style="color:white;" href = "/story/new">New Story</a></h1>
@@ -68,7 +70,12 @@
         <h1><a style="color:white;" href = "/users/sign_up">New Story</a></h1>
     <% end %>
 
+    <% if user_signed_in? %>
+        <h1><%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %></h1>
+    <% else %>
+        <h1><%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %></h1>
 
+    <% end %>
 
     <% if user_signed_in? %>
         <h1><a style="color:white;" class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></h1>
