@@ -2,8 +2,255 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/002/large/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/002/medium/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/002/original/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/003/large/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/003/medium/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/003/original/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/004/large/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/004/medium/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/004/original/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/005/large/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/005/medium/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/005/original/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/007/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/007/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/007/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/010/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/010/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/010/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/011/large/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/011/medium/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/011/original/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/013/large/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/013/medium/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/013/original/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/014/large/1473803884989.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/014/medium/1473803884989.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/014/original/1473803884989.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/large/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/medium/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/original/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/015/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/016/large/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/016/medium/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/016/original/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/017/large/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/017/medium/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/017/original/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/large/Logomakr_83WBn0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/large/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/medium/Logomakr_83WBn0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/medium/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/original/Logomakr_83WBn0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/018/original/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/019/large/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/019/medium/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/019/original/man-with-dark-hair-and-gray-shirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/076/large/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/076/medium/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/076/original/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/088/large/UzYPKUwesHWTu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/088/medium/UzYPKUwesHWTu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/088/original/UzYPKUwesHWTu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/089/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/089/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/089/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/096/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/096/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/096/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/097/large/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/097/medium/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/097/original/a18059f7ee54bccf301b17e8662eb540.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/111/large/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/111/medium/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/111/original/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/115/large/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/115/medium/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/115/original/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/116/large/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/116/medium/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/116/original/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/163/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/163/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/163/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/166/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/166/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/166/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/169/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/169/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/169/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/174/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/174/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/174/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/178/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/178/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/178/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/180/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/180/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/180/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/182/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/182/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/182/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/183/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/183/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/183/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/185/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/185/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/185/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/012/large/Sci-Fi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/012/medium/Sci-Fi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/012/original/Sci-Fi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/079/large/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/079/medium/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/079/original/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/080/large/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/080/medium/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/080/original/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/081/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/081/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/081/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/082/large/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/082/medium/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/082/original/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/085/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/085/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/085/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/086/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/086/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/086/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/090/large/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/090/medium/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/090/original/wood-harris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/091/large/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/091/medium/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/091/original/MV5BOTQ1NTUwNTAzN15BMl5BanBnXkFtZTYwMzM0Njk5._V1_UY268_CR4_0_182_268_AL_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/092/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/092/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/092/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/093/large/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/093/medium/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/093/original/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/094/large/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/094/medium/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/094/original/2ef4d593aa73e5518a79bee84e4ec838_paid-in-full-memes-ace-memesuper-paid-in-full-crying-meme_1920-1080.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/110/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/110/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/110/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/114/large/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/114/medium/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/114/original/wall_of_crime_scene_tape_1600_clr_8537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/116/large/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/116/medium/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/116/original/tuieqlh6cuyxpz9pw2mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/164/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/164/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/164/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/165/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/165/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/165/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/167/large/a20c1be1110798e5194777473d9adf88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/167/medium/a20c1be1110798e5194777473d9adf88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/167/original/a20c1be1110798e5194777473d9adf88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/168/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/168/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/168/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/176/large/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/176/medium/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/176/original/0135e8e51055270e27caa706a9f91c6d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/large/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/medium/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/001/original/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/large/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/medium/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/002/original/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/large/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/medium/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/original/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/004/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/004/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/004/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/005/large/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/005/medium/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/005/original/brick-wall-graffiti-wallpaper-modern-expansive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/large/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/medium/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/original/here_the_whole_time___mikoshiba_momotarou_x_reader_by_interconnecteddream-d7rw2ho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/009/large/Derrick-Rose-Christian-Petersen-Getty-Images.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/009/medium/Derrick-Rose-Christian-Petersen-Getty-Images.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/009/original/Derrick-Rose-Christian-Petersen-Getty-Images.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/large/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/medium/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/original/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/011/large/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/011/medium/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/011/original/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/013/large/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/013/medium/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/013/original/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/large/sign051.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/medium/sign051.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/original/sign051.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/023/large/At_100x100_iconjake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/023/medium/At_100x100_iconjake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/023/original/At_100x100_iconjake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/large/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/medium/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/original/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/036/large/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/036/medium/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/036/original/Alien_Ink_2560X1600_Abstract_Background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/large/db204946954d43676c16725c5135b6ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/large/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/medium/db204946954d43676c16725c5135b6ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/medium/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/original/db204946954d43676c16725c5135b6ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/001/original/l2R0aKwejYr8ycKAg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/002/large/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/002/medium/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/002/original/giphy_(2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/009/large/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/009/medium/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/009/original/crime-bug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/013/large/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/013/medium/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/avatars/000/000/013/original/tent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/001/large/RCO004_w_1493890728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/001/medium/RCO004_w_1493890728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/001/original/RCO004_w_1493890728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/002/large/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/002/medium/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/002/original/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/009/large/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/009/medium/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/users/covers/000/000/009/original/restaurant-Japanese.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/005/original/videobg-368bffc8cfbbffdba1760b3c39d10ed306bcb8fea79c5a781d5fe09813418bbd.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/005/thumb/videobg-368bffc8cfbbffdba1760b3c39d10ed306bcb8fea79c5a781d5fe09813418bbd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/006/original/videobg2-1b04fc55f017253302a0af33cd3b764b20bed8508c318cb02abc802701a6a421.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/006/thumb/videobg2-1b04fc55f017253302a0af33cd3b764b20bed8508c318cb02abc802701a6a421.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/007/original/videobg2-1b04fc55f017253302a0af33cd3b764b20bed8508c318cb02abc802701a6a421.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/007/thumb/videobg2-1b04fc55f017253302a0af33cd3b764b20bed8508c318cb02abc802701a6a421.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/008/original/videobg5-a7098b8fb364c0449292909477f564e545c4b7b7a0c5d01aba449bc0fb5ba679.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/008/thumb/videobg5-a7098b8fb364c0449292909477f564e545c4b7b7a0c5d01aba449bc0fb5ba679.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/009/original/videobg-368bffc8cfbbffdba1760b3c39d10ed306bcb8fea79c5a781d5fe09813418bbd.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/009/thumb/videobg-368bffc8cfbbffdba1760b3c39d10ed306bcb8fea79c5a781d5fe09813418bbd.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StoryTime.iml" afterPath="$PROJECT_DIR$/.idea/StoryTime.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/index.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="$PROJECT_DIR$/app/models/video.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,7 +269,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
@@ -30,6 +277,36 @@
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.js.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/new.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,16 +320,6 @@
                 <marker date="1493889014000" expanded="true" signature="11146:11200" ph="..." />
                 <marker date="1493889014000" expanded="true" signature="11295:11351" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="7" column="109" lean-forward="false" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -94,26 +361,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="702">
               <caret line="93" column="0" lean-forward="false" selection-start-line="66" selection-start-column="2" selection-end-line="93" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video-index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/videos/video-index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/videos/videos.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,8 +469,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170505053730_add_user_id_to_videos.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/video.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -235,6 +480,8 @@
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/videos/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/video.rb" />
       </list>
     </option>
   </component>
@@ -882,18 +1129,18 @@
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
       <workItem from="1493858550588" duration="30772000" />
-      <workItem from="1493960050459" duration="7824000" />
+      <workItem from="1493960050459" duration="8466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174625000" />
+    <option name="totallyTimeSpent" value="175267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1118,14 +1365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1157,14 +1396,6 @@
           <folding>
             <marker date="1493970012000" expanded="true" signature="6919:6926" ph="do ... end" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,14 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/new.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1342,6 +1565,30 @@
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/new.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
