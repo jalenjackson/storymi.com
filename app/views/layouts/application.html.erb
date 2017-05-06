@@ -16,6 +16,28 @@
           background: none;
           color:black !important;
         }
+
+        .log{
+          width:40px;
+          height:40px;
+        }
+        .nav-item{
+          transform:translateY(3px) !important;
+          font-family: Helvetica,sans-serif;
+          font-weight: 300 !important;
+          cursor: pointer;
+          color:grey !important;
+        }
+
+        .tele:hover{
+          background: white !important;
+          color:grey !important;
+        }
+
+        nav li:hover {
+          color:black !important;
+        }
+
     </style>
     <title>TellAFiction</title>
 
@@ -92,47 +114,50 @@
     <% end %>
 
   </div>
-  <nav class=" navigation-bar  is-visible" data-nav-status="toggle">
+  <nav style="box-shadow: 0 8px 6px -6px #999;background: white;" class=" navigation-bar  is-visible" data-nav-status="toggle">
     <ul>
 
-      <li><a class="brand" style="font-size:30px; font-weight:lighter;  font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
+      <li><%= image_tag 'log.png' , class: 'log'%></li>
+
+
+      <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px; font-weight:lighter; font-weight: bold; color:grey; font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
 
       <div style="" class="mobile-brand">
-        <h1 style="float:left;position: absolute;top:0;left:0;">TellAFiction</h1>
+        <h1 style="float:left;position: absolute;top:0px;left:0;">TellAFiction</h1>
         <h1><i class="fa fa-bars" aria-hidden="true"></i></h1>
       </div>
 
 
-      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go1 ">Message Stories</li>
-      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go2 ">Stories</li>
-      <li style="cursor: pointer; animation-iteration-count: infinite; animation-duration: 200ms;" class="category-go3 ">Videos</li>
-      <li style="cursor: pointer;" class="category-go">Categories</li>
+      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change ">Message Stories</li>
+      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change ">Stories</li>
+      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go3 mobile-change ">Videos</li>
+      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change">Categories</li>
 
       <% if user_signed_in? %>
-      <li ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
+      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
       <% else %>
-          <li ><%= link_to 'New Story', '/users/sign_up', class:'nav-item' %></li>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/users/sign_up', class:'nav-item' %></li>
       <% end %>
 
       <% if user_signed_in? %>
-      <%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; " ><%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %></li>
       <% else %>
-          <%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; "><%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %></li>
 
     <% end %>
 
 
       <% if user_signed_in? %>
-      <li ><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
-      <li><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></li>
+      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
+      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></li>
 
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></li>
           <li style="float: right; "><h1  class="story-name"> </h1></li>
 
     </ul>
       <% else %>
-          <li><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item'%></li>
-          <li><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item'  %></li>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item'%></li>
+          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item'  %></li>
 
     <% end %>
 

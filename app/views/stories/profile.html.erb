@@ -97,7 +97,9 @@
 
       <% end %>
 
-              <figure>
+
+
+              <figure class="figure-art">
                 <% if story.cover? %>
                 <img src="<%= story.cover.url(:medium) %>">
 
@@ -121,6 +123,11 @@
                 <% end %>
                     <% end %>
                 <% end %>
+
+
+
+
+
 
                     <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 

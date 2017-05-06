@@ -71,7 +71,6 @@ overflow-x: hidden;
 body,html{
 
   font-family: "Helvetica Neue";
-  font-weight: normal;
     height: 100%;
     width:100%;
 }
@@ -185,16 +184,6 @@ section div {
 }
 
 
-nav:after {
-  content: '';
-  position: absolute;
-  top: 90%;
-  left: 0;
-  right: 0;
-  background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
-  background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
-  height: 5px;
-}
 
 
 .ajs-content {
@@ -254,7 +243,33 @@ nav:after {
     left: 0px;
     content: "";
 }
+@media (max-width: 630px) {
 
+  nav{
+    height:70px !important;
+  }
+
+  nav li a {
+    display: none !important;
+  }
+}
+
+@media (max-width: 490px) {
+
+  .log{
+    display: none;
+  }
+
+  .mobile-change{
+    margin-left: -10px;
+    transform:translateX(-25px) !important;
+  }
+
+  nav{
+    height:50px !important;
+  }
+
+}
 
 @media only screen
 and (min-device-width: 320px)
@@ -266,6 +281,12 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     pading:0;
     cursor: pointer !important;
 
+  }
+
+  .videos-content{
+    background:black !important;
+    color:white !important;
+    margin-top:50px;
   }
 
   .form-div {
