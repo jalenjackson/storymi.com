@@ -94,6 +94,13 @@
           <%= f.file_field :image1 %>
           <%= f.text_field :message1, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
       <% end %>
+
+      <% if @message.popup? %>
+         <%= f.file_field :popup %>
+          <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+      <% end %>
+
+
       <%= f.submit %>
 
       <% end %>
@@ -113,4 +120,7 @@
   $(":file").filestyle({
       input: false
   })
+  $("label[for='message_popup'] > span:eq(1) ").html("Scary Popup image ");
+  $("label[for='message_mp3'] > span:eq(1) ").html("Add an mp3 to really scare the reader");
+
 </script>

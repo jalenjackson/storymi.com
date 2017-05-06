@@ -19,6 +19,40 @@
       background-size: 100% 100%;
     }
 
+  .scarypopup{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0%;
+    height:0%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    z-index: 999999999999999999999999999;
+    animation: popup 300ms ease-in-out 5;
+  }
+
+  @keyframes popup {
+    0%{
+      width:100%;
+      height:100%;
+    }
+    100%{
+      width:100%;
+      height:100%;
+    }
+  }
+
+  .popup-img {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
 
   @media only screen
   and (min-device-width: 320px)
@@ -80,6 +114,20 @@
 </div>
 <div class = "scroller">
 <% @messages.each_with_index do |message, i| %>
+      <div class="audio-popup">
+      <% if message.mp3.present? %>
+          <audio  class="audio d<%= i %>">
+            <source  src="<%=  message.mp3 %>" type="audio/ogg">
+            <source  src="<%=  message.mp3 %>" type="audio/mpeg">
+            <source  src="<%=  message.mp3 %>" type="audio/mpeg">
+          </audio>
+          <% end %>
+      </div>
+      <% if message.popup.present? %>
+      <div class="scarypopup popup<%= i %>">
+        <%= image_tag message.popup.url(:large), class: 'popup-img' %>
+      </div>
+          <% end %>
 <div class="message-container">
 <% if message.message1? || message.image? %>
   <div style="margin-top:5px;"  class="animated from-them message1 texter<%= i %>">
@@ -116,9 +164,12 @@
 
 <script>
 
+  $(".audio-popup").hide();
+  $(".scarypopup").hide();
   $(".message1").hide();
   $(".message2").hide();
   $(".upnextbtn").hide();
+
 
   console.log($(".message1-container").children());
   console.log($(".message2-container").children());
@@ -130,6 +181,9 @@
   $(document).click(function(){
       $(".texter" + i).fadeIn("slow").addClass("fadeIn");
       $(".reciever" + i).fadeIn("slow").addClass("fadeIn");
+      $(".popup" + i).show();
+      $(".d" + i).trigger('play');
+
       console.log(i);
 
       if(i >= all){

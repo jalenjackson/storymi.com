@@ -165,7 +165,7 @@
     .link-to{
       position: fixed;
       top: 50%;
-      left: 42%;
+      left: 44%;
       font-size:35px;
       color:white !important;
       background:black;
@@ -196,10 +196,48 @@
     }
 
 
+    .scarypopup{
+      width:50%;
+      height:auto;
+      position: relative;
+      border: 25px solid lavender;
+      max-height:200px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      border-radius: 2em;
+
+    }
+
+    .popup-img{
+      width: 100%;
+      max-height:200px;
+
+    }
+
+    .popup-message{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+      background:rgba(0,0,0,0.4);
+    }
+
+    .view-btn{
+      font-size: 15px !important;
+      transform: translateX(-50px);
+    }
+
+
+
+
 
 
 
 </style>
+
+
 
 <% if current_user.id == @story.user.id %>
 
@@ -224,6 +262,26 @@
 <div data-behavior="messages" class = "scroller">
   <% @messages.each_with_index do |message, i| %>
 
+      <% if message.mp3? %>
+      <audio style="margin-left:20px !important;" controls>
+        <source src="<%=  message.mp3 %>" type="audio/ogg">
+        <source src="<%=  message.mp3 %>" type="audio/mpeg">
+        <source src="<%=  message.mp3 %>" type="audio/mpeg">
+
+      </audio>
+
+          <% end %>
+      <% if message.popup.present? %>
+      <div class="scarypopup">
+        <%= image_tag message.popup.url(:large), class: 'popup-img' %>
+        <div class="popup-message">
+          <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
+
+        <h1 style="color:white; font-weight: lighter; font-family: Helvetica; font-size: 20px;  text-align: center; margin-top:40px;">Scary Popup Click here to add sound</h1>
+<% end %>
+        </div>
+      </div>
+          <% end %>
       <div class="message-container">
       <% if message.message1? || message.image?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
@@ -273,6 +331,7 @@
   <% end %>
 
 
+
   <footer class="site-footer">
     <a class="edit-story" style="background:black;" href= "/stories/<%= @story.id %>/edit"><h1 class="edit-story-details" style="position: fixed; color:white; top:78%;left:5%;cursor:pointer; z-index:999;font-size:15px;background:black;">Edit Story Details</h1></a>
 
@@ -281,7 +340,7 @@
     <% if !@story.ispublished? %>
 
   <%= link_to  publish_story_path(@story), class:'link-to',  :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
-      <h1>Publish</h1>
+      <h1 style="font-size:14px !important;">Publish</h1>
 
     <% end %>
 
@@ -310,6 +369,9 @@
       <%= f.file_field :image, class:'img1' %>
 
       <%= f.file_field :image2 %>
+
+    <%= f.file_field :popup %>
+
     <%= f.button "Send message" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
     <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
 
@@ -328,7 +390,9 @@
         buttonText: ""
     });
 
-  $("#message_image").change(function(){
+
+
+    $("#message_image").change(function(){
 
       if( $("#message_image").val().length > 0){
           $("label[for='message_image2']").css({
@@ -352,6 +416,50 @@
       }
   });
 
+
+    $("#message_popup").change(function(){
+
+        if( $("#message_popup").val().length > 0){
+            $("label[for='message_image2']").css({
+                "pointer-events": "none",
+                "opacity" : "0.3"
+            });
+            $("#message_message2").css({
+                "pointer-events":"none",
+                "opacity": "0.3"
+            });
+            $("label[for='message_image']").css({
+                "pointer-events": "none",
+                "opacity" : "0.3"
+            });
+            $("#message_message1").css({
+                "pointer-events":"none",
+                "opacity": "0.3"
+            });
+        }
+        else if($("#message_popup").val().length == 0 ) {
+            $("label[for='message_image2']").css({
+                "pointer-events": "auto",
+                "opacity" : "1"
+            });
+            $("#message_message2").css({
+                "pointer-events":"auto",
+                "opacity": "1"
+            });
+            $("label[for='message_image']").css({
+                "pointer-events": "auto",
+                "opacity" : "1"
+            });
+            $("#message_message1").css({
+                "pointer-events":"auto",
+                "opacity": "1"
+            });
+        }
+    });
+
+
+
+    $("label[for='message_popup'] > span:eq(1) ").html("Scary Popup");
 
     $("label[for='message_image2'] > span:eq(1) ").html("Image for <%= @story.reciever.titlecase %>");
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505053730) do
+ActiveRecord::Schema.define(version: 20170506040444) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -75,6 +75,14 @@ ActiveRecord::Schema.define(version: 20170505053730) do
     t.string   "image2_content_type"
     t.integer  "image2_file_size"
     t.datetime "image2_updated_at"
+    t.string   "popup_file_name"
+    t.string   "popup_content_type"
+    t.integer  "popup_file_size"
+    t.datetime "popup_updated_at"
+    t.string   "mp3_file_name"
+    t.string   "mp3_content_type"
+    t.integer  "mp3_file_size"
+    t.datetime "mp3_updated_at"
     t.index ["story_id"], name: "index_messages_on_story_id"
   end
 
