@@ -276,7 +276,11 @@
         <%= image_tag message.popup.url(:large), class: 'popup-img' %>
         <div class="popup-message">
           <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
+              <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
 
+              <h1 style="color:White;"> X</h1>
+
+                  <% end %>
         <h1 style="color:white; font-weight: lighter; font-family: Helvetica; font-size: 20px;  text-align: center; margin-top:40px;">Scary Popup Click here to add sound</h1>
 <% end %>
         </div>
