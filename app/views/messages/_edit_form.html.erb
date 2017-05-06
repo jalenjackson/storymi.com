@@ -66,34 +66,46 @@
                 <%= f.text_field :message1, maxlength: 120,  placeholder: "what will " + @story.texter.titleize + " say?" %>
                 <i>Add image</i>
                 <%= f.file_field :image %>
-            <% end %>
+                <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
+          <% end %>
             <% if @message.message2? && !@message.image2? %>
                 <%= f.text_field :message2, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
                 <i>Add image</i>
                 <%= f.file_field :image2 %>
-            <% end %>
+                <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
+          <% end %>
             <% if @message.image? && @message.message1? %>
                 <i>Add an image to this text</i>
                 <%= f.file_field :image %>
-            <% end %>
+                <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
+          <% end %>
 
             <% if @message.image2? && @message.message2? %>
             <i>Change image</i>
             <%= f.file_field :image2 %>
-  <% end %>
+                <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
+          <% end %>
           </div>
 
       <% if @message.image2? && !@message.message2?  %>
           <i>Change image</i>
           <%= f.file_field :image2 %>
           <%= f.text_field :message2, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
+          <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
 <% end %>
 
       <% if @message.image? && !@message.message1? %>
           <i>Change image</i>
           <%= f.file_field :image1 %>
           <%= f.text_field :message1, maxlength: 120, placeholder: "What will " + @story.reciever.titleize + " say?" %>
-      <% end %>
+          <%= f.file_field :mp3 %><i>audio files will play completly through choose a sound that is very fast and fits the purpose of the popup  </i>
+
+<% end %>
 
       <% if @message.popup? %>
          <%= f.file_field :popup %>

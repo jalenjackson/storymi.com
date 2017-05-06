@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_edit_form.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/_edit_form.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -31,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="335">
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170506040444_add_attachment_mp3_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170506040444_add_attachment_mp3_to_messages.rb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1806">
+              <caret line="338" column="33" lean-forward="false" selection-start-line="338" selection-start-column="33" selection-end-line="338" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -109,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_edit_form.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_edit_form.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/messages/_edit_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="99" column="149" lean-forward="false" selection-start-line="99" selection-start-column="149" selection-end-line="99" selection-end-column="149" />
+            <state relative-caret-position="390">
+              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,9 +222,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/views/messages/_edit_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/messages/_edit_form.html.erb" />
       </list>
     </option>
   </component>
@@ -886,12 +886,12 @@
       <workItem from="1493646813618" duration="11040000" />
       <workItem from="1493710255381" duration="14499000" />
       <workItem from="1493858550588" duration="30772000" />
-      <workItem from="1493960050459" duration="29461000" />
+      <workItem from="1493960050459" duration="29699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196262000" />
+    <option name="totallyTimeSpent" value="196500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1166,16 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="338" column="33" lean-forward="false" selection-start-line="338" selection-start-column="33" selection-end-line="338" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#fieldset#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
@@ -1356,22 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/_edit_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="99" column="149" lean-forward="false" selection-start-line="99" selection-start-column="149" selection-end-line="99" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1281">
@@ -1393,6 +1367,30 @@
             <marker date="1494050086000" expanded="true" signature="14169:14223" ph="..." />
             <marker date="1494050086000" expanded="true" signature="14318:14374" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1806">
+          <caret line="338" column="33" lean-forward="false" selection-start-line="338" selection-start-column="33" selection-end-line="338" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/_edit_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
