@@ -111,9 +111,14 @@
         <div  class="overlay">
 
           <a href = "/stories/<%= story.id %>/view">
-            <div class="overlay">
+            <div
+                <% if i == 0 %>
+            style="border: 3px solid #d4af37;"
+
+            <% end %>
+            class="overlay">
 <% if i == 0 %>
-              <img style="width:50px;height:50px; margin-left:42%; margin-top:5px;" src = "/assets/badge-simple-flat.png">
+              <img style="width:50px;height:50px; margin-left:42%; margin-top:5px;  " src = "/assets/badge-simple-flat.png">
             <% end %>
                   </div>
           </a>
