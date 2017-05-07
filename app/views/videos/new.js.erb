@@ -4,6 +4,7 @@ if ($('#new_video').modal('show')){
         Dropzone.autoDiscover = false;
         Dropzone.options.myDropzone = {
             autoProcessQueue: false,
+            maxFilesize: 2000,
             acceptedFiles: ".mp4,.mov,.wmv,.flv,.avi",
             init: function() {
                 setTimeout(function(){
