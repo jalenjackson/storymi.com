@@ -209,6 +209,18 @@
 
     }
 
+    .choices-container{
+    width:50%;
+    height:auto;
+    position: relative;
+    border: 25px solid lavender;
+    max-height:200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 2em;
+    }
+
     .popup-img{
       width: 100%;
       max-height:200px;
@@ -224,6 +236,7 @@
       background:rgba(0,0,0,0.4);
     }
 
+
     .view-btn{
       font-size: 15px !important;
       transform: translateX(-50px);
@@ -235,6 +248,27 @@
       margin-left:10px;
     }
 
+    .choice-modal{
+      width: 75%;
+      position: fixed;
+      left: 50%;
+      margin-left: -37.5%;
+      background:red;
+      top:25%;
+      height: 400px;
+    }
+
+    .choice1{
+      background:red;
+      font-size:27px;
+      color:white;
+    }
+
+    .choice2{
+      color:white;
+      font-size:27px;
+      background:blue;
+    }
 
 
 
@@ -276,7 +310,11 @@
 
       </audio>
 
-          <% end %>
+
+
+
+
+<% end %>
       <% if message.popup.present? %>
       <div class="scarypopup">
         <%= image_tag message.popup.url(:large), class: 'popup-img' %>
@@ -287,10 +325,32 @@
 <% end %>
           <%= link_to "X"  , story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } , class:'x' %>
 
-
         </div>
       </div>
           <% end %>
+
+
+      <% if message.choice1.present? %>
+          <div class="choices-container">
+            <%= link_to  story_message_path(@story, message) , method: :delete, data: { confirm: 'Are you sure you want to delete?' } do %>
+                <i style=" cursor: pointer;color:red; font-size:27px;" class="fa fa-times" aria-hidden="true"></i>
+                <% end %>
+            <div class="choice1">
+              <%= message.choice1 %>
+            </div>
+            <div class="choice2">
+              <%= message.choice2 %>
+            </div>
+            <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/left",  :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
+                  <button class="left">Left</button>
+                <% end %>
+                <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/right",   :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".link-to").fadeOut("slow");' do %>
+                  <button class="right">Right</button>
+                <% end %>
+          </div>
+      <% end %>
+
+
       <div class="message-container">
       <% if message.message1? || message.image?  %>
             <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
@@ -381,6 +441,21 @@
 
     <%= f.file_field :popup %>
 
+    <div class="choice-modal">
+      <i>Choice 1 </i>
+      <%= f.text_field :choice1 %>
+      <i>Choice 2 </i>
+      <%= f.text_field :choice2 %>
+
+      <%= f.file_field :choice_image %>
+
+
+      <%= f.button "Set it up" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
+
+    </div>
+
+    <button type="button" class="choice-btn">Trigger Modal</button>
+
     <%= f.button "Send message" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
     <button type="button" class="view-btn" style="background: white; border:none; font-size:30px; cursor: pointer; border-radius: .5em;">Preview</button>
 
@@ -393,6 +468,37 @@
 <% end %>
 
 <script>
+
+
+  $(".choice-modal").hide();
+
+  $(".choice-btn").click(function(){
+      $(".choice-modal").fadeIn("slow");
+  });
+
+
+  $(".left").click(function(){
+     $(".choices-container").css({
+         "pointer-events":"none",
+     });
+      $(".right").css({
+          "pointer-events":"none",
+          "opacity": "0"
+      });
+  });
+
+  $(".right").click(function(){
+      $(".choices-container").css({
+          "pointer-events":"none",
+      });
+      $(".left").css({
+          "pointer-events":"none",
+          "opacity": "0"
+      });
+  });
+
+
+
 
     $(":file").filestyle({
         input: false,

@@ -22,6 +22,8 @@ class StoriesController < ApplicationController
     @story.ispublished = true
     @story.save
   end
+
+
   # GET /stories/new
   def new
     @story = Story.new

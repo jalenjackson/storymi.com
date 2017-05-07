@@ -28,7 +28,12 @@ Rails.application.routes.draw do
     member do
       put :publish
     end
-    resources :messages
+    resources :messages do
+      member do
+        put :left , to: 'messages#left'
+        put :right , to: 'messages#right'
+      end
+    end
   end
       root :to => 'stories#index'
 

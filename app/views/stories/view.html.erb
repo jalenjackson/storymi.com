@@ -96,7 +96,43 @@
       font-weight: lighter !important;
     }
 
+  .choices-container{
+    width:50%;
+    height:50%;
+    position: fixed;
+    background:Red;
+  }
 
+    .choice-img{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:green;
+      z-index: 9999999999999999999999;
+    }
+    .gone {
+      animation: gone 50ms ease-in-out forwards 1 3s;
+    }
+    
+    @keyframes gone {
+      0%{
+        opacity:1;
+
+      }
+      100%{
+        opacity:0;
+      }
+    }
+
+    .choice-bg{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+    }
 
 
 
@@ -138,6 +174,45 @@
   </div>
 <% end %>
 
+  <div class="choice-img img<%= i %>">
+    <%= image_tag message.choice_image.url(:large), class:'choice-bg' %></div>
+
+  <% if message.choice1.present? %>
+      <div class="choices-container mmm choices<%= i %>">
+
+
+
+          <div style="width:100%; height: 100px;"
+               <% if message.left? %>
+               onclick="$('.img' + <%= i %>).show().addClass('gone');
+               setTimeout(function(){
+                   window.location.href = '/stories/<%= @story.id %>/view'
+                   },2000);
+               "
+               <% else %>
+          onclick="$('.choices-container').hide();"
+
+          <% end %>
+               class="choice1 left<%= i %>">
+            <%= message.choice1  %>
+        </div>
+
+            <div style="width:100%; height:100px;"
+                 <% if message.right? %>
+                 onclick="$('.choice-img').show().addClass('gone');
+                     setTimeout(function(){
+                         window.location.href = '/stories/<%= @story.id %>/view'
+                         },2000);
+                 "
+                 <% else %>
+            onclick="$('.choices-container').hide();"
+                  <% end %>
+                 class="choice1 left<%= i %>">
+              <%= message.choice2 %>
+            </div>
+      </div>
+  <% end %>
+
 <div class="clear"></div>
 
 <% if message.message2? || message.image2? %>
@@ -153,11 +228,11 @@
 <div class="clear"></div>
 
 
+
 </section>
       </div>
 
 <% end %>
-
 
 
 
@@ -169,6 +244,12 @@
   $(".message1").hide();
   $(".message2").hide();
   $(".upnextbtn").hide();
+  $(".mmm").hide();
+  $(".choice-img").hide();
+
+  function showImage(){
+      $(".choice-img").show();
+  }
 
 
   console.log($(".message1-container").children());
@@ -178,11 +259,13 @@
   var scrolled=0;
   $(".texter0").show();
 
+
   $(document).click(function(){
       $(".texter" + i).fadeIn("slow").addClass("fadeIn");
       $(".reciever" + i).fadeIn("slow").addClass("fadeIn");
       $(".popup" + i).show();
       $(".d" + i).trigger('play');
+      $(".choices" + i).show();
 
       console.log(i);
 

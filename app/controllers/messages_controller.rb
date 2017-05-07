@@ -34,6 +34,19 @@ class MessagesController < ApplicationController
     end
   end
 
+  def left
+    @message = Message.find(params[:id])
+    @message.left = true
+    @message.save
+  end
+
+
+  def right
+    @message = Message.find(params[:id])
+    @message.right = true
+    @message.save
+  end
+
   private
 
   def set_story
@@ -41,6 +54,6 @@ class MessagesController < ApplicationController
   end
 
   def message_params
-    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3 )
+    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3, :choice1, :choice2, :choice_image )
   end
 end
