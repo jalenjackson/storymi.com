@@ -239,7 +239,13 @@
 
 
                 <figure>
+                  <% if story.image? %>
+                      <img src="<%= story.image.url(:medium) %>">
+
+                <% else %>
                   <img src="<%= story.mp4.url(:thumb) %>">
+
+                      <% end %>
 
 
 
