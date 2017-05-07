@@ -94,6 +94,8 @@
 </style>
 <h1 style="text-align: center; color:black; margin-top:50px; font-size:20px !important;  font-weight:lighter;">Message Stories</h1>
 
+
+
 <div style="margin-top:30px; word-break: break-all;"  id="columns">
   <% @stories.each_with_index do |story, i| %>
 
@@ -106,7 +108,11 @@
         <%= image_tag 'black.jpg' %>
 
         <% end %>
-        <div class="overlay">
+        <div
+            <% if i == 0 %>
+        style="background:rgba(255,223,0,0.5) !important;"
+            <% end %>
+        class="overlay">
 
           <a href = "/stories/<%= story.id %>/view">
             <div class="overlay">
