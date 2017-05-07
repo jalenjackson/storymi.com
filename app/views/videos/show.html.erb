@@ -39,7 +39,7 @@
 
       <div class="container">
 
-      <span style = "font-size:25px; "><img style = "width:50px;height:50px;"src = "https://images.vexels.com/media/users/3/135899/isolated/preview/9d55a1dc7fbba0b7e8873e21b7135626-eye-icon-by-vexels.png"><span style = "font-weight:bold;font-style:italic; color:black !important;"><%= @video.impressionist_count(:filter=>:session_hash) %></span></span>
+      <span style = "font-size:25px; "><img style = "width:50px;height:50px;"src = "https://images.vexels.com/media/users/3/135899/isolated/preview/9d55a1dc7fbba0b7e8873e21b7135626-eye-icon-by-vexels.png"><span style = "font-weight:bold;font-style:italic; color:black !important;"><%= @video.impressionist_count %></span></span>
 
 
       <span style = "margin-left:0px; font-size:25px; margin-top:15px;"><%= link_to  like_video_path(@video),class: "like like-btn", method: :put, remote: :true do %>
