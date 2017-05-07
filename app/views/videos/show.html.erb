@@ -56,6 +56,7 @@
         <% if user_signed_in? %>
             <% if current_user.id == @video.user.id %>
           <p style="color:grey;"><a href ="/videos/<%= @video.id %>/edit">Edit</a></p>
+                <i  style="font-size:15px;">Change your thumbnail image and details of your video by clicking the edit button above</>
         <% end %>
                     <% end %>
 

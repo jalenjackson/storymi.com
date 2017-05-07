@@ -84,7 +84,11 @@
 
     <div style = "animation-delay: <%= i * 0.05 %>s" class="border col-md-3 animated fadeInUp">
       <% if video.mp4.present? %>
-        <%= link_to (image_tag video.mp4.url(:thumb), class:"videos-images img-responsive"), video_path(video) %>
+          <% if video.image? %>
+              <%= link_to (image_tag video.image.url(:medium), class:"videos-images img-responsive"), video_path(video) %>
+            <% else %>
+              <%= link_to (image_tag video.mp4.url(:thumb), class:"videos-images img-responsive"), video_path(video) %>
+          <% end %>
       <% end %>
           <p class = "videos-owner">
         <%= video.user.firstname + " " + video.user.lastname %>

@@ -1,15 +1,28 @@
+<style>
+  #video_title {
+    width:100%;
+    height:40px;
+    border: 2px solid black;
+  }
+</style>
+
 <%= simple_form_for(@video,html:{multipart:true, class:'dropzone', id:'my-dropzone'}) do |f| %>
     <%= f.error_notification %>
 
     <div class = "dz-message needsclick">
       <h3>Drop files here</h3>
       <strong>Click</strong> to upload
-    </div>
+    </div><br>
 
 
     <div class="fallback">
       <%= f.input :mp4 %>
       <%= f.submit "Upload Video" %>
+    </div>
+
+    <div>
+      <i>Add a custom thumbnail image</i>
+      <%= f.file_field :image %>
     </div>
 
 
@@ -23,8 +36,16 @@
       </div>
 
       <div class = "form-field">
-        <%= f.submit "submit", class:'submit' %>
+        <%= f.button :submit , class: " btn-success ", data: {disable_with: "Updating..."} %>
       </div>
     </div>
 
 <% end %>
+
+<script>
+
+    $(":file").filestyle({
+        input: false,
+        buttonText: ""
+    });
+</script>

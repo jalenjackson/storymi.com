@@ -10,5 +10,10 @@ class Video < ApplicationRecord
                     :styles => {:thumb => ["400x400#", :jpg]}
   validates_attachment_content_type :mp4, content_type: /\Avideo/
 
+  has_attached_file :image, styles: { medium: "400x400>" }, default_url: "/images/:style/missing.png"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+
+
+
 
 end

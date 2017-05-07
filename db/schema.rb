@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170507084723) do
+ActiveRecord::Schema.define(version: 20170507085742) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -164,6 +164,10 @@ ActiveRecord::Schema.define(version: 20170507084723) do
     t.float    "cached_weighted_average", default: 0.0
     t.integer  "user_id"
     t.integer  "impressions_count",       default: 0
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["cached_votes_down"], name: "index_videos_on_cached_votes_down"
     t.index ["cached_votes_score"], name: "index_videos_on_cached_votes_score"
     t.index ["cached_votes_total"], name: "index_videos_on_cached_votes_total"
