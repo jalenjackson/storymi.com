@@ -83,6 +83,10 @@
     }
   }
 
+  .godown {
+    animation: godown 1s ease-in-out forwards 1;
+  }
+
 
 
 
@@ -94,7 +98,7 @@
   <% @stories.each_with_index do |story, i| %>
 
       <% if story.ispublished? %>
-  <figure style="animation-delay: <%= i * 0.05 %>s;" class="animated fadeInDown">
+  <figure style="animation-delay: <%= i * 0.05 %>s;" class="animated">
     <% if story.cover? %>
     <img src="<%= story.cover.url(:medium) %>">
         <% else %>
