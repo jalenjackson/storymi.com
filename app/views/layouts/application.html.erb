@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %></title>
-    <meta name="Description" CONTENT="Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more. Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction. Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today!">
-    <link rel="shortcut icon" href="/assets/log.png" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -40,9 +37,15 @@
         nav li:hover {
           color:black !important;
         }
+        
+        .li-name{
+          display: none;
+        }
 
     </style>
-
+    <title><%= yield(:title) %></title>
+    <meta name="Description" CONTENT="Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more. Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction. Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today!">
+    <link rel="shortcut icon" href="/assets/log.png" />
 
 
     <%= csrf_meta_tags %>
@@ -104,7 +107,7 @@
         <h1><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></h1>
 
         <h1><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></h1>
-        <h1 style="float: right; "><h1  class="story-name"> </h1></h1>
+        <h1  class="story-name"> </h1>
 
         </ul>
     <% else %>
@@ -152,7 +155,6 @@
       <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></li>
 
           <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></li>
-          <li style="float: right; "><h1  class="story-name"> </h1></li>
 
     </ul>
       <% else %>
@@ -161,6 +163,7 @@
 
     <% end %>
 
+      <h1 style="float: right;" class="story-name li-name"> </h1>
 
       </nav>
 
@@ -207,6 +210,7 @@
         window.location.href = "/videos";
 
     });
+
 
     $(".category-overlay").hide();
     $(".category-go, .cat-link2").click(function(){
