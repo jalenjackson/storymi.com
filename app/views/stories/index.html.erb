@@ -108,16 +108,14 @@
         <%= image_tag 'black.jpg' %>
 
         <% end %>
-        <div
-            <% if i == 0 %>
-        style="background:rgba(255,223,0,0.5) !important;"
-            <% end %>
-        class="overlay">
+        <div  class="overlay">
 
           <a href = "/stories/<%= story.id %>/view">
             <div class="overlay">
-
-            </div>
+<% if i == 0 %>
+              <img style="width:50px;height:50px; margin-left:42%; margin-top:5px;" src = "/assets/badge-simple-flat.png">
+            <% end %>
+                  </div>
           </a>
 
 
