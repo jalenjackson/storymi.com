@@ -1,18 +1,18 @@
 <style>
-  #video_title {
+  #video_title{
     width:100%;
     height:40px;
-    border: 2px solid black;
+    border: solid 2px black;
   }
-</style>
 
+</style>
 <%= simple_form_for(@video,html:{multipart:true, class:'dropzone', id:'my-dropzone'}) do |f| %>
     <%= f.error_notification %>
 
     <div class = "dz-message needsclick">
       <h3>Drop files here</h3>
       <strong>Click</strong> to upload
-    </div><br>
+    </div>
 
 
     <div class="fallback">
@@ -21,8 +21,8 @@
     </div>
 
     <div>
-      <i>Add a custom thumbnail image</i>
-      <%= f.file_field :image %>
+      <i>Change thumbnail image with a custom image </i>
+      <%= f.input :image %>
     </div>
 
 
@@ -36,11 +36,13 @@
       </div>
 
       <div class = "form-field">
-        <%= f.button :submit , class: " btn-success ", data: {disable_with: "Updating..."} %>
+        <%= f.button :submit , class: " btn-success submit ", data: {disable_with: "Editing..."} %>
+
       </div>
     </div>
 
 <% end %>
+
 
 <script>
 
