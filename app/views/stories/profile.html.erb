@@ -130,7 +130,7 @@
 
                     <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 
-                <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
+                <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1>
 
                 <% if story.category.present? %>
                 <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
@@ -198,7 +198,7 @@
                   <% end %>
                   <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 
-                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1>
+                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1>
 
                   <% if story.category.present? %>
                       <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
@@ -258,7 +258,7 @@
 
 
 
-                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> </h1>
+                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><%= pluralize(story.impressionist_count, "view") %> </h1>
 
 
                   <% if user_signed_in? %>

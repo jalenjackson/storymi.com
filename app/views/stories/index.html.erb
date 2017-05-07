@@ -115,7 +115,7 @@
           </a>
 
 
-          <a href = "/stories/<%= story.id %>"><h1 class="view-count" style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count(:filter=>:session_hash), "view") %> <% end %></h1></a>
+          <a href = "/stories/<%= story.id %>"><h1 class="view-count" style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1></a>
           <h1 class="index-title" style="position: absolute;background:black;top:34px; font-size:25px;left:20px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase ,length:25) %></h1>
 
 

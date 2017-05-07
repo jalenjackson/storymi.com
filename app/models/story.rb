@@ -2,7 +2,8 @@ class Story < ApplicationRecord
   has_many :messages
   belongs_to :category
 
-  is_impressionable
+  is_impressionable counter_cache: true,  :unique => :all
+
 
 
 

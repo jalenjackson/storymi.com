@@ -1,5 +1,5 @@
 class Video < ApplicationRecord
-  is_impressionable
+  is_impressionable counter_cache: true,  :unique => :all
   acts_as_votable
   belongs_to :user
 

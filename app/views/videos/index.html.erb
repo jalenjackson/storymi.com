@@ -90,7 +90,7 @@
         <%= video.user.firstname + " " + video.user.lastname %>
       </p>
       <h1 class = "videos-content-title" ><%= video.title %></h1>
-      <span style="transform:translateY(-10px) !important; font-style: italic; font-weight: bold;"><%= pluralize(video.impressionist_count(:filter=>:session_hash), "view") %></span>
+      <span style="transform:translateY(-10px) !important; font-style: italic; font-weight: bold;"><%= pluralize(video.impressionist_count, "view") %></span>
 
     </div>
     <% end %>

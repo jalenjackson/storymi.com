@@ -5,7 +5,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all.order(:cached_votes_score => :desc).paginate(:page => params[:page], :per_page => 21)
+    @videos = Video.order(impressions_count: :desc).paginate(:page => params[:page], :per_page => 21)
   end
 
   # GET /videos/1

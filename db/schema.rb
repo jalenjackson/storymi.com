@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506040444) do
+ActiveRecord::Schema.define(version: 20170507084723) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.string   "synopsis"
     t.string   "body"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
     t.boolean  "ispublished"
     t.string   "cover_file_name"
     t.string   "cover_content_type"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170506040444) do
     t.datetime "cover_updated_at"
     t.integer  "user_id"
     t.integer  "category_id"
+    t.integer  "impressions_count",  default: 0
     t.index ["category_id"], name: "index_articles_on_category_id"
     t.index ["user_id"], name: "index_articles_on_user_id"
   end
@@ -92,8 +93,8 @@ ActiveRecord::Schema.define(version: 20170506040444) do
     t.string   "texter"
     t.string   "reciever"
     t.integer  "count"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -109,6 +110,7 @@ ActiveRecord::Schema.define(version: 20170506040444) do
     t.integer  "user_id"
     t.boolean  "ispublished"
     t.integer  "category_id"
+    t.integer  "impressions_count",  default: 0
     t.index ["category_id"], name: "index_stories_on_category_id"
     t.index ["user_id"], name: "index_stories_on_user_id"
   end
@@ -161,6 +163,7 @@ ActiveRecord::Schema.define(version: 20170506040444) do
     t.integer  "cached_weighted_total",   default: 0
     t.float    "cached_weighted_average", default: 0.0
     t.integer  "user_id"
+    t.integer  "impressions_count",       default: 0
     t.index ["cached_votes_down"], name: "index_videos_on_cached_votes_down"
     t.index ["cached_votes_score"], name: "index_videos_on_cached_votes_score"
     t.index ["cached_votes_total"], name: "index_videos_on_cached_votes_total"
