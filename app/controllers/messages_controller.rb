@@ -54,6 +54,6 @@ class MessagesController < ApplicationController
   end
 
   def message_params
-    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3, :choice1, :choice2, :choice_image )
+    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3 )
   end
 end
