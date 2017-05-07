@@ -1,3 +1,4 @@
+<% content_for :title, "TellAFiction - Categories" %>
 
 <style>
 
@@ -104,7 +105,9 @@
   <% @stories.each do |story| %>
       <% if story.category.present? %>
 
-      <% if story.ispublished %>
+
+
+          <% if story.ispublished %>
           <% if story.category.name == "Romance" %>
               <script>
 
