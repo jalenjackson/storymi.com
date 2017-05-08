@@ -290,6 +290,10 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     display: none !important;
   }
 
+  .message-div {
+    display: none !important;
+  }
+
 
 
   .videos-content{
@@ -752,6 +756,8 @@ div#columns small a {
     -webkit-transform: translate(0,0);
     -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
   }
+
+
 
 
 
