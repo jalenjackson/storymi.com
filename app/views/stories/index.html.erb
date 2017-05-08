@@ -87,23 +87,103 @@
   .godown {
     animation: got 1s ease-in-out forwards 1;
   }
+    
+    .message-div{
+      position: relative;
+      width:100%;
+      height:300px;
+      overflow: hidden;
+
+    }
 
 
+  video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  video#bgvid {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+    .story-overlay{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background:rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .story-label-overlay{
+      color:white !important;
+      font-size:65px !important;
+      text-align: center;
+      margin-top:95px;
+      font-weight: 100 !important;
+
+    }
+    .loader{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+      z-index: 999999999999999;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      filter: sepia(75%);
+      background: url(https://s-media-cache-ak0.pinimg.com/originals/5c/e3/c0/5ce3c05aa526c00fd27c1c962b8573f5.gif) center center;
+      background-size: 100% 100%;
 
 
+    }
 
 
 
 </style>
-<h1 style="text-align: center; color:black; margin-top:50px; font-size:20px !important;  font-weight:lighter;">Message Stories</h1>
+
+<div class="loader">
+
+</div>
+
+<div class="message-div">
+
+  <video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="/assets/abc.mp4" type="video/mp4">
+  </video>
+  <div class="story-overlay">
+    <h1 style="animation-delay: 1.3s" class="story-label-overlay animated ">Revolutionizing Story Telling</h1>
+  </div>
+</div>
+  <h1  style="text-align: center; color:black; margin-top:50px; font-size:20px !important;  font-weight:lighter;">Message Stories</h1>
 
 
 
-<div style="margin-top:30px; word-break: break-all;"  id="columns">
+
+<div class="figuration animated " style="margin-top:30px; word-break: break-all;"  id="columns">
   <% @stories.each_with_index do |story, i| %>
 
       <% if story.ispublished? %>
-  <figure style="animation-delay: <%= i * 0.05 %>s" class="animated godown">
+  <figure style="animation-delay: <%= i * 0.05 %>s" class="animated ">
     <% if story.cover? %>
     <img src="<%= story.cover.url(:medium) %>">
         <% else %>
@@ -148,6 +228,21 @@
       <% end %>
 
 </div>
+
+<script>
+
+
+  $("body").css("overflow","hidden");
+
+  $(window).load(function(){
+      $("body").css("overflow","auto");
+      $(".loader").fadeOut("slow");
+     $(".story-label-overlay").addClass("fadeInUp");
+     $(".figuration").addClass("fadeInUp")
+
+  });
+
+</script>
 
 
 <%= will_paginate @stories %>
