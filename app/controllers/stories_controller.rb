@@ -1,6 +1,5 @@
 class StoriesController < ApplicationController
   before_action :set_story, only: [:show, :view, :edit, :update, :destroy]
-  impressionist :action => [:view]
 
   # GET /stories
   # GET /stories.json
@@ -102,6 +101,9 @@ class StoriesController < ApplicationController
   def view
     @messages = @story.messages.order(created_at: :desc).reverse
     @count = Story.count
+    if @story.ispublished
+      impressionist(@story)
+    end
   end
 
   private
