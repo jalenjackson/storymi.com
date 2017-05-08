@@ -135,8 +135,61 @@
       background:black !important;
       color:white !important;
     }
+  .message-div{
+    position: relative;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+  }
+  .loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 999999999999999;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    filter: sepia(75%);
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/5c/e3/c0/5ce3c05aa526c00fd27c1c962b8573f5.gif) center center;
+    background-size: 100% 100%;
+
+
+  }
+  .story-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+
+  .story-label-overlay{
+    color:white !important;
+    font-size:55px !important;
+    text-align: center;
+    margin-top:95px;
+    font-weight: 100 !important;
+
+  }
 
 </style>
+
+<div class="loader">
+
+</div>
+<div class="message-div">
+
+  <video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="/assets/yo.mp4" type="video/mp4">
+  </video>
+  <div class="story-overlay">
+    <h1 style="animation-delay: 1.3s" class="story-label-overlay animated ">Your Only Limited By Your Own Imagination</h1>
+  </div>
+</div>
 <h1 class="article-story" style="text-align: center; color:white; margin-top: 50px; font-size:20px; font-weight:lighter;">Stories</h1>
 
 <div style="margin-top:30px;" id="columns">
@@ -171,5 +224,14 @@
 
 
 </div>
+
+<script>
+    $(window).load(function(){
+        $(".loader").fadeOut("slow");
+        $(".story-label-overlay").addClass("fadeInUp");
+        $(".figuration").addClass("fadeInUp")
+
+    });
+</script>
 
 <%= will_paginate @articles %>
