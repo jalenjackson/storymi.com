@@ -238,7 +238,7 @@
 <div class="container" >
   <h1 style="margin-top:30px;">Story Details</h1>
 
-  <%= form_for @article , class:'form' do |f| %>
+  <%= form_for @article , class:'form', multipart: true do |f| %>
       <% if @article.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
