@@ -155,7 +155,7 @@
     });
 
 
-    $(".story-name").html(" <%= truncate(@article.title,:length => 30) %>  <span class='latt' style='color:grey; font-style:italic;'> <% if @article.ispublished %> <%= pluralize(@article.impressionist_count(:filter=>:session_hash), "view") %> </span> <% end  %>");
+    $(".story-name").html(" <%= truncate(@article.title,:length => 30) %>  <span class='latt' style='color:grey; font-style:italic;'> <% if @article.ispublished %> <%= pluralize(@article.impressionist_count , "view") %> </span> <% end  %>");
     $(".story-name").addClass("animated fadeInUp")
 </script>
 <script id="dsq-count-scr" src="//tellafiction-com.disqus.com/count.js" async></script>

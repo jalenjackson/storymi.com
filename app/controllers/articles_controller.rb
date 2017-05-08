@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
   #include AmazonSignature
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  impressionist :action => [:show]
 
 
   # GET /articles
@@ -13,6 +12,9 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    if @article.ispublished
+      impressionist(@article)
+    end
   end
 
   # GET /articles/new
