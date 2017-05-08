@@ -231,6 +231,11 @@
     .froala{
       padding-bottom:50px;
     }
+    .notice {
+      text-align: center;
+      font-size:20px;
+
+    }
 
 
 </style>
@@ -282,10 +287,8 @@
       </fieldset>
       </div>
 
-      <h1>Speech to text recognition</h1>
 
 
-      <button type="button" onclick="startConverting();"><i class="fa fa-microphone"></i></button>
         <div class="froala" >
           <h1>Make Your Story Engaging</h1>
           <%= f.text_area :body, id: 'result' %>
@@ -386,6 +389,8 @@ setInterval(function(){
     })
     });
 
+  $("nav").hide();
+  $(".notice").html("Start Writing!")
 
 
 
