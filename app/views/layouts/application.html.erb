@@ -21,8 +21,9 @@
           width:40px;
           height:40px;
         }
+
         .nav-item{
-          transform:translateY(3px) !important;
+          transform:translateY(0px) !important;
           font-family: Helvetica,sans-serif;
           font-weight: 300 !important;
           cursor: pointer;
@@ -42,6 +43,42 @@
           display: none;
         }
 
+      .sliding-u-l-r-l {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 3px;
+      }
+      .sliding-u-l-r-l:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        transition: width 0s ease, background .5s ease;
+      }
+      .sliding-u-l-r-l:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background: #0a17ea;
+        transition: width .5s ease;
+      }
+      .sliding-u-l-r-l:hover:before {
+        width: 100%;
+        background: #0a17ea;
+        transition: width .5s ease;
+      }
+      .sliding-u-l-r-l:hover:after {
+        width: 100%;
+        background: transparent;
+        transition: width .5s ease;
+      }
     </style>
     <title><%= yield(:title) %></title>
     <meta name="Description" CONTENT="Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more. Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction. Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today! Fiction, Books, Videos ">
@@ -136,35 +173,35 @@
       </div>
 
 
-      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change ">Message Stories</li>
-      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change ">Free Writers</li>
-      <li  style="transform:translateY(3px);font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go3 mobile-change ">Videos <span style="font-size:10px; color:purple; ">New <i class="fa fa-gift" aria-hidden="true"></i></span></li>
-      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change">Categories</li>
+      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change ">Message Stories</li>
+      <li class="sliding-u-l-r-l"  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change ">Free Writers</li>
+      <li class="sliding-u-l-r-l"  style="transform:translateY(3px);font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go3 mobile-change ">Videos <span style="font-size:10px; color:purple; ">New <i class="fa fa-gift" aria-hidden="true"></i></span></li>
+      <li class="sliding-u-l-r-l"  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change">Categories</li>
 
       <% if user_signed_in? %>
-      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/story/new', class:'nav-item' %></li>
+      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/story/new', class:'nav-item ' %></li>
       <% else %>
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/users/sign_up', class:'nav-item' %></li>
+          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/users/sign_up', class:'nav-item ' %></li>
       <% end %>
 
       <% if user_signed_in? %>
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; " ><%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %></li>
+          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; " ><%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %></li>
       <% else %>
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; "><%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %></li>
+          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; "><%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %></li>
 
     <% end %>
 
 
       <% if user_signed_in? %>
-      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
-      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></li>
+      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
+      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item ' %></li>
 
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></li>
+          <li class="sliding-u-l-r-l"style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item '%></li>
 
     </ul>
       <% else %>
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item'%></li>
-          <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item'  %></li>
+          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px)', class: 'nav-item '%></li>
+          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px)', class: 'nav-item '  %></li>
 
     <% end %>
 
