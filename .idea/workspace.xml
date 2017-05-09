@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/view.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/view.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="416" column="4" lean-forward="false" selection-start-line="416" selection-start-column="4" selection-end-line="416" selection-end-column="4" />
+            <state relative-caret-position="216">
+              <caret line="533" column="32" lean-forward="false" selection-start-line="533" selection-start-column="32" selection-end-line="533" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -131,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>impre</find>
       <find>cover</find>
       <find>story-name</find>
       <find>for</find>
@@ -161,6 +160,7 @@
       <find>media</find>
       <find>message-bi</find>
       <find>:</find>
+      <find>red</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -612,7 +612,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250433000" />
+    <option name="totallyTimeSpent" value="250620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1033,8 +1033,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="416" column="4" lean-forward="false" selection-start-line="416" selection-start-column="4" selection-end-line="416" selection-end-column="4" />
+        <state relative-caret-position="216">
+          <caret line="533" column="32" lean-forward="false" selection-start-line="533" selection-start-column="32" selection-end-line="533" selection-end-column="32" />
           <folding />
         </state>
       </provider>
