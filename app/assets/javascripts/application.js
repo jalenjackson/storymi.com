@@ -18,6 +18,7 @@
 //= require bootstrap-modal
 //= require dropzone
 
+
 //= require plugins/align.min.js
 //= require plugins/char_counter.min.js
 //= require plugins/code_beautifier.min.js
