@@ -156,6 +156,46 @@
 
     }
 
+    .messages-overlay{
+      position: absolute;
+      top:170%;
+      left:0;
+      width:100%;
+      height:30%;
+      background: linear-gradient(rgba(0,0,0,0.1), rgb(20,20,20));
+      transition: all 500ms ease-in-out;
+    }
+
+    figure{
+      overflow: hidden !important;
+    }
+    
+    figure:hover .messages-overlay {
+      top:70%;
+      left:0;
+    }
+
+    .imgimg{
+      min-width:100% !important;
+      min-height: 250px !important;
+      height: auto !important;
+    }
+    figure{
+      min-width: 100% !important;
+    }
+
+    .mes-title{
+      color:white !important;
+      font-size:17px;
+      float: left;
+    }
+    .mes-des{
+      font-size:15px;
+      color:white;
+      float: left;
+      margin-left: 30px;
+    }
+
 
 
 </style>
@@ -185,13 +225,16 @@
       <% if story.ispublished? %>
   <figure style="animation-delay: <%= i * 0.05 %>s" class="animated ">
     <% if story.cover? %>
-    <img src="<%= story.cover.url(:medium) %>">
+    <img class="imgimg" src="<%= story.cover.url(:medium) %>">
         <% else %>
 
         <%= image_tag 'black.jpg' %>
 
         <% end %>
         <div  class="overlay">
+          <div class="messages-overlay">
+            <h1 class="mes-des"><%= story.synopsis %></h1>
+          </div>
 
           <a href = "/stories/<%= story.id %>/view">
             <div class="overlay gold">
