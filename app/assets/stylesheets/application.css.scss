@@ -282,6 +282,9 @@ and (-webkit-min-device-pixel-ratio: 2) {  /* For mobile phones: */
     cursor: pointer !important;
 
   }
+  .message-div{
+    display: none !important;
+  }
   .gold{
     border: none !important;
   }
@@ -729,6 +732,7 @@ div#columns small a {
   #columns { column-gap: 0px; }
   #columns figure { width: 100%; }
 }
+
 
 
 
