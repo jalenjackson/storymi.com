@@ -44,11 +44,11 @@
       <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="18" column="174" lean-forward="false" selection-start-line="18" selection-start-column="174" selection-end-line="18" selection-end-column="174" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#strong#0;n#span#0;n#p#0;n#div#2;n#div#2;n#div#2;n#!!top" expanded="true" />
-                <marker date="1494328487000" expanded="true" signature="5670:5724" ph="..." />
+                <marker date="1494328870000" expanded="true" signature="5664:5718" ph="..." />
               </folding>
             </state>
           </provider>
@@ -633,7 +633,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250821000" />
+    <option name="totallyTimeSpent" value="250974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1051,11 +1051,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="192">
+          <caret line="18" column="174" lean-forward="false" selection-start-line="18" selection-start-column="174" selection-end-line="18" selection-end-column="174" />
           <folding>
             <element signature="n#style#0;n#b#0;n#strong#0;n#span#0;n#p#0;n#div#2;n#div#2;n#div#2;n#!!top" expanded="true" />
-            <marker date="1494328487000" expanded="true" signature="5670:5724" ph="..." />
+            <marker date="1494328870000" expanded="true" signature="5664:5718" ph="..." />
           </folding>
         </state>
       </provider>
