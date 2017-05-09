@@ -305,6 +305,8 @@
   </video>
   <div class="story-overlay">
     <h1 style="animation-delay: 1.3s" class="story-label-overlay animated ">Revolutionizing Story Telling</h1>
+
+    <% if !user_signed_in? %>
     <div style="text-align: center;" class="sign-up-message animated ">
       <i style="color: white; cursor: pointer;font-size:40px;" class="fa fa-times-circle" aria-hidden="true"></i>
 
@@ -314,6 +316,7 @@
         Sign Up!
       </button>
     </div>
+    <% end %>
   </div>
 </div>
   <h1  style="text-align: center; color:black; margin-top:50px; font-size:20px !important;  font-weight:lighter;">Message Stories</h1>
@@ -391,9 +394,11 @@
   $(window).load(function(){
 
 
+      <% if !user_signed_in? %>
       setTimeout(function(){
           $(".d").trigger('play');
       },1300);
+      <% end %>
       setTimeout(function(){
           $(".sign-up-message").show().addClass("pulse")
       },2000);
