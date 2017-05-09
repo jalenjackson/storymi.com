@@ -242,11 +242,18 @@ section div {
     left: 0px;
     content: "";
 }
+@media (max-width: 1000px) {
+  .sign-up-message{
+    top:24% !important;
+  }
+
+}
 @media (max-width: 630px) {
 
   nav{
     height:70px !important;
   }
+
 
   nav li a {
     display: none !important;
