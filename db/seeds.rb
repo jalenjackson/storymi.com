@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+Category.delete_all
 
 Category.create(name:"Horror")
 Category.create(name:"Drama")
