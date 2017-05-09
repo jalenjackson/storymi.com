@@ -10,50 +10,25 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("http://st.depositphotos.com/2564943/3568/i/950/depositphotos_35685477-stock-photo-fantastic-background-with-a-magic.jpg") center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     overflow: hidden;
-    -webkit-animation:100s scroll infinite linear;
-    -moz-animation:100s scroll infinite linear;
-    -o-animation:100s scroll infinite linear;
-    -ms-animation:100s scroll infinite linear;
-    animation:100s scroll infinite linear;
+
   }
+  .loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 999999999999999;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    filter: sepia(75%);
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/5c/e3/c0/5ce3c05aa526c00fd27c1c962b8573f5.gif) center center;
+    background-size: 100% 100%;
 
 
-  @-webkit-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
   }
-
-  @-moz-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @-o-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @-ms-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
   .table {
     display: table;
     width: 100%;
@@ -74,7 +49,7 @@
     width: 600px;
     margin: 30px auto 0;
     height: 320px;
-    background-color: rgb(220,220,255);
+    background-color: white;
     top: 50%;
     margin-top: -160px;
     -moz-transition: all 0.5s;
@@ -95,7 +70,7 @@
     position: absolute;
     left: 152px;
     top: 50px;
-    background-color: purple;
+    background-color: lightcoral;
     transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
     width: 300px;
     height: 285px;
@@ -105,7 +80,7 @@
     transition: all 0.5s;
   }
   .container .box:after {
-    background-color: #8e44ad;
+    background-color: lightsalmon;
     top: -10px;
     left: 80px;
     width: 320px;
@@ -313,10 +288,31 @@
       height:50px;
       font-size:15px;
     }
+  video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+  }
 
 </style>
+<div class="loader">
 
-
+</div>
+<video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+  <source src="/assets/video1.mp4" type="video/mp4">
+</video>
 
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -325,8 +321,9 @@
 
     </div>
 
-<div style="margin-top:110px;" class="container">
-  <h1 style="position: absolute;top:5px;left:73%;color:rgb(80,80,80); font-weight:100 !important;"> Tell Whatever Story You Want</h1>
+
+<div style="margin-top:110px;" class="container animated lll">
+  <h1  style="position: absolute;top:5px;left:69%;color:rgb(80,80,80); font-weight:100 !important;">Your Story Your Imagination</h1>
   <div class="box"></div>
   <div class="container-forms">
     <div class="container-info">
@@ -400,4 +397,11 @@
     $(".container-form .btn").click(function(){
         $(".container").addClass("active");
     });
+  $(window).load(function(){
+      $("body").css("overflow","auto");
+      $(".loader").fadeOut("slow");
+      $(".story-label-overlay").addClass("fadeInUp");
+      $(".lll").addClass("fadeIn")
+
+  });
 </script>
