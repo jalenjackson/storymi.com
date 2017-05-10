@@ -104,7 +104,10 @@ class StoriesController < ApplicationController
     @count = Story.count
     if @story.ispublished
       impressionist(@story)
+      @randomStory = Story.order("RANDOM()").first
     end
+
+
   end
 
   private
