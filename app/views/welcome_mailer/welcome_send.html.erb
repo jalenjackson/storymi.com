@@ -1,0 +1,111 @@
+<style>
+  /* PUT ALL CSS IN THE EMAIL <HEAD>
+
+These styles are meant for clients that recognize CSS in the <head>; the email WILL STILL WORK for those that don't. */
+
+  #outlook a{padding:0;}
+  body{width:100% !important; overflow: auto !important; background-color:#41849a;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;margin:0 !important; padding:0 !important;}
+  .ReadMsgBody{width:100%;}
+  .ExternalClass{width:100%;}
+  ol li {margin-bottom:15px;}
+
+  img{height:auto; line-height:100%; outline:none; text-decoration:none;}
+  #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+  p {margin: 1em 0;}
+
+  h1, h2, h3, h4, h5, h6 {color:#222222 !important; font-family:Arial, Helvetica, sans-serif; line-height: 100% !important;}
+
+  table td {border-collapse:collapse;}
+
+  .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;}
+
+  .im {color:black;}
+  div[id="tablewrap"] {
+    width:100%;
+    max-width:600px!important;
+  }
+  table[class="fulltable"], td[class="fulltd"] {
+    max-width:100% !important;
+    width:100% !important;
+    height:auto !important;
+  }
+
+  @media screen and (max-device-width: 430px), screen and (max-width: 430px) {
+    td[class=emailcolsplit]{
+      width:100%!important;
+      float:left!important;
+      padding-left:0!important;
+      max-width:430px !important;
+    }
+    td[class=emailcolsplit] img {
+      margin-bottom:20px !important;
+    }
+  }
+
+  .email-overlay{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height: 400px;
+    background-color: #0B93F6;
+  }
+
+  .mes-overlay-div{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+  }
+
+  .go-to-button{
+    width:100%;
+    border-radius: .3em;
+    background: #02b875;
+    border:none;
+    height: 50px;
+    font-size:25px;
+    color:white !important;
+  }
+
+  .message-email{
+    font-size:20px;
+    font-weight: 100 !important;
+    color:rgb(80,80,80);
+    font-family:Helvetica, sans-serif;
+  }
+
+</style>
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="height:auto !important; margin:0; padding:0; width:100% !important; background-color:#FFFFFF; color:#222222;">
+  <tr>
+    <td>
+      <div id="tablewrap" style="width:100% !important; max-width:600px !important; text-align:center !important; margin-top:0 !important; margin-right: auto !important; margin-bottom:0 !important; margin-left: auto !important;">
+        <table id="contenttable" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; text-align:center !important; margin-top:0 !important; margin-right: auto !important; margin-bottom:0 !important; margin-left: auto !important; border:none; width: 100% !important; max-width:600px !important;">
+          <tr>
+            <td width="100%">
+              <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td width="100%" bgcolor="#ffffff" style="text-align:center;">
+                      <div onclick="window.location.href = 'tellafiction.com'" class="email-overlay">
+                        <img src="/assets/c.jpg" style="width:100%; height:400px;" border="0">
+                        <div class="mes-overlay-div">
+                          <h1 style="color:white !important; font-weight:100 !important; font-size:45px; margin-top:100px; font-family: helvetica, sans-serif;">
+                            <%= @user.firstname.titlecase %> Let Your Imagination Go Wild!</h1>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+              </table>
+              <table style="margin-top:380px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="25" width="100%">
+                <tr>
+                  <td width="100%" bgcolor="#ffffff" style="text-align:left;">
+                    <p class="message-email" >
+                      <b><%= @user.firstname.titlecase %></b>, thank you for signing up for TellAFiction! Next step is to let your imagination go crazy! Share your imagination with the world!
+                    </p>
+
+ c
+
+              </table>

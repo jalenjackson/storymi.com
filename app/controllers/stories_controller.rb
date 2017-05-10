@@ -6,6 +6,7 @@ class StoriesController < ApplicationController
   def index
     @stories = Story.order(impressions_count: :desc).paginate(:page => params[:page], :per_page => 21)
     @first = @stories.first
+    @user = current_user
   end
 
   # GET /stories/1

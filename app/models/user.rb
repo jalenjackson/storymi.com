@@ -15,5 +15,10 @@ class User < ApplicationRecord
   has_attached_file :cover, styles: { medium: "1500x500>", large: "1203x600>" }, default_url: "/images/:style/missing.png"
   validates_attachment_content_type :cover, content_type: /\Aimage\/.*\z/
 
+  after_create :welcome_send
+
+  def welcome_send
+    WelcomeMailer.welcome_send(self).deliver
+  end
 
 end
