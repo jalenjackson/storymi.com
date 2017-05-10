@@ -281,7 +281,6 @@
 
   <div style="background:url(<% if @randomStory.cover? %>'<%= @randomStory.cover.url(:medium) %>'<% else %>'/assets/black.jpg'<% end %>)
       center center no-repeat; text-align: center; background-size: cover !important;" class="sign-up-message2 animated ">
-    <i style="color: white; cursor: pointer;font-size:40px;" class="fa fa-times-circle" aria-hidden="true"></i>
 
 
     <div class="div-overlay">
@@ -292,6 +291,8 @@
         Check it out!
       </button>
       </a>
+      <i style="color: white; cursor: pointer;font-size:40px;" class="fa fa-times-circle" aria-hidden="true"></i>
+
     </div>
   </div>
 
@@ -317,7 +318,9 @@
   $(".texter0").show();
   $(".d0").trigger('play');
 
-
+  $(".fa-times-circle").click(function(){
+      $(".sign-up-message2").addClass("zoomOut");
+  });
 
 
   $(document).click(function(){
