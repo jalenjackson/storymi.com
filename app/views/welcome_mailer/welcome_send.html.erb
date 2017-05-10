@@ -1,111 +1,345 @@
 <style>
-  /* PUT ALL CSS IN THE EMAIL <HEAD>
+  /* This styles you should add to your html as inline-styles */
+  /* You can easily do it with http://inlinestyler.torchboxapps.com/ */
+  /* Copy this html-window code converter and click convert button */
+  /* After that you can remove this style from your code */
 
-These styles are meant for clients that recognize CSS in the <head>; the email WILL STILL WORK for those that don't. */
+  body {
+    margin: 0;
+    padding: 0;
+    mso-line-height-rule: exactly;
+    min-width: 100%;
 
-  #outlook a{padding:0;}
-  body{width:100% !important; overflow: auto !important; background-color:#41849a;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;margin:0 !important; padding:0 !important;}
-  .ReadMsgBody{width:100%;}
-  .ExternalClass{width:100%;}
-  ol li {margin-bottom:15px;}
-
-  img{height:auto; line-height:100%; outline:none; text-decoration:none;}
-  #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
-
-  p {margin: 1em 0;}
-
-  h1, h2, h3, h4, h5, h6 {color:#222222 !important; font-family:Arial, Helvetica, sans-serif; line-height: 100% !important;}
-
-  table td {border-collapse:collapse;}
-
-  .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;}
-
-  .im {color:black;}
-  div[id="tablewrap"] {
-    width:100%;
-    max-width:600px!important;
-  }
-  table[class="fulltable"], td[class="fulltd"] {
-    max-width:100% !important;
-    width:100% !important;
-    height:auto !important;
   }
 
-  @media screen and (max-device-width: 430px), screen and (max-width: 430px) {
-    td[class=emailcolsplit]{
-      width:100%!important;
-      float:left!important;
-      padding-left:0!important;
-      max-width:430px !important;
+  .wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 620px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: linear-gradient( 45deg, #FF512F, #DD2476 ) !important;
+
+  }
+
+  body, .wrapper {
+    background-color: #ffffff;
+  }
+
+  /* Basic */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table.center {
+    margin: 0 auto;
+    width: 602px;
+  }
+  td {
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .spacer,
+  .border {
+    font-size: 1px;
+    line-height: 1px;
+  }
+  .spacer {
+    width: 100%;
+    line-height: 16px
+  }
+  .border {
+    background-color: #e0e0e0;
+    width: 1px;
+  }
+
+  .padded {
+    padding: 0 24px;
+  }
+  img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+  .image {
+    font-size: 12px;
+  }
+  .image img {
+    display: block;
+  }
+  strong, .strong {
+    font-weight: 700;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ol,
+  ul,
+  li {
+    margin-top: 0;
+  }
+  ol,
+  ul,
+  li {
+    padding-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #616161;
+  }
+  .btn {
+    background-color:#2196F3;
+    border:1px solid #2196F3;
+    border-radius:2px;
+    color:#ffffff;
+    display:inline-block;
+    font-family:Roboto, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:36px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    width:200px;
+    height: 36px;
+    padding: 0 8px;
+    margin: 0;
+    outline: 0;
+    outline-offset: 0;
+    -webkit-text-size-adjust:none;
+    mso-hide:all;
+  }
+
+  /* Top panel */
+  .title {
+    text-align: left;
+  }
+
+  .subject {
+    text-align: right;
+  }
+
+  .title, .subject {
+    width: 300px;
+    padding: 8px 0;
+    color: #616161;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  /* Header */
+  .logo {
+    padding: 16px 0;
+  }
+
+  /* Logo */
+  .logo-image {
+
+  }
+
+  /* Main */
+  .main {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  /* Content */
+  .columns {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #ffffff;
+    font-size: 14px;
+  }
+
+  .column {
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 14px;
+  }
+
+  .column-top {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .column-bottom {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .content h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #212121;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .content p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #212121;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content .caption {
+    color: #616161;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /* Footer */
+  .signature, .subscription {
+    vertical-align: bottom;
+    width: 300px;
+    padding-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .signature {
+    text-align: left;
+  }
+  .subscription {
+    text-align: right;
+  }
+
+  .signature p, .subscription p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #616161;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /* This CSS code you should add to <head> of your page */
+  /* This code is for responsive design */
+  /* It didn't work in Gmail app on Android, but work fine on iOS */
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic&subset=latin,cyrillic);
+
+  @media only screen and (min-width: 0) {
+    .wrapper {
+      text-rendering: optimizeLegibility;
     }
-    td[class=emailcolsplit] img {
-      margin-bottom:20px !important;
+  }
+  @media only screen and (max-width: 620px) {
+    [class=wrapper] {
+      min-width: 302px !important;
+      width: 100% !important;
+    }
+    [class=wrapper] .block {
+      display: block !important;
+    }
+    [class=wrapper] .hide {
+      display: none !important;
+    }
+
+    [class=wrapper] .top-panel,
+    [class=wrapper] .header,
+    [class=wrapper] .main,
+    [class=wrapper] .footer {
+      width: 302px !important;
+    }
+
+    [class=wrapper] .title,
+    [class=wrapper] .subject,
+    [class=wrapper] .signature,
+    [class=wrapper] .subscription {
+      display: block;
+      float: left;
+      width: 300px !important;
+      text-align: center !important;
+    }
+    [class=wrapper] .signature {
+      padding-bottom: 0 !important;
+    }
+    [class=wrapper] .subscription {
+      padding-top: 0 !important;
     }
   }
-
-  .email-overlay{
-    position: absolute;
-    width:100%;
-    top:0;
-    left:0;
-    height: 400px;
-    background-color: #0B93F6;
-  }
-
-  .mes-overlay-div{
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.3);
-  }
-
-  .go-to-button{
-    width:100%;
-    border-radius: .3em;
-    background: #02b875;
-    border:none;
-    height: 50px;
-    font-size:25px;
-    color:white !important;
-  }
-
-  .message-email{
-    font-size:20px;
-    font-weight: 100 !important;
-    color:rgb(80,80,80);
-    font-family:Helvetica, sans-serif;
-  }
-
 </style>
-<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="height:auto !important; margin:0; padding:0; width:100% !important; background-color:#FFFFFF; color:#222222;">
-  <tr>
-    <td>
-      <div id="tablewrap" style="width:100% !important; max-width:600px !important; text-align:center !important; margin-top:0 !important; margin-right: auto !important; margin-bottom:0 !important; margin-left: auto !important;">
-        <table id="contenttable" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; text-align:center !important; margin-top:0 !important; margin-right: auto !important; margin-bottom:0 !important; margin-left: auto !important; border:none; width: 100% !important; max-width:600px !important;">
+
+<center class="wrapper">
+  <table class="top-panel center" width="602" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+      <td style="color:white !important" class="title" width="300">TellAFiction</td>
+      <td style="color:white !important" class="subject" width="300"><a style="color:white !important" class="strong" href="#" target="_blank">https://www.tellafiction.com</a></td>
+    </tr>
+    <tr>
+      <td class="border" colspan="2">&nbsp;</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="spacer">&nbsp;</div>
+
+  <table class="main center" width="602" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+      <td class="column">
+        <div class="column-top">&nbsp;</div>
+        <table class="content" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
           <tr>
-            <td width="100%">
-              <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%">
-                <tr>
-                  <td width="100%" bgcolor="#ffffff" style="text-align:center;">
-                      <div onclick="window.location.href = 'tellafiction.com'" class="email-overlay">
-                        <img src="/assets/c.jpg" style="width:100%; height:400px;" border="0">
-                        <div class="mes-overlay-div">
-                          <h1 style="color:white !important; font-weight:100 !important; font-size:45px; margin-top:100px; font-family: helvetica, sans-serif;">
-                            <%= @user.firstname.titlecase %> Let Your Imagination Go Wild!</h1>
-                        </div>
-                      </div>
-                  </td>
-                </tr>
-              </table>
-              <table style="margin-top:380px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="25" width="100%">
-                <tr>
-                  <td width="100%" bgcolor="#ffffff" style="text-align:left;">
-                    <p class="message-email" >
-                      <b><%= @user.firstname.titlecase %></b>, thank you for signing up for TellAFiction! Next step is to let your imagination go crazy! Share your imagination with the world!
-                    </p>
+            <td class="padded">
+              <h1><%= @user.firstname.titlecase %>, Thank You For Using TellAFiction</h1>
+              <p>Let your imagination go free here at TellAFiction. <strong>We </strong>can't wait to see what story you make!</p>
+              <p>At TellAFiction We Are Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more.
+              <p>Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction.</p>
 
- c
+              <p>Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today!  </p>
 
-              </table>
+
+              <p class="caption">https://www.tellafiction.com</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="column-bottom">&nbsp;</div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="spacer">&nbsp;</div>
+
+  <table class="footer center" width="602" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+      <td class="border" colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="signature" width="300">
+        <p style="color:white !important" >
+          With best regards,<br>
+          Jalen Jackson Founder And CEO Of TellAFiction<br>
+
+        </p>
+        <p style="color:white !important" >
+          <a style="color:white !important"  class="strong" href="https://www.tellafiction.com" target="_blank">https://www.tellafiction.com</a>
+        </p>
+      </td>
+      <td class="subscription" width="300">
+        <div class="logo-image">
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</center>
