@@ -354,6 +354,11 @@
 
 
     <% if message.ending_audio.present? %>
+        <audio class="ending-audio" style="margin-left:20px !important;" controls>
+          <source src="<%=  message.ending_audio %>" type="audio/ogg">
+          <source src="<%=  message.ending_audio  %>" type="audio/mpeg">
+          <source src="<%=  message.ending_audio %>" type="audio/mpeg">
+        </audio>
     <% end %>
 
       <% if message.ending.present? %>
@@ -478,6 +483,7 @@
       $(".d" + i).trigger('play');
       $(".choices" + i).show().addClass("zoomIn");
       $(".ending" + i).show(function(){
+          $(".ending-audio").trigger("play");
           <% if @story.ispublished?%>
           setTimeout(function(){
               window.location.href = "/stories/<%= Story.order("RANDOM()").first.id %>/view";
