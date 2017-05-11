@@ -363,7 +363,8 @@
 
       <% if message.ending.present? %>
           <h1 class="animated zoomInDown" style="color:white;font-size:60px;margin-top:100px; text-align: center; position: fixed; top:50px;left:10%; z-index: 9999999999999999999999999999999999999999999999999;"><span style="background:black;"><%= message.ending %></span></h1>
-      <% end %>
+          <a style="color:white;font-size:60px;margin-top:100px; text-align: center; position: fixed; top:65%;left:40%; z-index: 9999999999999999999999999999999999999999999999999;" href = "/stories/<%= Story.order("RANDOM()").first.id %>/view">Next Story</a>
+    <% end %>
   </div>
 
   <% if message.first_choice.present? && message.second_choice.present? %>
@@ -483,9 +484,6 @@
       $(".d" + i).trigger('play');
       $(".choices" + i).show().addClass("zoomIn");
       $(".ending" + i).show();
-      if($(".ending" + i).show()){
-          window.location.href = "/stories/<%= Story.order("RANDOM()").first.id %>/view"
-      }
        $(".ending-audio" + i).trigger("play");
 
 
