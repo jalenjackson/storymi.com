@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/006/large/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/006/medium/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/006/original/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/009/large/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/009/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/009/original/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/012/large/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/012/medium/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/012/original/arw3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/006/large/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/006/medium/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/006/original/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/009/large/1389720467236.cached.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/009/medium/1389720467236.cached.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/009/original/1389720467236.cached.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/012/large/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/012/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/012/original/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/006/large/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/006/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/006/original/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/009/large/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/009/medium/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/009/original/394819.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/006/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/009/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/004/large/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/004/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/004/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" afterPath="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -50,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="345" column="43" lean-forward="false" selection-start-line="345" selection-start-column="42" selection-end-line="345" selection-end-column="43" />
+            <state relative-caret-position="201">
+              <caret line="325" column="28" lean-forward="false" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
@@ -65,90 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510234256_add_messages_to_message.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510234256_add_messages_to_message.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20170510091513_add_attachment_choice_popup_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510091513_add_attachment_choice_popup_to_messages.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20170510092455_add_attachment_popup_audio_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510092455_add_attachment_popup_audio_to_messages.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="496" column="80" lean-forward="false" selection-start-line="496" selection-start-column="80" selection-end-line="496" selection-end-column="80" />
-              <folding>
-                <element signature="e#5586#5843#0#HTML" expanded="true" />
-                <element signature="e#6222#6258#0#HTML" expanded="true" />
-                <element signature="e#6762#6883#0#HTML" expanded="true" />
-                <element signature="e#7332#7376#0#HTML" expanded="true" />
-                <element signature="e#7771#7822#0#HTML" expanded="true" />
-                <element signature="e#8232#8276#0#HTML" expanded="true" />
-                <element signature="e#8678#8731#0#HTML" expanded="true" />
-                <element signature="e#9109#9135#0#HTML" expanded="true" />
-                <element signature="e#9172#9195#0#HTML" expanded="true" />
-                <element signature="e#9322#9602#0#HTML" expanded="true" />
-                <element signature="e#9814#9852#0#HTML" expanded="true" />
-                <element signature="e#10214#10274#0#HTML" expanded="true" />
-                <element signature="e#10281#10327#0#HTML" expanded="true" />
-                <element signature="e#10515#10793#0#HTML" expanded="true" />
-                <element signature="e#10809#10953#0#HTML" expanded="true" />
-                <element signature="e#11196#11234#0#HTML" expanded="true" />
-                <marker date="1494470114000" expanded="true" signature="20390:20444" ph="..." />
-                <marker date="1494470114000" expanded="true" signature="20539:20595" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="messages_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="471">
               <caret line="70" column="147" lean-forward="false" selection-start-line="70" selection-start-column="147" selection-end-line="70" selection-end-column="147" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20170510080146_add_new_choice_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,11 +57,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <file leaf-file-name="20170510080146_add_new_choice_to_messages.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2145">
-              <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="48">
+              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170510074534_add_choices_to_messages.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170510072824_add_attachment_choice_img2_to_messages.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170510072824_add_attachment_choice_img2_to_messages.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170510072818_add_attachment_choice_img1_to_messages.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170510072818_add_attachment_choice_img1_to_messages.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170507085742_add_attachment_image_to_videos.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170507085742_add_attachment_image_to_videos.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170507084723_add_impressions_count_to_articles.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170507084723_add_impressions_count_to_articles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170507084501_add_impressions_count_to_videos.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170507084501_add_impressions_count_to_videos.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>media</find>
       <find>message-bi</find>
       <find>red</find>
       <find>:</find>
@@ -208,6 +160,7 @@
       <find>imaginat</find>
       <find>choice2</find>
       <find>first</find>
+      <find>first_choice</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -265,12 +218,12 @@
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170511020500_remove_column_choice1_from_messages.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" />
       </list>
     </option>
   </component>
@@ -783,18 +736,18 @@
       <workItem from="1494144738421" duration="10317000" />
       <workItem from="1494189179482" duration="816000" />
       <workItem from="1494201406565" duration="11330000" />
-      <workItem from="1494467979618" duration="1641000" />
+      <workItem from="1494467979618" duration="1917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278340000" />
+    <option name="totallyTimeSpent" value="278616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -826,21 +779,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/science.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/articles.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1084,46 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510072824_add_attachment_choice_img2_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510072818_add_attachment_choice_img1_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170510091513_add_attachment_choice_popup_to_messages.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1199,16 +1097,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510072818_add_attachment_choice_img1_to_messages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170507085742_add_attachment_image_to_videos.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170507084723_add_impressions_count_to_articles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170507084501_add_impressions_count_to_videos.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="345" column="43" lean-forward="false" selection-start-line="345" selection-start-column="42" selection-end-line="345" selection-end-column="43" />
+        <state relative-caret-position="201">
+          <caret line="325" column="28" lean-forward="false" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
             <marker date="1494469870000" expanded="true" signature="13403:13457" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510072824_add_attachment_choice_img2_to_messages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
