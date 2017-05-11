@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170510234256) do
+ActiveRecord::Schema.define(version: 20170511020500) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -92,8 +92,8 @@ ActiveRecord::Schema.define(version: 20170510234256) do
     t.string   "choice_img2_content_type"
     t.integer  "choice_img2_file_size"
     t.datetime "choice_img2_updated_at"
-    t.string   "choice1"
-    t.string   "choice2"
+    t.string   "first_choice"
+    t.string   "second_choice"
     t.boolean  "is_correct"
     t.boolean  "is_correct2"
     t.string   "choice_popup_file_name"
