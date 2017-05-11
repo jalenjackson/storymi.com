@@ -45,9 +45,14 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="313" column="29" lean-forward="false" selection-start-line="313" selection-start-column="29" selection-end-line="313" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="360" column="81" lean-forward="false" selection-start-line="360" selection-start-column="81" selection-end-line="360" selection-end-column="81" />
+              <folding>
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sin.</find>
       <find>random</find>
       <find>&lt;%= for</find>
       <find>choices</find>
@@ -191,6 +195,7 @@
       <find>Next</find>
       <find>ending_ima</find>
       <find>ending-audio</find>
+      <find>story.user.firs</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -308,38 +313,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoryTime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -789,7 +762,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287890000" />
+    <option name="totallyTimeSpent" value="288426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1208,9 +1181,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="313" column="29" lean-forward="false" selection-start-line="313" selection-start-column="29" selection-end-line="313" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="360" column="81" lean-forward="false" selection-start-line="360" selection-start-column="81" selection-end-line="360" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#h1#0;n#a#2;n#div#0;n#figure#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

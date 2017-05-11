@@ -356,11 +356,11 @@
 
 
 
-          <a class="" href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:90px;   font-size:15px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %>
+          <a class="" href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:90px;   font-size:15px;  left:20px; word-break: break-all;color:white;"> <span style="font-size:20px; "> By <%= story.user.firstname.titlecase %></span>
             <% if story.user.cover.present? %>
-                <img class="mobile-profile" style="width:30px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%;"  src="<%= story.user.cover.url(:medium) %>" alt="Profile image example"/>
+                <img class="mobile-profile" style="padding-right: 10px;width:40px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%; padding-right:15px;"  src="<%= story.user.cover.url(:medium) %>" alt="Profile image example"/>
             <% else  %>
-                <img class="mobile-profile"  style="width:30px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
+                <img class="mobile-profile"  style="padding-right: 10px;width:40px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
             <% end %>
           </h1></a>
 
