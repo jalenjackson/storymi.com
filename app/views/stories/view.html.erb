@@ -323,7 +323,7 @@
   </div>
 <% end %>
 
-  <% if message.choice1.present? && message.choice2.present? %>
+  <% if message.first_choice.present? && message.second_choice.present? %>
   <div class="choices choices<%= i %> animated">
 
     <h1 class="good-choice animated " style="color:white; font-size:70px;position: absolute;top:40%;left:35%;background:black;z-index:99999999999999999999999999999">Good Choice</h1>
@@ -333,7 +333,7 @@
       <% end %>
           background-size: cover; " class="choice-overlay-img1 first<%= i %><% if message.is_correct? %> thecorrectmessage <% end %>">
     <div class="cc-overlay">
-      <h1><%= message.choice1 %></h1>
+      <h1><%= message.first_choice %></h1>
     </div>
 
   </div>
@@ -345,7 +345,7 @@
         <% end %>
         background-size: cover;  " class="choice-overlay-img2 second<%= i %><% if message.is_correct2? %> thecorrectmessage <% end %>">
       <div class="cc-overlay">
-        <h1><%= message.choice2 %></h1>
+        <h1><%= message.second_choice %></h1>
       </div>
 
 
