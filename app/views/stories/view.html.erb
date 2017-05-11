@@ -287,7 +287,8 @@
 
 </style>
 
-<div class="bg">
+
+<div style="z-index:999;" class="bg">
 
 </div>
 <div class="video-bg">
@@ -384,7 +385,7 @@
 </div>
 <div class="clear"></div>
       <% if message.popup_audio.present? %>
-           <audio class="wrong" class="">
+           <audio class="wrong<%= i %>" class="">
           <source  src="<%=  message.popup_audio %>" type="audio/ogg">
           <source  src="<%=  message.popup_audio %>" type="audio/mpeg">
           <source  src="<%=  message.popup_audio %>" type="audio/mpeg">
@@ -463,7 +464,7 @@
           console.log(i - 1);
           if($(".first" + (i - 1)).hasClass("thecorrectmessage")){
 
-              $(".good-choice").show().addClass("zoomInDown");
+              $(".good-choice").fadeIn("slow");
 
               setTimeout(function(){
                   $(".choices").fadeOut("slow");
@@ -472,7 +473,7 @@
           } else {
               $(".endpopup" + (i - 1)).show();
               $(".choice-imgimg-h1").addClass("zoomInDown")
-              $(".wrong").trigger("play");
+              $(".wrong" + (i - 1)).trigger("play");
 
 
               setTimeout(function(){
@@ -484,7 +485,7 @@
       $(".second" + i).click(function(){
           if($(".second" + (i - 1)).hasClass("thecorrectmessage")){
 
-              $(".good-choice").show().addClass("zoomInDown");
+              $(".good-choice").fadeIn("slow");
 
               setTimeout(function(){
                   $(".choices").fadeOut("slow");
@@ -496,7 +497,7 @@
               $(".endpopup" + (i - 1)).show();
               $(".choice-imgimg-h1").addClass("zoomInDown")
 
-              $(".wrong").trigger("play");
+              $(".wrong" + (i-1)).trigger("play");
 
               setTimeout(function(){
                   window.location.href = "/stories/<%= @story.id %>/view"
