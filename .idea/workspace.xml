@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message.rb" afterPath="$PROJECT_DIR$/app/models/message.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/view.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/view.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -26,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="440" column="1" lean-forward="false" selection-start-line="440" selection-start-column="1" selection-end-line="440" selection-end-column="1" />
+              <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#3;n#!!top" expanded="true" />
@@ -38,7 +34,41 @@
                 <element signature="n#style#0;n#h1#0;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
-                <marker date="1494490153000" expanded="true" signature="13975:14029" ph="..." />
+                <marker date="1494491383000" expanded="true" signature="10929:16151" ph="..." />
+                <marker date="1494491383000" expanded="true" signature="11275:11311" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="11555:11610" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="11648:13894" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="11922:12134" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="11937:12123" ph="if ... end" />
+                <marker date="1494491383000" expanded="true" signature="11993:12100" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12199:12860" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12296:12538" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12383:12519" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12544:12852" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12743:12834" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12903:13535" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="12971:13214" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13058:13195" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13220:13527" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13418:13509" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13560:13628" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13651:13717" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="13836:13876" ph="{&quot;scrollTop&quot;: scrolled...}" />
+                <marker date="1494491383000" expanded="true" signature="13975:14029" ph="..." />
+                <marker date="1494491383000" expanded="true" signature="14235:14327" ph="if ... end" />
+                <marker date="1494491383000" expanded="true" signature="14457:16138" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="14466:14614" ph="/** =========================================== ...*/" />
+                <marker date="1494491383000" expanded="true" signature="14626:14757" ph="//..." />
+                <marker date="1494491383000" expanded="true" signature="14823:15878" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="14886:15108" ph="/*...*/" />
+                <marker date="1494491383000" expanded="true" signature="15202:15869" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="15216:15356" ph="/*...*/" />
+                <marker date="1494491383000" expanded="true" signature="15406:15634" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="15475:15618" ph="/*...*/" />
+                <marker date="1494491383000" expanded="true" signature="15640:15708" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="15721:15811" ph="/*...*/" />
+                <marker date="1494491383000" expanded="true" signature="15907:16007" ph="{...}" />
+                <marker date="1494491383000" expanded="true" signature="16033:16133" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -124,27 +154,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="470" column="39" lean-forward="false" selection-start-line="470" selection-start-column="39" selection-end-line="470" selection-end-column="39" />
+            <state relative-caret-position="345">
+              <caret line="480" column="349" lean-forward="false" selection-start-line="480" selection-start-column="349" selection-end-line="480" selection-end-column="349" />
               <folding>
+                <element signature="e#5938#6195#0#HTML" expanded="true" />
+                <element signature="e#6574#6610#0#HTML" expanded="true" />
+                <element signature="e#7114#7235#0#HTML" expanded="true" />
+                <element signature="e#7684#7728#0#HTML" expanded="true" />
+                <element signature="e#8123#8174#0#HTML" expanded="true" />
+                <element signature="e#8584#8628#0#HTML" expanded="true" />
+                <element signature="e#9030#9083#0#HTML" expanded="true" />
+                <element signature="e#9375#9402#0#HTML" expanded="true" />
+                <element signature="e#9433#9469#0#HTML" expanded="true" />
                 <element signature="e#9745#9951#0#HTML" expanded="true" />
                 <element signature="e#9970#10053#0#HTML" expanded="true" />
                 <element signature="e#10248#10273#0#HTML" expanded="true" />
-                <element signature="e#10706#10986#0#HTML" expanded="true" />
-                <element signature="e#11198#11236#0#HTML" expanded="true" />
-                <element signature="e#11900#12178#0#HTML" expanded="true" />
-                <element signature="e#12194#12338#0#HTML" expanded="true" />
-                <element signature="e#12581#12619#0#HTML" expanded="true" />
-                <element signature="e#13424#13547#0#HTML" expanded="true" />
-                <element signature="e#16353#16416#0#HTML" expanded="true" />
-                <element signature="e#16492#16555#0#HTML" expanded="true" />
-                <element signature="e#16630#16693#0#HTML" expanded="true" />
-                <element signature="e#16982#17106#0#HTML" expanded="true" />
-                <marker date="1494488404000" expanded="true" signature="23066:23120" ph="..." />
-                <marker date="1494488404000" expanded="true" signature="23215:23271" ph="..." />
+                <element signature="e#10715#10995#0#HTML" expanded="true" />
+                <element signature="e#11207#11245#0#HTML" expanded="true" />
+                <element signature="e#11909#12187#0#HTML" expanded="true" />
+                <element signature="e#12203#12347#0#HTML" expanded="true" />
+                <element signature="e#12590#12628#0#HTML" expanded="true" />
+                <element signature="e#13433#13556#0#HTML" expanded="true" />
+                <element signature="e#16362#16425#0#HTML" expanded="true" />
+                <element signature="e#16501#16564#0#HTML" expanded="true" />
+                <element signature="e#16639#16702#0#HTML" expanded="true" />
+                <element signature="e#16991#17115#0#HTML" expanded="true" />
+                <marker date="1494491393000" expanded="true" signature="23075:23129" ph="..." />
+                <marker date="1494491393000" expanded="true" signature="23224:23280" ph="..." />
               </folding>
             </state>
           </provider>
@@ -245,8 +284,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20170511071217_add_ending_to_messages.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
       </list>
     </option>
   </component>
@@ -782,7 +821,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285745000" />
+    <option name="totallyTimeSpent" value="285754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -935,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7512">
           <caret line="313" column="30" lean-forward="false" selection-start-line="313" selection-start-column="30" selection-end-line="313" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,14 +1067,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1060,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,23 +1087,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170511025437_add_choices_to_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170511025437_add_choices_to_messages.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170511071318_add_attachment_ending_image_to_messages.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,24 +1188,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="470" column="39" lean-forward="false" selection-start-line="470" selection-start-column="39" selection-end-line="470" selection-end-column="39" />
+        <state relative-caret-position="345">
+          <caret line="480" column="349" lean-forward="false" selection-start-line="480" selection-start-column="349" selection-end-line="480" selection-end-column="349" />
           <folding>
+            <element signature="e#5938#6195#0#HTML" expanded="true" />
+            <element signature="e#6574#6610#0#HTML" expanded="true" />
+            <element signature="e#7114#7235#0#HTML" expanded="true" />
+            <element signature="e#7684#7728#0#HTML" expanded="true" />
+            <element signature="e#8123#8174#0#HTML" expanded="true" />
+            <element signature="e#8584#8628#0#HTML" expanded="true" />
+            <element signature="e#9030#9083#0#HTML" expanded="true" />
+            <element signature="e#9375#9402#0#HTML" expanded="true" />
+            <element signature="e#9433#9469#0#HTML" expanded="true" />
             <element signature="e#9745#9951#0#HTML" expanded="true" />
             <element signature="e#9970#10053#0#HTML" expanded="true" />
             <element signature="e#10248#10273#0#HTML" expanded="true" />
-            <element signature="e#10706#10986#0#HTML" expanded="true" />
-            <element signature="e#11198#11236#0#HTML" expanded="true" />
-            <element signature="e#11900#12178#0#HTML" expanded="true" />
-            <element signature="e#12194#12338#0#HTML" expanded="true" />
-            <element signature="e#12581#12619#0#HTML" expanded="true" />
-            <element signature="e#13424#13547#0#HTML" expanded="true" />
-            <element signature="e#16353#16416#0#HTML" expanded="true" />
-            <element signature="e#16492#16555#0#HTML" expanded="true" />
-            <element signature="e#16630#16693#0#HTML" expanded="true" />
-            <element signature="e#16982#17106#0#HTML" expanded="true" />
-            <marker date="1494488404000" expanded="true" signature="23066:23120" ph="..." />
-            <marker date="1494488404000" expanded="true" signature="23215:23271" ph="..." />
+            <element signature="e#10715#10995#0#HTML" expanded="true" />
+            <element signature="e#11207#11245#0#HTML" expanded="true" />
+            <element signature="e#11909#12187#0#HTML" expanded="true" />
+            <element signature="e#12203#12347#0#HTML" expanded="true" />
+            <element signature="e#12590#12628#0#HTML" expanded="true" />
+            <element signature="e#13433#13556#0#HTML" expanded="true" />
+            <element signature="e#16362#16425#0#HTML" expanded="true" />
+            <element signature="e#16501#16564#0#HTML" expanded="true" />
+            <element signature="e#16639#16702#0#HTML" expanded="true" />
+            <element signature="e#16991#17115#0#HTML" expanded="true" />
+            <marker date="1494491393000" expanded="true" signature="23075:23129" ph="..." />
+            <marker date="1494491393000" expanded="true" signature="23224:23280" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1211,7 +1230,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="440" column="1" lean-forward="false" selection-start-line="440" selection-start-column="1" selection-end-line="440" selection-end-column="1" />
+          <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#3;n#!!top" expanded="true" />
@@ -1219,7 +1238,41 @@
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#3;n#!!top" expanded="true" />
-            <marker date="1494490153000" expanded="true" signature="13975:14029" ph="..." />
+            <marker date="1494491383000" expanded="true" signature="10929:16151" ph="..." />
+            <marker date="1494491383000" expanded="true" signature="11275:11311" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="11555:11610" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="11648:13894" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="11922:12134" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="11937:12123" ph="if ... end" />
+            <marker date="1494491383000" expanded="true" signature="11993:12100" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12199:12860" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12296:12538" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12383:12519" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12544:12852" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12743:12834" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12903:13535" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="12971:13214" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13058:13195" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13220:13527" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13418:13509" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13560:13628" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13651:13717" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="13836:13876" ph="{&quot;scrollTop&quot;: scrolled...}" />
+            <marker date="1494491383000" expanded="true" signature="13975:14029" ph="..." />
+            <marker date="1494491383000" expanded="true" signature="14235:14327" ph="if ... end" />
+            <marker date="1494491383000" expanded="true" signature="14457:16138" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="14466:14614" ph="/** =========================================== ...*/" />
+            <marker date="1494491383000" expanded="true" signature="14626:14757" ph="//..." />
+            <marker date="1494491383000" expanded="true" signature="14823:15878" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="14886:15108" ph="/*...*/" />
+            <marker date="1494491383000" expanded="true" signature="15202:15869" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="15216:15356" ph="/*...*/" />
+            <marker date="1494491383000" expanded="true" signature="15406:15634" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="15475:15618" ph="/*...*/" />
+            <marker date="1494491383000" expanded="true" signature="15640:15708" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="15721:15811" ph="/*...*/" />
+            <marker date="1494491383000" expanded="true" signature="15907:16007" ph="{...}" />
+            <marker date="1494491383000" expanded="true" signature="16033:16133" ph="{...}" />
           </folding>
         </state>
       </provider>
