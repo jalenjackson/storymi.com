@@ -68,6 +68,6 @@ class MessagesController < ApplicationController
   end
 
   def message_params
-    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3, :choice_img1, :choice_img2 , :first_choice, :second_choice, :is_correct, :is_correct2, :choice_popup, :popup_audio, :end_message)
+    params.require(:message).permit(:message1, :message2, :image, :image2, :popup, :mp3, :choice_img1, :choice_img2 , :first_choice, :second_choice, :is_correct, :is_correct2, :choice_popup, :popup_audio, :end_message, :ending_image, :ending, :ending_audio)
   end
 end
