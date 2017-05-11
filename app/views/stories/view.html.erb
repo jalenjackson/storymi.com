@@ -288,7 +288,9 @@
 </style>
 
 
-<div style="z-index:99;" class="bg">
+<div class="clicker" style="position: fixed;top:0;left:0;width:100%;height:100%;z-index:99;"></div>
+
+<div style="" class="bg">
 
 </div>
 <div class="video-bg">
@@ -420,7 +422,6 @@
   </div>
 <% end %>
 
-
 <script>
 
   $(".audio-popup").hide();
@@ -451,7 +452,7 @@
 
 
 
-  $(".bg").click(function(){
+  $(".clicker").click(function(){
       $(".texter" + i).fadeIn("slow").addClass("fadeIn");
       $(".reciever" + i).fadeIn("slow").addClass("fadeIn");
       $(".popup" + i).show();
