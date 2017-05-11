@@ -251,12 +251,102 @@
     }
 
 
+    #message_choice1 {
+      width:30px;
+    }
+  #message_choice2 {
+    width:30px;
+  }
+
+
+    .a{
+      margin-left: 100px;
+    }
+
+    .d {
+margin-left:-100px;
+    }
 
 
 
+    .choice-form{
+      position: fixed;
+      top:50px;
+      left:0;
+      width:100%;
+      height:100%;
+      background:#0B93F6;
+    }
 
+    .choice-container{
+      overflow: hidden;
+    }
 
+    .choice-img1{
+      width:100%;
+      height:100%;
+    }
+  .choice-img2{
+    width:100%;
+    height:400px!important;
+  }
 
+    .choice-container{
+      background:Red !important;
+    }
+
+    .choices-overlay{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.4);
+
+    }
+
+    .succesful-choice:hover{
+      color: black;
+    }
+
+    .show-form{
+      top:100px !important;
+      left:50px !important;
+      border:none;
+      border-radius: .3em;
+      background: #e74c3c !important;
+      font-size:14px;
+      width:100px !important;
+    }
+
+    .choice-form-inside{
+      margin-top:50px;
+      margin-left:50px;
+    }
+
+    #message_choice1{
+      width:40%;
+
+    }
+  #message_choice2{
+    width:40%;
+
+  }
+
+    #message_end_message{
+      width:40%;
+      color:black !important;
+    }
+
+    .event-deleter{
+      color:white !important;
+      margin-left:-30px;
+      position: absolute;
+    }
+
+    .event-deleter:hover{
+      color:white !important;
+    }
 
 </style>
 
@@ -299,7 +389,7 @@
 
 <% end %>
       <% if message.popup.present? %>
-      <div class="scarypopup">
+      <div class="scarypopup animated">
         <%= image_tag message.popup.url(:large), class: 'popup-img' %>
         <div class="popup-message">
           <%= link_to "../stories/#{@story.id}/messages/#{message.id}/edit" do %>
@@ -311,6 +401,8 @@
         </div>
       </div>
           <% end %>
+
+
 
 
 
@@ -350,6 +442,72 @@
 
       <% end %>
       </div>
+
+<%if message.choice1.present? %>
+<div>
+      <% if !message.is_correct? && !message.is_correct2? %>
+        <h1 class="go-away-message" style="text-align:center;">Choose Which Leads To Success <span style="font-size:12px;">By Default Both Will Be Losing Choices</span> </h1>
+      <% end %>
+
+      <% if message.choice1.present? %>
+
+      <div style="margin-top: 10px;position: relative; float:left;
+
+          <% if message.choice_img1.present? %>
+          background:url('<%= message.choice_img1.url(:large) %>');
+          <% else %>
+          background: darkred;
+          <% end %>
+
+          width:50%;height:300px;">
+        <div  style="
+            <% if message.is_correct? && !message.is_correct2? %>
+        background:rgba(0,200,0,0.3);"
+            <% end %>
+
+             class="choices-overlay greeny">
+
+          <h1 style="color:white; margin-left:20px;"><%= message.choice1 %></h1>
+          <% if !message.is_correct? && !message.is_correct2? %>
+        <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct",   :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".succesful-choice").fadeOut("slow");' do %>
+              <h1 class="succesful-choice" style="margin-left:20px; border-radius:.3em;font-size:30px;"><span style="background: white; border-radius:.4em;">This Choice Leads To Success</span></h1>
+          <% end %>
+              <% end %>
+        </div>
+
+      </div>
+      <% end %>
+      <% if message.choice2.present? %>
+      <div style="margin-top: 10px;position: relative; float: left;
+          <% if message.choice_img2.present? %>
+          background:url('<%= message.choice_img2.url(:large) %>');
+          <% else %>
+          background: black;
+          <% end %>
+          width:50%; height:300px;">
+
+        <div style="
+            <% if message.is_correct2? && !message.is_correct? %>
+        background:rgba(0,200,0,0.4);
+            <% end %>
+
+        " class="choices-overlay greeny2">
+          <h1 class="event-deleter"><%= link_to "X"  ,  story_message_path(@story, message) , class: 'event-deleter', method: :delete, data: { confirm: 'Are you sure you want to delete?' } %>
+
+            <h1 style="color:white; margin-left:20px;"><%= message.choice2 %></h1>
+
+          <% if !message.is_correct2? && !message.is_correct? %>
+          <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct2",   :method => :put , :onclick => 'alertify.alert("Your story is now published! "); $(".succesful-choice").fadeOut("slow"); $(".go-away-message").fadeOut("slow"); ' do %>
+              <h1 class="succesful-choice" style="margin-left:20px; border-radius:.3em;font-size:30px;"><span style="background: white; border-radius:.4em;">This Choice Leads To Success</span></h1>
+          <% end %>
+              <% end %>
+
+        </div>
+      </div>
+      </div>
+          <% end %>
+<% end %>
+</div>
 
       <div class="clear"></div>
 
@@ -402,7 +560,30 @@
 
       <%= f.file_field :image2 %>
 
+
+<button class="show-form" style="position: fixed;top:200px;left:200px;width:40px;height:20px;background:blue; color:white !important;" type="button">Add A Choice!</button>
+
     <%= f.file_field :popup %>
+
+
+  <div class="choice-form">
+
+    <div class="choice-form-inside">
+      <%= f.text_field :choice1, placeholder: 'Choice 1' %>
+      <%= f.text_field :choice2 , placeholder: 'Choice 2'%><br>
+      <h1 style="font-size:18px; color:white!important;">Add An image to appear for choice 1  <%= f.file_field :choice_img1 %></h1>
+      <h1 style="font-size:18px; color:white!important;">Add An image to appear for choice 2  <%= f.file_field :choice_img2 %></h1>
+      <h1 style="font-size:18px; color:white!important;">Add A Popup Image If The Reader Is Wrong  <%= f.file_field :choice_popup %></h1>
+      <h1 style="font-size:18px; color:white!important;">Add Audio To Play With The PopUp  <%= f.file_field :popup_audio %></h1>
+
+      <h1 style="font-size:18px; color:white!important;">Losing Message <%= f.text_field :end_message %> </h1>
+
+      <h1 style="font-size:18px; color:white!important;">Nevermind I Change My Mind  <button style="color:white !important;font-size:20px !important; background: lightgreen !important;" class="hide-form show-form" type="button">Hide</button></h1>
+
+
+    <%= f.button "Send Choices" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
+    </div>
+  </div>
 
 
     <%= f.button "Send message" , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Sending..."} %>
@@ -420,8 +601,17 @@
 
 
 
+      $(".choice-form").hide();
 
 
+
+      $(".show-form").click(function(){
+         $(".choice-form").show();
+      });
+
+      $(".hide-form").click(function(){
+         $(".choice-form").hide();
+      });
 
 
     $(":file").filestyle({

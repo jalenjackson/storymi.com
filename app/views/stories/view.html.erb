@@ -214,7 +214,74 @@
       background:rgba(0,0,0,0.4);
     }
 
+    .choices {
+      height:100% !important;
+      width:100%;
+      left:0;
+      top:0;
+      position: fixed;
+      overflow: hidden;
+      z-index: 9999999999999999999999999999999999999999
+    }
 
+
+  .cc-overlay > h1 {
+    color:white !important;
+    font-size: 40px;
+    text-align: center;
+    margin-top:100px;
+  }
+
+    .choice-img1 {
+      width:50%;
+      float: left;
+      height:auto;
+    }
+    .choice-img2{
+      width:50%;
+      float: left;
+      height:auto;
+    }
+
+    .choice-overlay{
+
+    }
+
+    .choice-overlay-img1{
+      position: absolute;
+      top:0;
+      left:0;
+      width:50%;
+      height:100%;
+      background:black;
+    }
+
+    .choice-overlay-img2{
+      position: absolute;
+      top:0;
+      left:50%;
+      width:50%;
+      height:100%;
+      background:grey;
+    }
+
+    .choice-imgimg{
+      position: fixed;
+      top:0px;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:9999999999999999999999999999999999999999999999999999999
+    }
+
+    .cc-overlay{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.4);
+    }
 
 
 
@@ -242,7 +309,7 @@
           <% end %>
       </div>
       <% if message.popup.present? %>
-      <div class="scarypopup popup<%= i %>">
+      <div class="scarypopup popup<%= i %> animated">
         <%= image_tag message.popup.url(:large), class: 'popup-img' %>
       </div>
           <% end %>
@@ -255,6 +322,53 @@
     <% end %>
   </div>
 <% end %>
+
+  <% if message.choice1.present? && message.choice2.present? %>
+  <div class="choices choices<%= i %> animated">
+
+    <h1 class="good-choice animated " style="color:white; font-size:70px;position: absolute;top:40%;left:35%;background:black;z-index:99999999999999999999999999999">Good Choice</h1>
+  <div style="
+      <% if message.choice_img1.present? %>
+  background:url(<%= message.choice_img1.url(:large) %>) center center no-repeat;
+      <% end %>
+          background-size: cover; " class="choice-overlay-img1 first<%= i %><% if message.is_correct? %> thecorrectmessage <% end %>">
+    <div class="cc-overlay">
+      <h1><%= message.choice1 %></h1>
+    </div>
+
+  </div>
+
+    <div style="
+    <% if message.choice_img2.present? %>
+
+        background:url(<%= message.choice_img2.url(:large) %>) center center no-repeat;
+        <% end %>
+        background-size: cover;  " class="choice-overlay-img2 second<%= i %><% if message.is_correct2? %> thecorrectmessage <% end %>">
+      <div class="cc-overlay">
+        <h1><%= message.choice2 %></h1>
+      </div>
+
+
+    </div>
+
+
+    <%= image_tag message.choice_img1.url(:large) , class: 'choice-img1' %>
+    <%= image_tag message.choice_img2.url(:large), class: 'choice-img2' %>
+  </div>
+
+      <% end %>
+
+  <% if message.is_correct %>
+      <div style="background: url(<%= message.choice_popup.url(:medium) %>) center center no-repeat; background-size: cover;" class="choice-imgimg endpopup<%= i %>">
+        <h1 class="animated choice-imgimg-h1" style="text-align: center; color:white !important; font-size:70px;  margin-top:100px;"><span style="background:black;"><%= message.end_message %></span></h1>
+      </div>
+  <% end %>
+
+  <% if message.is_correct2 %>
+      <div style="background: url(<%= message.choice_popup.url(:medium) %>) center center no-repeat; background-size: cover;" class="choice-imgimg endpopup<%= i %>">
+        <h1 class="animated choice-imgimg-h1" style="text-align: center; color:white !important; font-size:70px;  margin-top:100px;"><span style="background:black;"><%= message.end_message %></span></h1>
+      </div>
+  <% end %>
 
 <div class="clear"></div>
 
@@ -269,7 +383,14 @@
 
 </div>
 <div class="clear"></div>
+      <% if message.popup_audio.present? %>
+           <audio class="wrong" class="">
+          <source  src="<%=  message.popup_audio %>" type="audio/ogg">
+          <source  src="<%=  message.popup_audio %>" type="audio/mpeg">
+          <source  src="<%=  message.popup_audio %>" type="audio/mpeg">
+          </audio>
 
+          <% end %>
 
 
 </section>
@@ -279,7 +400,8 @@
 
 
 
-  <div style="background:url(<% if @randomStory.cover? %>'<%= @randomStory.cover.url(:medium) %>'<% else %>'/assets/black.jpg'<% end %>)
+  <% if @story.ispublished? %>
+  <div style="background:url(<% if @randomStory.cover.present? %>'<%= @randomStory.cover.url(:medium) %>'<% else %>'/assets/black.jpg'<% end %>)
       center center no-repeat; text-align: center; background-size: cover !important;" class="sign-up-message2 animated ">
 
 
@@ -295,6 +417,7 @@
 
     </div>
   </div>
+<% end %>
 
 
 <script>
@@ -304,8 +427,11 @@
   $(".message1").hide();
   $(".message2").hide();
   $(".upnextbtn").hide();
+  $(".choice-imgimg").hide();
   $(".mmm").hide();
+  $(".choices").hide();
   $(".sign-up-message2").hide();
+  $(".good-choice").hide();
 
   function showImage(){
       $(".choice-img").show();
@@ -323,13 +449,60 @@
   });
 
 
-  $(document).click(function(){
+
+  $(".bg").click(function(){
       $(".texter" + i).fadeIn("slow").addClass("fadeIn");
       $(".reciever" + i).fadeIn("slow").addClass("fadeIn");
       $(".popup" + i).show();
       $(".d" + i).trigger('play');
+      $(".choices" + i).show().addClass("zoomIn");
 
       console.log(i);
+
+      $(".first" + i).click(function(){
+          console.log(i - 1);
+          if($(".first" + (i - 1)).hasClass("thecorrectmessage")){
+
+              $(".good-choice").show().addClass("zoomInDown");
+
+              setTimeout(function(){
+                  $(".choices").fadeOut("slow");
+                  $(".good-choice").hide().removeClass("zoomInDown");
+              },1000);
+          } else {
+              $(".endpopup" + (i - 1)).show();
+              $(".choice-imgimg-h1").addClass("zoomInDown")
+              $(".wrong").trigger("play");
+
+
+              setTimeout(function(){
+                  window.location.href = "/stories/<%= @story.id %>/view"
+              },2300)
+          }
+      });
+
+      $(".second" + i).click(function(){
+          if($(".second" + (i - 1)).hasClass("thecorrectmessage")){
+
+              $(".good-choice").show().addClass("zoomInDown");
+
+              setTimeout(function(){
+                  $(".choices").fadeOut("slow");
+                  $(".good-choice").hide().removeClass("zoomInDown");
+
+              },1000);
+          } else {
+
+              $(".endpopup" + (i - 1)).show();
+              $(".choice-imgimg-h1").addClass("zoomInDown")
+
+              $(".wrong").trigger("play");
+
+              setTimeout(function(){
+                  window.location.href = "/stories/<%= @story.id %>/view"
+              },2300)
+          }
+      });
 
       if(i > all - 1){
           $(".sign-up-message2").show().addClass("pulse");
@@ -411,10 +584,11 @@
   });
 
 
-
-
-
-
-
 </script>
+
+
+
+
+
+
 

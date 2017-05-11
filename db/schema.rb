@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170507085742) do
+ActiveRecord::Schema.define(version: 20170510234256) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -66,8 +66,8 @@ ActiveRecord::Schema.define(version: 20170507085742) do
     t.integer  "story_id"
     t.string   "message1"
     t.string   "message2"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -84,6 +84,27 @@ ActiveRecord::Schema.define(version: 20170507085742) do
     t.string   "mp3_content_type"
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
+    t.string   "choice_img1_file_name"
+    t.string   "choice_img1_content_type"
+    t.integer  "choice_img1_file_size"
+    t.datetime "choice_img1_updated_at"
+    t.string   "choice_img2_file_name"
+    t.string   "choice_img2_content_type"
+    t.integer  "choice_img2_file_size"
+    t.datetime "choice_img2_updated_at"
+    t.string   "choice1"
+    t.string   "choice2"
+    t.boolean  "is_correct"
+    t.boolean  "is_correct2"
+    t.string   "choice_popup_file_name"
+    t.string   "choice_popup_content_type"
+    t.integer  "choice_popup_file_size"
+    t.datetime "choice_popup_updated_at"
+    t.string   "popup_audio_file_name"
+    t.string   "popup_audio_content_type"
+    t.integer  "popup_audio_file_size"
+    t.datetime "popup_audio_updated_at"
+    t.string   "end_message"
     t.index ["story_id"], name: "index_messages_on_story_id"
   end
 
