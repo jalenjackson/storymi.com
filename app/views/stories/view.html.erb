@@ -408,7 +408,7 @@
       center center no-repeat; text-align: center; background-size: cover !important;" class="sign-up-message2 animated ">
 
 
-    <div class="div-overlay">
+    <div style="z-index: 99999999999999999999999999999999999;" class="div-overlay">
       <h5 class="messs animated bouceIn"><%= "Next Story #{@randomStory.title}".titlecase %></h5>
       <button class='myButt five'>
         <a href="/stories/<%= @randomStory.id%>/view">
@@ -510,7 +510,7 @@
           $(".sign-up-message2").show().addClass("pulse");
       }
 
-      if(i >= all){
+      if(i > all + 1){
           $(".upnextbtn").fadeIn().addClass("bounceIn");
       }
 
