@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -58,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170511025437_add_choices_to_messages.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="20170511025437_add_choices_to_messages.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20170511025437_add_choices_to_messages.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -88,12 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510072818_add_attachment_choice_img1_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510072818_add_attachment_choice_img1_to_messages.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="456" column="96" lean-forward="false" selection-start-line="456" selection-start-column="96" selection-end-line="456" selection-end-column="96" />
+              <folding>
+                <element signature="e#9844#9882#0#HTML" expanded="true" />
+                <element signature="e#10546#10854#0#HTML" expanded="true" />
+                <element signature="e#10870#11014#0#HTML" expanded="true" />
+                <element signature="e#11257#11295#0#HTML" expanded="true" />
+                <marker date="1494473005000" expanded="true" signature="20463:20517" ph="..." />
+                <marker date="1494473005000" expanded="true" signature="20612:20668" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +159,6 @@
       <find>leads</find>
       <find>scarypopup</find>
       <find>choice-imgimg</find>
-      <find>choice_pop</find>
       <find>end_m</find>
       <find>is_correct</find>
       <find>.loader</find>
@@ -162,6 +167,7 @@
       <find>choice2</find>
       <find>first</find>
       <find>first_choice</find>
+      <find>choice_pop</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -221,10 +227,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170511025437_add_choices_to_messages.rb" />
+        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
       </list>
     </option>
   </component>
@@ -737,12 +743,12 @@
       <workItem from="1494144738421" duration="10317000" />
       <workItem from="1494189179482" duration="816000" />
       <workItem from="1494201406565" duration="11330000" />
-      <workItem from="1494467979618" duration="2201000" />
+      <workItem from="1494467979618" duration="2709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278900000" />
+    <option name="totallyTimeSpent" value="279408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1040,33 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="496" column="80" lean-forward="false" selection-start-line="496" selection-start-column="80" selection-end-line="496" selection-end-column="80" />
-          <folding>
-            <element signature="e#5586#5843#0#HTML" expanded="true" />
-            <element signature="e#6222#6258#0#HTML" expanded="true" />
-            <element signature="e#6762#6883#0#HTML" expanded="true" />
-            <element signature="e#7332#7376#0#HTML" expanded="true" />
-            <element signature="e#7771#7822#0#HTML" expanded="true" />
-            <element signature="e#8232#8276#0#HTML" expanded="true" />
-            <element signature="e#8678#8731#0#HTML" expanded="true" />
-            <element signature="e#9109#9135#0#HTML" expanded="true" />
-            <element signature="e#9172#9195#0#HTML" expanded="true" />
-            <element signature="e#9322#9602#0#HTML" expanded="true" />
-            <element signature="e#9814#9852#0#HTML" expanded="true" />
-            <element signature="e#10214#10274#0#HTML" expanded="true" />
-            <element signature="e#10281#10327#0#HTML" expanded="true" />
-            <element signature="e#10515#10793#0#HTML" expanded="true" />
-            <element signature="e#10809#10953#0#HTML" expanded="true" />
-            <element signature="e#11196#11234#0#HTML" expanded="true" />
-            <marker date="1494470114000" expanded="true" signature="20390:20444" ph="..." />
-            <marker date="1494470114000" expanded="true" signature="20539:20595" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2145">
@@ -1173,6 +1152,21 @@
         <state relative-caret-position="72">
           <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="456" column="96" lean-forward="false" selection-start-line="456" selection-start-column="96" selection-end-line="456" selection-end-column="96" />
+          <folding>
+            <element signature="e#9844#9882#0#HTML" expanded="true" />
+            <element signature="e#10546#10854#0#HTML" expanded="true" />
+            <element signature="e#10870#11014#0#HTML" expanded="true" />
+            <element signature="e#11257#11295#0#HTML" expanded="true" />
+            <marker date="1494473005000" expanded="true" signature="20463:20517" ph="..." />
+            <marker date="1494473005000" expanded="true" signature="20612:20668" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

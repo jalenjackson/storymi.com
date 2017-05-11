@@ -454,7 +454,7 @@ margin-left:-100px;
       <div style="margin-top: 10px;position: relative; float:left;
 
           <% if message.choice_img1.present? %>
-          background:url('<%= message.choice_img1.url(:large) %>');
+          background:url('<%= message.choice_img1.url(:large) %>') center center no-repeat cover;
           <% else %>
           background: darkred;
           <% end %>
@@ -469,7 +469,7 @@ margin-left:-100px;
 
           <h1 style="color:white; margin-left:20px;"><%= message.first_choice %></h1>
           <% if !message.is_correct? && !message.is_correct2? %>
-        <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct",   :method => :put , :onclick => 'alertify.alert("Congragulations your story is published "); $(".succesful-choice").fadeOut("slow");' do %>
+        <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct",   :method => :put , :onclick => 'alertify.alert("You set this choice as the correct route!"); $(".succesful-choice").fadeOut("slow");' do %>
               <h1 class="succesful-choice" style="margin-left:20px; border-radius:.3em;font-size:30px;"><span style="background: white; border-radius:.4em;">This Choice Leads To Success</span></h1>
           <% end %>
               <% end %>
@@ -480,7 +480,7 @@ margin-left:-100px;
       <% if message.second_choice.present? %>
       <div style="margin-top: 10px;position: relative; float: left;
           <% if message.choice_img2.present? %>
-          background:url('<%= message.choice_img2.url(:large) %>');
+          background:url('<%= message.choice_img2.url(:large) %>') center center no-repeat cover;
           <% else %>
           background: black;
           <% end %>
@@ -497,7 +497,7 @@ margin-left:-100px;
             <h1 style="color:white; margin-left:20px;"><%= message.second_choice %></h1>
 
           <% if !message.is_correct2? && !message.is_correct? %>
-          <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct2",   :method => :put , :onclick => 'alertify.alert("Your story is now published! "); $(".succesful-choice").fadeOut("slow"); $(".go-away-message").fadeOut("slow"); ' do %>
+          <%= link_to  "/stories/#{@story.id}/messages/#{message.id}/is_correct2",   :method => :put , :onclick => 'alertify.alert("You set this choice as the correct route!"); $(".succesful-choice").fadeOut("slow"); $(".go-away-message").fadeOut("slow"); ' do %>
               <h1 class="succesful-choice" style="margin-left:20px; border-radius:.3em;font-size:30px;"><span style="background: white; border-radius:.4em;">This Choice Leads To Success</span></h1>
           <% end %>
               <% end %>
