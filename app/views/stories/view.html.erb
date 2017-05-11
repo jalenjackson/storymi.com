@@ -354,7 +354,7 @@
 
 
     <% if message.ending_audio.present? %>
-        <audio class="ending-audio" style="margin-left:20px !important;" controls>
+        <audio class="ending-audio<%= i %>" style="margin-left:20px !important;" controls>
           <source src="<%=  message.ending_audio %>" type="audio/ogg">
           <source src="<%=  message.ending_audio  %>" type="audio/mpeg">
           <source src="<%=  message.ending_audio %>" type="audio/mpeg">
@@ -483,13 +483,19 @@
       $(".d" + i).trigger('play');
       $(".choices" + i).show().addClass("zoomIn");
       $(".ending" + i).show(function(){
-          $(".ending-audio").trigger("play");
+
           <% if @story.ispublished?%>
           setTimeout(function(){
               window.location.href = "/stories/<%= Story.order("RANDOM()").first.id %>/view";
           },3500)
           <% end %>
       });
+       $(".ending-audio" + i).trigger("play");
+
+
+
+
+
 
       console.log(i);
 
