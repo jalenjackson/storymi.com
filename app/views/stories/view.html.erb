@@ -483,6 +483,9 @@
       $(".d" + i).trigger('play');
       $(".choices" + i).show().addClass("zoomIn");
       $(".ending" + i).show();
+      if($(".ending" + i).show()){
+          window.location.href = "/stories/<%= Story.order("RANDOM()").first.id %>/view"
+      }
        $(".ending-audio" + i).trigger("play");
 
 
