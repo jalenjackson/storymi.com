@@ -482,14 +482,7 @@
       $(".popup" + i).show();
       $(".d" + i).trigger('play');
       $(".choices" + i).show().addClass("zoomIn");
-      $(".ending" + i).show(function(){
-
-          <% if @story.ispublished?%>
-          setTimeout(function(){
-              window.location.href = "/stories/<%= Story.order("RANDOM()").first.id %>/view";
-          },3500)
-          <% end %>
-      });
+      $(".ending" + i).show();
        $(".ending-audio" + i).trigger("play");
 
 
