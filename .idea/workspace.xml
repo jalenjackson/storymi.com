@@ -90,15 +90,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="456" column="96" lean-forward="false" selection-start-line="456" selection-start-column="96" selection-end-line="456" selection-end-column="96" />
+            <state relative-caret-position="291">
+              <caret line="471" column="170" lean-forward="false" selection-start-line="471" selection-start-column="170" selection-end-line="471" selection-end-column="170" />
               <folding>
-                <element signature="e#9844#9882#0#HTML" expanded="true" />
-                <element signature="e#10546#10854#0#HTML" expanded="true" />
-                <element signature="e#10870#11014#0#HTML" expanded="true" />
-                <element signature="e#11257#11295#0#HTML" expanded="true" />
-                <marker date="1494473005000" expanded="true" signature="20463:20517" ph="..." />
-                <marker date="1494473005000" expanded="true" signature="20612:20668" ph="..." />
+                <element signature="e#9322#9602#0#HTML" expanded="true" />
+                <element signature="e#9814#9852#0#HTML" expanded="true" />
+                <element signature="e#10516#10794#0#HTML" expanded="true" />
+                <element signature="e#10810#10954#0#HTML" expanded="true" />
+                <element signature="e#11197#11235#0#HTML" expanded="true" />
+                <marker date="1494473126000" expanded="true" signature="20403:20457" ph="..." />
+                <marker date="1494473126000" expanded="true" signature="20552:20608" ph="..." />
               </folding>
             </state>
           </provider>
@@ -743,12 +744,12 @@
       <workItem from="1494144738421" duration="10317000" />
       <workItem from="1494189179482" duration="816000" />
       <workItem from="1494201406565" duration="11330000" />
-      <workItem from="1494467979618" duration="2709000" />
+      <workItem from="1494467979618" duration="2780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279408000" />
+    <option name="totallyTimeSpent" value="279479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -1157,15 +1158,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="456" column="96" lean-forward="false" selection-start-line="456" selection-start-column="96" selection-end-line="456" selection-end-column="96" />
+        <state relative-caret-position="291">
+          <caret line="471" column="170" lean-forward="false" selection-start-line="471" selection-start-column="170" selection-end-line="471" selection-end-column="170" />
           <folding>
-            <element signature="e#9844#9882#0#HTML" expanded="true" />
-            <element signature="e#10546#10854#0#HTML" expanded="true" />
-            <element signature="e#10870#11014#0#HTML" expanded="true" />
-            <element signature="e#11257#11295#0#HTML" expanded="true" />
-            <marker date="1494473005000" expanded="true" signature="20463:20517" ph="..." />
-            <marker date="1494473005000" expanded="true" signature="20612:20668" ph="..." />
+            <element signature="e#9322#9602#0#HTML" expanded="true" />
+            <element signature="e#9814#9852#0#HTML" expanded="true" />
+            <element signature="e#10516#10794#0#HTML" expanded="true" />
+            <element signature="e#10810#10954#0#HTML" expanded="true" />
+            <element signature="e#11197#11235#0#HTML" expanded="true" />
+            <marker date="1494473126000" expanded="true" signature="20403:20457" ph="..." />
+            <marker date="1494473126000" expanded="true" signature="20552:20608" ph="..." />
           </folding>
         </state>
       </provider>
