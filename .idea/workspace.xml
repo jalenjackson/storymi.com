@@ -2,7 +2,327 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/index.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/large/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/medium/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/006/original/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/large/Would-you-survive-a-plane-crash-deep-into-the-forest.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/medium/Would-you-survive-a-plane-crash-deep-into-the-forest.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/008/original/Would-you-survive-a-plane-crash-deep-into-the-forest.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/012/large/FLSPv2_Cv1_R1_marquee_57ef19df8d0256.03779299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/012/medium/FLSPv2_Cv1_R1_marquee_57ef19df8d0256.03779299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/articles/covers/000/000/012/original/FLSPv2_Cv1_R1_marquee_57ef19df8d0256.03779299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/045/large/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/045/medium/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/045/original/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/046/large/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/046/medium/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/046/original/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/057/large/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/057/medium/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/057/original/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/061/large/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/061/medium/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/061/original/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/063/large/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/063/medium/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/063/original/Crazy-creepy-gifs-9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/069/large/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/069/medium/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/069/original/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/073/large/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/073/medium/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_images/000/000/073/original/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/067/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/067/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/067/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/068/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/068/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/068/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/069/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/069/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/069/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/070/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/070/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/070/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/086/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/086/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/086/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/087/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/087/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/087/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/093/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/093/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/093/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/098/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/098/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/098/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/101/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/101/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/101/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/103/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/103/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/103/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/105/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/105/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/105/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/114/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/114/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/114/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/117/large/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/117/medium/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/117/original/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/121/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/121/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/121/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/129/large/FantasyDungeon_Screenshot_01-1920x1080-7edf6601ef279e2a6058740a22248a23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/129/medium/FantasyDungeon_Screenshot_01-1920x1080-7edf6601ef279e2a6058740a22248a23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/129/original/FantasyDungeon_Screenshot_01-1920x1080-7edf6601ef279e2a6058740a22248a23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/132/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/132/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/132/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/135/large/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/135/medium/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/135/original/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/143/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/143/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/143/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/147/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/147/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/147/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/149/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/149/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/149/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/150/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/150/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/150/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/157/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/157/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img1s/000/000/157/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/067/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/067/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/067/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/068/large/youtube1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/068/medium/youtube1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/068/original/youtube1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/069/large/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/069/medium/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/069/original/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/086/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/086/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/086/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/087/large/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/087/medium/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/087/original/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/093/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/093/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/093/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/098/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/098/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/098/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/101/large/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/101/medium/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/101/original/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/103/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/103/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/103/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/105/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/105/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/105/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/114/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/114/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/114/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/117/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/117/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/117/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/121/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/121/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/121/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/129/large/kitchen-hero-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/129/medium/kitchen-hero-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/129/original/kitchen-hero-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/132/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/132/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/132/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/135/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/135/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/135/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/143/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/143/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/143/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/147/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/147/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/147/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/149/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/149/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/149/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/150/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/150/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/150/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/157/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/157/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_img2s/000/000/157/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/101/large/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/101/medium/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/101/original/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/103/large/48420dd831888fbf60b756f337879cce.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/103/medium/48420dd831888fbf60b756f337879cce.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/103/original/48420dd831888fbf60b756f337879cce.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/105/large/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/105/medium/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/105/original/e9597514c831c4bac89e77985fa54313.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/109/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/109/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/109/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/111/large/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/111/medium/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/111/original/394819.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/114/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/114/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/114/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/117/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/117/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/117/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/121/large/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/121/medium/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/121/original/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/132/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/132/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/132/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/135/large/tumblr_mgq5yittag1qbyri1o1_500_kayayteearr.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/135/medium/tumblr_mgq5yittag1qbyri1o1_500_kayayteearr.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/135/original/tumblr_mgq5yittag1qbyri1o1_500_kayayteearr.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/143/large/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/143/medium/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/143/original/0822afa8ccc7aee3067b6fe8e909c2bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/147/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/147/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/147/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/149/large/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/149/medium/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/149/original/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/150/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/150/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/150/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/157/large/bedroom__night_by_7oneders-d3d3s4i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/157/medium/bedroom__night_by_7oneders-d3d3s4i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/choice_popups/000/000/157/original/bedroom__night_by_7oneders-d3d3s4i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/027/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/027/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/image2s/000/000/027/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/007/large/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/007/medium/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/007/original/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/028/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/028/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/images/000/000/028/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/005/original/220623__adriancalzon__scream-05.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/008/original/Jump_Scare_Sound_Effect_-_Free_Sound_Effects.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/015/original/Jump_Scare_Sound_Effect_-_Free_Sound_Effects.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/017/original/Jump_Scare_Sound_Effect_-_Free_Sound_Effects.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/021/original/Jump_Scare_Sound_Effect_-_Free_Sound_Effects.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/031/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/mp3s/000/000/124/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/105/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/121/original/Secret_Agent_01_by_Johannes_Bornlöf_-__Action_Music_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/132/original/Secret_Agent_01_by_Johannes_Bornlöf_-__Action_Music_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/135/original/Secret_Agent_01_by_Johannes_Bornlöf_-__Action_Music_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/143/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/147/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/149/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popup_audios/000/000/157/original/Super_Mario_Bros._-_Overworld_Music_-_In_4_Styles_(3World64New)__LarryInc64_.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/001/large/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/001/medium/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/001/original/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/005/large/76d2ca1f456b822b650b9bef0f98a7e4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/005/medium/76d2ca1f456b822b650b9bef0f98a7e4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/005/original/76d2ca1f456b822b650b9bef0f98a7e4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/large/377E8F6200000578-3753404-image-a-111_1471889756518.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/large/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/medium/377E8F6200000578-3753404-image-a-111_1471889756518.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/medium/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/original/377E8F6200000578-3753404-image-a-111_1471889756518.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/008/original/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/009/large/scary-monsters.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/009/medium/scary-monsters.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/009/original/scary-monsters.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/016/large/hqdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/016/medium/hqdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/016/original/hqdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/018/large/reFVL8qf1eBBS.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/018/medium/reFVL8qf1eBBS.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/018/original/reFVL8qf1eBBS.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/022/large/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/022/medium/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/022/original/tenor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/031/large/tenor_(1).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/031/medium/tenor_(1).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/031/original/tenor_(1).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/032/large/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/032/medium/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/032/original/960.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/124/large/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/124/medium/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/messages/popups/000/000/124/original/arw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/003/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/006/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/007/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/large/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/medium/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/010/original/Man-Making-Funny-Scary-Face.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/019/large/bioshroom_200x200_by_nintenzone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/019/medium/bioshroom_200x200_by_nintenzone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/019/original/bioshroom_200x200_by_nintenzone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/021/large/horizon-zero-dawn-impact-poster-ps4-us-07feb17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/021/medium/horizon-zero-dawn-impact-poster-ps4-us-07feb17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/021/original/horizon-zero-dawn-impact-poster-ps4-us-07feb17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/large/3167419-818tra9kb3l._ac_sl1500_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/medium/3167419-818tra9kb3l._ac_sl1500_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/022/original/3167419-818tra9kb3l._ac_sl1500_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/large/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/medium/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/covers/000/000/027/original/Clynotis_severus__AF_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/large/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/medium/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/004/original/5163303927_cdb99267f6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/012/large/maxresdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/012/medium/maxresdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/012/original/maxresdefault_(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/024/large/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/024/medium/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/024/original/GalleryGraphicNovels_1900x900_BatmanTDKR_52af9e0b71daa3.50638882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/025/large/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/025/medium/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/stories/images/000/000/025/original/1389720467236.cached.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/003/medium/subway-healthy-items.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/003/original/subway-healthy-items.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/005/large/soundwaves.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/005/medium/soundwaves.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/005/original/soundwaves.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/006/large/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/006/medium/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/images/000/000/006/original/kissing-in-the-rain-zuko-and-katara-26244454-300-386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/001/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/001/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/002/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/002/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/003/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/003/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/004/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/004/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/005/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/005/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/006/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/006/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/007/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/007/thumb/Video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/008/original/Video.MOV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/videos/mp4s/000/000/008/thumb/Video.jpg" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -52,7 +372,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
@@ -62,13 +382,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510234256_add_messages_to_message.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510234256_add_messages_to_message.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-              <folding />
-            </state>
+      <file leaf-file-name="loader.gif" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/images/loader.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -178,7 +495,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bg</find>
       <find>video</find>
       <find>media</find>
       <find>message-bi</find>
@@ -208,6 +524,7 @@
       <find>is_correct</find>
       <find>.loader</find>
       <find>imagina</find>
+      <find>imaginat</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -309,6 +626,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StoryTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoryTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoryTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -740,13 +1071,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276556000" />
+    <option name="totallyTimeSpent" value="276699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -778,11 +1109,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/front.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/frontbg.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1226,6 +1552,11 @@
           <caret line="313" column="30" lean-forward="false" selection-start-line="313" selection-start-column="30" selection-end-line="313" selection-end-column="30" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/loader.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
