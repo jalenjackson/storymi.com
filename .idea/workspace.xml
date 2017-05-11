@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/view.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/view.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,24 +27,14 @@
       <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="347" column="37" lean-forward="false" selection-start-line="347" selection-start-column="37" selection-end-line="347" selection-end-column="37" />
+            <state relative-caret-position="273">
+              <caret line="345" column="43" lean-forward="false" selection-start-line="345" selection-start-column="42" selection-end-line="345" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
                 <marker date="1494469870000" expanded="true" signature="13403:13457" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20170511020500_remove_column_choice1_from_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170511020500_remove_column_choice1_from_messages.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -77,21 +69,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510072824_add_attachment_choice_img2_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510072824_add_attachment_choice_img2_to_messages.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="496" column="80" lean-forward="false" selection-start-line="496" selection-start-column="80" selection-end-line="496" selection-end-column="80" />
+              <folding>
+                <element signature="e#5586#5843#0#HTML" expanded="true" />
+                <element signature="e#6222#6258#0#HTML" expanded="true" />
+                <element signature="e#6762#6883#0#HTML" expanded="true" />
+                <element signature="e#7332#7376#0#HTML" expanded="true" />
+                <element signature="e#7771#7822#0#HTML" expanded="true" />
+                <element signature="e#8232#8276#0#HTML" expanded="true" />
+                <element signature="e#8678#8731#0#HTML" expanded="true" />
+                <element signature="e#9109#9135#0#HTML" expanded="true" />
+                <element signature="e#9172#9195#0#HTML" expanded="true" />
+                <element signature="e#9322#9602#0#HTML" expanded="true" />
+                <element signature="e#9814#9852#0#HTML" expanded="true" />
+                <element signature="e#10214#10274#0#HTML" expanded="true" />
+                <element signature="e#10281#10327#0#HTML" expanded="true" />
+                <element signature="e#10515#10793#0#HTML" expanded="true" />
+                <element signature="e#10809#10953#0#HTML" expanded="true" />
+                <element signature="e#11196#11234#0#HTML" expanded="true" />
+                <marker date="1494470114000" expanded="true" signature="20390:20444" ph="..." />
+                <marker date="1494470114000" expanded="true" signature="20539:20595" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510072818_add_attachment_choice_img1_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510072818_add_attachment_choice_img1_to_messages.rb">
+      <file leaf-file-name="messages_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="471">
+              <caret line="70" column="147" lean-forward="false" selection-start-line="70" selection-start-column="147" selection-end-line="70" selection-end-column="147" />
               <folding />
             </state>
           </provider>
@@ -117,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170510074534_add_choices_to_messages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170510074534_add_choices_to_messages.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="-2145">
+              <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,7 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>video</find>
       <find>media</find>
       <find>message-bi</find>
       <find>red</find>
@@ -145,7 +165,6 @@
       <find>&lt;%= for</find>
       <find>choices</find>
       <find>Publi</find>
-      <find>first</find>
       <find>choice-overlay-img1</find>
       <find>choice</find>
       <find>audio</find>
@@ -161,9 +180,12 @@
       <find>.loader</find>
       <find>imagina</find>
       <find>imaginat</find>
+      <find>choice2</find>
+      <find>first</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
+      <replace>second_choice</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -213,8 +235,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510234256_add_messages_to_message.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
@@ -223,6 +243,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20170510075815_add_is_correct_to_messages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170510080146_add_new_choice_to_messages.rb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
       </list>
     </option>
   </component>
@@ -721,12 +743,12 @@
       <workItem from="1494144738421" duration="10317000" />
       <workItem from="1494189179482" duration="816000" />
       <workItem from="1494201406565" duration="11330000" />
-      <workItem from="1494467979618" duration="1116000" />
+      <workItem from="1494467979618" duration="1530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277815000" />
+    <option name="totallyTimeSpent" value="278229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1280" height="726" extended-state="0" />
@@ -969,21 +991,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170510091242_message.rb" />
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1968">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="70" column="206" lean-forward="false" selection-start-line="70" selection-start-column="206" selection-end-line="70" selection-end-column="206" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -992,26 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11232">
-          <caret line="488" column="20" lean-forward="false" selection-start-line="488" selection-start-column="20" selection-end-line="488" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1117,10 +1108,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="496" column="80" lean-forward="false" selection-start-line="496" selection-start-column="80" selection-end-line="496" selection-end-column="80" />
+          <folding>
+            <element signature="e#5586#5843#0#HTML" expanded="true" />
+            <element signature="e#6222#6258#0#HTML" expanded="true" />
+            <element signature="e#6762#6883#0#HTML" expanded="true" />
+            <element signature="e#7332#7376#0#HTML" expanded="true" />
+            <element signature="e#7771#7822#0#HTML" expanded="true" />
+            <element signature="e#8232#8276#0#HTML" expanded="true" />
+            <element signature="e#8678#8731#0#HTML" expanded="true" />
+            <element signature="e#9109#9135#0#HTML" expanded="true" />
+            <element signature="e#9172#9195#0#HTML" expanded="true" />
+            <element signature="e#9322#9602#0#HTML" expanded="true" />
+            <element signature="e#9814#9852#0#HTML" expanded="true" />
+            <element signature="e#10214#10274#0#HTML" expanded="true" />
+            <element signature="e#10281#10327#0#HTML" expanded="true" />
+            <element signature="e#10515#10793#0#HTML" expanded="true" />
+            <element signature="e#10809#10953#0#HTML" expanded="true" />
+            <element signature="e#11196#11234#0#HTML" expanded="true" />
+            <marker date="1494470114000" expanded="true" signature="20390:20444" ph="..." />
+            <marker date="1494470114000" expanded="true" signature="20539:20595" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2145">
+          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="70" column="147" lean-forward="false" selection-start-line="70" selection-start-column="147" selection-end-line="70" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="347" column="37" lean-forward="false" selection-start-line="347" selection-start-column="37" selection-end-line="347" selection-end-column="37" />
+        <state relative-caret-position="273">
+          <caret line="345" column="43" lean-forward="false" selection-start-line="345" selection-start-column="42" selection-end-line="345" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#2;n#!!top" expanded="true" />
