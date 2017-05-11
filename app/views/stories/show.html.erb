@@ -550,7 +550,7 @@ margin-left:-100px;
 
 
 
-  <%= form_for [@story, Message.new]  do |f| %>
+  <%= form_for [@story, Message.new] , multipart: true  do |f| %>
 
 <div class="form-div">
     <%= f.text_field :message1, class:'mes1',  maxlength: 260,  placeholder: "what will " + @story.texter.titleize + " say?" %>
