@@ -92,8 +92,6 @@ ActiveRecord::Schema.define(version: 20170511071318) do
     t.string   "choice_img2_content_type"
     t.integer  "choice_img2_file_size"
     t.datetime "choice_img2_updated_at"
-    t.string   "first_choice"
-    t.string   "second_choice"
     t.boolean  "is_correct"
     t.boolean  "is_correct2"
     t.string   "choice_popup_file_name"
