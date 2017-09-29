@@ -1,0 +1,481 @@
+<script src="https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300" rel="stylesheet">
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/CanvasRenderer.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/Projector.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/OrbitControls.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/150586/THREEx.WindowResize.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
+<style>
+
+
+    
+    .alert {
+      display: none;
+    }
+    .notice {
+      display: none;
+    }
+
+
+
+
+
+
+
+  #section0 img,
+  #section1 img{
+    margin: 20px 0 0 0;
+  }
+  #section2 img,
+  #section3 img{
+    margin: 20px 0 0 52px;
+  }
+
+    .inner-home-container h1 {
+      text-align: center;
+      font-size:100px;
+      letter-spacing:2px;
+      color:white;
+      font-family: 'Josefin Slab', serif;
+
+    }
+
+    #menu {
+      position: fixed;
+      left:0;
+      top:80px;
+      height: 100px;
+      width:50px;
+      background:none;
+      z-index: 999999999999999;
+    }
+
+    #menu div {
+      border-radius: 100%;
+      width:20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,0.5);
+      margin-top:30px;
+    }
+
+  #menu div.active {
+    background:white;
+  }
+
+    .text-container {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      z-index: 9999999999999999999;
+      text-align: center;
+    }
+
+    .text-container h1 {
+      color:white;
+      font-size:40px;
+      font-family: 'Nunito Sans', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top:130px;
+
+    }
+
+    .text-container p {
+      font-size:13px;
+      color:white;
+      font-weight: 100;
+      font-family: Helvetica, sans-serif;
+    }
+
+    .text-container p img {
+      width:20px;
+      height:20px;
+      filter:invert(100%);
+      transform: translateY(-10px) translateX(-5px) !important;
+      padding-left:3px;
+    }
+
+    .text-container button {
+      width:250px;
+      height: 50px;
+      background: rgb(204,24,30);
+      display: block;
+      border:none;
+      color:white;
+      margin: 0 auto;
+      margin-top:15px;
+      border-radius: .2em;
+      position: relative;
+      font-weight: bold;
+      transition: all 400ms ease-in-out;
+    }
+
+
+    .text-container button:hover{
+      background: rgb(204,14,10);
+    }
+
+
+
+    .logo {
+      position: fixed;
+      left:50px;
+      top:40px;
+      width:40px;
+      height: 40px;
+      filter: invert(100%);
+      z-index: 9999999999999999999;
+    }
+
+    input {
+      position: absolute;
+      left:150px;
+      top:40px;
+      width:350px;
+      height: 40px;
+      border:none;
+      background: rgba(255,255,255,0.06);
+      color:black;
+      border-radius: .3em;
+      z-index: 999999999999999999;
+    }
+
+    * {
+      outline: none;
+    }
+    .search {
+      position: absolute;
+      left:150px;
+      top:50px;
+      width:20px;
+      height: 20px;
+      filter: invert(100%);
+      z-index: 999999999999999999;
+
+
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      transform: translateX(30px);
+    }
+
+
+
+    .text2-container {
+      position: absolute;
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100%;
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("giphy.gif") center center no-repeat;
+      background-size:cover;
+      z-index: 9999999999999999;
+    }
+
+    .text2-container h1 {
+      color:white;
+      font-size:40px;
+      font-family: 'Nunito Sans', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top:170px;
+    }
+
+    .text2-container p {
+      font-size:13px;
+      color:white;
+      font-weight: 100;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+    }
+
+
+    .text2-container button {
+      width:250px;
+      height: 50px;
+      background:#569eca;
+      display: block;
+      border:none;
+      color:white;
+      margin: 0 auto;
+      margin-top:15px;
+      border-radius: .2em;
+      position: relative;
+      font-weight: bold;
+      transition: all 400ms ease-in-out;
+    }
+
+    .right-links {
+      position: fixed;
+      right: 40px;
+      top:50px;
+      z-index: 999999999999999;
+
+    }
+
+    .right-links a {
+      color:rgba(255,255,255,0.7);
+      font-size:12px;
+      font-weight:100;
+      font-family: 'Arial', sans-serif;
+      margin-left: 30px;
+      letter-spacing: 2px;
+      cursor: pointer;
+
+    }
+
+    .text3-container {
+      position: absolute;
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100%;
+      background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://pro2-bar-s3-cdn-cf.myportfolio.com/77e52192b707e14738a3ed47166f80c2/b89e70c9-9809-4b01-a4c0-a37cd5e9877d_rw_1200.gif?h=79bc553162a15971e602a4bacf178da3") center center no-repeat;
+      background-size:cover;
+      z-index: 9999999999999999;
+    }
+
+
+    .text3-container h1 {
+      color:white;
+      font-size:40px;
+      font-family: 'Nunito Sans', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top:140px;
+    }
+
+    .navigation-bar {
+      display: none !important;
+    }
+    .text3-container p {
+      font-size:13px;
+      color:white;
+      font-weight: 100;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+    }
+
+
+    .text3-container button {
+      width:250px;
+      height: 50px;
+      background:#569eca;
+      display: block;
+      border:none;
+      color:white;
+      margin: 0 auto;
+      margin-top:15px;
+      border-radius: .2em;
+      position: relative;
+      font-weight: bold;
+      transition: all 400ms ease-in-out;
+    }
+</style>
+
+
+
+<ul id="menu">
+  <a href="#firstPage"><div data-menuanchor="firstPage" class="active"></div></a>
+  <a href="#secondPage"><div data-menuanchor="secondPage"></div></a>
+  <a href="#3rdPage"><div data-menuanchor="3rdPage"> </div></a>
+  <a href="#4thpage"><div data-menuanchor="4thpage"> </div></a>
+</ul>
+
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/S_from_Samsung_Galaxy_S_logo.svg/2000px-S_from_Samsung_Galaxy_S_logo.svg.png"/>
+
+<input placeholder="Search for a story" type="text"/>
+
+<ul class="right-links">
+  <a onclick="window.location.href = '/stories' ">Stories</a>
+  <a>Articles</a>
+</ul>
+
+
+<img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-128.png" class="search"/>
+<div id="fullpage">
+
+  <div class="section active" id="section0">
+    <div id="threejs"></div>
+    <div class="text-container">
+      <h1>Storyly</h1>
+      <p>Let your imagination go free!</p>
+      <button onclick="window.location.href='users/sign_up'">Sign Up</button>
+      <button  onclick="window.location.href='users/sign_in'" style="background: white; color:black">Sign In</button>
+      <p style="font-weight: bold;margin-top:10px;"><img src="http://simpleicon.com/wp-content/uploads/multy-user.png"/>Explore!</p>
+    </div>
+  </div>
+  <div class="section" id="section1">
+    <div style="position: relative;"  class="slide active">
+      <div  class="intro">
+        <div class="text2-container">
+          <h1 style="color:white;">Unleash your inner creativity!</h1>
+          <p>At Storly we have a community of creative people who create the most engaging interactive indie stories you can find.</p>
+          <button>Check Out The Coolest One's</button>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative;" class="slide">
+      <div class="intro">
+        <div class="text3-container">
+          <h1 style="color:white;">A New Way Of Story Telling</h1>
+          <p>At Storly stories are designed in a engaging way. Find out for yourself!</p>
+          <button>View Stories</button>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative;" class="slide">
+      <div class="intro">
+        <div style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('scare.gif') center center no-repeat; background-size: cover;" class="text3-container">
+          <h1 style="color:white;">Beware some of these stories may scare you</h1>
+          <p>Some stories have a certain element of surprise! Beware!</p>
+          <button>Let's get started </button>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="intro">
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section2">
+    <div class="intro">
+    </div>
+  </div>
+  <div class="section" id="section3">
+    <div class="intro">
+    </div>
+  </div>
+</div>
+
+<%= render 'partials/footer' %>
+
+<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['black', 'black', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            css3: true
+        });
+    });
+
+
+    (function() {
+        var addMesh, animate, camera, clock, container, controls, draw, mesh, renderer, rotate, scene, start;
+
+        scene = void 0;
+
+        camera = void 0;
+
+        renderer = void 0;
+
+        container = void 0;
+
+        controls = void 0;
+
+        clock = void 0;
+
+        mesh = void 0;
+
+        rotate = true;
+
+        start = function() {
+            var ASPECT, FAR, NEAR, SCREEN_HEIGHT, SCREEN_WIDTH, VIEW_ANGLE;
+            scene = new THREE.Scene;
+            VIEW_ANGLE = 45;
+            NEAR = 0.1;
+            FAR = 10000;
+            SCREEN_WIDTH = window.innerWidth;
+            SCREEN_HEIGHT = window.innerHeight;
+            ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT;
+            camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);
+            camera.position.set(27.82504298529939, 14.02121980722944, 10.02178601347767);
+            camera.rotation.set(-2.4020274682629177, 0.6097939469542306, 2.6601321578044113);
+            camera.lookAt(scene.position);
+            scene.add(camera);
+            renderer = new THREE.WebGLRenderer({
+                antialias: true,
+                alpha: true
+            });
+            renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+            container = document.getElementById('threejs');
+            container.appendChild(renderer.domElement);
+            clock = new THREE.Clock;
+        };
+
+
+        var hemiLight, jsonLoader, light;
+
+
+        draw = function() {
+            light = new THREE.DirectionalLight(0xff0000, 0.7);
+            light.position.set(50, 0, 500);
+            light.castShadow = true;
+            scene.add(light);
+            jsonLoader = new THREE.ObjectLoader;
+            return jsonLoader.load('untitled-scene-threejs/untitled-scene.json', addMesh);
+        };
+
+
+
+        var myObj;
+        addMesh = function(object) {
+
+
+            myObj = object;
+            var materialObj = new THREE.MeshNormalMaterial({
+                vertexColors: THREE.FaceColors,
+                overdraw: 0.5
+            });
+            object.traverse(function(child) {
+                if (child instanceof THREE.Mesh) {
+                    child.geometry.computeVertexNormals;
+                }
+            });
+
+            object.position.set(10,-16,0);
+            object.rotateY(10);
+            object.scale.set(13,13,13);
+
+            // then directly add the object
+            return scene.add(object);
+        };
+
+        animate = function() {
+            requestAnimationFrame(animate);
+
+
+            myObj.rotation.y += 0.001;
+            return renderer.render(scene, camera);
+        };
+
+
+
+
+        start();
+        var delay = 2000; //milliseconds
+        var timeoutId;
+        var animationIsFinished = false;
+
+        draw();
+
+        animate();
+
+    }).call(this);
+
+
+
+</script>

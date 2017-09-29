@@ -1,290 +1,109 @@
 <% content_for :title, "TellAFiction - Revolutionizing Entertainment. Read, Watch, & Create Engaging Content" %>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
 <style>
 
   body{
     overflow-x: hidden;;
   }
-  .name {
-    transition: all 300ms ease-in-out;
+
+  .grid {
+    width:100%;
   }
 
-  .nav-item:hover{
-    background: none !important;
-    color:black !important;
+  /* reveal grid after images loaded */
+  .grid.are-images-unloaded {
+    opacity: 0;
+  }
+
+  .grid__item,
+  .grid__col-sizer {
+    width: 32%;
+  }
+
+  .grid__gutter-sizer { width: 2%; }
+
+  /* hide by default */
+  .grid.are-images-unloaded .image-grid__item {
+    opacity: 0;
+  }
+
+  .grid__item {
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .grid__item--height1 { height: 140px; background: #EA0; }
+  .grid__item--height2 { height: 220px; background: #C25; }
+  .grid__item--height3 { min-height: 300px; height:auto; background: rgb(51,51,51); }
+
+  .grid__item--width2 { width: 66%; }
+
+  .grid__item img {
+    display: block;
+    max-width: 100%;
   }
 
 
-
-
-
-
-    .pagination{
-      width: 50%;
-      margin: 0 auto;
-      background:rgb(240,240,255);
-      font-size:40px;
-      width:100%;
-      text-align: center;
-      color:rgb(80,80,80) !important;
-      font-weight:lighter !important;
-      position: relative;
-      margin-top: 5px;
-      margin-left: 8px;
-    }
-    .current{
-      font-style: normal;
-      background:rgb(80,80,80);
-      color:white;
-    }
-
-    .category-link {
-      color:white !important;
-    }
-  .category-title{
-    font-size:50px;
+  .page-load-status {
+    display: none; /* hidden by default */
+    padding-top: 20px;
+    border-top: 1px solid #DDD;
     text-align: center;
-    margin-top:45px;
-    background-size: cover;
-    color:white;
-    font-weight:bold !important;
-    -webkit-animation:100s scroll infinite linear;
-    -moz-animation:100s scroll infinite linear;
-    -o-animation:100s scroll infinite linear;
-    -ms-animation:100s scroll infinite linear;
-    animation:100s scroll infinite linear;
-
+    color: #777;
   }
 
+  .all-articles {
+    text-align:center;
+    font-size:50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: show 400ms ease-in-out forwards;
+  }
 
-  @-webkit-keyframes scroll{
+  @keyframes show {
+    0%{
+      transform: translateY(60px);
+      opacity:0;
+    }
     100%{
-      background-position:0px -3000px;
+      transform: translateY(0px);
+      opacity:1;
     }
   }
 
-  @-moz-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
+  .grid__item--height3 h1 {
+    font-size:17px;
+    margin-left:15px;
   }
 
-  @-o-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @-ms-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  .godown {
-    animation: got 1s ease-in-out forwards 1;
-  }
-    
-    .message-div{
-      position: relative;
-      width:100%;
-      height:300px;
-      overflow: hidden;
-    }
-
-
-  video#bgvid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: #000;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-  }
-
-  video#bgvid {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-  }
-
-    .story-overlay{
-      position: absolute;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-      background:rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-
-    .story-label-overlay{
-      color:white !important;
-      font-size:65px !important;
-      text-align: center;
-      margin-top:95px;
-      font-weight: 100 !important;
-
-    }
-    .loader{
-      position: fixed;
-      top:0;
-      left:0;
-      width:100%;
-      height: 100%;
-      z-index: 999999999999999;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      filter: sepia(75%);
-      background: url('/assets/loader.gif') center center;
-      background-size: cover;
-
-
-    }
-
-    .messages-overlay{
-      position: absolute;
-      top:170%;
-      left:0;
-      width:100%;
-      height:30%;
-      background: linear-gradient(rgba(0,0,0,0.1), rgb(20,20,20));
-      transition: all 500ms ease-in-out;
-    }
-
-    figure{
-      overflow: hidden !important;
-    }
-    
-    figure:hover .messages-overlay {
-      top:70%;
-      left:0;
-    }
-
-    .imgimg{
-      min-width:100% !important;
-      min-height: 250px !important;
-      height: auto !important;
-    }
-    figure{
-      min-width: 100% !important;
-    }
-
-    .mes-title{
-      color:white !important;
-      font-size:17px;
-      float: left;
-    }
-    .mes-des{
-      font-size:15px;
-      color:white;
-      float: left;
-      margin-left: 20px;
-    }
-
-    .sign-up-message{
-      position: fixed;
-      top: 14%;
-      right: 0;
-      margin-right:30px;
-      width:400px;
-      height:300px;
-      background:url("/assets/sin.jpg") center center no-repeat;
-      background-position: -100px -100px;
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-      border-radius:.3em;
-      overflow: hidden;
-
-    }
-
-
-
-    .sign-up-message::before {
-      border-bottom: 29px solid #ff73b3;
-      border-right: 29px solid rgba(0, 0, 0, 0);
-      position: absolute;
-      bottom: 0px;
-      right: -15px;
-      content: "";
-    }
-
-    .sign-up-message > h5{
-      color:white;
-      font-size: 25px;
-      margin-top:70px;
-      line-height:40px;
-      width:80%;
-      margin-left:10%;
-      text-align: center;
-      font-weight:300;
-
-
-    }
-    
-    .fa-times-circle{
-      position: absolute;
-      top:10px;
-      left:85%;
-
-    }
-
-    .sin-up{
-      background: #02b875;
-      color:white;
-      border-radius:.4em;
-      width:0px;
-      transform:translateY(-40px) !important;
-      font-size:34px;
-      text-align: center;
-    }
-
-
-  .five {
-    overflow: hidden;
-    color: white;
-    position: relative;
-    width:200px;
-    height:50px;
-    background:#02b875;
-    border-radius: .3em;
-    border:none;
-    margin: 0 auto;
-    margin-top:10px;
-  }
-  .five .layer {
-    color: #fff;
-    position: absolute;
-    top: -70px;
+  .grid__item--height3 img {
     width: 100%;
-    left: 0;
-    padding: 20px 0;
-    background-color: #F44336;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
+    height: auto;
   }
-  .five:hover .layer {
-    top: 0;
+
+  .all-articles {
+    color:white;
   }
+
+  .grid__item--height3 a {
+    color:white;
+  }
+  /* loader ellips in separate pen CSS */
+
+    body {
+      background:black;
+      letter-spacing:1px;
+      font-weight: 900 !important;
+      font-size:12px;
+      font-family: Helvetica, sans-serif;
+    }
+
+    .stories-link {
+      border-bottom: 2px solid rgba(255,255,255,0.7);
+    }
 
 
 
@@ -293,95 +112,63 @@
 </style>
 
 
-<div class="loader">
-
-</div>
 
 
-<div class="message-div">
 
-
-  <video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-    <source src="/assets/abc.mp4" type="video/mp4">
-  </video>
-  <div class="story-overlay">
-    <h1 style="animation-delay: 1.3s" class="story-label-overlay animated ">Revolutionizing Story Telling</h1>
-
-    <% if !user_signed_in? %>
-    <div style="text-align: center;" class="sign-up-message animated ">
-      <i style="color: white; cursor: pointer;font-size:40px;" class="fa fa-times-circle" aria-hidden="true"></i>
-
-      <h5 style="margin-top:40px !important;" class="messs animated bouceIn"><%= "Sign Up Today! Make Your Story Scary, Funny, Crazy You Name It! New Feature! Make Choices As you read!".titlecase %></h5>
-      <button class='myButt five'>
-        <div style="margin-top:-5px;" class='layer'>Let's Do This!</div>
-        Sign Up!
-      </button>
-    </div>
-    <% end %>
+<div class="grid are-images-unloaded">
+  <div class="grid__col-sizer"></div>
+  <div class="grid__gutter-sizer"></div>
+  <div  class="grid__item grid__item--width2">
+    <img src="https://i.ytimg.com/vi/6OKSxE7JCws/maxresdefault.jpg" alt="orange tree" />
   </div>
-</div>
-  <h1  style="text-align: center; color:black; margin-top:50px; font-size:20px !important;  font-weight:lighter;">Message Stories</h1>
 
-
-
-
-<div class="figuration animated" style="margin-top:30px; word-break: break-all;"  id="columns">
-  <% @stories.each_with_index do |story, i| %>
-
-      <% if story.ispublished? %>
-  <figure style="animation-delay: <%= i * 0.05 %>s" class="animated ">
-    <% if story.cover? %>
-    <img class="imgimg" src="<%= story.cover.url(:medium) %>">
+  <% @stories.each do |article| %>
+      <div class="grid__item grid__item--height3">
+        <a href="/articles/<%= article.id %>">
+          <img src="<%= article.cover.url(:medium) %>"/>
+        </a>
+        <% if !article.cover? %>
+            <a href="/stories/<%= article.id %>/view">
+              <h1 style="font-size:40px;"><%= article.title.truncate_words(6) %></h1>
+            </a>
         <% else %>
+            <a href="/articles/<%= article.id %>">
 
-        <%= image_tag 'black.jpg' %>
-
+              <h1><%= article.title %></h1>
+            </a>
         <% end %>
-        <div  class="overlay">
-          <div class="messages-overlay">
-            <h1 class="mes-des"><%= story.synopsis %></h1>
-          </div>
-
-          <a href = "/stories/<%= story.id %>/view">
-            <div class="overlay gold">
-<% if i == 0 %>
-              <img class="gold-img"  style="width:50px;height:50px; margin-left:42%; margin-top:5px;  " src = "/assets/badge-simple-flat.png">
-            <% end %>
-                  </div>
-          </a>
+        <a href="/user/<%= article.user.id %>">
+          <h1 class="parallax-scroll"><span>By <%= article.user.firstname %> <%= article.created_at.strftime('%B/%d/%Y') %></span></h1>
+        </a>
+      </div>
+  <% end %>
 
 
-          <a href = "/stories/<%= story.id %>"><h1 class="view-count" style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1></a>
-          <h1 class="index-title" style="position: absolute;background:black;top:34px; font-size:25px;left:20px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase ,length:25) %></h1>
+  <div class="grid__item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look out" />
+  </div>
 
 
-
-          <a class="" href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:90px;   font-size:15px;  left:20px; word-break: break-all;color:white;"> <span style="font-size:20px; "> By <%= story.user.firstname.titlecase %></span>
-            <% if story.user.cover.present? %>
-                <img class="mobile-profile" style="padding-right: 10px;width:40px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%; padding-right:15px;"  src="<%= story.user.cover.url(:medium) %>" alt="Profile image example"/>
-            <% else  %>
-                <img class="mobile-profile"  style="padding-right: 10px;width:40px !important; float: left;   left: 0;height:30px !important;  border-radius: 100%;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
-            <% end %>
-          </h1></a>
-
-
-          <% if story.category.present?  %>
-              <h1 class="name category "  style="position: absolute;top:100px; font-size:20px; font-style: italic;  left:210px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
-          <% end %>
-        </div>
-  </figure>
-
-
-<% end %>
-
-      <% end %>
 
 </div>
-<audio  class="audio d">
-  <source  src="/assets/pop.mp3" type="audio/mpeg">
-</audio>
+
+<div class="page-load-status">
+  <div class="loader-ellips infinite-scroll-request">
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+  </div>
+  <p class="infinite-scroll-last">End of content</p>
+  <p class="infinite-scroll-error">No more pages to load</p>
+</div>
+
+<%= render 'partials/footer' %>
+
 
 <script>
+
+  $(".footer-instructions").html("Hey <%= current_user.firstname %> enjoy these amazing stories!");
 
   $(".layer").click(function(){
       window.location.href = "/users/sign_up";
@@ -410,6 +197,64 @@
      $(".figuration").addClass("fadeInUp")
 
   });
+
+</script>
+
+<script>
+    //
+    //-------------------------------------//
+
+    $(document).on("turbolinks:load")
+    {
+        // init Masonry
+        $('.grid').masonry('reload');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: 'none', // select none at first
+            columnWidth: '.grid__col-sizer',
+            gutter: '.grid__gutter-sizer',
+            percentPosition: true,
+            stagger: 30,
+            // nicer reveal transition
+            visibleStyle: {transform: 'translateY(0)', opacity: 1},
+            hiddenStyle: {transform: 'translateY(100px)', opacity: 0},
+        });
+
+        // get Masonry instance
+        var msnry = $grid.data('masonry');
+
+        // initial items reveal
+        $grid.imagesLoaded(function () {
+            $grid.removeClass('are-images-unloaded');
+            $grid.masonry('option', {itemSelector: '.grid__item'});
+            var $items = $grid.find('.grid__item');
+            $grid.masonry('appended', $items);
+        });
+
+        //-------------------------------------//
+        // hack CodePen to load pens as pages
+
+        var nextPenSlugs = [
+            '202252c2f5f192688dada252913ccf13',
+            'a308f05af22690139e9a2bc655bfe3ee',
+            '6c9ff23039157ee37b3ab982245eef28',
+        ];
+
+        function getPenPath() {
+            var slug = nextPenSlugs[this.loadCount];
+            if (slug) {
+                return 'modernfitness.herokuapp.com' + slug;
+            }
+        }
+    }
+
+
+    //-------------------------------------//
+    // init Infinte Scroll
+
+
+
+
 
 </script>
 

@@ -33,7 +33,7 @@
     .shape{
       width: 300px;
       height: 140px;
-      border: 12px solid #FA8072;
+      border: 12px solid rgb(71,71,71);
 
       position:absolute; /*it can be fixed too*/
       left:0; right:0;
@@ -53,8 +53,8 @@
       height: 140px;
 
       position:absolute; /*it can be fixed too*/
-      left:60px; right:0;
-      top:58px; bottom:0;
+      left:0px; right:0;
+      top:100px; bottom:0;
       margin:auto;
 
       /*this to solve "the content will not be cut when the window is smaller than the content": */
@@ -73,7 +73,7 @@
       height: 140px;
 
       position:absolute; /*it can be fixed too*/
-      left:110px; right:0;
+      left:0px; right:0;
       top:100px; bottom:0;
       margin:auto;
       font-weight: lighter;
@@ -92,13 +92,13 @@
 
     }
     .choose-message:hover {
-      background:  #c51109;
+      background:  #a67fc0;
     }
     .choose-message:hover h1{
       color:white;
     }
   .choose-story:hover{
-    background: #0B93F6;
+    background: #37475c;
   }
   .choose-story:hover h1{
     color:white;
@@ -126,13 +126,23 @@
       width: 100%;
     }
 
+    .h1-choose {
+      font-family: 'Nunito Sans', sans-serif !important;
+      font-size:25px !important;
+      width:200px !important;
+      text-align: center !important;
+
+    }
+
+
+
 </style>
 
 <% if user_signed_in? %>
 <div class="choose-message">
   <div class="shape">
   </div>
-  <h1 class="h1-choose">Story With Text Messages</h1>
+  <h1 class="h1-choose">Message Stories</h1>
 </div>
 
 <div class="choose-story">

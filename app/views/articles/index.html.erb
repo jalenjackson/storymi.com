@@ -1,237 +1,263 @@
-<% content_for :title, "TellAFiction - Free Writer Stories " %>
-<% content_for :image, "/assets/log.png" %>
+<% content_for :title, "TellAFiction - Revolutionizing Entertainment. Read, Watch, & Create Engaging Content" %>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
 <style>
 
-  .name {
-    transition: all 300ms ease-in-out;
-  }
-  .name:hover{
-    background: #8e44ad !important;
-  }
-
   body{
-    background:black;
+    overflow-x: hidden;;
   }
 
-
-
-  nav{
-    background:rgb(40,40,40) !important;
-    color:white !important;
-    border:none !important;
-    box-shadow: none !important;
-  }
-
-  nav li {
-    color:white !important;
-
-  }
-  nav a {
-    color:white !important;
-
-  }
-
-
-  .name:after {
-    content: '';
-    position: absolute;
-    top: 110%;
-    left: 0;
-    right: 0;
-    background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
-    background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
-    height: 5px;
-  }
-
-
-
-
-  .pagination{
-    width: 50%;
-    margin: 0 auto;
-    background:rgb(240,240,255);
-    font-size:40px;
+  .grid {
     width:100%;
+  }
+
+  /* reveal grid after images loaded */
+  .grid.are-images-unloaded {
+    opacity: 0;
+  }
+
+  .grid__item,
+  .grid__col-sizer {
+    width: 32%;
+  }
+
+  .grid__gutter-sizer { width: 2%; }
+
+  /* hide by default */
+  .grid.are-images-unloaded .image-grid__item {
+    opacity: 0;
+  }
+
+  .grid__item {
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .grid__item--height1 { height: 140px; background: #EA0; }
+  .grid__item--height2 { height: 220px; background: #C25; }
+  .grid__item--height3 { min-height: 300px; height:auto; background: rgb(51,51,51); }
+
+  .grid__item--width2 { width: 66%; }
+
+  .grid__item img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .page-load-status {
+    display: none; /* hidden by default */
+    padding-top: 20px;
+    border-top: 1px solid #DDD;
     text-align: center;
-    color:rgb(80,80,80) !important;
-    font-weight:lighter !important;
-    position: relative;
-    margin-top: 5px;
-    margin-left: 8px;
-  }
-  .current{
-    font-style: normal;
-    background:rgb(80,80,80);
-    color:white;
+    color: #777;
   }
 
-  .category-link {
-    color:white !important;
-  }
-
-  .category-title{
+  .all-articles {
+    text-align:center;
     font-size:50px;
-    text-align: center;
-    margin-top:45px;
-    background-size: cover;
-    color:white;
-    background: url(https://s-media-cache-ak0.pinimg.com/originals/3f/49/bd/3f49bda40a090feca577a5451b1b97c6.jpg);
-    font-weight:bold !important;
-    -webkit-animation:100s scroll infinite linear;
-    -moz-animation:100s scroll infinite linear;
-    -o-animation:100s scroll infinite linear;
-    -ms-animation:100s scroll infinite linear;
-    animation:100s scroll infinite linear;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: show 400ms ease-in-out forwards;
   }
 
-
-  @-webkit-keyframes scroll{
+  @keyframes show {
+    0%{
+      transform: translateY(60px);
+      opacity:0;
+    }
     100%{
-      background-position:0px -3000px;
+      transform: translateY(0px);
+      opacity:1;
     }
   }
 
-  @-moz-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
+  .grid__item--height3 h1 {
+    font-size:17px;
+    margin-left:15px;
   }
 
-  @-o-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @-ms-keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-
-  @keyframes scroll{
-    100%{
-      background-position:0px -3000px;
-    }
-  }
-  .nav-item{
-    transform:translateY(3px) !important;
-    font-family: Helvetica,sans-serif;
-    font-weight: 300 !important;
-    cursor: pointer;
-    color:white !important;
-  }
-    .nav-item:hover{
-      color:white !important;
-    }
-
-    nav li:hover {
-      color:white !important;
-    }
-
-    .tele:hover{
-      background:black !important;
-      color:white !important;
-    }
-  .message-div{
-    position: relative;
-    width:100%;
-    height:300px;
-    overflow: hidden;
-  }
-  .loader{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    z-index: 999999999999999;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    filter: sepia(75%);
-    background: url('/assets/loader.gif') center center;
-    background-size: cover;
-
-
-  }
-  .story-overlay{
-    position: absolute;
-    top:0;
-    left:0;
+  .grid__item--height3 img {
     width: 100%;
-    height: 100%;
-    background:rgba(0,0,0,0.3);
-    z-index: 999;
+    height: auto;
   }
 
-  .story-label-overlay{
-    color:white !important;
-    font-size:55px !important;
-    text-align: center;
-    margin-top:95px;
-    font-weight: 100 !important;
-
+  .all-articles {
+    color:white;
   }
+
+  .grid__item--height3 a {
+    color:white;
+  }
+  /* loader ellips in separate pen CSS */
+
+  body {
+    background:black;
+    letter-spacing:1px;
+    font-weight: 900 !important;
+    font-size:12px;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .articles-link {
+    border-bottom: 2px solid white;
+  }
+
+
+
+
 
 </style>
 
-<div class="loader">
 
-</div>
-<div class="message-div">
 
-  <video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-    <source src="/assets/yo.mp4" type="video/mp4">
-  </video>
-  <div class="story-overlay">
-    <h1 style="animation-delay: 1.3s" class="story-label-overlay animated ">Your Only Limited By Your Own Imagination</h1>
+
+
+<div class="grid are-images-unloaded">
+  <div class="grid__col-sizer"></div>
+  <div class="grid__gutter-sizer"></div>
+  <div  class="grid__item grid__item--width2">
+    <img src="http://pop.h-cdn.co/assets/16/37/640x320/gallery-1473953626-perds.gif" alt="orange tree" />
   </div>
-</div>
-<h1 class="article-story" style="text-align: center; color:white; margin-top: 50px; font-size:20px; font-weight:lighter;">Stories</h1>
 
-<div class="figuration animated" style="margin-top:30px;" id="columns">
+  <% @articles.each do |article| %>
+      <div class="grid__item grid__item--height3">
+        <a href="/articles/<%= article.id %>">
+          <img src="<%= article.cover.url(:medium) %>"/>
+        </a>
+        <% if !article.cover? %>
+            <a href="/stories/<%= article.id %>/view">
+              <h1 style="font-size:40px;"><%= article.title.truncate_words(6) %></h1>
+            </a>
+        <% else %>
+            <a href="/articles/<%= article.id %>">
 
-  <% @articles.each do |story| %>
-
-      <% if story.ispublished? %>
-          <a href = "/articles/<%= story.id %>" >
-            <figure>
-              <% if story.cover? %>
-                  <img src="<%= story.cover.url(:medium) %>">
-              <% else %>
-
-                  <img src="http://www.peterfuda.com/wp-content/uploads/2014/11/Story-Image-e1415228963753.jpg">
-
-              <% end %>
-              <div class="overlay"></div>
-
-              <a href = "/stories/<%= story.id %>"><h1 style="position: absolute;background:black;top:5px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1></a>
-              <h1 style="position: absolute;background:black;top:34px; font-size:25px;left:20px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase ,length:25) %></h1>
-              <a href ="/profile/<%= story.user.id %>"><h1 class="name" style="position: absolute;top:100px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1></a>
-              <% if story.category.present?  %>
-                  <h1 class="name"  style="position: absolute;top:100px; font-size:20px; font-style: italic;  left:200px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
-              <% end %>
-
-            </figure>
-          </a>
-
-      <% end %>
-
+              <h1><%= article.title %></h1>
+            </a>
+        <% end %>
+        <a href="/user/<%= article.user.id %>">
+          <h1 class="parallax-scroll"><span>By <%= article.user.firstname %> <%= article.created_at.strftime('%B/%d/%Y') %></span></h1>
+        </a>
+      </div>
   <% end %>
 
 
+  <div class="grid__item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look out" />
+  </div>
+
+
+
 </div>
 
+<div class="page-load-status">
+  <div class="loader-ellips infinite-scroll-request">
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+    <span class="loader-ellips__dot"></span>
+  </div>
+  <p class="infinite-scroll-last">End of content</p>
+  <p class="infinite-scroll-error">No more pages to load</p>
+</div>
+
+<%= render 'partials/footer' %>
+
+
 <script>
+
+    $(".footer-instructions").html("<%= current_user.firstname %> check out these amazing articles!");
+
+
+    $(".layer").click(function(){
+        window.location.href = "/users/sign_up";
+    });
+
+    $(".sign-up-message").hide();
+    $(".fa-times-circle").click(function(){
+        $(".sign-up-message").addClass("zoomOut");
+    });
+
     $(window).load(function(){
+
+
+        <% if !user_signed_in? %>
+        setTimeout(function(){
+            $(".d").trigger('play');
+        },1300);
+        <% end %>
+        setTimeout(function(){
+            $(".sign-up-message").show().addClass("pulse")
+        },2000);
+
+        $("body").css("overflow","auto");
         $(".loader").fadeOut("slow");
         $(".story-label-overlay").addClass("fadeInUp");
         $(".figuration").addClass("fadeInUp")
 
     });
+
 </script>
+
+<script>
+    //
+    //-------------------------------------//
+
+    $(document).on("turbolinks:load")
+    {
+        // init Masonry
+        $('.grid').masonry('reload');
+
+        var $grid = $('.grid').masonry({
+            itemSelector: 'none', // select none at first
+            columnWidth: '.grid__col-sizer',
+            gutter: '.grid__gutter-sizer',
+            percentPosition: true,
+            stagger: 30,
+            // nicer reveal transition
+            visibleStyle: {transform: 'translateY(0)', opacity: 1},
+            hiddenStyle: {transform: 'translateY(100px)', opacity: 0},
+        });
+
+        // get Masonry instance
+        var msnry = $grid.data('masonry');
+
+        // initial items reveal
+        $grid.imagesLoaded(function () {
+            $grid.removeClass('are-images-unloaded');
+            $grid.masonry('option', {itemSelector: '.grid__item'});
+            var $items = $grid.find('.grid__item');
+            $grid.masonry('appended', $items);
+        });
+
+        //-------------------------------------//
+        // hack CodePen to load pens as pages
+
+        var nextPenSlugs = [
+            '202252c2f5f192688dada252913ccf13',
+            'a308f05af22690139e9a2bc655bfe3ee',
+            '6c9ff23039157ee37b3ab982245eef28',
+        ];
+
+        function getPenPath() {
+            var slug = nextPenSlugs[this.loadCount];
+            if (slug) {
+                return 'modernfitness.herokuapp.com' + slug;
+            }
+        }
+    }
+
+
+    //-------------------------------------//
+    // init Infinte Scroll
+
+
+
+
+
+</script>
+
 
 <%= will_paginate @articles %>

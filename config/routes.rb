@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get '/story/new', to: 'choose#index'
 
+  get '/stories', to: 'stories#index'
+
+  root :to => 'home#index'
+
   resources :videos do
     resources :comments
     member do
@@ -35,7 +39,6 @@ Rails.application.routes.draw do
       end
     end
   end
-      root :to => 'stories#index'
 
 
   get 'stories/:id/view', to: 'stories#view'

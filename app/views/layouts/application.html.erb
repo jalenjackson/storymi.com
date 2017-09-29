@@ -30,7 +30,7 @@
       }
         .nav-item:hover{
           background: none;
-          color:black !important;
+          color:white !important;
         }
 
         .log{
@@ -46,13 +46,22 @@
           color:grey !important;
         }
 
+
+        .story-name {
+          color:white !important;
+          position: fixed !important;
+          right:150px !important;
+          top:2px;
+          font-size:22px !important;
+        }
+
         .tele:hover{
           background: white !important;
           color:grey !important;
         }
 
         nav li:hover {
-          color:black !important;
+          color:white !important;
         }
         
         .li-name{
@@ -82,12 +91,12 @@
         bottom: 0;
         height: 3px;
         width: 0;
-        background: #0a17ea;
+        background: white;
         transition: width .5s ease;
       }
       .sliding-u-l-r-l:hover:before {
         width: 100%;
-        background: #0a17ea;
+        background: white;
         transition: width .5s ease;
       }
       .sliding-u-l-r-l:hover:after {
@@ -95,6 +104,50 @@
         background: transparent;
         transition: width .5s ease;
       }
+
+      .navigation-bar {
+        background:rgb(31,31,31) !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+
+        .navigation-bar a, .navigation-bar li {
+          color:white !important;
+
+        }
+
+        .right-sign-up {
+          position: fixed;
+          right: 30px;
+          top:3px;
+        }
+
+        .right-sign-up img {
+          width:40px;
+          height: 40px;
+          margin-top:-10px;
+        }
+
+        .notifiter {
+          position: fixed;
+          right:40px;
+          width:15px;
+          height: 15px;
+          border-radius: 100%;
+          background:red;
+          top:10px;
+          text-align: center;
+        }
+
+        .notifiter h1 {
+          color:white;
+          font-size:10px;
+          margin-top:1px;
+
+        }
+
+
+
     </style>
     <title><%= yield(:title) %></title>
     <meta name="Description" CONTENT="Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more. Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction. Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today! Fiction, Books, Videos ">
@@ -111,6 +164,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
+
   </head>
 
   <body>
@@ -126,62 +181,17 @@
   <p class="alert"><%= alert %></p>
 
 
-  <div class="category-overlay">
 
-    <h1 class="animated bounceInLeft"><a class="cat-link" href = "/category/24"><span style="background: url('/assets/science.jpg')">SCI-FI</span></a></h1>
-    <h1 style="animation-delay: 0.1s ;" class="animated bounceInLeft"><a class="cat-link" href = "/category/17"><span style="animation-delay: 0.3s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%), url(https://image.shutterstock.com/z/stock-vector-scary-fantasy-pattern-background-hair-and-eyes-blue-eyes-in-pink-hair-294640793.jpg)">Horror</span></a></h1>
-    <h1 style="animation-delay: 0.2s ;" class="animated bounceInLeft"><a class="cat-link" href = "/category/20"><span style="animation-delay: 0.6s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%), url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_zknayTcu_S.jpg)">Fantasy</span></a></h1>
-    <h1 style="animation-delay: 0.3s ;" class="animated bounceInLeft"><a class="cat-link" href = "/category/19"><span style="animation-delay: 0.9s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://st.depositphotos.com/1341440/1362/v/950/depositphotos_13624912-stock-illustration-seamless-pattern-with-pink-and.jpg)">Romance</span></a></h1>
-    <h1 style="animation-delay: 0.4s ;"class="animated bounceInLeft"><a class="cat-link" href = "/category/22"><span style="animation-delay: 1.2s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://www.presentationmagazine.com/powerpoint-templates/9/8/98199434/free-color-powerpoint-template-for-presentations-_1.jpg)">Thriller</span></a></h1>
-    <h1 style="animation-delay: 0.5s ; "class="animated bounceInLeft"><a class="cat-link" href = "/category/21"><span style="animation-delay: 1.5s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://previews.123rf.com/images/mihno/mihno1505/mihno150500047/40730251-Abstract-ink-background-Marble-style-White-black-ink-in-water-Stock-Photo.jpg)">Mystery</span></a></h1>
-    <h1 style="animation-delay: 0.6s ; "class="animated bounceInLeft"><a class="cat-link" href = "/category/18"><span style="animation-delay: 1.9s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://s-media-cache-ak0.pinimg.com/originals/b4/d3/83/b4d383b9130a29fd7218f161106f8e1e.jpg)">Drama</span></a></h1>
-    <h1 style="animation-delay: 0.7s ;" class="animated bounceInLeft"><a  class="cat-link" href = "/category/23"><span style="animation-delay: 2.1s ;background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 0%),url(https://st2.depositphotos.com/5817452/8470/v/950/depositphotos_84703236-stock-illustration-crowd-of-laughing-people-hand.jpg)">Comedy</span></a></h1>
-  </div>
 
-  <div class="mobile-menu">
-    <h1><a style="color:white;" href = "/">Message Stories</a></h1>
-    <h1><a style="color:white;" href = "/articles/">Stories</a></h1>
-    <h1><a style="color:white;" href = "/videos/">Videos</a></h1>
-
-    <h1 class="cat-link2">Categories</h1>
-    <% if user_signed_in? %>
-        <h1><a style="color:white;" href = "/story/new">New Story</a></h1>
-    <% else %>
-        <h1><a style="color:white;" href = "/users/sign_up">New Story</a></h1>
-    <% end %>
-
-    <% if user_signed_in? %>
-        <h1><%= link_to 'New Video', new_video_path, remote:true, class:'nav-item ' %></h1>
-    <% else %>
-        <h1><%= link_to 'New Video', '/users/sign_up' ,  class:'nav-item ' %></h1>
-
-    <% end %>
-
-    <% if user_signed_in? %>
-        <h1><a style="color:white;" class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></h1>
-        <h1><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item' %></h1>
-
-        <h1><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item'%></h1>
-        <h1  class="story-name"> </h1>
-
-        </ul>
-    <% else %>
-        <h1 style="color:white;"><%= link_to "Sign In", new_user_session_path, :style=>'transform:translate(20px,-22px); color:white;', class: 'nav-item'%></h1>
-        <h1 style="color:white;"><%= link_to "Sign Up", new_user_registration_path, :style=>'transform:translate(30px,-22px); color:white;', class: 'nav-item'  %></h1>
-
-    <% end %>
-
-  </div>
-  <nav style="box-shadow: 0 8px 6px -6px #999;background: white;" class=" navigation-bar  is-visible" data-nav-status="toggle">
+  <nav  class=" navigation-bar  is-visible" data-nav-status="toggle">
     <div class="eyes">
 
     </div>
     <ul>
 
-      <li><%= image_tag 'log.png' , class: 'log'%></li>
 
 
-      <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px; font-weight:lighter; font-weight: bold; color:grey; font-family: 'Lato',  sans-serif;" href = "/">TellAFiction</a></li>
+      <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px;  font-weight: bold; color:grey; font-family: 'Nunito Sans', sans-serif;" href = "/">STORLY</a></li>
 
       <div style="" class="mobile-brand">
         <h1 style="float:left;position: absolute;top:0px;left:0;">TellAFiction</h1>
@@ -189,9 +199,8 @@
       </div>
 
 
-      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change sliding-u-l-r-l">Message Stories</li>
-      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change sliding-u-l-r-l ">Free Writers</li>
-      <li  style="transform:translateY(3px);font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go3 mobile-change sliding-u-l-r-l ">Videos <span style="font-size:10px; color:purple; ">New <i class="fa fa-gift" aria-hidden="true"></i></span></li>
+      <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change sliding-u-l-r-l stories-link">Stories</li>
+      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change sliding-u-l-r-l  articles-link">Articles</li>
       <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change sliding-u-l-r-l">Categories</li>
 
       <% if user_signed_in? %>
@@ -200,17 +209,14 @@
           <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/users/sign_up', class:'nav-item ' %></li>
       <% end %>
 
-      <% if user_signed_in? %>
-          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; " ><%= link_to 'Publish a video', new_video_path, remote:true, class:'nav-item ' %></li>
-      <% else %>
-          <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; !important; "><%= link_to 'Publish a video', '/users/sign_up' ,  class:'nav-item ' %></li>
-
-    <% end %>
 
 
       <% if user_signed_in? %>
-      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><a class="nav-item" href = "/profile/<%= current_user.id %>">My Profile</a></li>
-      <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to 'Edit your profile', edit_user_registration_path , class:'nav-item ' %></li>
+          <div class="right-sign-up">
+            <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><img src="person-flat.png"/> </li>
+            <div class="notifiter"><h1>10+</h1></div>
+          </div>
+
 
           <li class="sliding-u-l-r-l"style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><%= link_to "Sign out", destroy_user_session_path, :method => :delete , class:'nav-item '%></li>
 
@@ -251,16 +257,13 @@
 
 
     $(".category-go1").click(function(){
-        window.location.href = "/";
+        window.location.href = "/stories";
     });
     $(".category-go2").click(function(){
         window.location.href = "/articles";
 
     });
-    $(".category-go3").click(function(){
-        window.location.href = "/videos";
 
-    });
 
 
     $(".category-overlay").hide();

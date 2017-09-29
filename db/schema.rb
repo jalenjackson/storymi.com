@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511071318) do
+ActiveRecord::Schema.define(version: 20170929044829) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -112,6 +112,8 @@ ActiveRecord::Schema.define(version: 20170511071318) do
     t.string   "ending_image_content_type"
     t.integer  "ending_image_file_size"
     t.datetime "ending_image_updated_at"
+    t.string   "first_choice"
+    t.string   "second_choice"
     t.index ["story_id"], name: "index_messages_on_story_id"
   end
 
