@@ -136,10 +136,14 @@
 
               <h1><%= article.title %></h1>
             </a>
-        <% end %>
+
+            <h1 style="color:white;"><%= pluralize(article.impressionist_count, "view") %></h1>
+
+      <% end %>
         <a href="/profile/<%= article.user.id %>">
           <h1 class="parallax-scroll"><span>By <%= article.user.firstname %> <%= article.created_at.strftime('%B/%d/%Y') %></span></h1>
         </a>
+
       </div>
   <% end %>
 
