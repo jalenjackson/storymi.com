@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="139" column="58" lean-forward="false" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+            <state relative-caret-position="240">
+              <caret line="134" column="52" lean-forward="false" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="118">
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -107,18 +107,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/stories/new.html.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secrets.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/secrets.yml">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stories/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -131,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Next</find>
       <find>ending_ima</find>
       <find>ending-audio</find>
       <find>story.user.firs</find>
@@ -161,6 +160,7 @@
       <find>view</find>
       <find>plur</find>
       <find>plura</find>
+      <find>aws</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -196,7 +196,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20170511071217_add_ending_to_messages.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/articles.scss" />
@@ -224,6 +223,7 @@
         <option value="$PROJECT_DIR$/app/views/soon/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -304,6 +304,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TellAFiction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TellAFiction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,12 +768,12 @@
       <workItem from="1506721956389" duration="143000" />
       <workItem from="1506731936475" duration="160000" />
       <workItem from="1506820042142" duration="644000" />
-      <workItem from="1506919853070" duration="9094000" />
+      <workItem from="1506919853070" duration="9553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325128000" />
+    <option name="totallyTimeSpent" value="325587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="1280" height="708" extended-state="0" />
@@ -793,13 +811,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -960,14 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1201,11 +1204,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="139" column="58" lean-forward="false" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+        <state relative-caret-position="240">
+          <caret line="134" column="52" lean-forward="false" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
