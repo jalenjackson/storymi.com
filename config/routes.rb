@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
 
+
+  get '/all', to: 'all#index'
+
+  root :to => 'home#index'
+
   resources :videos
   resources :articles do
     member do
@@ -15,7 +20,6 @@ Rails.application.routes.draw do
 
   get '/stories', to: 'stories#index'
 
-  root :to => 'home#index'
 
   resources :videos do
     resources :comments

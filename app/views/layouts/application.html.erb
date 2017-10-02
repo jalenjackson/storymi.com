@@ -146,6 +146,13 @@
 
         }
 
+        .side-name {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size:20px;
+          transform: translateY(-3px);
+          cursor: pointer;
+        }
+
 
 
     </style>
@@ -191,7 +198,7 @@
 
 
 
-      <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px;  font-weight: bold; color:grey; font-family: 'Nunito Sans', sans-serif;" href = "/">STORYMI</a></li>
+      <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px;  font-weight: bold; color:grey; font-family: 'Nunito Sans', sans-serif;" <% if user_signed_in? %> href = "/stories" <% else %>  href="/" <% end %> >STORYMI</a></li>
 
       <div style="" class="mobile-brand">
         <h1 style="float:left;position: absolute;top:0px;left:0;">TellAFiction</h1>
@@ -200,8 +207,7 @@
 
 
       <li style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " class="category-go1 mobile-change sliding-u-l-r-l stories-link">Stories</li>
-      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go2 mobile-change sliding-u-l-r-l  articles-link">Articles</li>
-      <li  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change sliding-u-l-r-l">Categories</li>
+      <li onclick="window.location.href = '/all'"  style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important; cursor: pointer; color:grey; " class="category-go mobile-change sliding-u-l-r-l">Categories</li>
 
       <% if user_signed_in? %>
       <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; " ><%= link_to 'New Story', '/story/new', class:'nav-item ' %></li>
@@ -213,8 +219,7 @@
 
       <% if user_signed_in? %>
           <div class="right-sign-up">
-            <li class="sliding-u-l-r-l" style="transform:translateY(3px); font-family: Helvetica,sans-serif;font-weight: 300 !important;  cursor: pointer; color:grey; "><img src="person-flat.png"/> </li>
-            <div class="notifiter"><h1>10+</h1></div>
+            <li  onclick="window.location.href='/profile/<%= current_user.id %>'" class="side-name"><%= current_user.firstname %></li>
           </div>
 
 

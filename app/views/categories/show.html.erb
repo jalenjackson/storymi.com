@@ -48,7 +48,7 @@
       text-align: center;
       margin-top:45px;
       background-size: cover;
-      color:white;
+      color:black;
       font-weight:bold !important;
       -webkit-animation:100s scroll infinite linear;
       -moz-animation:100s scroll infinite linear;
@@ -99,7 +99,6 @@
 <% end %>
 
 <% if @stories.last.present? %>
-    <h1 style="text-align: center;font-weight:lighter">Message Stories</h1>
 
 <div style="margin-top:60px;" id="columns">
   <% @stories.each do |story| %>
@@ -111,56 +110,38 @@
           <% if story.category.name == "Romance" %>
               <script>
 
-                      $(".brand").css('background',"url(https://st.depositphotos.com/1341440/1362/v/950/depositphotos_13624912-stock-illustration-seamless-pattern-with-pink-and.jpg)");
 
-                  $(".category-title").css('background',"url(https://st.depositphotos.com/1341440/1362/v/950/depositphotos_13624912-stock-illustration-seamless-pattern-with-pink-and.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Horror" %>
               <script>
-                      $(".brand").css('background',"url(https://image.shutterstock.com/z/stock-vector-scary-fantasy-pattern-background-hair-and-eyes-blue-eyes-in-pink-hair-294640793.jpg)");
-                  $(".category-title").css('background',"url(https://image.shutterstock.com/z/stock-vector-scary-fantasy-pattern-background-hair-and-eyes-blue-eyes-in-pink-hair-294640793.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Drama" %>
               <script>
-                  $(".brand").css('background',"url(http://www.webdesignhot.com/wp-content/uploads/2013/05/Vector-Seamless-Abstract-Pattern-Background.jpg)");
-                  $(".category-title").css('background',"url(http://www.webdesignhot.com/wp-content/uploads/2013/05/Vector-Seamless-Abstract-Pattern-Background.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Fantasy" %>
               <script>
 
-                      $(".brand").css('background',"url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_zknayTcu_S.jpg)");
-                      $(".category-title").css('background',"url(https://d1yn1kh78jj1rr.cloudfront.net/preview/vector-seamless-texture-with-abstract-flowers-endless-background-ethnic-sea_zknayTcu_S.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Mystery" %>
               <script>
 
-                      $(".brand").css('background',"url(https://previews.123rf.com/images/mihno/mihno1505/mihno150500047/40730251-Abstract-ink-background-Marble-style-White-black-ink-in-water-Stock-Photo.jpg)");
-                      $(".category-title").css('background',"url(https://previews.123rf.com/images/mihno/mihno1505/mihno150500047/40730251-Abstract-ink-background-Marble-style-White-black-ink-in-water-Stock-Photo.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Thriller" %>
               <script>
-                      $(".brand").css('background',"url(https://www.presentationmagazine.com/powerpoint-templates/9/8/98199434/free-color-powerpoint-template-for-presentations-_1.jpg)");
-                      $(".category-title").css('background',"url(https://www.presentationmagazine.com/powerpoint-templates/9/8/98199434/free-color-powerpoint-template-for-presentations-_1.jpg)");
               </script>
           <% end %>
           <% if story.category.name == "Comedy" %>
               <script>
-                  $(".brand").css('background',"url(https://st2.depositphotos.com/5817452/8470/v/950/depositphotos_84703236-stock-illustration-crowd-of-laughing-people-hand.jpg)");
-                  $(".category-title").css({
-                      'background':"url(https://st2.depositphotos.com/5817452/8470/v/950/depositphotos_84703236-stock-illustration-crowd-of-laughing-people-hand.jpg)",
-                      'color' : 'red'
-                  });
+
               </script>
           <% end %>
           <% if story.category.name == "SCI-FI" %>
               <script>
-                  $(".brand").css('background',"url(http://www.jotdown.es/wp-content/uploads/2014/12/peq1.jpg)");
-                  $(".category-title").css('background',"url(http://www.jotdown.es/wp-content/uploads/2014/12/peq1.jpg)");
               </script>
           <% end %>
           <a href = "/stories/<%= story.id %>/view" >
@@ -290,4 +271,3 @@
 
 
 <%= will_paginate @stories %>
-<%= will_paginate @articles %>

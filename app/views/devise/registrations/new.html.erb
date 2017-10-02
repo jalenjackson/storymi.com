@@ -1,5 +1,6 @@
 
 <% content_for :title, "TellAFiction - Revolutionizing Entertainment Read, Watch, & Create Engaging Content " %>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
 
 <style>
   @charset "UTF-8";
@@ -11,307 +12,73 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-
-  }
-  .loader{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    z-index: 999999999999999;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    filter: sepia(75%);
-    background: url('/assets/loader.gif') center center;
+    background: url(http://t.wallpaperweb.org/wallpaper/3_dimensional/2560x1440/super3dguitar2560x1440wallpaper1996.jpg) center center no-repeat;
     background-size: cover;
+    overflow-y: scroll;
 
   }
-  .table {
-    display: table;
-    width: 100%;
-    height: 100%;
-  }
 
-  .table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+    h1 {
+      text-align:center;
+      font-family: 'Nunito Sans', sans-serif;
+      color:white;
+      font-size:50px;
+      font-weight: 900;
+      margin-top:50px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: move-up 500ms ease-in-out forwards 1 300ms;
 
-  .container {
-    position: relative;
-    width: 600px;
-    margin: 30px auto 0;
-    height: 320px;
-    background-color: white;
-    top: 50%;
-    margin-top: -160px;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .box {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .container .box:before, .container .box:after {
-    content: " ";
-    position: absolute;
-    left: 152px;
-    top: 50px;
-    background-color: lightcoral;
-    transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
-    width: 300px;
-    height: 285px;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .box:after {
-    background-color: lightsalmon;
-    top: -10px;
-    left: 80px;
-    width: 320px;
-    height: 180px;
-  }
-  .container .container-forms {
-    position: relative;
-  }
-  .container .btn {
-    cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
-    width: 60px;
-    color: #fff;
-    background-color: #ff73b3;
-    opacity: 1;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .btn:hover {
-    opacity: 0.7;
-  }
-  .container .btn, .container input {
-    padding: 10px 15px;
-  }
-  .container input {
-    margin: 0 auto 15px;
-    display: block;
-    width: 220px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .container .container-forms .container-info {
-    text-align: left;
-    font-size: 0;
-  }
-  .container .container-forms .container-info .info-item {
-    text-align: center;
-    font-size: 16px;
-    width: 300px;
-    height: 320px;
-    display: inline-block;
-    vertical-align: top;
-    color: #fff;
-    opacity: 1;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .container .container-forms .container-info .info-item p {
-    font-size: 20px;
-    margin: 20px;
-  }
-  .container .container-forms .container-info .info-item .btn {
-    background-color: transparent;
-    border: 1px solid #fff;
-  }
-  .container .container-forms .container-info .info-item .table-cell {
-    padding-right: 35px;
-  }
-  .container .container-forms .container-info .info-item:nth-child(2) .table-cell {
-    padding-left: 35px;
-    padding-right: 0;
-  }
-  .container .container-form {
-    overflow: hidden;
-    position: absolute;
-    left: 30px;
-    top: -30px;
-    width: 305px;
-    height: 380px;
-    background-color: #fff;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .container-form:before {
-    content: "✔";
-    position: absolute;
-    left: 160px;
-    top: -50px;
-    color: #5356ad;
-    font-size: 130px;
-    opacity: 0;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .container-form .btn {
-    position: relative;
-    box-shadow: 0 0 10px 1px #ff73b3;
-    margin-top: 30px;
-  }
-  .container .form-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .container .form-item.sign-up {
-    position: absolute;
-    left: -100%;
-    opacity: 0;
-  }
-  .container.log-in .box:before {
-    position: absolute;
-    left: 180px;
-    top: 62px;
-    height: 265px;
-  }
-  .container.log-in .box:after {
-    top: 22px;
-    left: 192px;
-    width: 324px;
-    height: 220px;
-  }
-  .container.log-in .container-form {
-    left: 265px;
-  }
-  .container.log-in .container-form .form-item.sign-up {
-    left: 0;
-    opacity: 1;
-  }
-  .container.log-in .container-form .form-item.log-in {
-    left: -100%;
-    opacity: 0;
-  }
-  .container.active {
-    width: 260px;
-    height: 140px;
-    margin-top: -70px;
-  }
-  .container.active .container-form {
-    left: 30px;
-    width: 200px;
-    height: 200px;
-  }
-  .container.active .container-form:before {
-    content: "✔";
-    position: absolute;
-    left: 51px;
-    top: 5px;
-    color: #5356ad;
-    font-size: 130px;
-    opacity: 1;
-  }
-  .container.active input, .container.active .btn, .container.active .info-item {
-    display: none;
-    opacity: 0;
-    padding: 0px;
-    margin: 0 auto;
-    height: 0;
-  }
-  .container.active .form-item {
-    height: 100%;
-  }
-  .container.active .container-forms .container-info .info-item {
-    height: 0%;
-    opacity: 0;
-  }
+    }
 
-  #error_explanation{
-    background:black;
-  }
+    .form-fields{
 
-  .rabbit {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 3;
-    fill: #fff;
-  }
+      opacity: 0;
+      transform: translateY(30px);
+      animation: move-up 500ms ease-in-out forwards 1 300ms;
+    }
 
-    input[type="button"]{
-      background:red;
-      border:none;
-      background: rgb(245,245,255);
-      border-radius: .4em;
+    @keyframes move-up {
+      0%{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    input {
+      margin: 0 auto;
+      display: block;
+      width:350px;
+      height:70px;
+      margin-top:5px;
+      background: white;
       color:black;
-      margin-left:45px;
-      width:100%;
+      border: none;
+      border-radius: .2em;
+
+
     }
 
-    .btn-btn{
-      width:100%;
-      border-radius: .2em;
-      border:none;
-      background: rgb(225,225,255);
-      height:50px;
-      font-size:15px;
-    }
-  video#bgvid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: #000;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
+  button{
+    width: 350px;
+    height: 50px;
+    background: #569eca;
+    display: block;
+    margin: 0 auto;
+    border:none;
+    color:white;
+    font-weight: 900;
+    margin-top:20px;
+    margin-bottom: 60px;
+    font-weight: 100;
+    font-family: Helvetica, sans-serif;
   }
 
 </style>
-<div class="loader">
 
-</div>
-<video  playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-  <source src="/assets/video1.mp4" type="video/mp4">
-</video>
 
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -320,86 +87,19 @@
 
     </div>
 
+    <h1>STORYMI</h1>
+    <div class="form-fields">
 
-<div style="margin-top:110px;" class="container animated lll">
-  <h1  style="position: absolute;top:5px;left:69%;color:rgb(80,80,80); font-weight:100 !important;">Your Story Your Imagination</h1>
-  <div class="box"></div>
-  <div class="container-forms">
-    <div class="container-info">
-      <div class="info-item">
-        <div class="table">
-          <div class="table-cell">
-            <p>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="info-item">
-        <div class="table">
-          <div class="table-cell">
+    <%= f.text_field :firstname, placeholder: "First Name" %>
+    <%= f.text_field :lastname, placeholder: "Last Name" %>
+    <%= f.email_field :email, placeholder: "Email"  %>
+    <% if @minimum_password_length %>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", placeholder: "password " %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "password confirmation" %>
+    <%= f.button :submit ,  data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Getting You All Set Up!"}, class: "btn-btn" %>
 
-
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="container-form">
-      <div class="form-item log-in">
-        <div class="table">
-          <div class="table-cell">
-            <div style="margin-top:20px;">
-            <%= f.text_field :firstname, placeholder: "First Name" %>
-            <%= f.text_field :lastname, placeholder: "Last Name" %>
-            </div>
-            <%= f.email_field :email, placeholder: "Email"  %>
-            <% if @minimum_password_length %>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", placeholder: "password " %>
-            <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "password confirmation" %>
-            <%= f.button :submit ,  data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Getting You All Set Up!"}, class: "btn-btn" %>
+<% end %>
 
-          </div>
-        </div>
-      </div>
-      <div class="form-item sign-up">
-        <div class="table">
-          <div class="table-cell">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <% end %>
-
-<script>
-
-  $("input").keyup(function(){
-      if($("#user_firstname").val().toUpperCase() == "TellAFiction".toUpperCase() ){
-          $("button[type='submit']").css({
-              "pointer-events":"none",
-              "opacity":"0.3"
-          });
-          alertify.alert("","Sorry your firstname is saved for the creator of TellAFiction")
-
-      } else {
-          $("button[type='submit']").css({
-              "pointer-events":"auto",
-              "opacity":"1"
-          });      }
-  });
-
-    $(".info-item .btn").click(function(){
-        $(".container").toggleClass("log-in");
-    });
-    $(".container-form .btn").click(function(){
-        $(".container").addClass("active");
-    });
-  $(window).load(function(){
-      $(".loader").fadeOut("slow");
-      $(".story-label-overlay").addClass("fadeInUp");
-      $(".lll").addClass("fadeIn")
-
-  });
-</script>
+<%= render 'partials/footer' %>

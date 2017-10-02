@@ -288,10 +288,10 @@
 
 
 <ul id="menu">
-  <a href="#firstPage"><div data-menuanchor="firstPage" class="active"></div></a>
-  <a href="#secondPage"><div data-menuanchor="secondPage"></div></a>
-  <a href="#3rdPage"><div data-menuanchor="3rdPage"> </div></a>
-  <a href="#4thpage"><div data-menuanchor="4thpage"> </div></a>
+  <a href="#1"><div data-menuanchor="1" class="active"></div></a>
+  <a href="#2"><div data-menuanchor="2"></div></a>
+  <a href="#3"><div data-menuanchor="3"> </div></a>
+  <a href="#4"><div data-menuanchor="4"> </div></a>
 </ul>
 
 <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/S_from_Samsung_Galaxy_S_logo.svg/2000px-S_from_Samsung_Galaxy_S_logo.svg.png"/>
@@ -323,7 +323,7 @@
         <div class="text2-container">
           <h1 style="color:white;">Unleash your inner creativity!</h1>
           <p>At Storly we have a community of creative people who create the most engaging interactive indie stories you can find.</p>
-          <button>Check Out The Coolest One's</button>
+          <button onclick="window.location.href='/stories'">Check Out The Coolest One's</button>
         </div>
       </div>
     </div>
@@ -332,7 +332,7 @@
         <div class="text3-container">
           <h1 style="color:white;">A New Way Of Story Telling</h1>
           <p>At Storly stories are designed in a engaging way. Find out for yourself!</p>
-          <button>View Stories</button>
+          <button onclick="window.location.href='/stories'">View Stories</button>
         </div>
       </div>
     </div>
@@ -341,7 +341,7 @@
         <div style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('scare.gif') center center no-repeat; background-size: cover;" class="text3-container">
           <h1 style="color:white;">Beware some of these stories may scare you</h1>
           <p>Some stories have a certain element of surprise! Beware!</p>
-          <button>Let's get started </button>
+          <button onclick="window.location.href='users/sign_up'">Let's get started </button>
         </div>
       </div>
     </div>
@@ -363,10 +363,15 @@
 <%= render 'partials/footer' %>
 
 <script>
+
+  <% if user_signed_in? %>
+    window.location.href = "/stories"
+  <% end %>
+
     $(document).ready(function() {
         $('#fullpage').fullpage({
             sectionsColor: ['black', 'black', '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            anchors: ['1', '2', '3', '4', '5'],
             menu: '#menu',
             css3: true
         });

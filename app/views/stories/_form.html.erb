@@ -4,7 +4,6 @@
     background:rgb(240,240,255);
   }
 
-  <style>
    *, *:before, *:after {
      box-sizing: border-box;
      margin: 0;
@@ -13,7 +12,7 @@
 
   body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: #ededed;
+    background: rgb(21,21,21);
   }
 
   input, button {
@@ -35,7 +34,9 @@
     width: 900px;
     height: 550px;
     margin: 0 auto 100px;
-    background: #fff;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://i.pinimg.com/736x/23/e2/f2/23e2f2717ce8e472a676f6e08fee221c.jpg) center center no-repeat;
+    background-size:cover;
+    color:white !important;
   }
 
   .form {
@@ -48,6 +49,9 @@
     transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
     padding: 50px 30px 0;
   }
+  label, input {
+    color:white !important;
+  }
 
   .sub-cont {
     overflow: hidden;
@@ -57,11 +61,6 @@
     width: 900px;
     height: 100%;
     padding-left: 260px;
-    background: #fff;
-    -webkit-transition: -webkit-transform 1.2s ease-in-out;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
   }
   .cont.s--signup .sub-cont {
     -webkit-transform: translate3d(-640px, 0, 0);
@@ -248,6 +247,9 @@
     background: #d4af7a;
     text-transform: uppercase;
   }
+  span {
+    color:white !important;
+  }
 
   .fb-btn {
     border: 2px solid #d3dae9;
@@ -294,6 +296,31 @@
     left: auto;
     right: 5px;
   }
+
+    input {
+      border-bottom: 2px solid white !important;
+    }
+
+    select {
+      color:black;
+      width:100px;
+    }
+
+    button {
+      margin-bottom: 70px !important;
+      border-radius: .2em !important;
+      text-transform: uppercase;
+      transition: all 400ms ease-in-out;
+    }
+
+    button:hover {
+      background: black !important;
+      color:white;
+    }
+
+    .img {
+      background: none !important;
+    }
 
 </style>
 
@@ -347,11 +374,11 @@
       <%= form.button :submit , class: " btn-success ", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> Creating Story Interface..."} %>
     </label>
   </div>
-  <div class="sub-cont">
+  <div style="background: none !important;" class="sub-cont">
     <div class="img">
-      <div class="img__text m--up">
-        <h2 style="font-family:'Alex Brush', cursive;';">TellAFiction</h2>
-        <p>Let's set up the details of your story before we begin</p>
+      <div style="background: none !important;" class="img__text m--up">
+        <h2>STORYMI</h2>
+        <p>Let's Make Somethig Weird!</p>
       </div>
       <div class="img__text m--in">
         <h2>One of us?</h2>
@@ -361,6 +388,10 @@
   </div>
 
     <% end %>
+
+<%= render 'partials/footer' %>
+
+
 <script>
     $("button").html("Start");
 </script>
