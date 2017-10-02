@@ -1,0 +1,627 @@
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+  .clearfix {
+    zoom: 1;
+  }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: block;
+    width: 100%;
+    margin: 0;
+    pdding: 0;
+    background: #e8e8e8;
+    background-color: #d9d9d9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#d9d9d9));
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #d9d9d9);
+    background-image: -moz-linear-gradient(top, #e8e8e8, #d9d9d9);
+    background-image: -o-linear-gradient(top, #e8e8e8, #d9d9d9);
+    background-image: linear-gradient(to bottom, #e8e8e8, #d9d9d9);
+    font-family: 'lato', helvetica, arial, sans-serif;
+    font-size: 62.5%;
+  }
+
+  #wrapper {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  #header {
+    display: block;
+    padding-top: 27px;
+    background: black;
+  }
+  #header ul {
+    display: block;
+    padding: 0;
+    margin: 0 0 0;
+    list-style: none;
+  }
+  #header ul li {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+  }
+  #header ul li a {
+    color: #f2f2f2;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-right: 1em;
+    cursor: pointer;
+    padding: 5px 10px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+  }
+  #header ul li a:focus, #header ul li a:hover {
+    background: white;
+    color: black;
+  }
+
+  #banner {
+    background: black;
+    position: relative;
+    height: 500px;
+    margin: 0;
+    padding-bottom: 100px;
+    color: #f2f2f2;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #banner h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 1.5em;
+    width: 70%;
+    float: right;
+    text-align: right;
+  }
+  #banner h1 span {
+    font-weight: 400;
+  }
+
+  #items {
+    display: block;
+    background: black;
+  }
+
+  .panels {
+    display: block;
+    padding: 0;
+    margin: 0 0 0;
+    list-style: none;
+    width: 100%;
+  }
+  .panels li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 31%;
+    top: -50px;
+    height: 250px;
+    margin-right: 3%;
+    background: #FF6B6B;
+    background-color: #ff4747;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6B6B), to(#ff4747));
+    background-image: -webkit-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: -moz-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: -o-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: linear-gradient(to bottom, #FF6B6B, #ff4747);
+    opacity: .8;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+  }
+  @media screen and (max-width: 768px) {
+    .panels li {
+      width: 100%;
+      height: 150px;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+    .panels li i {
+      top: -50px !important;
+    }
+  }
+  .panels li:nth-child(2) {
+    background: #4ECDC4;
+    background-color: #36c1b7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4ECDC4), to(#36c1b7));
+    background-image: -webkit-linear-gradient(top, #4ECDC4, #36c1b7);
+    background-image: -moz-linear-gradient(top, #4ECDC4, #36c1b7);
+    background-image: -o-linear-gradient(top, #4ECDC4, #36c1b7);
+    background-image: linear-gradient(to bottom, #4ECDC4, #36c1b7);
+  }
+  .panels li:nth-child(3) {
+    background: #B0698B;
+    background-color: #a15579;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#B0698B), to(#a15579));
+    background-image: -webkit-linear-gradient(top, #B0698B, #a15579);
+    background-image: -moz-linear-gradient(top, #B0698B, #a15579);
+    background-image: -o-linear-gradient(top, #B0698B, #a15579);
+    background-image: linear-gradient(to bottom, #B0698B, #a15579);
+  }
+  .panels li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .panels li i {
+    position: absolute;
+    top: 10%;
+    right: -10px;
+    font-size: 220px;
+  }
+
+  #lipsum {
+    margin: 0;
+    padding: 27px 0;
+    background: black;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
+  #lipsum p {
+    width: 47%;
+    padding: 27px 0;
+    float: left;
+    margin-right: 6%;
+    background: black;
+  }
+  #lipsum p:nth-of-type(2) {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 600px) {
+    #lipsum p {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  #lipsum h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  #lipsum .dropcap {
+    display: block;
+    float: left;
+    padding: 20px;
+    margin: 10px 27px 13px 0;
+    font-size: 3.5rem;
+    color: black;
+    background: #FF6B6B;
+    background-color: #ff4747;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6B6B), to(#ff4747));
+    background-image: -webkit-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: -moz-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: -o-linear-gradient(top, #FF6B6B, #ff4747);
+    background-image: linear-gradient(to bottom, #FF6B6B, #ff4747);
+    font-weight: 700;
+  }
+
+  .shippy {
+    display: block;
+    position: absolute;
+    background: url(http://www.ericbrewer.ca/images/rocket.png) no-repeat 0 0;
+    z-index: 3;
+  }
+
+  .cloud {
+    display: block;
+    position: absolute;
+    background: white;
+    border-radius: 40px;
+    z-index: 2;
+  }
+
+  .star {
+    display: block;
+    position: absolute;
+    background: white;
+    border-radius: 2;
+    z-index: 1;
+  }
+
+  .wrap {
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+</style>
+
+<body>
+<div id='wrapper'>
+  <div class='clearfix' id='banner'>
+    <div class='wrap clearfix'>
+      <h1>Free Writers Is <span>Launching Soon!</span></h1>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+<%= render 'partials/footer' %>
+
+
+<script>
+    (function() {
+        var Cloud, Entity, Scene, Ship, Star,
+            bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+            extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+            hasProp = {}.hasOwnProperty;
+
+        Scene = (function() {
+            Scene.prototype.scrollTop = 0;
+
+            function Scene(container) {
+                this.container = container;
+                this.tick = bind(this.tick, this);
+                this.entities = [];
+                this.h = $(this.container).height();
+                this.w = $(this.container).width();
+                this.target = {
+                    x: 100,
+                    y: 200
+                };
+            }
+
+            Scene.prototype.setup = function() {};
+
+            Scene.prototype.run = function() {
+                return setInterval(this.tick, 30);
+            };
+
+            Scene.prototype.update = function() {
+                var entity, j, len, radius, ref, results, star, that, x, y, yellow;
+                that = this;
+                if (Math.random() > .005) {
+                    x = this.w + (100 * Math.random());
+                    y = this.h * Math.random();
+                    radius = 2 * Math.random();
+                    yellow = 255 * Math.random();
+                    star = new Star(that, x, y, radius, radius, 'star', yellow);
+                }
+                if (this.entities.length > 0) {
+                    ref = this.entities;
+                    results = [];
+                    for (j = 0, len = ref.length; j < len; j++) {
+                        entity = ref[j];
+                        if (entity) {
+                            results.push(entity.update());
+                        } else {
+                            results.push(void 0);
+                        }
+                    }
+                    return results;
+                }
+            };
+
+            Scene.prototype.tick = function() {
+                return this.update();
+            };
+
+            return Scene;
+
+        })();
+
+        Entity = (function() {
+            Entity.prototype.vx = 0;
+
+            Entity.prototype.vy = 0;
+
+            Entity.prototype.dirY = 1;
+
+            Entity.prototype.dirX = 1;
+
+            Entity.prototype.scrollTop = 0;
+
+            function Entity(scene1, x1, y1, w1, h1, classname1) {
+                var entity;
+                this.scene = scene1;
+                this.x = x1;
+                this.y = y1;
+                this.w = w1 != null ? w1 : 0;
+                this.h = h1 != null ? h1 : 0;
+                this.classname = classname1 != null ? classname1 : 'entity';
+                entity = document.createElement('div');
+                entity.className += this.classname;
+                this.entity = entity;
+                this.scene.container.appendChild(entity);
+                this.scene.entities.push(this);
+                if (this.scene.debug) {
+                    console.log('added ' + this.classname);
+                }
+            }
+
+            Entity.prototype.update = function() {
+                this.dx = this.x + this.vx * this.dirX;
+                this.dy = this.y + this.vy * this.dirY;
+                this.x = this.dx;
+                this.y = this.dy + this.scene.scrollTop;
+                return $(this.entity).css({
+                    'width': this.w + 'px',
+                    'height': this.h + 'px',
+                    'top': this.y + 'px',
+                    'left': this.x + 'px'
+                });
+            };
+
+            Entity.prototype.draw = function() {};
+
+            Entity.prototype.changeDir = function(direction) {
+                if (direction == null) {
+                    direction = x;
+                }
+                if (direction === 'x') {
+                    return this.dirX = -this.dirX;
+                } else if (direction === 'y') {
+                    return this.dirY = -this.dirY;
+                } else {
+                    return console.log(direction + ' is not a valid direction');
+                }
+            };
+
+            return Entity;
+
+        })();
+
+        Ship = (function(superClass) {
+            extend(Ship, superClass);
+
+            function Ship() {
+                return Ship.__super__.constructor.apply(this, arguments);
+            }
+
+            Ship.prototype.speedX = 3;
+
+            Ship.prototype.speedY = 3;
+
+            Ship.prototype.update = function() {
+                var cloudPoss, i, j;
+                this.fly();
+                Ship.__super__.update.apply(this, arguments);
+                cloudPoss = Math.random();
+                if (cloudPoss > .3) {
+                    for (i = j = 0; j <= 3; i = ++j) {
+                        this.createCloud();
+                    }
+                }
+                if (cloudPoss > .7) {
+                    this.createCloud();
+                }
+                if (cloudPoss > .9) {
+                    return this.createCloud();
+                }
+            };
+
+            Ship.prototype.fly = function() {
+                if (this.x < this.scene.target.x - 10) {
+                    this.vx = this.speedX;
+                } else if (this.x > this.scene.target.x + 10) {
+                    this.vx = -this.speedX;
+                } else if (this.x >= this.scene.target.x - 10 || this.x <= this.scene.target.x + 10) {
+                    this.vx = 0;
+                }
+                if (this.y < this.scene.target.y - 5) {
+                    return this.vy = this.speedY;
+                } else if (this.y > this.scene.target.y + 5) {
+                    return this.vy = -this.speedY;
+                } else if (this.y <= this.scene.target.y + 5 || this.y >= this.scene.target.y - 5) {
+                    return this.vy = 0;
+                }
+            };
+
+            Ship.prototype.chanceOfChangeX = function(x) {
+                var chance;
+                chance = 0.001;
+                if (x > this.scene.w * .7 || x < this.scene.w * .1) {
+                    chance = .1;
+                }
+                if (Math.random() < chance) {
+                    return true;
+                }
+                return false;
+            };
+
+            Ship.prototype.chanceOfChangeY = function(y) {
+                var chance;
+                chance = 0.05;
+                if (y > this.scene.h * .8 || y < this.scene.h * .2) {
+                    chance = 0.3;
+                }
+                if (Math.random() < chance) {
+                    return true;
+                }
+                return false;
+            };
+
+            Ship.prototype.createCloud = function() {
+                var cloud, opac, radius, y;
+                opac = Math.random();
+                if (Math.random() > .6) {
+                    radius = 60 * Math.random();
+                } else {
+                    radius = 40 * Math.random();
+                }
+                y = this.y + this.h / 4;
+                y += 20 * Math.random();
+                if (Math.random() > .5) {
+                    y *= -1;
+                }
+                return cloud = new Cloud(this.scene, this.x, y, radius, radius, opac);
+            };
+
+            return Ship;
+
+        })(Entity);
+
+        Cloud = (function(superClass) {
+            extend(Cloud, superClass);
+
+            Cloud.prototype.vx = -5;
+
+            function Cloud(scene, x, y, w, h, opacity) {
+                this.opacity = opacity;
+                Cloud.__super__.constructor.call(this, scene, x, y, w, h, 'cloud');
+                $(this.entity).css('opacity', this.opacity);
+                this.vx = this.vx * Math.random() - 3;
+            }
+
+            Cloud.prototype.update = function() {
+                Cloud.__super__.update.apply(this, arguments);
+                this.opacity -= .004;
+                $(this.entity).css('opacity', this.opacity);
+                if (this.opacity <= 0) {
+                    return this.kill();
+                }
+            };
+
+            Cloud.prototype.kill = function() {
+                var ref, t, that;
+                that = this;
+                if ((t = this.scene.entities.indexOf(that))) {
+                    [].splice.apply(this.scene.entities, [t, t - t + 1].concat(ref = [])), ref;
+                }
+                return $(this.entity).remove();
+            };
+
+            return Cloud;
+
+        })(Entity);
+
+        Star = (function(superClass) {
+            extend(Star, superClass);
+
+            Star.prototype.vx = -10;
+
+            function Star(scene, x, y, w, h, classname, yellowBy) {
+                var blue;
+                this.yellowBy = yellowBy != null ? yellowBy : 0;
+                Star.__super__.constructor.call(this, scene, x, y, w, h, 'star');
+                blue = this.yellowBy;
+                $(this.entity).css('background', 'rgb(255,255,' + blue + ')');
+            }
+
+            Star.prototype.update = function() {
+                Star.__super__.update.apply(this, arguments);
+                if (this.x < 0) {
+                    return this.kill();
+                }
+            };
+
+            Star.prototype.kill = function() {
+                var ref, t, that;
+                that = this;
+                if ((t = this.scene.entities.indexOf(that))) {
+                    [].splice.apply(this.scene.entities, [t, t - t + 1].concat(ref = [])), ref;
+                }
+                return $(this.entity).remove();
+            };
+
+            return Star;
+
+        })(Entity);
+
+        $(function() {
+            var cont, dScroll, i, j, radius, scene, scenes, scroll_amt, ship, star, title, titleTop, vh, x, y, yellow;
+            scenes = [];
+            title = $('h1');
+            titleTop = title.css('margin-top').split('px')[0];
+            vh = $(window).height();
+            vh = vh > 500 ? vh : 500;
+            if (vh > 700) {
+                vh = 700;
+            }
+            $('#banner').css('height', vh);
+            scroll_amt = 0;
+            dScroll = 0;
+            $('#banner').mousemove(function(e) {
+                var mouseX, mouseY;
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                if (scenes[0]) {
+                    return scenes[0].target = {
+                        x: mouseX - 130,
+                        y: mouseY - 120
+                    };
+                }
+            });
+            $('#banner').mouseleave(function() {
+                if (scenes[0]) {
+                    return scenes[0].target = {
+                        x: 200,
+                        y: 200
+                    };
+                }
+            });
+            $(window).on('scroll', function() {
+                var entity, j, len, opac, ref, results, scrollBy, scrollT;
+                scrollT = $(this).scrollTop();
+                dScroll = scrollT - scroll_amt;
+                scroll_amt = scrollT;
+                scrollBy = (scrollT * 1.5) + parseInt(titleTop);
+                opac = 1.2 - (scrollBy / (title.parent().parent().outerHeight() - 50));
+                title.css({
+                    'margin-top': scrollBy,
+                    'opacity': opac
+                });
+                if (scenes[0]) {
+                    ref = scenes[0].entities;
+                    results = [];
+                    for (j = 0, len = ref.length; j < len; j++) {
+                        entity = ref[j];
+                        if (entity.classname === 'star') {
+                            results.push(entity.y -= dScroll * (.5 * entity.w));
+                        } else {
+                            results.push(void 0);
+                        }
+                    }
+                    return results;
+                }
+            });
+            cont = document.getElementById('banner');
+            scene = new Scene(cont);
+            scenes.push(scene);
+            scene.run();
+            scene.target = {
+                x: 400,
+                y: 180
+            };
+            for (i = j = 1; j <= 200; i = ++j) {
+                x = Math.random() * scene.w;
+                y = Math.random() * scene.h;
+                radius = 2 * Math.random();
+                yellow = 255 * Math.random();
+                star = new Star(scene, x, y, radius, radius, 'star', yellow);
+            }
+            ship = new Ship(scene, 150, 100, 220, 80, 'shippy');
+            return setTimeout(function() {
+                return scene.target.y = 90;
+            }, 1000);
+        });
+
+    }).call(this);
+
+</script>

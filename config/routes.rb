@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/all', to: 'all#index'
 
+  get '/comingsoon', to: 'soon#index'
+
   root :to => 'home#index'
 
   resources :videos
