@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/index.html.erb" />
-    </list>
+    <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="400">
+              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -767,12 +765,12 @@
       <workItem from="1506721956389" duration="143000" />
       <workItem from="1506731936475" duration="160000" />
       <workItem from="1506820042142" duration="644000" />
-      <workItem from="1506919853070" duration="9680000" />
+      <workItem from="1506919853070" duration="9863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325714000" />
+    <option name="totallyTimeSpent" value="325897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="1280" height="708" extended-state="0" />
@@ -1219,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="400">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
