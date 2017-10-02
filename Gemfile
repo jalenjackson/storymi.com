@@ -28,6 +28,7 @@ gem 'dropzonejs-rails'
 gem 'videojs_rails'
 gem "paperclip-ffmpeg"
 
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
