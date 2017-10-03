@@ -14,7 +14,11 @@
   {
     margin: -90px 10px 0px 50px;
     z-index: 9;
-    width: 20%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size:cover !important;
+    border:none !important;
   }
 
   @media (max-width:768px)
@@ -57,34 +61,76 @@
     .category-link:hover{
       color:blue;
     }
+
+    .header-img {
+      width: 100%;
+      height: 200px;
+      margin-top: -5px;
+    }
+
+    .navigation-bar {
+      border: none !important;
+    }
+
+    .fb-profile-text h1 {
+      font-family:"Helvetica", sans-serif;
+      font-weight: 100;
+
+    }
+
+    .message-stories {
+      font-size:20px;
+      font-family: Helvetica, sans-serif;
+      font-weight: 100;
+      text-align:center;
+    }
+
+    .edit-btn {
+      z-index: 99999;
+      position: fixed;
+      right: 50px;
+      top:100px;
+      width:200px;
+      height: 50px;
+      background: rgb(31,31,31);
+      border-radius: .2em;
+      border: none;
+      color:white;
+    }
 </style>
 
 
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <div class="fb-profile">
-    <% if @user.avatar? %>
-    <img align="left" class="fb-image-lg" src="<%= @user.avatar.url(:large) %>" alt="Profile image example"/>
-    <% else  %>
-        <img class="mobile-bg" style="width:100%;height:500px;" align="left" src="<%= asset_path 'bg2.jpg' %>" alt="Profile image example"/>
 
+<% if user_signed_in? %>
+  <% if current_user.id == @user.id %>
+    <button onclick="window.location.href = '/users/edit'" class="edit-btn">EDIT</button>
+  <% end %>
+<% end %>
+
+<div class="fb-profile">
+    <% if @user.avatar? %>
+        <div style="background: url(<%= @user.avatar.url(:large) %>) center center no-repeat; background-size: cover;" class="header-img">
+        </div>
+    <% else  %>
+        <div style="background: url(https://ae01.alicdn.com/kf/HTB1KAJJQpXXXXaMapXXq6xXFXXXG/-font-b-Psychedelic-b-font-Trippy-font-b-Art-b-font-Fabric-Cloth-Rolled-Wall.jpg) center center no-repeat; background-size: cover;" class="header-img">
+        </div>
   <% end %>
      <% if @user.cover? %>
      <img align="left" class="fb-image-profile thumbnail" src="<%= @user.cover.url(:medium) %>" alt="Profile image example"/>
     <% else %>
-        <img align="left" class="fb-image-profile thumbnail" src="http://sem.yildiz.edu.tr/img/avatar.png" alt="Profile image example"/>
+        <div style="background: url(https://www.worldskills.org/components/angular-worldskills-utils/images/user.png) center center no-repeat; background-size: cover;" class="profile-img fb-image-profile thumbnail">
+        </div>
 
   <% end %>
     <div class="container mobile-container">
 
     <div   class="fb-profile-text">
       <h1><%= @user.firstname.titlecase + " " + @user.lastname.titlecase %></h1>
-      <h1 style="color:grey; font-style:italic;">  <%= pluralize(@views , "total view" ) %></h1>
+      <h1 style="color:grey; font-size:15px;">  <%= pluralize(@views , "total view" ) %></h1>
 
-      <% if @user.stories.exists? %>
-
-      <h1 style="transform:translateY(50px); "><%= @user.firstname %>'s Text Message Stories</h1>
-<% end %>
+      <h1 class="message-stories"><span style="border-bottom: 2px solid black;">All Stories</span></h1>
       <div style="margin-top:85px;" id="columns">
 
 <% if @user.stories.exists? %>
@@ -124,11 +170,6 @@
                     <% end %>
                 <% end %>
 
-
-
-
-
-
                     <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
 
                 <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1>
@@ -150,74 +191,7 @@
         <% end %>
 
             <% else %>
-          <h1>No Stories </h1>
-        <% end %>
-
-
-      </div>
-      <% if @user.articles.exists? %>
-
-      <h1 style="text-align: center;;"><%= @user.firstname %>'s Stories</h1>
-          <% end %>
-      <div style="margin-top:85px;" id="columns">
-
-        <% if @user.articles.exists? %>
-            <% @user.articles.each do |story| %>
-
-
-                <% if story.ispublished? %>
-                    <a href = "/articles/<%= story.id %>" >
-                <% else %>
-                    <a href = "/articles/<%= story.id %>/edit" >
-
-                <% end %>
-
-                <figure>
-                  <% if story.cover? %>
-                      <img src="<%= story.cover.url(:medium) %>">
-
-                  <% else%>
-
-
-                      <img src="https://img.clipartfox.com/9d5ebbcfc33590c7463cb14267e13fe4_bookshelf-graphic-black-graphic-black-and-white_1083-650.jpeg">
-
-                  <% end %>
-                  <div class="overlay"></div>
-                  <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
-                  <% if user_signed_in? %>
-                      <% if current_user.id == story.user.id %>
-                          <a href ="/articles/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
-                      <% end %>
-                  <% end %>
-
-                  <% if user_signed_in? %>
-                      <% if current_user.id == story.user.id %>
-                  <% if !story.ispublished %>
-                      <h1 style="position: absolute;background:black;top:5px; color:#e74c3c; font-size:16px;left:140px; word-break: break-all;">Not Yet Published</h1>
-                  <% end %>
-                    <% end %>
-                  <% end %>
-                  <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
-
-                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><% if story.ispublished %> <%= pluralize(story.impressionist_count, "view") %> <% end %></h1>
-
-                  <% if story.category.present? %>
-                      <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:70px; font-size:15px; word-break: break-all;color:white;"><%= link_to story.category.name, "/category/#{story.category.id}", class:'category-link' %></h1>
-                  <% end %>
-
-                  <% if user_signed_in? %>
-                  <% if current_user.id == story.user.id %>
-                      <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to yea",  data: { confirm: 'Are you sure?' } %></h1>
-                  <% end %>
-                      <% end %>
-                </figure>
-                </a>
-
-
-
-            <% end %>
-
-        <% else %>
+          <h1 style="font-weight: 100; font-family: Helvetica,sans-serif; text-align: center">No Stories Yet :(</h1>
         <% end %>
 
 
@@ -227,61 +201,6 @@
 
 
 
-      <% if @user.videos.exists? %>
-
-          <h1 style="text-align: center;;"><%= @user.firstname %>'s Videos</h1>
-      <% end %>
-      <div style="margin-top:85px;" id="columns">
-
-        <% if @user.videos.exists? %>
-            <% @user.videos.each do |story| %>
-
-
-
-
-                <figure>
-                  <% if story.image? %>
-                      <img src="<%= story.image.url(:medium) %>">
-
-                <% else %>
-                  <img src="<%= story.mp4.url(:thumb) %>">
-
-                      <% end %>
-
-
-
-
-                  <a href = "/videos/<%= story.id %>">
-
-                  <div class="overlay"></div>
-                  <h1 style="position: absolute;background:black;top:45px;left:20px; font-size:25px; word-break: break-all;color:white;"><%= truncate(story.title.titlecase,length:20) %></h1>
-                  <% if user_signed_in? %>
-                      <% if current_user.id == story.user.id %>
-                            <a href ="/videos/<%= story.id %>/edit"><h1 class="edit-action" style="position: absolute;background:black;top:5px; font-size:16px;left:20px; word-break: break-all;color:white;">Edit</h1></a>
-                  <% end %>
-                  <% end %>
-
-                  <h1 style="position: absolute;background:black;top:90px; font-size:20px;  left:20px; word-break: break-all;color:white;"><%= story.user.firstname.titlecase %></h1>
-
-
-
-                  <h1 class="view-counter" style="position: absolute;background:black;top:130px;left:20px; font-size:15px; word-break: break-all;color:white;"><%= pluralize(story.impressionist_count, "view") %> </h1>
-
-
-                  <% if user_signed_in? %>
-                      <% if current_user.id == story.user.id %>
-                          <h1 style="position: absolute;background:black;top:5px; font-size:16px;  left:60px; word-break: break-all;color:white;"><%= link_to 'Delete ',  story ,  method: :delete, class:"link-to yea",  data: { confirm: 'Are you sure?' } %></h1>
-                      <% end %>
-                  <% end %>
-                </figure>
-
-                </a>
-
-
-            <% end %>
-
-        <% else %>
-        <% end %>
 
 
       </div>
@@ -290,7 +209,6 @@
 
 
 
-</div> <!-- /container -->
 
 
 
