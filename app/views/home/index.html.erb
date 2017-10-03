@@ -168,7 +168,8 @@
     }
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      transform: translateX(30px);
+      transform: translateX(10px);
+      font-size:13px !important;
     }
 
 
@@ -283,6 +284,82 @@
       font-weight: bold;
       transition: all 400ms ease-in-out;
     }
+
+
+
+
+
+
+
+    @media only screen and (max-width: 1200px) {
+
+
+    }
+
+
+    @media only screen and (max-width: 900px) {
+      .footer-instructions {
+        display: none !important;
+      }
+
+
+      .right-text {
+        transform: translateY(10px)!important;
+
+      }
+    }
+
+
+    @media only screen and (max-width: 600px){
+      .footer-instructions {
+        display: none !important;
+      }
+
+      .right-text {
+        transform: translateY(10px)!important;
+
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+      #menu {
+        left: -50px !important;
+      }
+
+      .footer-instructions {
+        display: none !important;
+      }
+
+      .right-text {
+        transform: translateY(10px)!important;
+
+      }
+
+      .search-it {
+        width:200px !important;
+        color:white;
+        left: 70px !important;
+      }
+
+      .search {
+        display: none !important;
+      }
+
+      .right-links {
+        right: 0 !important;
+        top: 40px !important;
+      }
+
+      .logo {
+        left: 10px !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 350px) {
+
+    }
 </style>
 
 
@@ -296,7 +373,7 @@
 
 <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/S_from_Samsung_Galaxy_S_logo.svg/2000px-S_from_Samsung_Galaxy_S_logo.svg.png"/>
 
-<input placeholder="Search for a story" type="text"/>
+<input class="search-it" placeholder="Search for a story" type="text"/>
 
 <ul class="right-links">
   <a onclick="window.location.href = '/stories' ">Stories</a>
@@ -320,7 +397,7 @@
     <div style="position: relative;"  class="slide active">
       <div  class="intro">
         <div class="text2-container">
-          <h1 style="color:white;">Unleash your inner creativity!</h1>
+          <h1 class="h1-2" style="color:white;">Unleash your inner creativity!</h1>
           <p>At Storly we have a community of creative people who create the most engaging interactive indie stories you can find.</p>
           <button onclick="window.location.href='/stories'">Check Out The Coolest One's</button>
         </div>

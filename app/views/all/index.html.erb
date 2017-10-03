@@ -29,7 +29,6 @@
     display: block;
     width: 100%;
     text-align:center;
-    background:blue;
   }
 
   .module:hover .overlay {
@@ -65,9 +64,46 @@
     .autowide .module:nth-child(2n+0) {
       margin-right: 0;
     }
+    .center-area {
+      margin: 0 !important;
+    }
+
+    .autowide {
+      margin: 0 !important;
+    }
+    .module {
+      width: 100% !important;
+    }
   }
 
-  /* 3 columns: 768px */
+  @media only screen and (min-width: 400px) {
+
+    .center-area {
+      margin: 0 !important;
+    }
+
+    .autowide {
+      margin: -100px !important;
+    }
+    .module {
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (min-width: 300px) {
+    .center-area {
+      margin: 0 !important;
+    }
+
+    .autowide {
+      margin: 0px !important;
+    }
+    .module {
+      width: 100% !important;
+    }
+  }
+
+    /* 3 columns: 768px */
   @media only screen and (min-width: 768px) {
     .autowide .module {
       width: 31.623931623931625%;

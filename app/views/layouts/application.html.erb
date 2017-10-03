@@ -155,6 +155,137 @@
 
 
 
+
+      @media only screen and (max-width: 1200px) {
+
+
+      }
+
+
+      @media only screen and (max-width: 900px) {
+
+      }
+
+
+      @media only screen and (max-width: 600px){
+        .fa-bars {
+          font-size:23px !important;
+          margin: 0 !important;
+          top: 0 !important;
+          transform: translateY(0px) !important;
+        }
+
+        .mobile-brand {
+          margin: 0 !important;
+          top: 0 !important;
+          transform: translateY(0px) !important;
+        }
+
+        .mobile-brand h1 {
+          position: relative !important;
+          top:0 !important;
+          font-size:15px !important;
+          transform: translateY(0px) !important;
+
+
+        }
+
+        .footer-instructions {
+          display: none !important;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 400px) {
+          .fa-bars {
+            font-size:23px !important;
+            margin: 0 !important;
+            top: 0 !important;
+            transform: translateY(0px) !important;
+          }
+
+        .mobile-brand {
+          margin: 0 !important;
+          top: 0 !important;
+          transform: translateY(0px) !important;
+        }
+
+        .mobile-brand h1 {
+          position: relative !important;
+          top:0 !important;
+          font-size:15px !important;
+          transform: translateY(0px) !important;
+
+
+        }
+
+
+
+      }
+
+      @media only screen and (max-width: 350px) {
+
+      }
+
+
+      .links {
+        position:absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        background:rgb(31,31,31);
+        z-index: 99999999999999999999999;
+        transition: all 400ms ease-in-out;
+        opacity: 1;
+        overflow: hidden !important;
+      }
+
+        .add-height {
+          height: 400px;
+          opacity: 1;
+        }
+
+        .links ul li {
+          font-size:40px !important;
+          text-align:left;
+          margin: 0 !important;
+          line-height: 33px;
+          margin-top:30px !important;
+          font-family: Helvetica, sans-serif;
+          font-weight: 900;
+          color:white;
+          letter-spacing: 1px;
+          margin-left: 10px !important;
+        }
+
+        .links ul {
+          list-style-type: none;
+          margin:0 !important;
+        }
+
+        .fa-times2 {
+          color:white !important;
+          position: relative;
+          float: right;
+          right: 0 !important;
+          margin-right: 30px !important;
+          font-size:40px !important;
+          margin-top:20px;
+          font-family: Helvetica, sans-serif;
+          opacity: 0;
+        }
+
+        .show {
+          opacity: 1;
+        }
+        .fa-bars {
+          font-size:20px !important;
+        }
+
+
+
     </style>
     <title><%= yield(:title) %></title>
     <meta name="Description" CONTENT="Revolutionizing Entertainment. TellAFiction offers a new way to read stories. Even if you do not like to read , the stories that are created at TellAFiction will keep you wanting more. Many stories contain scary pop up images and music that will scare you crazy! The stories could be in the form of text-messages or a comic book, you name it ! These aren't regular stories.  There are tons of creative scary, and plenty other stories on TellAFiction. Or you can create your own story! We also offer a video sharing platform , upload whatever video you like , and watch interesting videos here at TellAFiction! Sign up Today! Fiction, Books, Videos ">
@@ -170,6 +301,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Indie+Flower" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
 
@@ -177,6 +309,17 @@
 
   <body>
 
+
+  <div class="links">
+    <h1 class="fa-times2">X</h1>
+    <ul>
+      <li onclick="window.location.href='/stories'">Stories</li>
+      <li onclick="window.location.href='/all'">Categories</li>
+      <li onclick="window.location.href='/stories/new'">New Story</li>
+      <li onclick="window.location.href='/users/sign_in'">Sign In</li>
+      <li onclick="window.location.href='/users/sign_up'">Sign Up</li>
+    </ul>
+  </div>
 
   <div style="display:none;" class="mobile-overlay">
     <div class="mobile-overlay2">
@@ -201,8 +344,7 @@
       <li style="transform:translateY(5px)"><a class="tele"  style="font-size:20px; margin-top:10px;  font-weight: bold; color:grey; font-family: 'Nunito Sans', sans-serif;" <% if user_signed_in? %> href = "/stories" <% else %>  href="/" <% end %> >STORYMI</a></li>
 
       <div style="" class="mobile-brand">
-        <h1 style="float:left;position: absolute;top:0px;left:0;">TellAFiction</h1>
-        <h1><i class="fa fa-bars" aria-hidden="true"></i></h1>
+        <h1>STORYMI <i class="fa fa-bars" aria-hidden="true"></i></h1>
       </div>
 
 
@@ -286,6 +428,18 @@
         $(".category-overlay").show();
     });
 
+
+
+
+    $(".fa-bars, .mobile-brand h1 ").click(function(){
+       $(".links").addClass("add-height");
+        $(".fa-times2").addClass("show");
+    });
+
+    $(".fa-times2").click(function(){
+        $(".links").removeClass("add-height");
+        $(".fa-times2").removeClass("show");
+    });
 
   </script>
 <style>
