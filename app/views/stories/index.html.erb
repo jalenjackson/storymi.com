@@ -143,6 +143,10 @@
 
   }
 
+    .clickzer {
+      cursor: pointer;
+    }
+
 
 
 </style>
@@ -174,6 +178,36 @@
             </a>
 
             <h1 style="color:white;"><%= pluralize(article.impressionist_count, "view") %></h1>
+
+            <h1 class="clickzer" onclick="window.location.href='/category/<%= article.category.id %>'"
+
+                <% if article.category.name == "Romance" %>
+            style="color:pink;"
+                <% end %>
+                <% if article.category.name == "Drama" %>
+                style="color:darkcyan;"
+                <% end %>
+                <% if article.category.name == "Fantasy" %>
+                style="color:mediumorchid;"
+                <% end %>
+                <% if article.category.name == "Thriller" %>
+                style="color:red;"
+                <% end %>
+                <% if article.category.name == "Comedy" %>
+                style="color:yellow;"
+                <% end %>
+                <% if article.category.name == "Mystery" %>
+                style="color:darkolivegreen;"
+                <% end %>
+                <% if article.category.name == "SCI-FI" %>
+                style="color:lightskyblue;"
+                <% end %>
+                <% if article.category.name == "Horror" %>
+                style="color:darkred;"
+                <% end %>
+
+            ><%= article.category.name %></h1>
+
 
       <% end %>
         <a href="/profile/<%= article.user.id %>">

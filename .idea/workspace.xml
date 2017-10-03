@@ -35,16 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/articles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.css.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,8 +48,27 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="160" column="22" lean-forward="false" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+            <state relative-caret-position="313">
+              <caret line="146" column="22" lean-forward="false" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#1;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#2;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#3;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#4;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#5;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#6;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#7;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -773,12 +782,12 @@
       <workItem from="1506731936475" duration="160000" />
       <workItem from="1506820042142" duration="644000" />
       <workItem from="1506919853070" duration="10176000" />
-      <workItem from="1506991229888" duration="10393000" />
+      <workItem from="1506991229888" duration="10990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336603000" />
+    <option name="totallyTimeSpent" value="337200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="1280" height="708" extended-state="0" />
@@ -936,13 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1199,11 +1201,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="160" column="22" lean-forward="false" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="313">
+          <caret line="146" column="22" lean-forward="false" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#2;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#3;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#4;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#5;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#6;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#7;n#h1#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
