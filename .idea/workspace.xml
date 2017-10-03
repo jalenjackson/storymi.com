@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeacae9-7760-42f3-8523-0c48c850aa58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/view.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/view.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/stories/index.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -56,6 +55,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="160" column="22" lean-forward="false" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,17 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffolds.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/stories/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
@@ -136,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form-div</find>
       <find>show-ending</find>
       <find>publish</find>
       <find>link-to</find>
@@ -166,6 +164,7 @@
       <find>name</find>
       <find>recieve</find>
       <find>message-big</find>
+      <find>Goof</find>
     </findStrings>
     <replaceStrings>
       <replace>//=</replace>
@@ -219,7 +218,6 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/profile.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/all/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
@@ -229,6 +227,7 @@
         <option value="$PROJECT_DIR$/app/views/stories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stories/view.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stories/index.html.erb" />
       </list>
     </option>
   </component>
@@ -774,12 +773,12 @@
       <workItem from="1506731936475" duration="160000" />
       <workItem from="1506820042142" duration="644000" />
       <workItem from="1506919853070" duration="10176000" />
-      <workItem from="1506991229888" duration="10173000" />
+      <workItem from="1506991229888" duration="10393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336383000" />
+    <option name="totallyTimeSpent" value="336603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="1280" height="708" extended-state="0" />
@@ -1055,14 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4340">
@@ -1205,6 +1196,14 @@
             <element signature="n#style#0;n#b#0;n#strong#0;n#span#0;n#p#0;n#div#6;n#div#2;n#div#3;n#!!top" expanded="true" />
             <marker date="1507018662000" expanded="true" signature="14855:14909" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="160" column="22" lean-forward="false" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

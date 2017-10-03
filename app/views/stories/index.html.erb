@@ -157,6 +157,8 @@
 
 
   <% @stories.each do |article| %>
+
+      <% if article.ispublished? %>
       <div class="grid__item grid__item--height3">
         <a href="/stories/<%= article.id %>/view">
           <img src="<%= article.cover.url(:medium) %>"/>
@@ -179,6 +181,7 @@
         </a>
 
       </div>
+          <% end %>
   <% end %>
 
 
