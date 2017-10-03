@@ -316,8 +316,13 @@
       <li onclick="window.location.href='/stories'">Stories</li>
       <li onclick="window.location.href='/all'">Categories</li>
       <li onclick="window.location.href='/stories/new'">New Story</li>
-      <li onclick="window.location.href='/users/sign_in'">Sign In</li>
-      <li onclick="window.location.href='/users/sign_up'">Sign Up</li>
+
+      <% if user_signed_in? %>
+          <li onclick="window.location.href='/user/<%= current_user.id %>'"><%= current_user.firstname %></li>
+    <% else %>
+        <li onclick="window.location.href='/users/sign_in'">Sign In</li>
+        <li onclick="window.location.href='/users/sign_up'">Sign Up</li>
+      <% end %>
     </ul>
   </div>
 
