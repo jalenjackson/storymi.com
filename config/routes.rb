@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get '/comingsoon', to: 'soon#index'
 
-  root :to => 'home#index'
+  root :to => 'stories#index'
 
   resources :videos
   resources :articles do
