@@ -109,17 +109,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      address:                'smtp.zoho.com',
-      port:                   465,
-      user_name:              'tellafiction@tellafiction.com',
-      domain:                 'tellafiction.com',
-      password:               'bigship1',
-      authentication:         'plain',
-      ssl:                    true,
-      tls:                    true,
-      :enable_starttls_auto => true
-  }
-
 end
