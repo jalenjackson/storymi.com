@@ -1,3 +1,3 @@
-**TellAFiction** 
+**StoryMi** 
 
-tellafiction.com share stories in engaging ways, and share videos. 
+storymi.com share stories in engaging ways
