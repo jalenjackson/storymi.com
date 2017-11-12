@@ -170,18 +170,19 @@ section div {
     position: relative;
     padding: 10px 20px;
     color: white;
-    background: #0B93F6;
+    background: rgb(60,60,60) !important;
     border-radius: 25px;
     float: right;
     margin-right:100px;
 }
 .from-me:before {
-    border-bottom: 29px solid #0B93F6;
+    border-bottom: 29px solid rgb(60,60,60);
     border-right: 29px solid rgba(0, 0, 0, 0);
     position: absolute;
-    bottom: 15px;
-    right: -15px;
+    bottom: 2px;
+    right: -3px;
     content: "";
+
 }
 
 

@@ -404,6 +404,9 @@
         </audio>
     <% end %>
 
+
+
+
       <% if message.ending.present? %>
           <h1 class="animated zoomInDown" style="color:white;font-size:60px;margin-top:100px; text-align: center; position: fixed; top:50px;left:10%; z-index: 9999999999999999999999999999999999999999999999999;"><span style="background:black;"><%= message.ending %></span></h1>
           <a style="color:white;font-size:60px;margin-top:100px; text-align: center; position: fixed; top:65%;left:40%; z-index: 9999999999999999999999999999999999999999999999999;" href = "/stories/<%= Story.order("RANDOM()").first.id %>/view">Next Story</a>
@@ -486,7 +489,9 @@
 <% end %>
 
 
-
+  <audio class="text-message" style="margin-left:20px !important; ">
+    <source src="../../assets/text.mp3" type="audio/mpeg">
+  </audio>
  
 <script>
 
@@ -502,6 +507,7 @@
   $(".good-choice").hide();
   $(".ending").hide();
   $(".ending-overlay").hide();
+
 
   function showImage(){
       $(".choice-img").show();
@@ -521,6 +527,12 @@
 
 
   $(".clicker").click(function(){
+          window.scrollTo(0,document.body.scrollHeight);
+      var audio = document.getElementsByClassName("text-message")[0];
+      audio.volume = 0.3;
+      audio.currentTime = 0;
+      $(".text-message").trigger("play");
+
       $(".texter" + i).fadeIn("slow").addClass("fadeIn");
       $(".reciever" + i).fadeIn("slow").addClass("fadeIn");
       $(".popup" + i).show();
@@ -537,6 +549,8 @@
       console.log(i);
 
       $(".first" + i).click(function(){
+          window.scrollTo(0,document.body.scrollHeight);
+
           console.log(i - 1);
           if($(".first" + (i - 1)).hasClass("thecorrectmessage")){
 
@@ -559,6 +573,8 @@
       });
 
       $(".second" + i).click(function(){
+          window.scrollTo(0,document.body.scrollHeight);
+
           if($(".second" + (i - 1)).hasClass("thecorrectmessage")){
 
               $(".good-choice").fadeIn("slow");
@@ -667,7 +683,7 @@
 <script>
    $(window).click(function(){
        window.scrollTo(0,document.body.scrollHeight);
-   })
+   });
 </script>
 
 
